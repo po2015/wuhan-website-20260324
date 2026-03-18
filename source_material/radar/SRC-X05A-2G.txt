@@ -1,0 +1,33 @@
+model: SRC-X05A-2G
+highlight: Long-Range Single-Face Defense
+range_km: 20
+image: /images/radar/src-x05a-2g.jpg
+factory_location: Xi'an, China
+targets:
+  person: 5
+  vehicle: 8
+  vessel: 12
+Product Introduction：The SRC-X05A-2G moving target surveillance radar employs an Active Electronically Scanned Array (AESA) system, enabling continuous, all-day, all-weather detection and tracking of moving targets within its coverage area. It offers advantages such as high detection sensitivity, low false alarm rate, and excellent accuracy.
+Product Advantages：High accuracy and reliability; low false alarm probability; excellent tracking performance under dense target conditions; wide coverage, compact size, and lightweight design.
+Application Scenarios：Land border surveillance, maritime surveillance, critical site protection, waterway management.
+Key Specifications：
+Working Frequency	X-band
+Operating Mode	Active Electronically Scanned Array (AESA) System.
+Scanning Range	90° Azimuth Sector.
+Range	12km
+Detection Range	≥5 km (personnel)
+	≥8 km (small vehicle)
+	≥12 km (large vehicle, vessel)
+Detection Accuracy	Distance: ≤5 m
+	Azimuth: ≤0.25°
+	Velocity: ≤±0.1 m/s ±2%
+Communication Interface	Gigabit Ethernet aviation connector.
+Weight	≤4.5Kg
+Data Interval	1.2s
+Number of Targets Tracked Simultaneously	≥200 Batches
+Detection Radial Velocity Range	0.4~60m/s
+Anti-Clutter Capability	No false alarms triggered by common clutter.
+Power Consumption	≤80W
+Power Supply Range	DC 18~28V (with AC 220V to DC 24V adapter)
+Environmental Adaptability	Operating temperature: -40°C to +55°C, protection rating: IP67
+Main Unit Dimensions	365*295*55mm

@@ -1,0 +1,96 @@
+<header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/92 backdrop-blur-md">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between gap-4 lg:h-[4.5rem]">
+      <a href="{{ "/" | relLangURL }}" class="shrink-0">
+        <img src="{{ "images/logo.png" | relURL }}" alt="Cyrentis" class="h-10 w-auto max-w-[210px] object-contain">
+      </a>
+
+      <button id="mobileMenuButton" type="button" class="inline-flex items-center rounded-lg border border-slate-300/90 bg-white px-3 py-2 text-sm font-semibold text-slate-700 lg:hidden" aria-expanded="false" aria-controls="mobileMenu">
+        Menu
+      </button>
+
+      <nav class="main-nav hidden lg:block" aria-label="Main Navigation">
+        <ul class="flex items-center gap-0.5 text-[0.92rem] font-semibold text-slate-700">
+          {{ range .Site.Menus.main }}
+          {{ $hasChildren := .HasChildren }}
+          {{ $hasGrandchildren := false }}
+          {{ if $hasChildren }}
+            {{ range .Children }}
+              {{ if .HasChildren }}{{ $hasGrandchildren = true }}{{ end }}
+            {{ end }}
+          {{ end }}
+          <li class="menu-item {{ if $hasChildren }}has-children{{ end }}">
+            <a class="menu-link" href="{{ .URL }}">
+              {{ .Name }}
+              {{ if $hasChildren }}<span class="menu-caret" aria-hidden="true"></span>{{ end }}
+            </a>
+            {{ if $hasChildren }}
+            <div class="menu-panel {{ if $hasGrandchildren }}w-[330px]{{ else }}w-[270px]{{ end }}">
+              {{ if $hasGrandchildren }}
+              <ul>
+                {{ range .Children }}
+                <li class="{{ if .HasChildren }}menu-subitem{{ end }}">
+                  <a class="menu-sublink {{ if .HasChildren }}with-caret{{ end }}" href="{{ .URL }}">
+                    <span>{{ .Name }}</span>
+                    {{ if .HasChildren }}<span class="submenu-caret" aria-hidden="true"></span>{{ end }}
+                  </a>
+                  {{ if .HasChildren }}
+                  <div class="submenu-panel w-[280px]">
+                    {{ range .Children }}
+                    <a class="submenu-link" href="{{ .URL }}">{{ .Name }}</a>
+                    {{ end }}
+                  </div>
+                  {{ end }}
+                </li>
+                {{ end }}
+              </ul>
+              {{ else }}
+                {{ range .Children }}
+                <a class="panel-link" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+              {{ end }}
+            </div>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-slate-200 py-4 lg:hidden">
+      <div class="space-y-2 text-sm font-semibold text-slate-700">
+        {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+          <details class="mobile-group">
+            <summary>
+              <span>{{ .Name }}</span>
+              <span class="mobile-caret" aria-hidden="true"></span>
+            </summary>
+            <div class="mobile-submenu">
+              {{ range .Children }}
+                {{ if .HasChildren }}
+                <details>
+                  <summary>
+                    <span>{{ .Name }}</span>
+                    <span class="mobile-caret" aria-hidden="true"></span>
+                  </summary>
+                  <div class="mobile-submenu pl-3">
+                    {{ range .Children }}
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                    {{ end }}
+                  </div>
+                </details>
+                {{ else }}
+                <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </details>
+          {{ else }}
+          <a class="mobile-link" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</header>

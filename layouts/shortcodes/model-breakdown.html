@@ -1,0 +1,35 @@
+{{- $tokens := slice
+  (dict "label" (.Get "t1") "desc" (.Get "d1"))
+  (dict "label" (.Get "t2") "desc" (.Get "d2"))
+  (dict "label" (.Get "t3") "desc" (.Get "d3"))
+  (dict "label" (.Get "t4") "desc" (.Get "d4"))
+  (dict "label" (.Get "t5") "desc" (.Get "d5"))
+  (dict "label" (.Get "t6") "desc" (.Get "d6"))
+-}}
+{{- $anchors := slice "1.5" "4.5" "6" "7.5" "9.5" "10.5" -}}
+{{- $gapCounts := slice "0" "2" "3" "4" "6" "7" -}}
+{{- $rowTops := slice "0.7rem" "2.7rem" "4.7rem" "6.7rem" "8.7rem" "10.7rem" -}}
+{{- $displayOrder := slice 5 4 3 2 1 0 -}}
+<div class="model-breakdown">
+  <div class="model-breakdown-inner" data-model-breakdown>
+    <div class="model-breakdown-code" aria-label="Model code">
+      {{- range $idx, $token := $tokens -}}
+      <span class="model-breakdown-token" data-len="{{ len $token.label }}" data-model-anchor="{{ $token.label }}">{{ $token.label }}</span>
+      {{- if or (eq $idx 0) (eq $idx 3) -}}
+      <span class="model-breakdown-sep" aria-hidden="true">-</span>
+      {{- end -}}
+      {{- end -}}
+    </div>
+    <div class="model-breakdown-notes">
+      {{- range $rowIdx, $tokenIdx := $displayOrder -}}
+      {{- $token := index $tokens $tokenIdx -}}
+      <div class="model-breakdown-note-row" data-model-note="{{ $token.label }}" style="--anchor-ch: {{ index $anchors $tokenIdx }}; --anchor-gap-count: {{ index $gapCounts $tokenIdx }}; --row-top: {{ index $rowTops $rowIdx }};">
+        <div class="model-breakdown-note">
+          <span class="model-breakdown-note-label">{{ $token.label }}</span>
+          <span>{{ $token.desc }}</span>
+        </div>
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+</div>

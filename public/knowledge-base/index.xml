@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledge Base on Wuhan Cyrentis Technology Co., Ltd.</title>
+    <link>https://www.cyrentis.com/knowledge-base/</link>
+    <description>Recent content in Knowledge Base on Wuhan Cyrentis Technology Co., Ltd.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.cyrentis.com/knowledge-base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Choosing Radar Frequency Bands: Pros, Cons, and Application Scenarios</title>
+      <link>https://www.cyrentis.com/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/radar-frequency-band-comparison.svg&#34; alt=&#34;Radar frequency band comparison chart&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Civil security radar projects rarely fail because of one parameter. They fail when frequency band choice is disconnected from site conditions, target mix, and system integration objectives.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Comparison of Different Radar Scanning Architectures</title>
+      <link>https://www.cyrentis.com/knowledge-base/comparison-of-different-radar-scanning-architectures/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/comparison-of-different-radar-scanning-architectures/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/radar-scanning-architecture-comparison.svg&#34; alt=&#34;Radar scanning architecture comparison diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In civil security radar deployment, architecture is not a cosmetic option. It determines coverage behavior, revisit pattern, mechanical wear profile, and how tracks are consumed by upper-layer command platforms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compliance Overview for Dual-Use Export of Civil Security Radar Products</title>
+      <link>https://www.cyrentis.com/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/dual-use-export-compliance-flow.svg&#34; alt=&#34;Dual-use export compliance flow diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Civil security radar projects can fail late in the delivery cycle if compliance planning starts too late. For cross-border deployment, technical readiness and regulatory readiness must progress in parallel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cross-border Logistics Planning Template</title>
+      <link>https://www.cyrentis.com/knowledge-base/cross-border-logistics-template/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/cross-border-logistics-template/</guid>
+      <description>&lt;p&gt;Placeholder content: this article shows sample milestones and collaboration points for cross-border logistics execution.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EO Commissioning Checklist</title>
+      <link>https://www.cyrentis.com/knowledge-base/eo-commissioning-checklist/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/eo-commissioning-checklist/</guid>
+      <description>&lt;p&gt;Placeholder content: this entry demonstrates a simple commissioning checklist structure for EO project delivery.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Radar Site Planning Basics</title>
+      <link>https://www.cyrentis.com/knowledge-base/radar-site-planning-basics/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/radar-site-planning-basics/</guid>
+      <description>&lt;p&gt;Placeholder content: this article outlines baseline methods for survey, obstacle review, and coverage planning in radar projects.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

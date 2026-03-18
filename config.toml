@@ -1,0 +1,152 @@
+baseURL = "https://www.cyrentis.com/"
+title = "Wuhan Cyrentis Technology Co., Ltd."
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+summaryLength = 24
+
+[pagination]
+  pagerSize = 9
+
+[params]
+  company_name = "Wuhan Cyrentis Technology Co., Ltd."
+  address = "Room 201-134, Building C9, Phase II, Wuhan Software New City, No. 8 Huacheng Avenue, East Lake High-tech Development Zone, Wuhan, China"
+  phone = "+86-13986053927"
+  email = "info@cyrentis.com"
+  icp_license = "鄂ICP备202405002号"
+  default_description = "Integrated sensing systems for security monitoring and low-altitude awareness, combining Horizon software, sensor devices, and consulting services."
+
+  [params.ui]
+    page_kicker = "Page"
+    section_kicker = "Section"
+    read_more_label = "Read More"
+    no_items_label = "No items available in this section yet."
+    key_points_title = "Key Points"
+    inquiry_title = "Project Inquiry"
+    inquiry_text = "Need custom solutions, product selection, or quotation support? Send us your requirements."
+    inquiry_button_label = "Contact Team"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-US"
+    weight = 1
+    contentDir = "content/en"
+    title = "Wuhan Cyrentis Technology Co., Ltd."
+
+[[menus.main]]
+  name = "Home"
+  url = "/"
+  weight = 5
+
+[[menus.main]]
+  name = "Horizon"
+  pageRef = "/horizon"
+  weight = 10
+
+[[menus.main]]
+  name = "Sensors"
+  identifier = "sensors"
+  pageRef = "/sensors"
+  weight = 20
+
+[[menus.main]]
+  name = "Surveillance Radar"
+  parent = "sensors"
+  pageRef = "/sensors/src"
+  weight = 20
+
+[[menus.main]]
+  name = "Surveillance Optics"
+  parent = "sensors"
+  pageRef = "/sensors/soc"
+  weight = 30
+
+[[menus.main]]
+  name = "Spectrum Detection"
+  parent = "sensors"
+  pageRef = "/sensors/sdc"
+  weight = 40
+
+[[menus.main]]
+  name = "Services"
+  identifier = "services"
+  pageRef = "/services"
+  weight = 30
+
+[[menus.main]]
+  name = "Security Software Customization"
+  parent = "services"
+  pageRef = "/services/security-software-customization"
+  weight = 10
+
+[[menus.main]]
+  name = "Security Solution Design"
+  parent = "services"
+  pageRef = "/services/security-solution-design"
+  weight = 20
+
+[[menus.main]]
+  name = "Security Equipment Integration"
+  parent = "services"
+  pageRef = "/services/security-equipment-integration"
+  weight = 30
+
+[[menus.main]]
+  name = "Information"
+  identifier = "information-center"
+  pageRef = "/info-center"
+  weight = 40
+
+[[menus.main]]
+  name = "Knowledge Base"
+  parent = "information-center"
+  pageRef = "/knowledge-base"
+  weight = 10
+
+[[menus.main]]
+  name = "News"
+  parent = "information-center"
+  pageRef = "/news"
+  weight = 20
+
+[[menus.main]]
+  name = "Download"
+  parent = "information-center"
+  pageRef = "/download"
+  weight = 30
+
+[[menus.main]]
+  name = "Contact"
+  pageRef = "/contact-us"
+  weight = 50
+
+[[menus.footer]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menus.footer]]
+  name = "Horizon"
+  pageRef = "/horizon"
+  weight = 15
+
+[[menus.footer]]
+  name = "Sensors"
+  pageRef = "/sensors"
+  weight = 20
+
+[[menus.footer]]
+  name = "Services"
+  pageRef = "/services"
+  weight = 25
+
+[[menus.footer]]
+  name = "Information"
+  pageRef = "/info-center"
+  weight = 30
+
+[[menus.footer]]
+  name = "Contact"
+  pageRef = "/contact-us"
+  weight = 40

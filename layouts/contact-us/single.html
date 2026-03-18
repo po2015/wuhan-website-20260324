@@ -1,0 +1,73 @@
+{{ define "main" }}
+{{- $cfg := .Params.contact_page -}}
+<section class="bg-white py-14">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <p class="section-kicker">{{ $cfg.kicker | default "Contact Us" }}</p>
+    <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">{{ .Title }}</h1>
+    {{ with .Params.description }}
+    <p class="mt-4 max-w-3xl text-base leading-8 text-slate-600">{{ . }}</p>
+    {{ end }}
+  </div>
+</section>
+<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+  <div class="grid gap-8 lg:grid-cols-12">
+    <div class="space-y-6 lg:col-span-5">
+      <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
+        <h2 class="text-lg font-bold text-slate-900">{{ $cfg.details_title | default "Contact Details" }}</h2>
+        <dl class="mt-4 space-y-3 text-sm text-slate-600">
+          {{ range $cfg.details }}
+          <div>
+            <dt class="font-semibold text-slate-900">{{ .label }}</dt>
+            <dd>
+              {{ if .href }}
+              <a href="{{ .href | safeURL }}" class="hover:text-brand-700">{{ .value }}</a>
+              {{ else }}
+              {{ .value }}
+              {{ end }}
+            </dd>
+          </div>
+          {{ end }}
+        </dl>
+      </article>
+      <article class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft">
+        <iframe title="{{ $cfg.map_title | default "Google Map" }}" class="h-72 w-full" loading="lazy" allowfullscreen src="{{ $cfg.map_embed_url | safeURL }}"></iframe>
+      </article>
+    </div>
+
+    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-soft lg:col-span-7">
+      <h2 class="text-2xl font-bold text-slate-900">{{ $cfg.form_title | default "Send Us a Message" }}</h2>
+      <form class="mt-6 grid gap-4 sm:grid-cols-2" method="post" action="#">
+        <label class="form-field sm:col-span-1">
+          <span>{{ $cfg.fields.name_label | default "Name *" }}</span>
+          <input type="text" name="name" required>
+        </label>
+        <label class="form-field sm:col-span-1">
+          <span>{{ $cfg.fields.company_label | default "Company" }}</span>
+          <input type="text" name="company">
+        </label>
+        <label class="form-field sm:col-span-1">
+          <span>{{ $cfg.fields.email_label | default "Email *" }}</span>
+          <input type="email" name="email" required>
+        </label>
+        <label class="form-field sm:col-span-1">
+          <span>{{ $cfg.fields.phone_label | default "Phone" }}</span>
+          <div class="grid grid-cols-[110px_1fr] gap-2">
+            <input type="text" name="country_code" placeholder="{{ $cfg.fields.country_code_placeholder | default "+86" }}">
+            <input type="text" name="phone_number" placeholder="{{ $cfg.fields.phone_placeholder | default "13986053927" }}">
+          </div>
+        </label>
+        <label class="form-field sm:col-span-2">
+          <span>{{ $cfg.fields.message_label | default "Message" }}</span>
+          <textarea name="message" rows="5"></textarea>
+        </label>
+        <div class="sm:col-span-2 rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-center text-sm text-slate-500">
+          {{ $cfg.captcha_label | default "CAPTCHA Placeholder Area" }}
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="inline-flex rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-700">{{ $cfg.submit_label | default "Submit" }}</button>
+        </div>
+      </form>
+    </article>
+  </div>
+</section>
+{{ end }}

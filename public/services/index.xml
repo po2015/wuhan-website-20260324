@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Wuhan Cyrentis Technology Co., Ltd.</title>
+    <link>https://www.cyrentis.com/services/</link>
+    <description>Recent content in Services on Wuhan Cyrentis Technology Co., Ltd.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="https://www.cyrentis.com/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security Software Customization</title>
+      <link>https://www.cyrentis.com/services/security-software-customization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/services/security-software-customization/</guid>
+      <description>&lt;p&gt;This service focuses on adapting the software layer to the way a project actually operates. Cyrentis can customize interface logic, monitoring workflows, alert handling, and functional modules around specific deployment needs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Security Solution Design</title>
+      <link>https://www.cyrentis.com/services/security-solution-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/services/security-solution-design/</guid>
+      <description>&lt;p&gt;This service focuses on turning site requirements into a workable security solution. Cyrentis helps define how Horizon, sensor families, and field subsystems should be combined to meet coverage, verification, and operational goals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Security Equipment Integration</title>
+      <link>https://www.cyrentis.com/services/security-equipment-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/services/security-equipment-integration/</guid>
+      <description>&lt;p&gt;This service focuses on assembling the selected security devices and software into a coordinated system. Cyrentis supports the integration of sensing equipment, software platforms, communications links, and operational interfaces.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

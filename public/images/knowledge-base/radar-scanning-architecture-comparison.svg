@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none" role="img" aria-label="Radar scanning architecture comparison diagram">
+  <rect width="1200" height="760" fill="#F8FAFC"/>
+  <rect x="48" y="44" width="1104" height="672" rx="24" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="88" y="102" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#0F172A">Scanning Architecture Comparison (A to E)</text>
+  <text x="88" y="138" font-family="Arial, sans-serif" font-size="20" fill="#475569">Coverage style, motion dependency, and integration implications.</text>
+
+  <g transform="translate(86 190)">
+    <rect x="0" y="0" width="192" height="430" rx="16" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <text x="96" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1E3A8A" text-anchor="middle">A</text>
+    <text x="96" y="70" font-family="Arial, sans-serif" font-size="16" fill="#334155" text-anchor="middle">Azimuth e-scan</text>
+    <circle cx="96" cy="145" r="50" stroke="#2563EB" stroke-width="4" fill="none"/>
+    <path d="M96 145 L140 120" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/>
+    <text x="96" y="242" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">No mechanical rotation</text>
+    <text x="96" y="268" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">Fast sector revisit</text>
+    <text x="96" y="322" font-family="Arial, sans-serif" font-size="14" fill="#1E293B" text-anchor="middle">Best for fixed sectors</text>
+  </g>
+
+  <g transform="translate(302 190)">
+    <rect x="0" y="0" width="192" height="430" rx="16" fill="#F0F9FF" stroke="#BAE6FD"/>
+    <text x="96" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0C4A6E" text-anchor="middle">B</text>
+    <text x="96" y="70" font-family="Arial, sans-serif" font-size="16" fill="#334155" text-anchor="middle">Mech az + elec el</text>
+    <circle cx="96" cy="145" r="50" stroke="#0891B2" stroke-width="4" fill="none"/>
+    <path d="M96 95 L96 195" stroke="#0891B2" stroke-width="4"/>
+    <path d="M46 145 L146 145" stroke="#0891B2" stroke-width="4"/>
+    <text x="96" y="242" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">Hybrid mechanical + electronic</text>
+    <text x="96" y="268" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">Good cost-performance</text>
+    <text x="96" y="322" font-family="Arial, sans-serif" font-size="14" fill="#1E293B" text-anchor="middle">Best for broad C-UAS</text>
+  </g>
+
+  <g transform="translate(518 190)">
+    <rect x="0" y="0" width="192" height="430" rx="16" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="96" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#14532D" text-anchor="middle">C</text>
+    <text x="96" y="70" font-family="Arial, sans-serif" font-size="16" fill="#334155" text-anchor="middle">Single-face AESA</text>
+    <rect x="56" y="108" width="80" height="80" rx="8" fill="#16A34A"/>
+    <text x="96" y="242" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">High precision in one sector</text>
+    <text x="96" y="268" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">No rotating parts</text>
+    <text x="96" y="322" font-family="Arial, sans-serif" font-size="14" fill="#1E293B" text-anchor="middle">Best for focused corridors</text>
+  </g>
+
+  <g transform="translate(734 190)">
+    <rect x="0" y="0" width="192" height="430" rx="16" fill="#FFFBEB" stroke="#FDE68A"/>
+    <text x="96" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#78350F" text-anchor="middle">D</text>
+    <text x="96" y="70" font-family="Arial, sans-serif" font-size="16" fill="#334155" text-anchor="middle">2D + mechanical</text>
+    <circle cx="96" cy="145" r="50" stroke="#D97706" stroke-width="4" fill="none"/>
+    <path d="M96 95 A50 50 0 0 1 136 115" stroke="#D97706" stroke-width="6" stroke-linecap="round"/>
+    <text x="96" y="242" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">Wide-area periodic refresh</text>
+    <text x="96" y="268" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">Strong perimeter fit</text>
+    <text x="96" y="322" font-family="Arial, sans-serif" font-size="14" fill="#1E293B" text-anchor="middle">Best for 360 sweep needs</text>
+  </g>
+
+  <g transform="translate(950 190)">
+    <rect x="0" y="0" width="192" height="430" rx="16" fill="#FDF4FF" stroke="#E9D5FF"/>
+    <text x="96" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#581C87" text-anchor="middle">E</text>
+    <text x="96" y="70" font-family="Arial, sans-serif" font-size="16" fill="#334155" text-anchor="middle">Four-face AESA</text>
+    <rect x="58" y="108" width="76" height="76" rx="8" fill="#7E22CE"/>
+    <path d="M58 146H134M96 108V184" stroke="#E9D5FF" stroke-width="4"/>
+    <text x="96" y="242" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">Full electronic 360</text>
+    <text x="96" y="268" font-family="Arial, sans-serif" font-size="14" fill="#475569" text-anchor="middle">Lowest mechanical wear</text>
+    <text x="96" y="322" font-family="Arial, sans-serif" font-size="14" fill="#1E293B" text-anchor="middle">Best for high-availability sites</text>
+  </g>
+</svg>

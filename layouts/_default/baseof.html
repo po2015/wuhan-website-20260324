@@ -1,0 +1,10 @@
+{{ partial "head.html" . }}
+<body class="bg-slate-50 text-slate-900 antialiased">
+  {{ partial "header.html" . }}
+  <main id="main-content" class="min-h-[60vh]">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  <script src="{{ "js/site.js" | relURL }}" defer></script>
+</body>
+</html>

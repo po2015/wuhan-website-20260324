@@ -1,0 +1,30 @@
+model: SRC-X10D-1D
+highlight: Customer-Preferred Choice
+range_km: 15
+image: /images/radar/src-x10d-1d.jpg
+factory_location: Xi'an, China
+targets:
+  drone_small: 10
+Type	SRC-X10D-1D
+Frequency band	X Band
+Detection range	≥10Km（RCS:0.01m2，UAV）
+Blind zone	≤200m
+Mode	Mechanical scanning
+	And
+	Two-Dim Phased Scanning
+View range	Mechanical scanning：Azimuth：0°~360°
+	Elevation：0°~60°（Elevation Configurable）
+	Phased Scanning：Azimuth：-45°~45°
+	Elevation：0°~60°（Elevation Configurable）
+Track function	Mechanical scanning: Track mode
+	Two-Dim Phased Scanning: TAS
+TAS Tracking Targets Number	≥6
+Speed measuring range	1m/s~100m/s
+Target update rate	Mechanical scanning≤4.5s
+	Phased Scanning≤3.5s (Elevation30°)
+Search Accuracy	Distance：＜10m
+	Azimuth：＜0.4
+	Elevation：＜0.4°
+Track Accuracy	Distance：＜10m
+	Azimuth：＜0.3°
+	Elevation：＜0.3°

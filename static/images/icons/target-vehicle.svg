@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Vehicle target icon">
+  <circle cx="32" cy="32" r="30" fill="#E2E8F0"/>
+  <rect x="16" y="28" width="32" height="14" rx="4" fill="#0F172A"/>
+  <path d="M22 28L27 22H37L42 28" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="44" r="4" fill="#0F172A"/>
+  <circle cx="40" cy="44" r="4" fill="#0F172A"/>
+</svg>

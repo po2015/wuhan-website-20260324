@@ -1,0 +1,36 @@
+model: SRC-X05B-2D
+highlight: Mid-Range Single-Face Defense
+range_km: 10
+image: /images/radar/src-x05b-2d.jpg
+factory_location: Xi'an, China
+targets:
+  drone_small: 5
+Product Introduction：The SRC-X05B-2D moving target surveillance radar adopts azimuth mechanical scanning and elevation digital beamforming technology. It provides all-day, all-weather continuous detection and tracking of moving targets within the designated area, offering advantages such as high detection sensitivity, low false alarm rate, and high precision.
+Product Advantages：High data rate and strong tracking capability; low false alarm probability; wide detection range and high precision; cost-effective and easy to operate.
+Application Scenarios：Border surveillance, maritime surveillance, key site protection, battlefield reconnaissance.
+Key Specifications：
+Working frequency	X-band
+Operating Mode	Azimuth Mechanical Scanning, Elevation Digital Beamforming (DBF) System
+Elevation Field of View	-5~40°
+Horizontal Field of View	360°
+Detection Altitude	1000m
+Range	10km
+Detection Range	≥5 km (small rotorcraft UAV, RCS=0.01 m², DJI Phantom 4)
+	≥10 km (medium fixed-wing UAV, RCS=1 m²)
+	≥8 km (personnel)
+	≥10 km (helicopter, vehicle)
+Angle Measurement Accuracy	Azimuth: ≤0.4° (RMS)
+	Elevation: ≤0.4° (RMS)
+Distance Measurement Accuracy	5m(RMS)
+Blind Zone	50m
+Antenna Rotation Speed	20RPM(120°/s)，
+	30RPM(180°/s)，60RPM(360°/s)（Upgradable）
+Number of Targets Tracked Simultaneously	≥200 Batches
+Detection Radial Velocity Range	1~150m/s
+Anti-Clutter Capability	No false alarms triggered by common clutter.
+Power Consumption	≤260W
+Power Supply Range	DC 36–52V (with AC 220V to DC 48V adapter)
+Communication Interface	Gigabit Ethernet Aviation Connector
+Environmental Adaptability	Operating temperature: -40°C to +55°C; Protection rating: IP66 (main unit IP67)
+Weight	≤30Kg（Including Turntable）
+Main Unit Dimensions	505*600*105mm

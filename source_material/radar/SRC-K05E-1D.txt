@@ -1,0 +1,30 @@
+model: SRC-K05E-1D
+highlight: High Reliability
+range_km: 10
+image: /images/radar/src-k05e-1d.jpg
+factory_location: Xi'an, China
+targets:
+  drone_small: 5
+Type	SRC-K05E-1D
+Frequency band	Ku  Band
+Detection range	≥5Km（RCS:0.01m2，UAV）
+Blind zone	≤150m
+Mode	Four Side Two-Dim Phased Scanning
+	
+View range	
+  Azimuth：0°~360°
+	Elevation：0°~80°
+	(Elevation Configurable)
+Track function	TAS
+TAS Tracking Targets Number	≥24
+Speed measuring range	1m/s~100m/s
+Target update rate	TWS:≤3s
+	TAS：≤0.5s（Default）
+Search Accuracy	
+  Distance：≤10m
+	Azimuth：≤0.5°
+	Elevation：≤0.4°
+Track Accuracy	
+  Distance：≤10m
+	Azimuth：≤0.4°
+	Elevation：≤0.3°

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Components &amp; Subsystems on Wuhan Cyrentis Technology Co., Ltd.</title>
+    <link>https://www.cyrentis.com/components-subsystems/</link>
+    <description>Recent content in Components &amp; Subsystems on Wuhan Cyrentis Technology Co., Ltd.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="https://www.cyrentis.com/components-subsystems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Power Modules</title>
+      <link>https://www.cyrentis.com/components-subsystems/power-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/components-subsystems/power-modules/</guid>
+      <description>&lt;p&gt;Power modules cover regulated supply, surge protection, and battery-friendly operation profiles for long-running security systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chipsets</title>
+      <link>https://www.cyrentis.com/components-subsystems/chipsets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/components-subsystems/chipsets/</guid>
+      <description>&lt;p&gt;Our chipset offerings include compute, control, and interface solutions used in radar processing, EO data handling, and embedded security devices.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Infrared Modules</title>
+      <link>https://www.cyrentis.com/components-subsystems/infrared-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/components-subsystems/infrared-modules/</guid>
+      <description>&lt;p&gt;Infrared modules are selected for stable thermal imaging performance in challenging weather and low-visibility environments.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Laser Ranging Modules</title>
+      <link>https://www.cyrentis.com/components-subsystems/laser-ranging-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/components-subsystems/laser-ranging-modules/</guid>
+      <description>&lt;p&gt;Laser ranging modules support high-precision distance capture for tracking logic, warning thresholds, and multi-sensor fusion workflows.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wireless Transmission Modules</title>
+      <link>https://www.cyrentis.com/components-subsystems/wireless-transmission-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/components-subsystems/wireless-transmission-modules/</guid>
+      <description>&lt;p&gt;Wireless modules provide low-latency telemetry and video backhaul options across temporary, remote, and distributed project sites.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

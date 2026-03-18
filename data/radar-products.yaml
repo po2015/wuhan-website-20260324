@@ -1,0 +1,207 @@
+products:
+  - model: SRC-C08A-1G
+    highlight: "Entry-Level Deployment"
+    range_km: 10
+    image: /images/radar/src-c08a-1g.jpg
+    targets:
+      person: 2
+      vehicle: 5
+      vessel: 8
+
+  - model: SRC-X01C-1D
+    highlight: "Short-Range Single-Face Defense"
+    range_km: 3
+    image: /images/radar/src-x01c-1d.jpg
+    targets:
+      drone_small: 1.5
+
+  - model: SRC-X01D-1D
+    highlight: "Short-Range All-Around Defense"
+    range_km: 3
+    image: /images/radar/src-x01d-1d.jpg
+    targets:
+      drone_small: 1.5
+
+  - model: SRC-X01E-1D
+    highlight: "High Reliability"
+    range_km: 3
+    image: /images/radar/src-x01e-1d.jpg
+    targets:
+      drone_small: 1.5
+
+  - model: SRC-X03C-1D
+    highlight: "Precision Single-Face Defense"
+    range_km: 5
+    image: /images/radar/src-x03c-1d.jpg
+    targets:
+      drone_small: 3
+
+  - model: SRC-X03D-1D
+    highlight: "Mid-Range All-Around Defense"
+    range_km: 5
+    image: /images/radar/src-x03d-1d.jpg
+    targets:
+      drone_small: 3
+
+  - model: SRC-X03E-1D
+    highlight: "High Reliability"
+    range_km: 5
+    image: /images/radar/src-x03e-1d.jpg
+    targets:
+      drone_small: 3
+
+  - model: SRC-X05C-1D
+    highlight: "Precision Single-Face Defense"
+    range_km: 10
+    image: /images/radar/src-x05c-1d.jpg
+    targets:
+      drone_small: 5
+
+  - model: SRC-X05D-1D
+    highlight: "Customer-Preferred Choice"
+    range_km: 10
+    image: /images/radar/src-x05d-1d.jpg
+    targets:
+      drone_small: 5
+
+  - model: SRC-X05E-1D
+    highlight: "High Reliability"
+    range_km: 10
+    image: /images/radar/src-x05e-1d.jpg
+    targets:
+      drone_small: 5
+
+  - model: SRC-K05C-1D
+    highlight: "Precision Single-Face Defense"
+    range_km: 10
+    image: /images/radar/src-k05c-1d.jpg
+    targets:
+      drone_small: 5
+
+  - model: SRC-K05D-1D
+    highlight: "Customer-Preferred Choice"
+    range_km: 10
+    image: /images/radar/src-k05d-1d.jpg
+    targets:
+      drone_small: 5
+
+  - model: SRC-K05E-1D
+    highlight: "High Reliability"
+    range_km: 10
+    image: /images/radar/src-k05e-1d.jpg
+    targets:
+      drone_small: 5
+
+  - model: SRC-X10C-1D
+    highlight: "Precision Single-Face Defense"
+    range_km: 15
+    image: /images/radar/src-x10c-1d.jpg
+    targets:
+      drone_small: 10
+
+  - model: SRC-X10D-1D
+    highlight: "Customer-Preferred Choice"
+    range_km: 15
+    image: /images/radar/src-x10d-1d.jpg
+    targets:
+      drone_small: 10
+
+  - model: SRC-X10E-1D
+    highlight: "High Reliability"
+    range_km: 15
+    image: /images/radar/src-x10e-1d.jpg
+    targets:
+      drone_small: 10
+
+  - model: SRC-K01B-2D
+    highlight: "Short-Range Single-Face Defense"
+    range_km: 3
+    image: /images/radar/src-k01b-2d.jpg
+    targets:
+      drone_small: 1.5
+
+  - model: SRC-K03B-2D
+    highlight: "Mid-Range Single-Face Defense"
+    range_km: 5
+    image: /images/radar/src-k03b-2d.jpg
+    targets:
+      drone_small: 3
+
+  - model: SRC-X05B-2D
+    highlight: "Mid-Range Single-Face Defense"
+    range_km: 10
+    image: /images/radar/src-x05b-2d.jpg
+    targets:
+      drone_small: 5
+
+  - model: SRC-X08B-2D
+    highlight: "Long-Range Single-Face Defense"
+    range_km: 20
+    image: /images/radar/src-x08b-2d.jpg
+    targets:
+      drone_small: 8
+
+  - model: SRC-X10B-2D
+    highlight: "Long-Range Single-Face Defense"
+    range_km: 20
+    image: /images/radar/src-x10b-2d.jpg
+    targets:
+      drone_small: 10
+
+  - model: SRC-X05E-3D
+    highlight: "High Reliability"
+    range_km: 10
+    image: /images/radar/src-x05e-3d.jpg
+    targets:
+      drone_small: 5
+
+  - model: SRC-X08E-3D
+    highlight: "High Reliability"
+    range_km: 10
+    image: /images/radar/src-x08e-3d.jpg
+    targets:
+      drone_small: 8
+
+  - model: SRC-K05E-2G
+    highlight: "Mid-Range Single-Face Defense"
+    range_km: 10
+    image: /images/radar/src-k05e-2g.jpg
+    targets:
+      person: 2
+      vehicle: 5
+
+  - model: SRC-K10A-2G
+    highlight: "Long-Range Single-Face Defense"
+    range_km: 15
+    image: /images/radar/src-k10a-2g.jpg
+    targets:
+      person: 4
+      vehicle: 6
+      vessel: 10
+
+  - model: SRC-X12A-2G
+    highlight: "Long-Range Single-Face Defense"
+    range_km: 20
+    image: /images/radar/src-x12a-2g.jpg
+    targets:
+      person: 5
+      vehicle: 8
+      vessel: 12
+
+  - model: SRC-X25A-2G
+    highlight: "Long-Range Single-Face Defense"
+    range_km: 30
+    image: /images/radar/src-x25a-2g.jpg
+    targets:
+      person: 10
+      vehicle: 16
+      vessel: 25
+
+  - model: SRC-X50A-2G
+    highlight: "Longest Coverage Range"
+    range_km: 50
+    image: /images/radar/src-x50a-2g.jpg
+    targets:
+      person: 16
+      vehicle: 28
+      vessel: 50

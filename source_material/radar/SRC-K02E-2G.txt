@@ -1,0 +1,30 @@
+model: SRC-K02E-2G
+highlight: Mid-Range Single-Face Defense
+range_km: 10
+image: /images/radar/src-k02e-2g.jpg
+factory_location: Xi'an, China
+targets:
+  person: 2
+  vehicle: 5
+Product Introduction：The SRC-K02E-2G moving target surveillance radar is specifically designed for the detection and real-time tracking of moving targets on the ground and water surfaces. It serves as an all-weather, day-and-night efficient surveillance system, capable of stable operation even in complex environments and harsh weather conditions. Employing a Digital Beamforming (DBF) system, the radar can accurately detect and track various types of targets, providing detailed information such as distance, speed, azimuth, and type. It features functions including boundary crossing alerts, early warnings, and recording capabilities.
+Product Advantages：Accurate detection and stable tracking; low false alarm rate; strong multi-target tracking capability; all-weather stable operation; portable and flexible deployment; multi-functional integration.
+Application Scenarios：Land border surveillance, maritime surveillance, critical site protection, port monitoring.
+Key Specifications：
+Working Frequency	Ku-band
+Operating Mode	Integrated DBF technology and multi-phase center angle measurement technology.
+Scanning Range	360°
+Range	5km
+Detection Range	≥2 km (personnel)
+	≥5 km (small vehicle)
+Detection Accuracy	Distance: ≤3 m
+	Azimuth: ≤0.4°
+Communication Interface	Gigabit Ethernet aviation connector.
+Weight	≤14Kg（Main unit only.）
+Data Interval	0.25s
+Number of Targets Tracked Simultaneously	≥400 Batches
+Detection Radial Velocity Range	0.4~60m/s
+Anti-Clutter Capability	No false alarms triggered by common clutter.
+Power Consumption	≤120W
+Power Supply Range	DC 18~28V (with AC 220V to DC 24V adapter)
+Environmental Adaptability	Operating temperature: -40°C to +55°C, protection rating: IP67
+Main Unit Dimensions	340*320*350mm

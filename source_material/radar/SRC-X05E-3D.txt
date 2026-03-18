@@ -1,0 +1,36 @@
+model: SRC-X05E-3D
+highlight: High Reliability
+range_km: 10
+image: /images/radar/src-x05e-3d.jpg
+factory_location: Xi'an, China
+targets:
+  drone_small: 5
+Product Introduction：The SRC-X05E-3D moving target surveillance radar employs a two-dimensional electronic scanning system, enabling continuous, all-day, all-weather detection and tracking of moving targets within its coverage area. It offers advantages such as high detection sensitivity, low false alarm rate, and excellent accuracy.
+Product Advantages：High data rate and strong tracking capability; low false alarm probability; wide detection range and high accuracy; cost-effective and easy to operate.
+Application Scenarios：Border surveillance, maritime surveillance, critical site protection.
+Key Specifications：
+Working Frequency	X-band
+Operating Mode	Two-Dimensional Electronic Scanning System
+Elevation Field of View	-2~45°
+Horizontal Field of View	90°（Single-faced array）/360°（Four-faced array）
+Detection Altitude	1500m
+Range	8km
+Detection Range	≥5 km (small rotorcraft UAV, RCS=0.01 m², DJI Phantom 4)  
+	≥8 km (medium fixed-wing UAV, RCS=1 m²)  
+	≥8 km (personnel)  
+	≥8 km (helicopter, vehicle)
+Angle Measurement Accuracy	Azimuth: ≤0.3° (RMS)  
+	Elevation: ≤0.3° (RMS)
+Distance Measurement Accuracy	8m(RMS)
+Blind Zone	150m
+Data Rate	0.5Hz（TWS）
+	4Hz（TAS）
+Number of Targets Tracked Simultaneously	TWS≥300 Batches，TAS=2 Batches per array
+Detection Radial Velocity Range	1~150m/s
+Anti-Clutter Capability	No false alarms triggered by common clutter
+Power Consumption	≤320W（Single-faced array）
+Power Supply Range	DC 36–52V (with AC 220V–DC 48V adapter)
+Communication Interface	Gigabit Ethernet aviation connector
+Environmental Adaptability	Operating temperature: -40°C to +55°C; Protection rating: IP66
+Weight	≤105Kg
+Main Unit Dimensions	350*350*140mm

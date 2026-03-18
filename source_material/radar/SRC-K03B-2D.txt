@@ -1,0 +1,35 @@
+model: SRC-K03B-2D
+highlight: Mid-Range Single-Face Defense
+range_km: 5
+image: /images/radar/src-k03b-2d.jpg
+factory_location: Xi'an, China
+targets:
+  drone_small: 3
+Product Introduction：The SRC-K03B-2D moving target surveillance radar employs an azimuth mechanical scanning and elevation digital beamforming architecture. It enables continuous, all-day, all-weather detection and tracking of moving targets within the designated area, offering advantages such as high detection sensitivity, low false alarm rate, and superior accuracy.
+Product Advantages：High data rate and strong tracking capability; low probability of false alarm; wide detection range and high accuracy; cost-effective and user-friendly.
+Application Scenarios：Border Surveillance, Maritime Surveillance, Critical Site Protection, Battlefield Reconnaissance.
+Key Specifications：
+Working frequency	Ku-band
+Operating Mode	Azimuth Mechanical Scanning, Elevation Digital Beamforming (DBF) System
+Elevation Field of View	-5~60°
+Horizontal Field of View	360°
+Detection Altitude	1000m
+Range	5km
+Detection Range	
+  ≥3 km (small rotorcraft UAV, RCS=0.01 m², DJI Phantom 4)
+	≥5 km (medium fixed-wing UAV, RCS=1 m²)
+	≥5 km (personnel)
+Angle Measurement Accuracy	Azimuth: ≤0.4° (RMS)
+	Elevation: ≤0.4° (RMS)
+Distance Measurement Accuracy	5m(RMS)
+Blind Zone	50m
+Antenna Rotation Speed	20 RPM (120°/s), 	30 RPM (180°/s), 60 RPM (360°/s) (upgradable)
+Number of Targets Tracked Simultaneously	≥200 Batches
+Detection Radial Velocity Range	1~150m/s
+Anti-Clutter Capability	No false alarms triggered by common clutter.
+Power Consumption	≤150W
+Power Supply Range	DC 18-28V (with AC 220V to DC 24V adapter)
+Communication Interface	Gigabit Ethernet Aviation Connector
+Environmental Adaptability	Operating temperature: -40°C to +55°C; Protection rating: IP66 (main unit IP67)
+Weight	≤25Kg（Including Turntable）
+Main Unit Dimensions	460*360*70mm
