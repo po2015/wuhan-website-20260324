@@ -15,10 +15,6 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
-defaults:
-  run:
-    shell: bash
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -40,8 +36,9 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
-      - name: Install Dart Sass
-        uses: sass/dart-sass@v1
+      # 如果你确认站点用了 SCSS/Sass，就取消下面两行注释
+      # - name: Install Dart Sass
+      #   uses: dw-labs-org/dart-sass-gha@v1
 
       - name: Build with Hugo
         run: hugo --gc --minify
