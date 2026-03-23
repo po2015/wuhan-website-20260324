@@ -1,16 +1,9 @@
 ---
 title: "Services"
-description: "Three core service lines: security software customization, security solution design, and security equipment integration."
+description: "From tailored Horizon software to site planning and device integration, Cyrentis helps turn security requirements into a working system."
 kicker: "Consulting Services"
+layout: "service-catalog"
 weight: 3
 ---
 
-Cyrentis focuses its service offering on three practical areas that support deployable security monitoring systems.
-
-Typical service scope includes:
-
-- security software customization
-- security solution design
-- security equipment integration
-
-These services connect Horizon, field sensors, and customer requirements into one usable system outcome.
+Whether you need to customize software, plan an airport or aquaculture deployment, or connect existing devices into one operating picture, these services show how Cyrentis supports the project from design to delivery.

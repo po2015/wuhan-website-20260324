@@ -1,0 +1,124 @@
+product_family: SRC
+product_line_name: Surveillance Radar by Cyrentis
+model: SRC-X03C-1D
+product_name: SRC-X03C-1D Surveillance Radar
+status: active
+visibility: public
+featured: false
+positioning:
+  short: X band Pulse Doppler surveillance radar for drone detection.
+  tagline: Pulse Doppler radar for stable target detection and tracking.
+  primary_role: security surveillance radar
+  application_focus: &id001
+  - low-altitude surveillance
+  - critical site protection
+  - counter-UAS early warning
+naming:
+  format: SRC-[Band][DetectionLevel][Architecture]-[Generation][Purpose]
+  band_code: X
+  detection_level_code: '03'
+  architecture_code: C
+  generation_code: '1'
+  purpose_code: D
+technical_classification:
+  waveform:
+    code: P
+    name: Pulse Doppler
+  band:
+    code: X
+    name: X band
+  scan_architecture:
+    code: C
+    name: 2D Electronic Scanning (Single-Face AESA)
+  target_domains:
+  - air
+  primary_target_types:
+  - small_uav
+  - fixed_wing_uav
+detection:
+  nominal_class_km: 3
+  reference_target:
+    type: small_uav
+    rcs_m2: 0.01
+  typical_detection_ranges_km:
+    small_uav_0_01m2: 3
+  notes:
+  - Target-distance fields were inferred from the model naming code because the source
+    file did not include a structured targets block.
+  - Instrumented range uses the source preamble value 5 km, while nominal class follows
+    model code 3 km.
+performance:
+  blind_zone_m: 100.0
+  horizontal_field_of_view_deg: 360.0
+  vertical_field_of_view_deg: 80.0
+  speed_measurement_range_mps:
+    min: 1.0
+    max: 100.0
+  rotation_speed_rpm: N/A
+  rotation_speed_options_rpm: N/A
+  data_update_interval_s: 3.0
+  tracking_capacity:
+    tws_count: null
+    tas_count: 6
+  accuracy:
+    range_m: 10.0
+    azimuth_deg: 0.4
+    elevation_deg: 0.6
+coverage:
+  azimuth:
+    mode: electronic
+    coverage_deg: 360.0
+  elevation:
+    mode: electronic
+    coverage_deg: 80.0
+  refresh_rate_s: 3.0
+  instrumented_range_km: 5.0
+physical:
+  deployment_type: fixed
+  enclosure_rating: null
+  operating_temperature_c:
+    min: null
+    max: null
+  dimensions_mm:
+    length: null
+    width: null
+    height: null
+  weight_kg: null
+interfaces:
+  power_input: null
+  data_interfaces:
+  - Ethernet
+  power_consumption_w: null
+  protocol_support:
+  - Ethernet
+  horizon_compatible: true
+  third_party_integration: true
+platform_integration:
+  compatible_platforms:
+  - Cyrentis Horizon
+  supported_modules:
+  - Horizon Sense
+  - Horizon Fusion
+  - Horizon Track
+  - Horizon Command
+  supports_cueing_to_optics: true
+  supports_multi_sensor_fusion: true
+use_cases:
+  primary: *id001
+  secondary:
+  - cooperative multi-sensor detection
+media:
+  hero_image: /images/radar/src-x03c-1d.jpg
+content:
+  summary: SRC-X03C-1D Surveillance Radar is a X band Pulse Doppler surveillance radar
+    designed for drone detection. It uses 2d electronic scanning (single-face aesa)
+    for practical security monitoring and response workflows.
+  key_features:
+  - Pulse Doppler architecture for stable target detection and tracking in security
+    surveillance scenarios.
+  - 360 degree azimuth coverage and 80 degree elevation coverage for wide-area surveillance.
+  - Designed for all-day, all-weather operation in complex environments.
+  application_scenarios: *id001
+contact:
+  inquiry_enabled: true
+  recommended_cta: Request radar consultation

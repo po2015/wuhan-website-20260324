@@ -4,12 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Surveillance Radar | Wuhan Cyrentis Technology Co., Ltd.</title>
-  <meta name="description" content="Surveillance Radar by Cyrentis for wide-area detection of UAVs, people, vehicles, and vessels.">
+  <meta name="description" content="Wide-area radar models for UAV, personnel, vehicle, and vessel detection.">
   <link rel="icon" type="image/png" href="/images/icon.png">
   <link rel="shortcut icon" href="/images/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -33,12 +30,44 @@
             soft: '0 8px 30px rgba(15, 23, 42, 0.08)'
           },
           fontFamily: {
-            sans: ['Manrope', 'Noto Sans SC', 'sans-serif']
+            sans: ['Manrope', 'Aptos', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', 'Arial', 'sans-serif']
           }
         }
       }
     }
   </script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-H32XFR8H0R');
+
+    (function () {
+      var tagId = 'G-H32XFR8H0R';
+      var loaded = false;
+
+      function loadGoogleTag() {
+        if (loaded) return;
+        loaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId);
+        script.referrerPolicy = 'strict-origin-when-cross-origin';
+        script.onerror = function () {};
+        document.head.appendChild(script);
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGoogleTag, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', function () {
+          window.setTimeout(loadGoogleTag, 2000);
+        }, { once: true });
+      }
+    })();
+  </script>
+  
   <link rel="stylesheet" href="/css/site.css">
 </head>
 
@@ -60,8 +89,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/">
+            <a class="menu-link " href="/">
               Home
               
             </a>
@@ -71,13 +101,15 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/horizon/">
+            <a class="menu-link " href="/horizon/">
               Horizon
               
             </a>
             
           </li>
+          
           
           
           
@@ -91,7 +123,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/sensors/">
+            <a class="menu-link is-current" href="/sensors/">
               Sensors
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -113,6 +145,7 @@
           
           
           
+          
             
               
             
@@ -122,7 +155,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/services/">
+            <a class="menu-link " href="/services/">
               Services
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -144,8 +177,7 @@
           
           
           
-            
-              
+          
             
               
             
@@ -153,7 +185,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/info-center/">
+            <a class="menu-link " href="/info-center/">
               Information
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -165,8 +197,6 @@
                 
                 <a class="panel-link" href="/news/">News</a>
                 
-                <a class="panel-link" href="/download/">Download</a>
-                
               
             </div>
             
@@ -175,8 +205,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/contact-us/">
+            <a class="menu-link " href="/contact-us/">
               Contact
               
             </a>
@@ -262,10 +293,6 @@
                 <a href="/news/">News</a>
                 
               
-                
-                <a href="/download/">Download</a>
-                
-              
             </div>
           </details>
           
@@ -280,97 +307,1871 @@
 </header>
 
   <main id="main-content" class="min-h-[60vh]">
-    <section class="bg-white py-14">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <p class="section-kicker">SRC Family</p>
-    <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">Surveillance Radar</h1>
-    
-    <div class="prose prose-slate mt-6 max-w-3xl"><p>Surveillance Radar is the primary detection layer of a Cyrentis monitoring system. The <code>SRC</code> family is designed for early warning and wide-area surveillance across different environments.</p>
-<p>Typical detection targets include:</p>
-<ul>
-<li>small UAVs and fixed-wing UAVs</li>
-<li>human movement</li>
-<li>vehicles</li>
-<li>vessels</li>
-</ul>
-<p>SRC models can differ in waveform type, frequency band, detection-range class, and scanning architecture. They are often paired with Surveillance Optics and managed through the Horizon platform.</p>
+    <div data-radar-filter-root data-total-count="28">
+  <section class="radar-filter-hero py-14">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="radar-filter-hero-shell">
+        <div class="radar-filter-hero-copy">
+          <nav class="site-breadcrumb" aria-label="Breadcrumb">
+  <ol class="site-breadcrumb-list"><li class="site-breadcrumb-item"><a href="/" class="site-breadcrumb-link">Home</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><a href="/sensors/" class="site-breadcrumb-link">Sensors</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><span class="site-breadcrumb-current" aria-current="page">Surveillance Radar</span></li></ol>
+</nav>
+          <h1 class="radar-filter-title">Surveillance Radar</h1>
+          
+          <p class="radar-filter-lead">Wide-area radar models for UAV, personnel, vehicle, and vessel detection.</p>
+          
+          
+          <div class="radar-filter-note"><p>Compare current SRC models by mission focus and scanning architecture.</p>
 </div>
+          
+        </div>
+
+        <div class="radar-filter-toolbar" aria-label="Radar filters">
+          <div class="radar-filter-row">
+            <fieldset class="radar-filter-inline-group">
+              <legend class="radar-filter-inline-label">Detection</legend>
+              <div class="radar-filter-chip-row">
+                <label class="radar-filter-choice">
+                  <input type="checkbox" value="g" data-radar-purpose checked>
+                  <span>
+                    <strong>Ground target</strong>
+                  </span>
+                </label>
+                <label class="radar-filter-choice">
+                  <input type="checkbox" value="d" data-radar-purpose checked>
+                  <span>
+                    <strong>Air target</strong>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="form-field radar-filter-select" for="radarArchitectureFilter">
+              <span>Architecture</span>
+              <select id="radarArchitectureFilter" data-radar-architecture>
+                <option value="all" selected>All architectures</option>
+                <option value="a">A - Azimuth electronic scanning</option>
+                <option value="b">B - Mechanical azimuth &#43; electronic elevation</option>
+                <option value="c">C - Single-face AESA 2D electronic scanning</option>
+                <option value="d">D - 2D electronic scanning &#43; mechanical rotation</option>
+                <option value="e">E - Four-face AESA full electronic coverage</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="radar-filter-toolbar-meta">
+            <span class="radar-filter-results" aria-live="polite">
+              Showing <span class="ml-1" data-radar-results-count>28</span> of 28 models
+            </span>
+            <button type="button" class="radar-filter-reset" data-radar-reset>Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
     
-  </div>
-</section>
-<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-  
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-          <a href="/complete-products/radar/" class="block">
-          
-            <img src="/images/placeholder.png" alt="Radar Product Portfolio"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          
-          </a>
-          
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3" data-radar-card-grid>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-c03a-1g" data-band="c"
+        data-architecture="a" data-generation="1" data-purpose="g"
+        data-range="3">
+        <a href="/sensors/src/src-c03a-1g/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-C03A-1G.png' alt="SRC-C03A-1G"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">C band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-c03a-1g/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-C03A-1G
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Azimuth Scanning</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-person.svg' alt='Human' title='Human' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vehicle.svg' alt='Vehicle' title='Vehicle' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vessel.svg' alt='Vessel' title='Vessel' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">3 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          <a href="/complete-products/radar/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Radar Product Portfolio
-          </a>
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Browse the current SRC radar catalog by range class, waveform type, and scanning architecture.</p>
       </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-          <a href="/complete-products/radar/ground-security-radar/" class="block">
-          
-            <img src="/images/placeholder.png" alt="Ground Security Radar"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          
-          </a>
-          
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-k01b-2d" data-band="k"
+        data-architecture="b" data-generation="2" data-purpose="d"
+        data-range="1.5">
+        <a href="/sensors/src/src-k01b-2d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-K01B-2D.png' alt="SRC-K01B-2D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">Ku band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-k01b-2d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-K01B-2D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Mechanical Azimuth Scanning &#43; Electronic Elevation Steering</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">1.5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          <a href="/complete-products/radar/ground-security-radar/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Ground Security Radar
-          </a>
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Radar solutions for perimeter protection, critical infrastructure, and broad-area terrestrial monitoring.</p>
       </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-          <a href="/complete-products/radar/counter-uas-radar/" class="block">
-          
-            <img src="/images/placeholder.png" alt="Low-altitude Counter-UAS Radar"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          
-          </a>
-          
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-k02e-2g" data-band="k"
+        data-architecture="e" data-generation="2" data-purpose="g"
+        data-range="1">
+        <a href="/sensors/src/src-k02e-2g/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-K02E-2G.png' alt="SRC-K02E-2G"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">Ku band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-k02e-2g/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-K02E-2G
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Four-Face AESA Array</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-person.svg' alt='Human' title='Human' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vehicle.svg' alt='Vehicle' title='Vehicle' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vessel.svg' alt='Vessel' title='Vessel' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">1 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          <a href="/complete-products/radar/counter-uas-radar/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Low-altitude Counter-UAS Radar
-          </a>
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Low-slow-small aerial target detection for airspace awareness and early warning.</p>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-k03b-2d" data-band="k"
+        data-architecture="b" data-generation="2" data-purpose="d"
+        data-range="3">
+        <a href="/sensors/src/src-k03b-2d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-K03B-2D.png' alt="SRC-K03B-2D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">Ku band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-k03b-2d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-K03B-2D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Mechanical Azimuth Scanning &#43; Electronic Elevation Steering</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">3 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-k04a-2g" data-band="k"
+        data-architecture="a" data-generation="2" data-purpose="g"
+        data-range="1">
+        <a href="/sensors/src/src-k04a-2g/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-K04A-2G.png' alt="SRC-K04A-2G"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">Ku band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-k04a-2g/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-K04A-2G
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Azimuth Scanning</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-person.svg' alt='Human' title='Human' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vehicle.svg' alt='Vehicle' title='Vehicle' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vessel.svg' alt='Vessel' title='Vessel' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">1 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-k05c-1d" data-band="k"
+        data-architecture="c" data-generation="1" data-purpose="d"
+        data-range="5">
+        <a href="/sensors/src/src-k05c-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-K05C-1D.png' alt="SRC-K05C-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">Ku band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-k05c-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-K05C-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">2D Electronic Scanning (Single-Face AESA)</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-k05d-1d" data-band="k"
+        data-architecture="d" data-generation="1" data-purpose="d"
+        data-range="5">
+        <a href="/sensors/src/src-k05d-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-K05D-1D.png' alt="SRC-K05D-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">Ku band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-k05d-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-K05D-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Scanning with Mechanical Rotation</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-k05e-1d" data-band="k"
+        data-architecture="e" data-generation="1" data-purpose="d"
+        data-range="5">
+        <a href="/sensors/src/src-k05e-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-K05E-1D.png' alt="SRC-K05E-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">Ku band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-k05e-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-K05E-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Four-Face AESA Array</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x01c-1d" data-band="x"
+        data-architecture="c" data-generation="1" data-purpose="d"
+        data-range="1.5">
+        <a href="/sensors/src/src-x01c-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X01C-1D.png' alt="SRC-X01C-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x01c-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X01C-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">2D Electronic Scanning (Single-Face AESA)</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">1.5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x01d-1d" data-band="x"
+        data-architecture="d" data-generation="1" data-purpose="d"
+        data-range="1.5">
+        <a href="/sensors/src/src-x01d-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X01D-1D.png' alt="SRC-X01D-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x01d-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X01D-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Scanning with Mechanical Rotation</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">1.5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x01e-1d" data-band="x"
+        data-architecture="e" data-generation="1" data-purpose="d"
+        data-range="1.5">
+        <a href="/sensors/src/src-x01e-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X01E-1D.png' alt="SRC-X01E-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x01e-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X01E-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Four-Face AESA Array</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">1.5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x03c-1d" data-band="x"
+        data-architecture="c" data-generation="1" data-purpose="d"
+        data-range="3">
+        <a href="/sensors/src/src-x03c-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X03C-1D.png' alt="SRC-X03C-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x03c-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X03C-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">2D Electronic Scanning (Single-Face AESA)</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">3 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x03d-1d" data-band="x"
+        data-architecture="d" data-generation="1" data-purpose="d"
+        data-range="3">
+        <a href="/sensors/src/src-x03d-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X03D-1D.png' alt="SRC-X03D-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x03d-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X03D-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Scanning with Mechanical Rotation</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">3 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x03e-1d" data-band="x"
+        data-architecture="e" data-generation="1" data-purpose="d"
+        data-range="3">
+        <a href="/sensors/src/src-x03e-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X03E-1D.png' alt="SRC-X03E-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x03e-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X03E-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Four-Face AESA Array</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">3 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x05a-2g" data-band="x"
+        data-architecture="a" data-generation="2" data-purpose="g"
+        data-range="5">
+        <a href="/sensors/src/src-x05a-2g/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X05A-2G.png' alt="SRC-X05A-2G"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x05a-2g/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X05A-2G
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Azimuth Scanning</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-person.svg' alt='Human' title='Human' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vehicle.svg' alt='Vehicle' title='Vehicle' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vessel.svg' alt='Vessel' title='Vessel' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x05b-2d" data-band="x"
+        data-architecture="b" data-generation="2" data-purpose="d"
+        data-range="5">
+        <a href="/sensors/src/src-x05b-2d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X05B-2D.png' alt="SRC-X05B-2D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x05b-2d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X05B-2D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Mechanical Azimuth Scanning &#43; Electronic Elevation Steering</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x05c-1d" data-band="x"
+        data-architecture="c" data-generation="1" data-purpose="d"
+        data-range="5">
+        <a href="/sensors/src/src-x05c-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X05C-1D.png' alt="SRC-X05C-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x05c-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X05C-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">2D Electronic Scanning (Single-Face AESA)</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x05d-1d" data-band="x"
+        data-architecture="d" data-generation="1" data-purpose="d"
+        data-range="5">
+        <a href="/sensors/src/src-x05d-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X05D-1D.png' alt="SRC-X05D-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x05d-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X05D-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Scanning with Mechanical Rotation</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x05e-1d" data-band="x"
+        data-architecture="e" data-generation="1" data-purpose="d"
+        data-range="5">
+        <a href="/sensors/src/src-x05e-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X05E-1D.png' alt="SRC-X05E-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x05e-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X05E-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Four-Face AESA Array</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x05e-3d" data-band="x"
+        data-architecture="e" data-generation="3" data-purpose="d"
+        data-range="5">
+        <a href="/sensors/src/src-x05e-3d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X05E-3D.png' alt="SRC-X05E-3D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x05e-3d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X05E-3D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Four-Face AESA Array</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x08b-2d" data-band="x"
+        data-architecture="b" data-generation="2" data-purpose="d"
+        data-range="8">
+        <a href="/sensors/src/src-x08b-2d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X08B-2D.png' alt="SRC-X08B-2D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x08b-2d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X08B-2D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Mechanical Azimuth Scanning &#43; Electronic Elevation Steering</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">8 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x08e-3d" data-band="x"
+        data-architecture="e" data-generation="3" data-purpose="d"
+        data-range="8">
+        <a href="/sensors/src/src-x08e-3d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X08E-3D.png' alt="SRC-X08E-3D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x08e-3d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X08E-3D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Four-Face AESA Array</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">8 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x10a-2g" data-band="x"
+        data-architecture="a" data-generation="2" data-purpose="g"
+        data-range="10">
+        <a href="/sensors/src/src-x10a-2g/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X10A-2G.png' alt="SRC-X10A-2G"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x10a-2g/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X10A-2G
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Azimuth Scanning</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-person.svg' alt='Human' title='Human' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vehicle.svg' alt='Vehicle' title='Vehicle' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vessel.svg' alt='Vessel' title='Vessel' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">10 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x10b-2d" data-band="x"
+        data-architecture="b" data-generation="2" data-purpose="d"
+        data-range="10">
+        <a href="/sensors/src/src-x10b-2d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X10B-2D.png' alt="SRC-X10B-2D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x10b-2d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X10B-2D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Mechanical Azimuth Scanning &#43; Electronic Elevation Steering</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">10 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x10c-1d" data-band="x"
+        data-architecture="c" data-generation="1" data-purpose="d"
+        data-range="10">
+        <a href="/sensors/src/src-x10c-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X10C-1D.png' alt="SRC-X10C-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x10c-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X10C-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">2D Electronic Scanning (Single-Face AESA)</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">10 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x10d-1d" data-band="x"
+        data-architecture="d" data-generation="1" data-purpose="d"
+        data-range="10">
+        <a href="/sensors/src/src-x10d-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X10D-1D.png' alt="SRC-X10D-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x10d-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X10D-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Scanning with Mechanical Rotation</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">10 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x10e-1d" data-band="x"
+        data-architecture="e" data-generation="1" data-purpose="d"
+        data-range="10">
+        <a href="/sensors/src/src-x10e-1d/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X10E-1D.png' alt="SRC-X10E-1D"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x10e-1d/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X10E-1D
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-pulse.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">Pulse Doppler</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Four-Face AESA Array</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-drone.svg' alt='Small UAV' title='Small UAV' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vtol.svg' alt='Large UAV' title='Large UAV' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">10 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      <article class="radar-catalog-card group"
+        data-radar-card data-model="src-x16a-2g" data-band="x"
+        data-architecture="a" data-generation="2" data-purpose="g"
+        data-range="1">
+        <a href="/sensors/src/src-x16a-2g/" class="radar-catalog-media">
+            <img src='/ref-image/SRC-X16A-2G.png' alt="SRC-X16A-2G"
+              class="radar-catalog-image">
+        </a>
+
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">X band</span>
+              <h2 class="radar-catalog-title">
+                <a href="/sensors/src/src-x16a-2g/"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  SRC-X16A-2G
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-wave-continuous.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">FMCW</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-architecture.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">Electronic Azimuth Scanning</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-target.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row"><img src='/images/icons/radar-target-person.svg' alt='Human' title='Human' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vehicle.svg' alt='Vehicle' title='Vehicle' class="radar-catalog-target-chip"><img src='/images/icons/radar-target-vessel.svg' alt='Vessel' title='Vessel' class="radar-catalog-target-chip"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='/images/icons/radar-stat-range.svg' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">1 km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
       </article>
       
     </div>
-  
-</section>
+    <div class="hidden rounded-3xl border border-dashed border-slate-300 bg-white p-10 text-center text-sm text-slate-600" data-radar-empty-state>
+      No radar models match the current filter combination. Try enabling more detection types or switching architecture back to all.
+    </div>
+    
+  </section>
+</div>
 
   </main>
   <footer class="border-t border-slate-800 bg-slate-950 text-slate-200">
@@ -522,7 +2323,7 @@
       <div class="space-y-1">
         <p>&copy; 2026 Wuhan Cyrentis Technology Co., Ltd.. All rights reserved.</p>
         
-        <p>鄂ICP备202405002号</p>
+        <p>é„‚ICPå¤‡202405002å·</p>
         
       </div>
       <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-slate-400">

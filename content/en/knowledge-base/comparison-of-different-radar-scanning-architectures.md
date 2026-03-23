@@ -11,6 +11,9 @@ keywords:
   - "mechanical and electronic scan radar"
   - "civil security radar design"
   - "radar integration planning"
+categories:
+  - "Radar Architecture"
+  - "System Design"
 image: "/images/knowledge-base/radar-scanning-architecture-comparison.svg"
 weight: 11
 date: 2026-03-01
@@ -71,6 +74,6 @@ Single-face and sector-oriented architectures can be highly effective when site 
 
 - [Choosing Radar Frequency Bands: Pros, Cons, and Application Scenarios](/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/)
 - [Compliance Overview for Dual-Use Export of Civil Security Radar Products](/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/)
-- [Radar Product Catalog](/complete-products/radar/)
+- [Radar Product Catalog](/sensors/src/)
 
 > Note: This comparison is intended for civil security project planning and system integration decisions.

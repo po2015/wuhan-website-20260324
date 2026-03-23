@@ -7,9 +7,6 @@
   <meta name="description" content="Practical knowledge on security products, project design, and delivery execution.">
   <link rel="icon" type="image/png" href="/images/icon.png">
   <link rel="shortcut icon" href="/images/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -33,12 +30,44 @@
             soft: '0 8px 30px rgba(15, 23, 42, 0.08)'
           },
           fontFamily: {
-            sans: ['Manrope', 'Noto Sans SC', 'sans-serif']
+            sans: ['Manrope', 'Aptos', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', 'Arial', 'sans-serif']
           }
         }
       }
     }
   </script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-H32XFR8H0R');
+
+    (function () {
+      var tagId = 'G-H32XFR8H0R';
+      var loaded = false;
+
+      function loadGoogleTag() {
+        if (loaded) return;
+        loaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId);
+        script.referrerPolicy = 'strict-origin-when-cross-origin';
+        script.onerror = function () {};
+        document.head.appendChild(script);
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGoogleTag, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', function () {
+          window.setTimeout(loadGoogleTag, 2000);
+        }, { once: true });
+      }
+    })();
+  </script>
+  
   <link rel="stylesheet" href="/css/site.css">
 </head>
 
@@ -60,8 +89,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/">
+            <a class="menu-link " href="/">
               Home
               
             </a>
@@ -71,13 +101,15 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/horizon/">
+            <a class="menu-link " href="/horizon/">
               Horizon
               
             </a>
             
           </li>
+          
           
           
           
@@ -91,7 +123,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/sensors/">
+            <a class="menu-link " href="/sensors/">
               Sensors
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -113,6 +145,7 @@
           
           
           
+          
             
               
             
@@ -122,7 +155,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/services/">
+            <a class="menu-link " href="/services/">
               Services
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -144,8 +177,7 @@
           
           
           
-            
-              
+          
             
               
             
@@ -153,7 +185,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/info-center/">
+            <a class="menu-link is-current" href="/info-center/">
               Information
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -165,8 +197,6 @@
                 
                 <a class="panel-link" href="/news/">News</a>
                 
-                <a class="panel-link" href="/download/">Download</a>
-                
               
             </div>
             
@@ -175,8 +205,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/contact-us/">
+            <a class="menu-link " href="/contact-us/">
               Contact
               
             </a>
@@ -262,10 +293,6 @@
                 <a href="/news/">News</a>
                 
               
-                
-                <a href="/download/">Download</a>
-                
-              
             </div>
           </details>
           
@@ -280,9 +307,12 @@
 </header>
 
   <main id="main-content" class="min-h-[60vh]">
-    <section class="bg-white py-14">
+    
+<section class="bg-white py-14">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <p class="section-kicker">Section</p>
+    <nav class="site-breadcrumb" aria-label="Breadcrumb">
+  <ol class="site-breadcrumb-list"><li class="site-breadcrumb-item"><a href="/" class="site-breadcrumb-link">Home</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><a href="/info-center/" class="site-breadcrumb-link">Information</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><span class="site-breadcrumb-current" aria-current="page">Knowledge Base</span></li></ol>
+</nav>
     <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">Knowledge Base</h1>
     
     <div class="prose prose-slate mt-6 max-w-3xl"><p>The knowledge base shares methods, field experience, and workflow recommendations.</p>
@@ -292,109 +322,283 @@
 </section>
 <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
   
+  
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
     
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/" class="block">
+          <img src="/images/knowledge-base/dual-use-export-compliance-flow.svg" alt="Compliance Overview for Dual-Use Export of Civil Security Radar Products" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2026-03-01</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Compliance</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Compliance Overview for Dual-Use Export of Civil Security Radar Products
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">High-level compliance guidance for dual-use export of civil security radar systems, covering process, documentation, timeline risk, and project coordination.</p>
+    </article>
     
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/comparison-of-different-radar-scanning-architectures/" class="block">
+          <img src="/images/knowledge-base/radar-scanning-architecture-comparison.svg" alt="Comparison of Different Radar Scanning Architectures" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2026-03-01</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Radar Architecture</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/comparison-of-different-radar-scanning-architectures/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Comparison of Different Radar Scanning Architectures
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A practical comparison of radar scanning architectures A, B, C, D, and E for civil security projects, including coverage behavior and integration impact.</p>
+    </article>
     
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/" class="block">
-            <img src="/images/placeholder.png" alt="Choosing Radar Frequency Bands: Pros, Cons, and Application Scenarios"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Choosing Radar Frequency Bands: Pros, Cons, and Application Scenarios
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">A practical guide for selecting C, X, or Ku band radar in civil security projects based on environment, target profile, and integration goals.</p>
-      </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/knowledge-base/comparison-of-different-radar-scanning-architectures/" class="block">
-            <img src="/images/placeholder.png" alt="Comparison of Different Radar Scanning Architectures"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/knowledge-base/comparison-of-different-radar-scanning-architectures/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Comparison of Different Radar Scanning Architectures
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">A practical comparison of radar scanning architectures A, B, C, D, and E for civil security projects, including coverage behavior and integration impact.</p>
-      </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/" class="block">
-            <img src="/images/placeholder.png" alt="Compliance Overview for Dual-Use Export of Civil Security Radar Products"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Compliance Overview for Dual-Use Export of Civil Security Radar Products
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">High-level compliance guidance for dual-use export of civil security radar systems, covering process, documentation, timeline risk, and project coordination.</p>
-      </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/knowledge-base/cross-border-logistics-template/" class="block">
-            <img src="/images/placeholder.png" alt="Cross-border Logistics Planning Template"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/knowledge-base/cross-border-logistics-template/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Cross-border Logistics Planning Template
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Milestones and documentation checkpoints from factory release to final handover.</p>
-      </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/knowledge-base/eo-commissioning-checklist/" class="block">
-            <img src="/images/placeholder.png" alt="EO Commissioning Checklist"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/knowledge-base/eo-commissioning-checklist/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            EO Commissioning Checklist
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Key checklist items for commissioning and acceptance of EO equipment.</p>
-      </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/knowledge-base/radar-site-planning-basics/" class="block">
-            <img src="/images/placeholder.png" alt="Radar Site Planning Basics"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/knowledge-base/radar-site-planning-basics/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Radar Site Planning Basics
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Field survey and location zoning recommendations before ground radar deployment.</p>
-      </article>
-      
-    </div>
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/" class="block">
+          <img src="/images/knowledge-base/radar-frequency-band-comparison.svg" alt="Choosing Radar Frequency Bands: Pros, Cons, and Application Scenarios" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2026-03-01</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Radar Planning</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Choosing Radar Frequency Bands: Pros, Cons, and Application Scenarios
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A practical guide for selecting C, X, or Ku band radar in civil security projects based on environment, target profile, and integration goals.</p>
+    </article>
     
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/frontier-radar-technologies-what-is-real-what-is-emerging-and-what-to-watch/" class="block">
+          <img src="/images/knowledge-base/kb-radar-frontiers.svg" alt="Frontier Radar Technologies: What Is Real, What Is Emerging, and What to Watch" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-05-05</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Emerging Technology</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/frontier-radar-technologies-what-is-real-what-is-emerging-and-what-to-watch/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Frontier Radar Technologies: What Is Real, What Is Emerging, and What to Watch
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A practical survey of frontier radar and sensing topics including 4D radar, photonic radar, cognitive radar, integrated sensing, and other emerging directions.</p>
+    </article>
+    
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/high-power-microwave-counter-uas-systems-where-they-fit-in-layered-defense/" class="block">
+          <img src="/images/knowledge-base/kb-counter-uas-chain.svg" alt="High-Power Microwave Counter-UAS Systems: Where They Fit in Layered Defense" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-05-02</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Counter-UAS</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/high-power-microwave-counter-uas-systems-where-they-fit-in-layered-defense/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          High-Power Microwave Counter-UAS Systems: Where They Fit in Layered Defense
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A high-level discussion of high-power microwave counter-UAS systems, focused on where they may fit in a layered architecture rather than how to build them.</p>
+    </article>
+    
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/radar-basics-mechanical-scan-phased-array-aesa-and-over-the-horizon/" class="block">
+          <img src="/images/knowledge-base/kb-radar-basics.svg" alt="Radar Basics: Mechanical Scan, Phased Array, AESA, and Over-the-Horizon Detection" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-04-28</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Radar Basics</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/radar-basics-mechanical-scan-phased-array-aesa-and-over-the-horizon/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Radar Basics: Mechanical Scan, Phased Array, AESA, and Over-the-Horizon Detection
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A practical beginner-friendly explanation of how radar works, how scanning methods differ, and why electronically scanned arrays changed the field.</p>
+    </article>
+    
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/bionic-fmcw-lidar-and-adaptive-4d-machine-vision/" class="block">
+          <img src="/images/knowledge-base/kb-bionic-lidar.svg" alt="Bionic FMCW LiDAR and the Rise of Adaptive 4D Machine Vision" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-04-25</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">EO Systems</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/bionic-fmcw-lidar-and-adaptive-4d-machine-vision/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Bionic FMCW LiDAR and the Rise of Adaptive 4D Machine Vision
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A high-level introduction to gaze-enabled FMCW lidar and why adaptive, high-resolution allocation matters for the future of machine perception.</p>
+    </article>
+    
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/layered-radar-architectures-what-civil-security-planners-can-borrow/" class="block">
+          <img src="/images/knowledge-base/kb-layered-radar.svg" alt="Layered Radar Architectures: What Civil Security Planners Can Borrow from Long-, Mid-, and Short-Range Systems" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-04-21</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">System Design</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/layered-radar-architectures-what-civil-security-planners-can-borrow/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Layered Radar Architectures: What Civil Security Planners Can Borrow from Long-, Mid-, and Short-Range Systems
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A practical discussion of layered radar design, explaining how long-, medium-, and short-range roles can be translated into civil security planning without copying military systems.</p>
+    </article>
+    
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/why-rf-digitization-is-reshaping-modern-radar-systems/" class="block">
+          <img src="/images/knowledge-base/kb-rf-digitization.svg" alt="Why RF Digitization Is Reshaping Modern Radar Systems" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-04-18</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Digital RF</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/why-rf-digitization-is-reshaping-modern-radar-systems/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Why RF Digitization Is Reshaping Modern Radar Systems
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A practical guide to RF digitization, direct RF sampling, and why moving more of radar into the digital domain changes flexibility, maintenance, and upgrade strategy.</p>
+    </article>
+    
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/from-gaas-to-gan-what-makes-aesa-radar-industrially-ready/" class="block">
+          <img src="/images/knowledge-base/kb-aesa-gan.svg" alt="From GaAs to GaN: What Makes AESA Radar Industrially Ready?" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-04-14</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Radar Architecture</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/from-gaas-to-gan-what-makes-aesa-radar-industrially-ready/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          From GaAs to GaN: What Makes AESA Radar Industrially Ready?
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A practical explanation of why AESA radar depends on T/R module maturity, why GaN matters, and what industrial readiness really means beyond a headline technology claim.</p>
+    </article>
+    
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/synthetic-aperture-radar-sar-principles-imaging-modes-and-civil-applications/" class="block">
+          <img src="/images/knowledge-base/kb-sar-imaging.svg" alt="Synthetic Aperture Radar Explained: Principles, Imaging Modes, and Civil Applications" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-04-11</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Remote Sensing</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/synthetic-aperture-radar-sar-principles-imaging-modes-and-civil-applications/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Synthetic Aperture Radar Explained: Principles, Imaging Modes, and Civil Applications
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A high-level guide to SAR, including how synthetic aperture radar forms images, what imaging modes matter, and why it is so valuable for all-weather observation.</p>
+    </article>
+    
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/radar-system-components-front-end-back-end-and-data-flow/" class="block">
+          <img src="/images/knowledge-base/kb-radar-components.svg" alt="Radar System Components Explained: Front End, Back End, and Data Flow" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-04-07</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Radar Architecture</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/radar-system-components-front-end-back-end-and-data-flow/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Radar System Components Explained: Front End, Back End, and Data Flow
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A plain-language explanation of the transmitter, antenna, receiver, processing chain, and control stack that make a radar system work in the field.</p>
+    </article>
+    
+    <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
+      <div class="overflow-hidden rounded-2xl"><a href="/knowledge-base/radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem/" class="block">
+          <img src="/images/knowledge-base/kb-sensing-modalities.svg" alt="Radar, LiDAR, Ultrasonic, and OTH Radar: Which Sensing Layer Solves Which Problem?" class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+        </a>
+      </div>
+      <div class="mt-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+        
+        <span>2025-04-04</span>
+        
+        
+        <span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800">Sensor Selection</span>
+        
+      </div>
+      <h2 class="mt-3 text-lg font-bold text-slate-900">
+        <a href="/knowledge-base/radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem/" class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          Radar, LiDAR, Ultrasonic, and OTH Radar: Which Sensing Layer Solves Which Problem?
+        </a>
+      </h2>
+      <p class="mt-2 text-sm leading-7 text-slate-600">A practical comparison of microwave radar, millimeter-wave radar, ultrasonic sensing, lidar, and over-the-horizon radar, focused on what each layer is actually good at.</p>
+    </article>
+    
+  </div>
   
 </section>
 
@@ -548,7 +752,7 @@
       <div class="space-y-1">
         <p>&copy; 2026 Wuhan Cyrentis Technology Co., Ltd.. All rights reserved.</p>
         
-        <p>鄂ICP备202405002号</p>
+        <p>é„‚ICPå¤‡202405002å·</p>
         
       </div>
       <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-slate-400">

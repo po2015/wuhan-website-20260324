@@ -1,0 +1,35 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="airportSky" x1="0" y1="0" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F5FAFF"/>
+      <stop offset="1" stop-color="#DDEBF8"/>
+    </linearGradient>
+    <linearGradient id="airportGround" x1="0" y1="560" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EAF2F9"/>
+      <stop offset="1" stop-color="#C8D9EA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="28" fill="url(#airportSky)"/>
+  <path d="M0 590C190 560 402 610 600 585C788 560 980 490 1170 520C1320 544 1458 596 1600 572V900H0V590Z" fill="url(#airportGround)"/>
+  <path d="M110 205C248 132 415 132 548 202" stroke="#B9D0E6" stroke-width="18" stroke-linecap="round"/>
+  <path d="M852 150C996 74 1156 88 1295 172" stroke="#B9D0E6" stroke-width="14" stroke-linecap="round"/>
+  <path d="M120 660C412 604 694 604 1016 658" stroke="#6E8FB0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M384 604C572 566 816 566 1034 610" stroke="#8AA8C6" stroke-width="18" stroke-linecap="round"/>
+  <path d="M1048 401H1114L1125 252H1189L1200 401H1265L1276 688H1036L1048 401Z" fill="#EAF3FB" stroke="#1C3962" stroke-width="6"/>
+  <path d="M1078 323H1232" stroke="#1C3962" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1065 441H1244" stroke="#1C3962" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="1154" cy="210" r="44" fill="#F8FCFF" stroke="#1C3962" stroke-width="6"/>
+  <path d="M74 742H1528" stroke="#5B7593" stroke-width="10" stroke-linecap="round"/>
+  <path d="M126 742L286 714L390 726L499 692L604 705L746 672L921 686L1122 650L1330 677L1492 648" stroke="#89A8C5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M378 632H1036" stroke="#1C3962" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+  <path d="M428 588L701 628L832 589L959 612L1045 648L827 668L708 652L642 685L504 668L428 588Z" fill="#F9FCFF" stroke="#1C3962" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M691 556L845 519L927 534L866 578L763 586L691 556Z" fill="#CFE0F1" stroke="#1C3962" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M821 584L984 624" stroke="#1C3962" stroke-width="6" stroke-linecap="round"/>
+  <path d="M731 598L606 636" stroke="#1C3962" stroke-width="6" stroke-linecap="round"/>
+  <path d="M892 572L942 544" stroke="#1C3962" stroke-width="6" stroke-linecap="round"/>
+  <path d="M731 615L709 642" stroke="#1C3962" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="1154" cy="210" r="76" stroke="#6FA7D7" stroke-width="4" stroke-dasharray="9 14"/>
+  <path d="M1154 210C1029 226 920 286 831 390" stroke="#7EC0EE" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+  <path d="M1154 210C1054 188 949 194 860 246" stroke="#9FD5F6" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+  <path d="M1154 210C1076 155 1006 126 924 112" stroke="#B8E2FB" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+</svg>

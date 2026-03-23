@@ -1,0 +1,136 @@
+product_family: SRC
+product_line_name: Surveillance Radar by Cyrentis
+model: SRC-K02E-2G
+product_name: SRC-K02E-2G moving target surveillance radar
+status: active
+visibility: public
+featured: false
+positioning:
+  short: Ku band FMCW surveillance radar for ground surveillance.
+  tagline: FMCW radar for stable target detection and tracking.
+  primary_role: security surveillance radar
+  application_focus: &id001
+  - Land border surveillance
+  - maritime surveillance
+  - critical site protection
+naming:
+  format: SRC-[Band][DetectionLevel][Architecture]-[Generation][Purpose]
+  band_code: K
+  detection_level_code: '02'
+  architecture_code: E
+  generation_code: '2'
+  purpose_code: G
+technical_classification:
+  waveform:
+    code: F
+    name: FMCW
+  band:
+    code: K
+    name: Ku band
+  scan_architecture:
+    code: E
+    name: Four-Face AESA Array
+  target_domains:
+  - ground
+  - maritime
+  primary_target_types:
+  - human
+  - vehicle
+  - boat
+detection:
+  nominal_class_km: 2
+  reference_target:
+    type: human
+    rcs_m2: 0.5
+  typical_detection_ranges_km:
+    human_0_5m2: 2
+  notes:
+  - Target-distance fields were inferred from the model naming code because the source
+    file did not include a structured targets block.
+  - Instrumented range uses the source preamble value 10 km, while nominal class follows
+    model code 2 km.
+performance:
+  blind_zone_m: null
+  horizontal_field_of_view_deg: null
+  vertical_field_of_view_deg: null
+  speed_measurement_range_mps:
+    min: 0.4
+    max: 60.0
+  rotation_speed_rpm: N/A
+  rotation_speed_options_rpm: N/A
+  data_update_interval_s: 0.25
+  tracking_capacity:
+    tws_count: 400
+    tas_count: null
+  accuracy:
+    range_m: null
+    azimuth_deg: 0.4
+    elevation_deg: null
+coverage:
+  azimuth:
+    mode: electronic
+    coverage_deg: null
+  elevation:
+    mode: electronic
+    coverage_deg: null
+  refresh_rate_s: 0.25
+  instrumented_range_km: 10.0
+physical:
+  deployment_type: portable
+  enclosure_rating: IP67
+  operating_temperature_c:
+    min: -40.0
+    max: 55.0
+  dimensions_mm:
+    length: 340.0
+    width: 320.0
+    height: 350.0
+  weight_kg: 14.0
+interfaces:
+  power_input: DC 18~28V (with AC 220V to DC 24V adapter)
+  data_interfaces:
+  - Ethernet
+  power_consumption_w: 120.0
+  protocol_support:
+  - Ethernet
+  horizon_compatible: true
+  third_party_integration: true
+platform_integration:
+  compatible_platforms:
+  - Cyrentis Horizon
+  supported_modules:
+  - Horizon Sense
+  - Horizon Fusion
+  - Horizon Track
+  - Horizon AI
+  - Horizon Command
+  supports_cueing_to_optics: false
+  supports_multi_sensor_fusion: true
+use_cases:
+  primary: *id001
+  secondary:
+  - dense target monitoring
+media:
+  hero_image: /images/radar/src-k02e-2g.jpg
+content:
+  summary: The SRC-K02E-2G moving target surveillance radar is specifically designed
+    for the detection and real-time tracking of moving targets on the ground and water
+    surfaces. It serves as an all-weather, day-and-night efficient surveillance system,
+    capable of stable operation even in complex environments and harsh weather conditions.
+    Employing a Digital Beamforming (DBF) system, the radar can accurately detect
+    and track various types of targets, providing detailed information such as distance,
+    speed, azimuth, and type. It features functions including boundary crossing alerts,
+    early warnings, and recording capabilities.
+  key_features:
+  - Accurate detection and stable tracking;.
+  - low false alarm rate;.
+  - strong multi-target tracking capability;.
+  - all-weather stable operation;.
+  application_scenarios:
+  - Land border surveillance
+  - maritime surveillance
+  - critical site protection
+  - port monitoring
+contact:
+  inquiry_enabled: true
+  recommended_cta: Request radar consultation

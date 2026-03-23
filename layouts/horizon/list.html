@@ -1,0 +1,192 @@
+{{ define "main" }}
+{{- $page := .Params.horizon_page -}}
+{{- $hero := $page.hero -}}
+{{- $positioning := $page.positioning -}}
+{{- $blueprint := $page.blueprint -}}
+{{- $modules := $page.modules -}}
+{{- $notice := $page.platform_value -}}
+
+<section class="horizon-hero">
+  <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <div class="horizon-hero-shell">
+      <div class="grid gap-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(380px,1.08fr)] lg:items-center">
+        <div>
+          {{ partial "breadcrumb.html" . }}
+          <h1 class="horizon-title">{{ $hero.title }}</h1>
+          <p class="horizon-lead">{{ $hero.lead }}</p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href='{{ printf "%s#contact-form" ("contact-us/" | relLangURL) }}' class="horizon-cta horizon-cta-primary">Discuss Platform</a>
+            <a href="#horizon-modules" class="horizon-cta horizon-cta-secondary">Explore Modules</a>
+          </div>
+        </div>
+
+        <div class="horizon-hero-media">
+          <img src="{{ $hero.image | relURL }}" alt="Horizon platform visual" class="horizon-hero-image">
+        </div>
+      </div>
+
+      <div class="horizon-metrics">
+        {{ range $hero.metrics }}
+        <article class="horizon-metric">
+          <p class="horizon-metric-label">{{ .label }}</p>
+          <p class="horizon-metric-value">{{ .value }}</p>
+          <p class="horizon-metric-text">{{ .description }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="horizon-positioning">
+      <div class="horizon-position-header">
+        <p class="horizon-section-tag">{{ $positioning.eyebrow }}</p>
+        <h2 class="section-title">{{ $positioning.title }}</h2>
+        <p class="horizon-section-lead">{{ $positioning.lead }}</p>
+      </div>
+      <div class="horizon-position-grid">
+        {{ range $positioning.items }}
+        <article class="horizon-position-item">
+          <img src="{{ .icon | relURL }}" alt="" class="horizon-position-icon">
+          <h3 class="horizon-position-title">{{ .title }}</h3>
+          <p class="horizon-position-text">{{ .description }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="horizon-blueprint-section py-16">
+  {{- $phaseCount := len $blueprint.phases -}}
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="horizon-blueprint-shell">
+      <div class="horizon-blueprint-header">
+        <div class="horizon-blueprint-header-copy">
+          <p class="horizon-section-tag">{{ $blueprint.eyebrow }}</p>
+          <h2 class="section-title">{{ $blueprint.title }}</h2>
+          {{ with $blueprint.lead }}
+          <p class="horizon-section-lead">{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
+
+      {{ with $blueprint.flow_note }}
+      <aside class="horizon-blueprint-note">
+        <p class="horizon-blueprint-note-kicker">Flow Logic</p>
+        <p class="horizon-blueprint-note-text">{{ . }}</p>
+      </aside>
+      {{ end }}
+
+      <div class="horizon-blueprint-flow">
+        {{ range $index, $phase := $blueprint.phases }}
+        <article class="horizon-phase">
+          <div class="horizon-phase-head">
+            <span class="horizon-phase-tag">{{ $phase.tag }}</span>
+            {{ with $phase.icon }}
+            <img src="{{ . | relURL }}" alt="" class="horizon-phase-icon">
+            {{ end }}
+          </div>
+          <div class="horizon-phase-copy">
+            <h3>{{ $phase.title }}</h3>
+            <p>{{ $phase.description }}</p>
+          </div>
+          <div class="horizon-phase-meta">
+            {{ with $phase.focus }}
+            <div class="horizon-phase-meta-item">
+              <span class="horizon-phase-meta-label">Focus</span>
+              <p>{{ . }}</p>
+            </div>
+            {{ end }}
+            {{ with $phase.handoff }}
+            <div class="horizon-phase-meta-item">
+              <span class="horizon-phase-meta-label">Flow</span>
+              <p>{{ . }}</p>
+            </div>
+            {{ end }}
+          </div>
+          {{ if lt (add $index 1) $phaseCount }}
+          <div class="horizon-phase-connector" aria-hidden="true">
+            <span class="horizon-phase-connector-line"></span>
+            <span class="horizon-phase-connector-arrow"></span>
+          </div>
+          {{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="horizon-modules" class="bg-white py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl">
+      <p class="horizon-section-tag">{{ $modules.eyebrow }}</p>
+      <h2 class="section-title">{{ $modules.title }}</h2>
+      <p class="horizon-section-lead">{{ $modules.intro }}</p>
+    </div>
+
+    <div class="mt-12 space-y-12">
+      {{ range $groupIndex, $group := $modules.groups }}
+      <section class="horizon-module-group horizon-tone-{{ $group.tone }}">
+        <div class="horizon-module-group-header">
+          <div>
+            <span class="horizon-group-index">{{ printf "%02d" (add $groupIndex 1) }}</span>
+            <h3>{{ $group.title }}</h3>
+          </div>
+          <p>{{ $group.summary }}</p>
+        </div>
+
+        <div class="mt-8 space-y-6">
+          {{ range $moduleIndex, $module := $group.modules }}
+          {{- $isReverse := eq (mod $moduleIndex 2) 1 -}}
+          <article class="horizon-module-story {{ if $isReverse }}is-reverse{{ end }}">
+            <div class="horizon-module-icon-column">
+              {{ with $module.icon }}
+              <img src="{{ . | relURL }}" alt="{{ $module.name }} icon" class="horizon-module-icon">
+              {{ end }}
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">{{ $module.role }}</p>
+              <h4>{{ $module.name }}</h4>
+              <p class="horizon-module-focus">{{ $module.focus }}</p>
+              <p class="horizon-module-description">{{ $module.description }}</p>
+              <div class="horizon-output-list">
+                {{ range $module.outputs }}
+                <span class="horizon-output-chip">{{ . }}</span>
+                {{ end }}
+              </div>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="horizon-notice-section py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="horizon-notice-shell">
+      <div>
+        <p class="horizon-section-tag">Platform Value</p>
+        <h2 class="section-title">{{ $notice.title }}</h2>
+        <p class="horizon-section-lead">{{ $notice.text }}</p>
+      </div>
+      <div class="horizon-bullet-stack mt-8 lg:mt-0">
+        {{ range $notice.points }}
+        <div class="horizon-bullet-item">
+          <span class="horizon-bullet-dot"></span>
+          <p>{{ . }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

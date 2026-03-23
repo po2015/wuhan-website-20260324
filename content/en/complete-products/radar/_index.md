@@ -2,7 +2,9 @@
 title: "product center - radar"
 description: "Browse the radar product center and narrow the catalog by target type and scanning architecture."
 layout: "radar-list"
-url: "/complete-products/radar/"
+build:
+  list: never
+  render: never
 weight: 1
 draft: false
 ---

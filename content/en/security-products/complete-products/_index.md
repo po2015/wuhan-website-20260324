@@ -5,7 +5,7 @@ url: "/complete-products/"
 list_cards:
   - title: "Radar"
     description: "Ground security and low-altitude counter-UAS radar lines for all-weather detection and early warning."
-    url: "/complete-products/radar/"
+    url: "/sensors/src/"
   - title: "Electro-optical Detection"
     description: "HD laser and long-range infrared capabilities for target confirmation, tracking, and evidence support."
     url: "/complete-products/electro-optical-detection/"

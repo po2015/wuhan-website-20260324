@@ -1,0 +1,72 @@
+{{- if not .IsHome -}}
+{{- $ui := .Site.Params.ui -}}
+{{- $homeLabel := $ui.breadcrumb_home_label | default "Home" -}}
+{{- $path := .RelPermalink -}}
+{{- $currentTitle := .Params.breadcrumb_title | default .Title -}}
+{{- $crumbs := slice (dict "title" $homeLabel "url" ("/" | relLangURL)) -}}
+
+{{- $sensorsPage := .Site.GetPage "/sensors" -}}
+{{- $srcPage := .Site.GetPage "/sensors/src" -}}
+{{- $socPage := .Site.GetPage "/sensors/soc" -}}
+{{- $sdcPage := .Site.GetPage "/sensors/sdc" -}}
+{{- $servicesPage := .Site.GetPage "/services" -}}
+{{- $infoPage := .Site.GetPage "/info-center" -}}
+{{- $kbPage := .Site.GetPage "/knowledge-base" -}}
+{{- $newsPage := .Site.GetPage "/news" -}}
+{{- $contactPage := .Site.GetPage "/contact-us" -}}
+{{- $horizonPage := .Site.GetPage "/horizon" -}}
+
+{{- if hasPrefix $path "/sensors/" -}}
+  {{- $crumbs = $crumbs | append (dict "title" (cond $sensorsPage $sensorsPage.Title "Sensors") "url" ("/sensors/" | relLangURL)) -}}
+  {{- if hasPrefix $path "/sensors/src/" -}}
+    {{- if ne $path "/sensors/src/" -}}
+      {{- $crumbs = $crumbs | append (dict "title" (cond $srcPage $srcPage.Title "Surveillance Radar") "url" ("/sensors/src/" | relLangURL)) -}}
+    {{- end -}}
+  {{- else if hasPrefix $path "/sensors/soc/" -}}
+    {{- if ne $path "/sensors/soc/" -}}
+      {{- $crumbs = $crumbs | append (dict "title" (cond $socPage $socPage.Title "Surveillance Optics") "url" ("/sensors/soc/" | relLangURL)) -}}
+    {{- end -}}
+  {{- else if hasPrefix $path "/sensors/sdc/" -}}
+    {{- if ne $path "/sensors/sdc/" -}}
+      {{- $crumbs = $crumbs | append (dict "title" (cond $sdcPage $sdcPage.Title "Spectrum Detection") "url" ("/sensors/sdc/" | relLangURL)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if hasPrefix $path "/services/" -}}
+  {{- if ne $path "/services/" -}}
+    {{- $crumbs = $crumbs | append (dict "title" (cond $servicesPage $servicesPage.Title "Services") "url" ("/services/" | relLangURL)) -}}
+  {{- end -}}
+{{- else if hasPrefix $path "/knowledge-base/" -}}
+  {{- $crumbs = $crumbs | append (dict "title" (cond $infoPage $infoPage.Title "Information") "url" ("/info-center/" | relLangURL)) -}}
+  {{- if ne $path "/knowledge-base/" -}}
+    {{- $crumbs = $crumbs | append (dict "title" (cond $kbPage $kbPage.Title "Knowledge Base") "url" ("/knowledge-base/" | relLangURL)) -}}
+  {{- end -}}
+{{- else if hasPrefix $path "/news/" -}}
+  {{- $crumbs = $crumbs | append (dict "title" (cond $infoPage $infoPage.Title "Information") "url" ("/info-center/" | relLangURL)) -}}
+  {{- if ne $path "/news/" -}}
+    {{- $crumbs = $crumbs | append (dict "title" (cond $newsPage $newsPage.Title "News") "url" ("/news/" | relLangURL)) -}}
+  {{- end -}}
+{{- else if hasPrefix $path "/info-center/" -}}
+{{- else if hasPrefix $path "/contact-us/" -}}
+{{- else if hasPrefix $path "/horizon/" -}}
+{{- else -}}
+{{- end -}}
+
+{{- $crumbs = $crumbs | append (dict "title" $currentTitle) -}}
+<nav class="site-breadcrumb" aria-label="Breadcrumb">
+  <ol class="site-breadcrumb-list">
+    {{- range $index, $item := $crumbs -}}
+      {{- $isLast := eq $index (sub (len $crumbs) 1) -}}
+      <li class="site-breadcrumb-item">
+        {{- if and (not $isLast) ($item.url) -}}
+          <a href="{{ $item.url }}" class="site-breadcrumb-link">{{ $item.title }}</a>
+        {{- else -}}
+          <span class="site-breadcrumb-current" aria-current="page">{{ $item.title }}</span>
+        {{- end -}}
+      </li>
+      {{- if not $isLast -}}
+      <li class="site-breadcrumb-separator" aria-hidden="true">/</li>
+      {{- end -}}
+    {{- end -}}
+  </ol>
+</nav>
+{{- end -}}

@@ -1,0 +1,140 @@
+product_family: SRC
+product_line_name: Surveillance Radar by Cyrentis
+model: SRC-X10E-1D
+product_name: SRC-X10E-1D Surveillance Radar
+status: active
+visibility: public
+featured: false
+positioning:
+  short: X band Pulse Doppler surveillance radar for drone detection.
+  tagline: Pulse Doppler radar for stable target detection and tracking.
+  primary_role: security surveillance radar
+  application_focus: &id001
+  - low-altitude surveillance
+  - critical site protection
+  - counter-UAS early warning
+naming:
+  format: SRC-[Band][DetectionLevel][Architecture]-[Generation][Purpose]
+  band_code: X
+  detection_level_code: '10'
+  architecture_code: E
+  generation_code: '1'
+  purpose_code: D
+technical_classification:
+  waveform:
+    code: P
+    name: Pulse Doppler
+  band:
+    code: X
+    name: X band
+  scan_architecture:
+    code: E
+    name: Four-Face AESA Array
+  target_domains:
+  - air
+  primary_target_types:
+  - small_uav
+  - fixed_wing_uav
+detection:
+  nominal_class_km: 10
+  reference_target:
+    type: small_uav
+    rcs_m2: 0.01
+  typical_detection_ranges_km:
+    small_uav_0_01m2: 10
+  notes:
+  - Target-distance fields were inferred from the model naming code because the source
+    file did not include a structured targets block.
+  - Instrumented range uses the source preamble value 15 km, while nominal class follows
+    model code 10 km.
+performance:
+  blind_zone_m: 200.0
+  horizontal_field_of_view_deg: 360.0
+  vertical_field_of_view_deg: 60.0
+  speed_measurement_range_mps:
+    min: 1.0
+    max: 100.0
+  rotation_speed_rpm: N/A
+  rotation_speed_options_rpm: N/A
+  data_update_interval_s: 3.5
+  tracking_capacity:
+    tws_count: null
+    tas_count: 24
+  accuracy:
+    range_m: 10.0
+    azimuth_deg: 0.3
+    elevation_deg: 0.3
+coverage:
+  azimuth:
+    mode: electronic
+    coverage_deg: 360.0
+  elevation:
+    mode: electronic
+    coverage_deg: 60.0
+  refresh_rate_s: 3.5
+  instrumented_range_km: 15.0
+physical:
+  deployment_type: fixed
+  enclosure_rating: null
+  operating_temperature_c:
+    min: null
+    max: null
+  dimensions_mm:
+    length: null
+    width: null
+    height: null
+  weight_kg: null
+interfaces:
+  power_input: null
+  data_interfaces:
+  - Ethernet
+  power_consumption_w: null
+  protocol_support:
+  - Ethernet
+  horizon_compatible: true
+  third_party_integration: true
+platform_integration:
+  compatible_platforms:
+  - Cyrentis Horizon
+  supported_modules:
+  - Horizon Sense
+  - Horizon Fusion
+  - Horizon Track
+  - Horizon Command
+  supports_cueing_to_optics: true
+  supports_multi_sensor_fusion: true
+use_cases:
+  primary: *id001
+  secondary:
+  - cooperative multi-sensor detection
+media:
+  hero_image: /images/radar/src-x10e-1d.jpg
+content:
+  summary: SRC-X10E-1D Surveillance Radar is a X band Pulse Doppler surveillance radar
+    designed for drone detection. It uses four-face aesa array for practical security
+    monitoring and response workflows.
+  key_features:
+  - Pulse Doppler architecture for stable target detection and tracking in security
+    surveillance scenarios.
+  - 360 degree azimuth coverage and 60 degree elevation coverage for wide-area surveillance.
+  - Designed for all-day, all-weather operation in complex environments.
+  application_scenarios: *id001
+contact:
+  inquiry_enabled: true
+  recommended_cta: Request radar consultation
+export_compliance:
+  china_regime: PRC dual-use export control
+  civil_security_only: true
+  general_notice: This product is intended for civil security use only. Export from
+    China is subject to PRC dual-use export control and licensing procedures.
+  official_basis:
+  - PRC Dual-Use Export Control List (effective 2024-12-01)
+  - MOFCOM / GACC / CMC EDD Announcement No. 31 of 2024
+  review_rule:
+    rule_type: internal_compliance_escalation_rule
+    measurement_field: detection.typical_detection_ranges_km.small_uav_0_01m2
+    small_uav_threshold_km: 10
+    triggered: true
+    control_status: special_permit_required
+    license_requirement: special_permit_required
+    reviewer_note: Auto-generated from source text and naming-rule mapping.

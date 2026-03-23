@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" fill="none" role="img" aria-label="Continuous wave icon">
+  <rect x="8" y="8" width="72" height="72" rx="22" fill="#ECFBFF" stroke="#97E2F8" stroke-width="2"/>
+  <path d="M16 48C21 48 21 32 26 32C31 32 31 56 36 56C41 56 41 32 46 32C51 32 51 56 56 56C61 56 61 38 66 38C68 38 70 40 72 42" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 61C23 61 23 47 28 47C33 47 33 61 38 61C43 61 43 47 48 47C53 47 53 61 58 61C63 61 63 53 68 53" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

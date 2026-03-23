@@ -1,0 +1,591 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "cyrentis/sdc-spectrum.schema"
+
+title: "SDC Spectrum Detection System Schema"
+description: "Schema for Cyrentis SDC spectrum detection products."
+
+type: object
+additionalProperties: false
+
+required:
+  - product_family
+  - model
+  - product_name
+  - status
+  - naming
+  - technical_classification
+  - rf_capabilities
+  - content
+  - platform_integration
+
+properties:
+  product_family:
+    type: string
+    const: "SDC"
+    description: "Product family code for Cyrentis spectrum detection products."
+
+  product_line_name:
+    type: string
+    default: "Spectrum Detection by Cyrentis"
+    description: "Human-readable product line name."
+
+  model:
+    type: string
+    description: "Official product model."
+    pattern: "^SDC-[A-Z0-9-]+$"
+    examples:
+      - "SDC-FX"
+      - "SDC-PT"
+      - "SDC-FX-24"
+      - "SDC-PT-6"
+
+  product_name:
+    type: string
+    description: "Full product name."
+
+  status:
+    type: string
+    enum:
+      - "active"
+      - "preview"
+      - "legacy"
+      - "discontinued"
+
+  visibility:
+    type: string
+    enum:
+      - "public"
+      - "internal"
+      - "private"
+    default: "public"
+
+  featured:
+    type: boolean
+    default: false
+
+  positioning:
+    type: object
+    additionalProperties: false
+    properties:
+      short:
+        type: string
+        description: "Short positioning sentence."
+      tagline:
+        type: string
+      primary_role:
+        type: string
+        examples:
+          - "RF spectrum detection system"
+          - "UAV signal detection sensor"
+      application_focus:
+        type: array
+        items:
+          type: string
+        examples:
+          - ["low-altitude awareness", "RF signal monitoring", "counter-UAV detection"]
+
+  naming:
+    type: object
+    additionalProperties: false
+    required:
+      - format
+      - deployment_code
+    properties:
+      format:
+        type: string
+        description: "Naming rule used by the SDC product family."
+        examples:
+          - "SDC-[Deployment]-[Variant]"
+          - "SDC-[Deployment]-[Band]"
+      deployment_code:
+        type: string
+        enum:
+          - "FX"
+          - "PT"
+        description: "FX = fixed unit, PT = portable unit"
+      variant_code:
+        type:
+          - string
+          - "null"
+        description: "Optional product subtype or band variant."
+        examples:
+          - "24"
+          - "6"
+          - "DF"
+
+  technical_classification:
+    type: object
+    additionalProperties: false
+    required:
+      - deployment_type
+      - integration_mode
+      - capability_type
+      - target_domains
+    properties:
+      deployment_type:
+        type: string
+        enum:
+          - "fixed"
+          - "portable"
+          - "vehicle-mounted"
+          - "mast-mounted"
+      integration_mode:
+        type: string
+        enum:
+          - "horizon-integrated"
+          - "standalone"
+          - "optional-integration"
+        description: "Whether the device is intended for Horizon integration."
+      capability_type:
+        type: array
+        minItems: 1
+        items:
+          type: string
+          enum:
+            - "signal_detection"
+            - "signal_identification"
+            - "direction_finding"
+            - "signal_recording"
+            - "spectrum_monitoring"
+      target_domains:
+        type: array
+        minItems: 1
+        items:
+          type: string
+          enum:
+            - "air"
+            - "ground"
+            - "general_rf"
+      primary_target_types:
+        type: array
+        items:
+          type: string
+          enum:
+            - "small_uav"
+            - "fixed_wing_uav"
+            - "remote_controller"
+            - "data_link"
+            - "wireless_emitter"
+
+  rf_capabilities:
+    type: object
+    additionalProperties: false
+    required:
+      - frequency_range
+    properties:
+      frequency_range:
+        type: object
+        additionalProperties: false
+        required:
+          - min_mhz
+          - max_mhz
+        properties:
+          min_mhz:
+            type: number
+            description: "Lower bound of detectable frequency range in MHz."
+            examples:
+              - 400
+              - 800
+          max_mhz:
+            type: number
+            description: "Upper bound of detectable frequency range in MHz."
+            examples:
+              - 6000
+              - 8000
+
+      supported_bands:
+        type: array
+        description: "Named RF bands or typical application bands."
+        items:
+          type: string
+        examples:
+          - ["433 MHz", "900 MHz", "1.2 GHz", "2.4 GHz", "5.8 GHz"]
+
+      detection_functions:
+        type: array
+        description: "Main RF detection functions supported by the product."
+        items:
+          type: string
+          enum:
+            - "signal_presence_detection"
+            - "uav_control_link_detection"
+            - "telemetry_link_detection"
+            - "video_link_detection"
+            - "emitter_identification"
+            - "direction_finding"
+            - "spectrum_recording"
+
+      direction_finding:
+        type: object
+        additionalProperties: false
+        properties:
+          supported:
+            type: boolean
+          mode:
+            type:
+              - string
+              - "null"
+            enum:
+              - "none"
+              - "single-station"
+              - "multi-station"
+              - "interferometric"
+              - null
+          azimuth_accuracy_deg:
+            type:
+              - number
+              - "null"
+
+      signal_library:
+        type: object
+        additionalProperties: false
+        properties:
+          supported:
+            type: boolean
+          updateable:
+            type: boolean
+          notes:
+            type:
+              - string
+              - "null"
+
+      sensitivity_dbm:
+        type:
+          - number
+          - "null"
+        description: "Receiver sensitivity in dBm when known."
+
+      channelization:
+        type:
+          - string
+          - "null"
+        description: "High-level description of channelization or receiver architecture."
+
+      notes:
+        type: array
+        items:
+          type: string
+
+  performance:
+    type: object
+    additionalProperties: false
+    properties:
+      typical_detection_radius_km:
+        type:
+          - number
+          - "null"
+        description: "Typical RF detection radius in km where applicable."
+      response_time_s:
+        type:
+          - number
+          - "null"
+      simultaneous_targets:
+        type:
+          - integer
+          - "null"
+      notes:
+        type: array
+        items:
+          type: string
+
+  physical:
+    type: object
+    additionalProperties: false
+    properties:
+      deployment_type:
+        type: string
+        enum:
+          - "fixed"
+          - "portable"
+          - "vehicle-mounted"
+          - "mast-mounted"
+      form_factor:
+        type:
+          - string
+          - "null"
+        examples:
+          - "portable case"
+          - "outdoor cabinet"
+          - "sensor head + control unit"
+      mounting_options:
+        type: array
+        items:
+          type: string
+      enclosure_rating:
+        type:
+          - string
+          - "null"
+        examples:
+          - "IP65"
+      operating_temperature_c:
+        type: object
+        additionalProperties: false
+        properties:
+          min:
+            type:
+              - number
+              - "null"
+          max:
+            type:
+              - number
+              - "null"
+      weight_kg:
+        type:
+          - number
+          - "null"
+
+  interfaces:
+    type: object
+    additionalProperties: false
+    properties:
+      power_input:
+        type:
+          - string
+          - "null"
+        examples:
+          - "24 VDC"
+          - "220 VAC"
+          - "battery"
+      data_interfaces:
+        type: array
+        items:
+          type: string
+        examples:
+          - ["Ethernet", "USB"]
+      protocol_support:
+        type: array
+        items:
+          type: string
+      horizon_compatible:
+        type: boolean
+        default: false
+      third_party_integration:
+        type: boolean
+        default: true
+
+  platform_integration:
+    type: object
+    additionalProperties: false
+    required:
+      - compatible_platforms
+      - supported_modules
+      - horizon_integration_supported
+    properties:
+      compatible_platforms:
+        type: array
+        items:
+          type: string
+        examples:
+          - ["Cyrentis Horizon"]
+      supported_modules:
+        type: array
+        items:
+          type: string
+          enum:
+            - "Horizon Sense"
+            - "Horizon Spatial"
+            - "Horizon Fusion"
+            - "Horizon Track"
+            - "Horizon AI"
+            - "Horizon Command"
+            - "Horizon Notify"
+            - "Horizon Archive"
+            - "Horizon Link"
+      horizon_integration_supported:
+        type: boolean
+      standalone_operation_supported:
+        type: boolean
+      radar_fusion_supported:
+        type: boolean
+      eo_cueing_supported:
+        type: boolean
+
+  use_cases:
+    type: object
+    additionalProperties: false
+    properties:
+      primary:
+        type: array
+        items:
+          type: string
+      secondary:
+        type: array
+        items:
+          type: string
+
+  media:
+    type: object
+    additionalProperties: false
+    properties:
+      hero_image:
+        type:
+          - string
+          - "null"
+      gallery:
+        type: array
+        items:
+          type: string
+      datasheet_pdf:
+        type:
+          - string
+          - "null"
+
+  content:
+    type: object
+    additionalProperties: false
+    required:
+      - summary
+      - key_features
+    properties:
+      summary:
+        type: string
+        description: "Concise product summary paragraph."
+      key_features:
+        type: array
+        minItems: 3
+        items:
+          type: string
+      application_scenarios:
+        type: array
+        items:
+          type: string
+
+  seo:
+    type: object
+    additionalProperties: false
+    properties:
+      title:
+        type:
+          - string
+          - "null"
+      description:
+        type:
+          - string
+          - "null"
+      keywords:
+        type: array
+        items:
+          type: string
+
+  contact:
+    type: object
+    additionalProperties: false
+    properties:
+      inquiry_enabled:
+        type: boolean
+        default: true
+      recommended_cta:
+        type:
+          - string
+          - "null"
+
+examples:
+  - product_family: "SDC"
+    product_line_name: "Spectrum Detection by Cyrentis"
+    model: "SDC-FX-6"
+    product_name: "SDC-FX-6 Spectrum Detection System"
+    status: "active"
+    visibility: "public"
+    featured: true
+    positioning:
+      short: "Fixed RF detection system for UAV signal monitoring and Horizon integration."
+      tagline: "RF situational awareness for integrated security monitoring."
+      primary_role: "UAV signal detection sensor"
+      application_focus:
+        - "low-altitude awareness"
+        - "RF signal monitoring"
+        - "fixed-site security"
+    naming:
+      format: "SDC-[Deployment]-[Variant]"
+      deployment_code: "FX"
+      variant_code: "6"
+    technical_classification:
+      deployment_type: "fixed"
+      integration_mode: "horizon-integrated"
+      capability_type:
+        - "signal_detection"
+        - "signal_identification"
+        - "spectrum_monitoring"
+      target_domains:
+        - "air"
+        - "general_rf"
+      primary_target_types:
+        - "small_uav"
+        - "remote_controller"
+        - "data_link"
+    rf_capabilities:
+      frequency_range:
+        min_mhz: 400
+        max_mhz: 6000
+      supported_bands:
+        - "433 MHz"
+        - "900 MHz"
+        - "1.2 GHz"
+        - "2.4 GHz"
+        - "5.8 GHz"
+      detection_functions:
+        - "signal_presence_detection"
+        - "uav_control_link_detection"
+        - "telemetry_link_detection"
+        - "video_link_detection"
+      direction_finding:
+        supported: false
+        mode: "none"
+        azimuth_accuracy_deg: null
+      signal_library:
+        supported: true
+        updateable: true
+        notes: "Signal library can be updated based on supported target protocols."
+      sensitivity_dbm: null
+      channelization: null
+      notes:
+        - "Actual detection performance depends on signal environment and emitter characteristics."
+    performance:
+      typical_detection_radius_km: null
+      response_time_s: null
+      simultaneous_targets: null
+    physical:
+      deployment_type: "fixed"
+      form_factor: "outdoor cabinet"
+      mounting_options:
+        - "pole"
+        - "tower"
+        - "wall"
+      enclosure_rating: "IP65"
+      operating_temperature_c:
+        min: null
+        max: null
+      weight_kg: null
+    interfaces:
+      power_input: "24 VDC"
+      data_interfaces:
+        - "Ethernet"
+      protocol_support:
+        - "custom"
+      horizon_compatible: true
+      third_party_integration: true
+    platform_integration:
+      compatible_platforms:
+        - "Cyrentis Horizon"
+      supported_modules:
+        - "Horizon Sense"
+        - "Horizon Fusion"
+        - "Horizon Track"
+        - "Horizon AI"
+        - "Horizon Command"
+        - "Horizon Notify"
+        - "Horizon Archive"
+      horizon_integration_supported: true
+      standalone_operation_supported: false
+      radar_fusion_supported: true
+      eo_cueing_supported: false
+    content:
+      summary: "SDC-FX-6 is a fixed RF spectrum detection system designed for UAV signal monitoring and integration into the Cyrentis Horizon platform."
+      key_features:
+        - "Fixed-site RF signal detection"
+        - "Supports Horizon platform integration"
+        - "Suitable for low-altitude awareness scenarios"
+      application_scenarios:
+        - "critical infrastructure monitoring"
+        - "facility perimeter monitoring"
+        - "RF-assisted drone detection"

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>System Design on Wuhan Cyrentis Technology Co., Ltd.</title>
+    <link>https://www.cyrentis.com/categories/system-design/</link>
+    <description>Recent content in System Design on Wuhan Cyrentis Technology Co., Ltd.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.cyrentis.com/categories/system-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comparison of Different Radar Scanning Architectures</title>
+      <link>https://www.cyrentis.com/knowledge-base/comparison-of-different-radar-scanning-architectures/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/comparison-of-different-radar-scanning-architectures/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/radar-scanning-architecture-comparison.svg&#34; alt=&#34;Radar scanning architecture comparison diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In civil security radar deployment, architecture is not a cosmetic option. It determines coverage behavior, revisit pattern, mechanical wear profile, and how tracks are consumed by upper-layer command platforms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Radar, LiDAR, Ultrasonic, and OTH Radar: Which Sensing Layer Solves Which Problem?</title>
+      <link>https://www.cyrentis.com/knowledge-base/radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem/</link>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-sensing-modalities.svg&#34; alt=&#34;Concept illustration comparing sensing modalities&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Security projects often go wrong at the first decision: sensors are compared as if they were substitutes, when in practice they are layers with different jobs. The right question is not &amp;ldquo;Which technology is best?&amp;rdquo; but &amp;ldquo;Which sensing layer solves which part of the mission?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Radar System Components Explained: Front End, Back End, and Data Flow</title>
+      <link>https://www.cyrentis.com/knowledge-base/radar-system-components-front-end-back-end-and-data-flow/</link>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/radar-system-components-front-end-back-end-and-data-flow/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-radar-components.svg&#34; alt=&#34;Radar front end and back end concept diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When people say &amp;ldquo;radar,&amp;rdquo; they often picture a rotating antenna. In real projects, that is only the visible tip of the system. What matters operationally is the entire chain that generates a waveform, sends it into space, receives the echo, extracts useful meaning, and presents the result to an operator or command platform.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Layered Radar Architectures: What Civil Security Planners Can Borrow from Long-, Mid-, and Short-Range Systems</title>
+      <link>https://www.cyrentis.com/knowledge-base/layered-radar-architectures-what-civil-security-planners-can-borrow/</link>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/layered-radar-architectures-what-civil-security-planners-can-borrow/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-layered-radar.svg&#34; alt=&#34;Layered radar architecture concept graphic&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Large radar ecosystems are often described in terms of long-range, mid-range, and short-range layers. Civil security teams do not need to copy that structure literally, but they can learn a great deal from the logic behind it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

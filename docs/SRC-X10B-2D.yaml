@@ -1,0 +1,164 @@
+product_family: SRC
+product_line_name: Surveillance Radar by Cyrentis
+model: SRC-X10B-2D
+product_name: SRC-X10B-2D Low-Altitude Surveillance Radar
+status: active
+visibility: public
+featured: false
+positioning:
+  short: X band FMCW surveillance radar for drone detection.
+  tagline: FMCW radar for stable target detection and tracking.
+  primary_role: security surveillance radar
+  application_focus: &id001
+  - low-altitude surveillance
+  - critical site protection
+  - counter-UAS early warning
+naming:
+  format: SRC-[Band][DetectionLevel][Architecture]-[Generation][Purpose]
+  band_code: X
+  detection_level_code: '10'
+  architecture_code: B
+  generation_code: '2'
+  purpose_code: D
+technical_classification:
+  waveform:
+    code: F
+    name: FMCW
+  band:
+    code: X
+    name: X band
+  scan_architecture:
+    code: B
+    name: Mechanical Azimuth Scanning + Electronic Elevation Steering
+  target_domains:
+  - air
+  primary_target_types:
+  - small_uav
+  - fixed_wing_uav
+detection:
+  nominal_class_km: 10
+  reference_target:
+    type: small_uav
+    rcs_m2: 0.01
+  typical_detection_ranges_km:
+    small_uav_0_01m2: 10
+    fixed_wing_uav_1m2: 18
+  notes:
+  - Target-distance fields were inferred from the model naming code because the source
+    file did not include a structured targets block.
+  - Instrumented range uses the source preamble value 20 km, while nominal class follows
+    model code 10 km.
+  - Vehicle detection details in the source use a different RCS bucket than the schema's
+    fixed vehicle_2m2 field.
+performance:
+  blind_zone_m: 50.0
+  horizontal_field_of_view_deg: 360.0
+  vertical_field_of_view_deg: 65.0
+  speed_measurement_range_mps:
+    min: 1.0
+    max: 150.0
+  rotation_speed_rpm: 30
+  rotation_speed_options_rpm:
+  - 20
+  - 30
+  - 60
+  data_update_interval_s: 2.0
+  tracking_capacity:
+    tws_count: 500
+    tas_count: N/A
+  accuracy:
+    range_m: 5.0
+    azimuth_deg: 0.5
+    elevation_deg: 0.5
+coverage:
+  azimuth:
+    mode: mechanical
+    coverage_deg: 360.0
+  elevation:
+    mode: electronic
+    coverage_deg: 65.0
+  refresh_rate_s: 2.0
+  instrumented_range_km: 20.0
+physical:
+  deployment_type: "fixed"
+  mounting_options:
+    - "pole-mounted"
+    - "tower-mounted"
+  enclosure_rating: "IP66"
+  operating_temperature_c:
+    min: -40.0
+    max: 55.0
+  dimensions_mm:
+    length: null
+    width: null
+    height: null
+  weight_kg: 66.0
+interfaces:
+  power_input: DC 36-52V
+  data_interfaces:
+  - Ethernet
+  power_consumption_w: null
+  protocol_support:
+  - UDP
+  horizon_compatible: true
+  third_party_integration: true
+platform_integration:
+  compatible_platforms:
+  - Cyrentis Horizon
+  supported_modules:
+  - Horizon Sense
+  - Horizon Fusion
+  - Horizon Track
+  - Horizon AI
+  - Horizon Command
+  supports_cueing_to_optics: true
+  supports_multi_sensor_fusion: true
+use_cases:
+  primary: *id001
+  secondary:
+  - electro-optical cueing
+  - bird activity monitoring
+  - dense target monitoring
+media:
+  hero_image: /images/radar/src-x10b-2d.jpg
+content:
+  summary: 'The SRC-X10B-2D Low-Altitude Surveillance Radar is an
+    intelligent detection 3D radar. It can rapidly detect and continuously track targets
+    such as UAVs, aircraft, vehicles and birds. It is widely used in critical sites
+    to prevent hazards caused by aerial intruders and birds. Utilizing simultaneous
+    multi-beam technology and high-performance signal processing techniques, this
+    radar can rapidly and accurately acquire target position and motion states even
+    in complex, dense multi-target environments. The radar employs a continuous wave
+    operation mode with low transmission power, significantly enhancing its resistance
+    to stability compared to pulse-based systems. Within a cooperative detection system,
+    this radar can serve as the core sensing unit, providing high-precision target
+    data to other sensors (such as electro-optical devices, bird dispersal equipment)
+    to achieve precise guidance.'
+  key_features:
+  - "Wide Detection Range: Capable of detecting small UAVs (RCS 0.01 m²) at distances up to 10 km, providing early warning and ample response time."
+  - 'Strong Tracking Capability: By adopting advanced tracking filtering algorithms,
+    it has significantly improved its target tracking performance.'
+  - 'Effective Small Target Detection: Utilizing a Frequency Modulated Continuous
+    Wave (FMCW) system, it avoids the signal-to-noise ratio mutation issues caused
+    by waveform handover in pulse radars, ensuring continuous detection of very small
+    targets (such as the DJI Mini 3) at all elevation angles.'
+  application_scenarios: *id001
+contact:
+  inquiry_enabled: true
+  recommended_cta: Request radar consultation
+export_compliance:
+  china_regime: PRC dual-use export control
+  civil_security_only: true
+  general_notice: This product is intended for civil security use only. Export from
+    China is subject to PRC dual-use export control and licensing procedures.
+  official_basis:
+  - PRC Dual-Use Export Control List (effective 2024-12-01)
+  - MOFCOM / GACC / CMC EDD Announcement No. 31 of 2024
+  review_rule:
+    rule_type: internal_compliance_escalation_rule
+    measurement_field: detection.typical_detection_ranges_km.small_uav_0_01m2
+    small_uav_threshold_km: 10
+    triggered: true
+    control_status: special_permit_required
+    license_requirement: special_permit_required
+    reviewer_note: Auto-generated from source text and naming-rule mapping.

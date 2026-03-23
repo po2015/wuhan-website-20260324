@@ -4,12 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Wuhan Cyrentis Technology Co., Ltd.</title>
-  <meta name="description" content="Share your project requirements for Horizon, sensors, or consulting services and our team will contact you soon.">
+  <meta name="description" content="Talk to Cyrentis about Horizon customization, sensor projects, solution planning, or integrated site deployments.">
   <link rel="icon" type="image/png" href="/images/icon.png">
   <link rel="shortcut icon" href="/images/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -33,12 +30,44 @@
             soft: '0 8px 30px rgba(15, 23, 42, 0.08)'
           },
           fontFamily: {
-            sans: ['Manrope', 'Noto Sans SC', 'sans-serif']
+            sans: ['Manrope', 'Aptos', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', 'Arial', 'sans-serif']
           }
         }
       }
     }
   </script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-H32XFR8H0R');
+
+    (function () {
+      var tagId = 'G-H32XFR8H0R';
+      var loaded = false;
+
+      function loadGoogleTag() {
+        if (loaded) return;
+        loaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId);
+        script.referrerPolicy = 'strict-origin-when-cross-origin';
+        script.onerror = function () {};
+        document.head.appendChild(script);
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGoogleTag, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', function () {
+          window.setTimeout(loadGoogleTag, 2000);
+        }, { once: true });
+      }
+    })();
+  </script>
+  
   <link rel="stylesheet" href="/css/site.css">
 </head>
 
@@ -60,8 +89,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/">
+            <a class="menu-link " href="/">
               Home
               
             </a>
@@ -71,13 +101,15 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/horizon/">
+            <a class="menu-link " href="/horizon/">
               Horizon
               
             </a>
             
           </li>
+          
           
           
           
@@ -91,7 +123,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/sensors/">
+            <a class="menu-link " href="/sensors/">
               Sensors
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -113,6 +145,7 @@
           
           
           
+          
             
               
             
@@ -122,7 +155,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/services/">
+            <a class="menu-link " href="/services/">
               Services
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -144,8 +177,7 @@
           
           
           
-            
-              
+          
             
               
             
@@ -153,7 +185,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/info-center/">
+            <a class="menu-link " href="/info-center/">
               Information
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -165,8 +197,6 @@
                 
                 <a class="panel-link" href="/news/">News</a>
                 
-                <a class="panel-link" href="/download/">Download</a>
-                
               
             </div>
             
@@ -175,8 +205,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/contact-us/">
+            <a class="menu-link is-current" href="/contact-us/">
               Contact
               
             </a>
@@ -262,10 +293,6 @@
                 <a href="/news/">News</a>
                 
               
-                
-                <a href="/download/">Download</a>
-                
-              
             </div>
           </details>
           
@@ -282,97 +309,210 @@
   <main id="main-content" class="min-h-[60vh]">
     <section class="bg-white py-14">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <p class="section-kicker">Contact</p>
+    <nav class="site-breadcrumb" aria-label="Breadcrumb">
+  <ol class="site-breadcrumb-list"><li class="site-breadcrumb-item"><a href="/" class="site-breadcrumb-link">Home</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><span class="site-breadcrumb-current" aria-current="page">Contact</span></li></ol>
+</nav>
     <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">Contact</h1>
     
-    <p class="mt-4 max-w-3xl text-base leading-8 text-slate-600">Share your project requirements for Horizon, sensors, or consulting services and our team will contact you soon.</p>
+    <p class="mt-4 max-w-4xl text-base leading-8 text-slate-600">Talk to Cyrentis about Horizon customization, sensor projects, solution planning, or integrated site deployments.</p>
+    
+    
+    <div class="content-typography mt-4 max-w-4xl"><p>Share your project scope, site conditions, sensing priorities, and integration expectations. Cyrentis can respond with product suggestions, solution architecture direction, or a more structured project discussion based on your scenario.</p>
+</div>
     
   </div>
 </section>
 <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-  <div class="grid gap-8 lg:grid-cols-12">
-    <div class="space-y-6 lg:col-span-5">
-      <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
+  <div class="grid gap-6 md:grid-cols-2">
+      <article class="contact-panel">
+        <div class="contact-card-head">
+          
+          <img src="/images/icons/contact-about.svg" alt="" class="contact-card-icon" aria-hidden="true">
+          
+          <div>
+            <p class="contact-card-eyebrow">Brand</p>
+            <h2 class="contact-card-title">About Cyrentis</h2>
+          </div>
+        </div>
+        <p class="contact-card-text">Cyrentis builds layered civil-security capabilities around sensing hardware, operational software, and deployment-oriented engineering. Our work connects radar, electro-optical, and RF detection products with the Horizon platform so operators can move from detection to confirmation and response in one coordinated workflow.</p>
+      </article>
+
+      <article class="contact-panel">
+        <div class="contact-card-head">
+          
+          <img src="/images/icons/contact-vision.svg" alt="" class="contact-card-icon" aria-hidden="true">
+          
+          <div>
+            <p class="contact-card-eyebrow">Direction</p>
+            <h2 class="contact-card-title">Vision</h2>
+          </div>
+        </div>
+        <p class="contact-card-text">We aim to make advanced site awareness more practical for real operators by combining field-ready sensing products with software structures that are easier to integrate, adapt, and scale across different environments.</p>
+      </article>
+  </div>
+</section>
+
+<section class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+  <div class="grid gap-8 xl:grid-cols-[minmax(320px,0.92fr)_minmax(0,1.08fr)]">
+    <div class="space-y-6">
+      <article class="contact-panel">
         <h2 class="text-lg font-bold text-slate-900">Contact Details</h2>
-        <dl class="mt-4 space-y-3 text-sm text-slate-600">
+        <dl class="contact-detail-list">
           
-          <div>
-            <dt class="font-semibold text-slate-900">Company</dt>
-            <dd>
-              
-              Wuhan Cyrentis Technology Co., Ltd.
-              
-            </dd>
+          <div class="contact-detail-row">
+            
+            <img src="/images/icons/contact-company.svg" alt="" class="contact-detail-icon" aria-hidden="true">
+            
+            <div class="min-w-0">
+              <dt class="contact-detail-label">Company</dt>
+              <dd class="contact-detail-value">
+                
+                Wuhan Cyrentis Technology Co., Ltd.
+                
+              </dd>
+            </div>
           </div>
           
-          <div>
-            <dt class="font-semibold text-slate-900">Address</dt>
-            <dd>
-              
-              Room 201-134, Building C9, Phase II, Wuhan Software New City, No. 8 Huacheng Avenue, East Lake High-tech Development Zone, Wuhan, China
-              
-            </dd>
+          <div class="contact-detail-row">
+            
+            <img src="/images/icons/contact-address.svg" alt="" class="contact-detail-icon" aria-hidden="true">
+            
+            <div class="min-w-0">
+              <dt class="contact-detail-label">Address</dt>
+              <dd class="contact-detail-value">
+                
+                Room 201-134, Building C9, Phase II, Wuhan Software New City, No. 8 Huacheng Avenue, East Lake High-tech Development Zone, Wuhan, China
+                
+              </dd>
+            </div>
           </div>
           
-          <div>
-            <dt class="font-semibold text-slate-900">Phone</dt>
-            <dd>
-              
-              <a href="tel:&#43;8613986053927" class="hover:text-brand-700">&#43;86-13986053927</a>
-              
-            </dd>
-          </div>
-          
-          <div>
-            <dt class="font-semibold text-slate-900">Email</dt>
-            <dd>
-              
-              <a href="mailto:info@cyrentis.com" class="hover:text-brand-700">info@cyrentis.com</a>
-              
-            </dd>
+          <div class="contact-detail-row">
+            
+            <img src="/images/icons/contact-email.svg" alt="" class="contact-detail-icon" aria-hidden="true">
+            
+            <div class="min-w-0">
+              <dt class="contact-detail-label">Email</dt>
+              <dd class="contact-detail-value">
+                
+                <a href="mailto:info@cyrentis.com" class="font-semibold transition hover:text-brand-700">info@cyrentis.com</a>
+                
+              </dd>
+            </div>
           </div>
           
         </dl>
       </article>
+
       <article class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft">
-        <iframe title="Google Map" class="h-72 w-full" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=%E6%AD%A6%E6%B1%89%E5%B8%82%E4%B8%9C%E6%B9%96%E6%96%B0%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91%E5%8C%BA%E8%8A%B1%E5%9F%8E%E5%A4%A7%E9%81%938%E5%8F%B7%E6%AD%A6%E6%B1%89%E8%BD%AF%E4%BB%B6%E6%96%B0%E5%9F%8E%E4%BA%8C%E6%9C%9FC9%E6%A0%8B201-134%E5%AE%A4&amp;output=embed"></iframe>
+        <div class="contact-map-head">
+          <div class="contact-card-head">
+            
+            <img src="/images/icons/contact-map.svg" alt="" class="contact-card-icon" aria-hidden="true">
+            
+            <div>
+              <p class="contact-card-eyebrow">Location</p>
+              <h2 class="contact-card-title contact-card-title-sm">Visit The Office</h2>
+              
+              <p class="contact-form-note">Use the embedded map for quick location reference, or open the full Google Maps route for navigation and field access.</p>
+              
+            </div>
+          </div>
+          
+          <a href="https://maps.app.goo.gl/LWDcEk2WE9SPqoUU7" target="_blank" rel="noreferrer" class="inline-flex text-sm font-bold text-brand-700 transition hover:text-brand-800">Open in Google Maps</a>
+          
+        </div>
+        <iframe title="Google Map" class="h-[26rem] w-full" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=30.557662647460553,114.50104472074759&amp;z=17&amp;output=embed"></iframe>
       </article>
     </div>
 
-    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-soft lg:col-span-7">
-      <h2 class="text-2xl font-bold text-slate-900">Start a Project Discussion</h2>
-      <form class="mt-6 grid gap-4 sm:grid-cols-2" method="post" action="#">
-        <label class="form-field sm:col-span-1">
-          <span>Name *</span>
-          <input type="text" name="name" required>
-        </label>
-        <label class="form-field sm:col-span-1">
-          <span>Company</span>
-          <input type="text" name="company">
-        </label>
-        <label class="form-field sm:col-span-1">
-          <span>Email *</span>
-          <input type="email" name="email" required>
-        </label>
-        <label class="form-field sm:col-span-1">
-          <span>Phone</span>
-          <div class="grid grid-cols-[110px_1fr] gap-2">
-            <input type="text" name="country_code" placeholder="&#43;86">
-            <input type="text" name="phone_number" placeholder="13986053927">
+    <div class="space-y-6">
+      <article id="contact-form" class="contact-panel contact-form-anchor p-7">
+        <div class="contact-card-head">
+          
+          <img src="/images/icons/contact-form.svg" alt="" class="contact-card-icon" aria-hidden="true">
+          
+          <div>
+            <p class="contact-card-eyebrow">Project Contact</p>
+            <h2 class="contact-card-title contact-form-title">Start a Project Discussion</h2>
+            
+            <p class="contact-form-note">Use this form when you want product guidance, deployment planning, software customization, or a more structured project consultation.</p>
+            
           </div>
-        </label>
-        <label class="form-field sm:col-span-2">
-          <span>Message</span>
-          <textarea name="message" rows="5"></textarea>
-        </label>
-        <div class="sm:col-span-2 rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-center text-sm text-slate-500">
-          CAPTCHA Placeholder Area
         </div>
-        <div class="sm:col-span-2">
-          <button type="submit" class="inline-flex rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-700">Submit</button>
+        
+        <p class="contact-card-text">Tell us what environment you are protecting, what sensing layers are already in place, and where you need support. We can respond with product suggestions, architecture direction, or the next step for a deeper project discussion.</p>
+        
+
+        
+        <div class="contact-meta-grid">
+          
+          <article class="contact-meta-card">
+            
+            <img src="/images/icons/contact-hours.svg" alt="" class="contact-meta-icon" aria-hidden="true">
+            
+            <div>
+              <h3 class="contact-meta-title">Business Hours</h3>
+              <p class="contact-meta-text">Standard response hours are 09:00 to 18:00, Beijing time.</p>
+            </div>
+          </article>
+          
+          <article class="contact-meta-card">
+            
+            <img src="/images/icons/contact-response.svg" alt="" class="contact-meta-icon" aria-hidden="true">
+            
+            <div>
+              <h3 class="contact-meta-title">Response Window</h3>
+              <p class="contact-meta-text">Under normal conditions, a Cyrentis team member will contact you within 48 hours.</p>
+            </div>
+          </article>
+          
+          <article class="contact-meta-card">
+            
+            <img src="/images/icons/contact-urgent.svg" alt="" class="contact-meta-icon" aria-hidden="true">
+            
+            <div>
+              <h3 class="contact-meta-title">Urgent Cases</h3>
+              <p class="contact-meta-text">If the matter is urgent, call or reach us through WhatsApp using the phone number shown in the page footer.</p>
+            </div>
+          </article>
+          
         </div>
-      </form>
-    </article>
+        
+
+        <form class="mt-6 grid gap-4 sm:grid-cols-2" method="post" action="#">
+          <label class="form-field sm:col-span-1">
+            <span>Name *</span>
+            <input type="text" name="name" required>
+          </label>
+          <label class="form-field sm:col-span-1">
+            <span>Company</span>
+            <input type="text" name="company">
+          </label>
+          <label class="form-field sm:col-span-1">
+            <span>Email *</span>
+            <input type="email" name="email" required>
+          </label>
+          <label class="form-field sm:col-span-1">
+            <span>Phone</span>
+            <div class="grid grid-cols-[110px_1fr] gap-2">
+              <input type="text" name="country_code" placeholder="&#43;86">
+              <input type="text" name="phone_number" placeholder="">
+            </div>
+          </label>
+          <label class="form-field sm:col-span-2">
+            <span>Message</span>
+            <textarea name="message" rows="5"></textarea>
+          </label>
+          <div class="sm:col-span-2 rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-center text-sm text-slate-500">
+            CAPTCHA Placeholder Area
+          </div>
+          <div class="sm:col-span-2">
+            <button type="submit" class="inline-flex rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-700">Submit</button>
+          </div>
+        </form>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -526,7 +666,7 @@
       <div class="space-y-1">
         <p>&copy; 2026 Wuhan Cyrentis Technology Co., Ltd.. All rights reserved.</p>
         
-        <p>鄂ICP备202405002号</p>
+        <p>é„‚ICPå¤‡202405002å·</p>
         
       </div>
       <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-slate-400">

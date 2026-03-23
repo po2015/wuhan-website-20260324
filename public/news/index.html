@@ -7,9 +7,6 @@
   <meta name="description" content="Company updates and business-related announcements.">
   <link rel="icon" type="image/png" href="/images/icon.png">
   <link rel="shortcut icon" href="/images/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -33,12 +30,44 @@
             soft: '0 8px 30px rgba(15, 23, 42, 0.08)'
           },
           fontFamily: {
-            sans: ['Manrope', 'Noto Sans SC', 'sans-serif']
+            sans: ['Manrope', 'Aptos', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', 'Arial', 'sans-serif']
           }
         }
       }
     }
   </script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-H32XFR8H0R');
+
+    (function () {
+      var tagId = 'G-H32XFR8H0R';
+      var loaded = false;
+
+      function loadGoogleTag() {
+        if (loaded) return;
+        loaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId);
+        script.referrerPolicy = 'strict-origin-when-cross-origin';
+        script.onerror = function () {};
+        document.head.appendChild(script);
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGoogleTag, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', function () {
+          window.setTimeout(loadGoogleTag, 2000);
+        }, { once: true });
+      }
+    })();
+  </script>
+  
   <link rel="stylesheet" href="/css/site.css">
 </head>
 
@@ -60,8 +89,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/">
+            <a class="menu-link " href="/">
               Home
               
             </a>
@@ -71,13 +101,15 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/horizon/">
+            <a class="menu-link " href="/horizon/">
               Horizon
               
             </a>
             
           </li>
+          
           
           
           
@@ -91,7 +123,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/sensors/">
+            <a class="menu-link " href="/sensors/">
               Sensors
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -113,6 +145,7 @@
           
           
           
+          
             
               
             
@@ -122,7 +155,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/services/">
+            <a class="menu-link " href="/services/">
               Services
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -144,8 +177,7 @@
           
           
           
-            
-              
+          
             
               
             
@@ -153,7 +185,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/info-center/">
+            <a class="menu-link is-current" href="/info-center/">
               Information
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -165,8 +197,6 @@
                 
                 <a class="panel-link" href="/news/">News</a>
                 
-                <a class="panel-link" href="/download/">Download</a>
-                
               
             </div>
             
@@ -175,8 +205,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/contact-us/">
+            <a class="menu-link " href="/contact-us/">
               Contact
               
             </a>
@@ -262,10 +293,6 @@
                 <a href="/news/">News</a>
                 
               
-                
-                <a href="/download/">Download</a>
-                
-              
             </div>
           </details>
           
@@ -281,73 +308,135 @@
 
   <main id="main-content" class="min-h-[60vh]">
     <section class="bg-white py-14">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <p class="section-kicker">Section</p>
+  <div class="mx-auto max-w-[88rem] px-4 sm:px-6 lg:px-8">
+    <nav class="site-breadcrumb" aria-label="Breadcrumb">
+  <ol class="site-breadcrumb-list"><li class="site-breadcrumb-item"><a href="/" class="site-breadcrumb-link">Home</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><a href="/info-center/" class="site-breadcrumb-link">Information</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><span class="site-breadcrumb-current" aria-current="page">News</span></li></ol>
+</nav>
     <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">News</h1>
     
-    <div class="prose prose-slate mt-6 max-w-3xl"><p>The news section presents company updates and milestone announcements.</p>
+    <p class="mt-4 max-w-4xl text-base leading-8 text-slate-600">Company updates and business-related announcements.</p>
+    
+    
+    <div class="prose prose-slate mt-6 max-w-4xl"><p>The news section presents company updates and milestone announcements.</p>
 </div>
     
   </div>
 </section>
-<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-  
+
+<section class="bg-white pb-16">
+  <div class="mx-auto max-w-[88rem] px-4 sm:px-6 lg:px-8">
     
-    
-    
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/news/logistics-network-expansion/" class="block">
-            <img src="/images/placeholder.png" alt="Logistics Coordination Network Expanded"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+    <div class="grid gap-6">
+      <article class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft transition duration-200 hover:-translate-y-0.5 hover:shadow-xl">
+        <div class="grid lg:grid-cols-[320px_minmax(0,1fr)]">
+          <a href="/news/editorial-layout-sample/" class="block overflow-hidden border-b border-slate-200 bg-slate-100 lg:border-b-0 lg:border-r">
+            <img src="/images/news/news-layout-sample.svg" alt="Editorial Layout Sample for News Publishing" class="h-[15rem] w-full object-cover object-center transition duration-200 hover:scale-[1.02] lg:h-full">
           </a>
+
+          <div class="grid gap-5 p-6 lg:p-7">
+            <div class="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.08em] text-slate-500">
+              <span>2026-03-20</span>
+              <span class="h-1 w-1 rounded-full bg-slate-300"></span>
+              <span>News</span>
+            </div>
+
+            <div>
+              <h2 class="text-[1.55rem] font-extrabold leading-tight text-slate-900">
+                <a href="/news/editorial-layout-sample/" class="transition hover:text-brand-700">Editorial Layout Sample for News Publishing</a>
+              </h2>
+              <p class="mt-4 text-[0.98rem] leading-8 text-slate-600">A sample news entry showing common mixed-content styles including headings, inline images, highlighted notes, and tables.</p>
+            </div>
+
+            <div class="flex items-center justify-between border-t border-slate-200 pt-4">
+              <a href="/news/editorial-layout-sample/" class="text-sm font-bold uppercase tracking-[0.12em] text-slate-800 transition hover:text-brand-700">Read article</a>
+            </div>
+          </div>
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/news/logistics-network-expansion/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Logistics Coordination Network Expanded
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Additional international routes were added to improve delivery flexibility.</p>
       </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/news/sample-shipment-update/" class="block">
-            <img src="/images/placeholder.png" alt="Pilot Shipment Progress for Overseas Project"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+      <article class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft transition duration-200 hover:-translate-y-0.5 hover:shadow-xl">
+        <div class="grid lg:grid-cols-[320px_minmax(0,1fr)]">
+          <a href="/news/logistics-network-expansion/" class="block overflow-hidden border-b border-slate-200 bg-slate-100 lg:border-b-0 lg:border-r">
+            <img src="/images/news/logistics-network.svg" alt="Logistics Coordination Network Expanded" class="h-[15rem] w-full object-cover object-center transition duration-200 hover:scale-[1.02] lg:h-full">
           </a>
+
+          <div class="grid gap-5 p-6 lg:p-7">
+            <div class="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.08em] text-slate-500">
+              <span>2026-03-01</span>
+              <span class="h-1 w-1 rounded-full bg-slate-300"></span>
+              <span>News</span>
+            </div>
+
+            <div>
+              <h2 class="text-[1.55rem] font-extrabold leading-tight text-slate-900">
+                <a href="/news/logistics-network-expansion/" class="transition hover:text-brand-700">Logistics Coordination Network Expanded</a>
+              </h2>
+              <p class="mt-4 text-[0.98rem] leading-8 text-slate-600">Additional international routes were added to improve delivery flexibility.</p>
+            </div>
+
+            <div class="flex items-center justify-between border-t border-slate-200 pt-4">
+              <a href="/news/logistics-network-expansion/" class="text-sm font-bold uppercase tracking-[0.12em] text-slate-800 transition hover:text-brand-700">Read article</a>
+            </div>
+          </div>
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/news/sample-shipment-update/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Pilot Shipment Progress for Overseas Project
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">The first pilot batch has been shipped and entered field testing.</p>
       </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/news/company-launch-and-focus/" class="block">
-            <img src="/images/placeholder.png" alt="Cyrentis Defined Its Platform, Sensors, and Services Structure"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+      <article class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft transition duration-200 hover:-translate-y-0.5 hover:shadow-xl">
+        <div class="grid lg:grid-cols-[320px_minmax(0,1fr)]">
+          <a href="/news/sample-shipment-update/" class="block overflow-hidden border-b border-slate-200 bg-slate-100 lg:border-b-0 lg:border-r">
+            <img src="/images/news/pilot-shipment.svg" alt="Pilot Shipment Progress for Overseas Project" class="h-[15rem] w-full object-cover object-center transition duration-200 hover:scale-[1.02] lg:h-full">
           </a>
+
+          <div class="grid gap-5 p-6 lg:p-7">
+            <div class="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.08em] text-slate-500">
+              <span>2026-02-11</span>
+              <span class="h-1 w-1 rounded-full bg-slate-300"></span>
+              <span>News</span>
+            </div>
+
+            <div>
+              <h2 class="text-[1.55rem] font-extrabold leading-tight text-slate-900">
+                <a href="/news/sample-shipment-update/" class="transition hover:text-brand-700">Pilot Shipment Progress for Overseas Project</a>
+              </h2>
+              <p class="mt-4 text-[0.98rem] leading-8 text-slate-600">The first pilot batch has been shipped and entered field testing.</p>
+            </div>
+
+            <div class="flex items-center justify-between border-t border-slate-200 pt-4">
+              <a href="/news/sample-shipment-update/" class="text-sm font-bold uppercase tracking-[0.12em] text-slate-800 transition hover:text-brand-700">Read article</a>
+            </div>
+          </div>
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/news/company-launch-and-focus/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Cyrentis Defined Its Platform, Sensors, and Services Structure
+      </article>
+      <article class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft transition duration-200 hover:-translate-y-0.5 hover:shadow-xl">
+        <div class="grid lg:grid-cols-[320px_minmax(0,1fr)]">
+          <a href="/news/company-launch-and-focus/" class="block overflow-hidden border-b border-slate-200 bg-slate-100 lg:border-b-0 lg:border-r">
+            <img src="/images/news/company-launch-structure.svg" alt="Cyrentis Defined Its Platform, Sensors, and Services Structure" class="h-[15rem] w-full object-cover object-center transition duration-200 hover:scale-[1.02] lg:h-full">
           </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Wuhan Cyrentis Technology clarified the three business pillars behind its integrated monitoring systems.</p>
+
+          <div class="grid gap-5 p-6 lg:p-7">
+            <div class="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.08em] text-slate-500">
+              <span>2026-01-08</span>
+              <span class="h-1 w-1 rounded-full bg-slate-300"></span>
+              <span>News</span>
+            </div>
+
+            <div>
+              <h2 class="text-[1.55rem] font-extrabold leading-tight text-slate-900">
+                <a href="/news/company-launch-and-focus/" class="transition hover:text-brand-700">Cyrentis Defined Its Platform, Sensors, and Services Structure</a>
+              </h2>
+              <p class="mt-4 text-[0.98rem] leading-8 text-slate-600">Wuhan Cyrentis Technology clarified the three business pillars behind its integrated monitoring systems.</p>
+            </div>
+
+            <div class="flex items-center justify-between border-t border-slate-200 pt-4">
+              <a href="/news/company-launch-and-focus/" class="text-sm font-bold uppercase tracking-[0.12em] text-slate-800 transition hover:text-brand-700">Read article</a>
+            </div>
+          </div>
+        </div>
       </article>
       
     </div>
+
     
-  
+    
+  </div>
 </section>
 
   </main>
@@ -500,7 +589,7 @@
       <div class="space-y-1">
         <p>&copy; 2026 Wuhan Cyrentis Technology Co., Ltd.. All rights reserved.</p>
         
-        <p>鄂ICP备202405002号</p>
+        <p>é„‚ICPå¤‡202405002å·</p>
         
       </div>
       <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-slate-400">

@@ -1,0 +1,464 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "cyrentis/soc-optics.schema"
+
+title: "SOC Electro-Optical System Schema"
+description: "Schema for Cyrentis SOC electro-optical surveillance systems."
+
+type: object
+additionalProperties: false
+
+required:
+  - product_family
+  - model
+  - product_name
+  - status
+  - naming
+  - technical_classification
+  - observation
+  - content
+  - platform_integration
+
+properties:
+
+  product_family:
+    type: string
+    const: "SOC"
+    description: "Product family code for Cyrentis electro-optical systems."
+
+  product_line_name:
+    type: string
+    default: "Surveillance Optics by Cyrentis"
+
+  model:
+    type: string
+    description: "Official product model."
+    pattern: "^SOC-[DTVM][0-9]{2}[GFMV]-[123][APMU]$"
+    examples:
+      - "SOC-D05G-1U"
+      - "SOC-V06G-2U"
+      - "SOC-D13G-2A"
+      - "SOC-M13G-3U"
+      - "SOC-D20G-2U"
+
+  product_name:
+    type: string
+    description: "Full product name."
+
+  status:
+    type: string
+    enum:
+      - "active"
+      - "preview"
+      - "legacy"
+      - "discontinued"
+
+  visibility:
+    type: string
+    enum:
+      - "public"
+      - "internal"
+      - "private"
+    default: "public"
+
+  featured:
+    type: boolean
+    default: false
+
+  positioning:
+    type: object
+    additionalProperties: false
+    properties:
+
+      short:
+        type: string
+        description: "Short positioning sentence."
+
+      tagline:
+        type: string
+
+      primary_role:
+        type: string
+        examples:
+          - "electro-optical surveillance payload"
+
+      application_focus:
+        type: array
+        items:
+          type: string
+
+  naming:
+    type: object
+    additionalProperties: false
+    required:
+      - format
+      - payload_code
+      - observation_class_code
+      - stabilization_code
+      - generation_code
+      - mission_code
+      - configuration_suffix_pattern
+
+    properties:
+
+      format:
+        type: string
+        const: "SOC-[Payload][ObservationClass][Stabilization]-[Generation][Mission]"
+
+      payload_code:
+        type: string
+        enum:
+          - "D"
+          - "T"
+          - "V"
+          - "M"
+        description: "Payload package code. D = dual-spectrum EO+thermal, T = thermal-only, V = visible-only long-zoom, M = multi-sensor payload."
+
+      observation_class_code:
+        type: string
+        pattern: "^[0-9]{2}$"
+        description: "Two-digit nominal observation class in kilometers, usually aligned to the public detection or observation positioning of the product."
+
+      stabilization_code:
+        type: string
+        enum:
+          - "G"
+          - "F"
+          - "M"
+          - "V"
+        description: "Stabilization and installation code. G = gimbal-stabilized PTZ, F = fixed head, M = mast-mounted integrated unit, V = vehicle-mounted mobile unit."
+
+      generation_code:
+        type: string
+        enum:
+          - "1"
+          - "2"
+          - "3"
+        description: "Product generation code."
+
+      mission_code:
+        type: string
+        enum:
+          - "A"
+          - "P"
+          - "M"
+          - "U"
+        description: "Mission code. A = air surveillance, P = perimeter security, M = maritime/coastal observation, U = multi-mission surveillance."
+
+      configuration_suffix_pattern:
+        type: string
+        const: "SOC-[Payload][ObservationClass][Stabilization]-[Generation][Mission]-[Suffix]"
+        description: "Delivered configurations can keep the same base product name and add a suffix such as SOC-D05G-1U-A or SOC-D20G-2U-CL."
+
+  configurations:
+    type: array
+    description: "Optional delivered configurations grouped under the same public base product."
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - suffix
+        - full_model
+        - title
+      properties:
+        suffix:
+          type: string
+          pattern: "^[A-Z0-9]{1,4}$"
+          description: "Configuration suffix shown after the base product name."
+        full_model:
+          type: string
+          pattern: "^SOC-[DTVM][0-9]{2}[GFMV]-[123][APMU]-[A-Z0-9]{1,4}$"
+          description: "Full delivered configuration identifier."
+        title:
+          type: string
+        description:
+          type:
+            - string
+            - "null"
+        highlights:
+          type: array
+          items:
+            type: string
+
+  technical_classification:
+    type: object
+    additionalProperties: false
+
+    required:
+      - sensor_type
+      - spectral_modes
+      - stabilization
+      - deployment_type
+
+    properties:
+
+      sensor_type:
+        type: string
+        enum:
+          - "EO"
+          - "EO+IR"
+          - "thermal"
+          - "multi-sensor"
+
+      spectral_modes:
+        type: array
+        items:
+          type: string
+          enum:
+            - "visible"
+            - "NIR"
+            - "MWIR"
+            - "LWIR"
+
+      stabilization:
+        type: string
+        enum:
+          - "fixed"
+          - "gimbal-stabilized"
+
+      deployment_type:
+        type: string
+        enum:
+          - "fixed"
+          - "tripod"
+          - "vehicle-mounted"
+          - "mast-mounted"
+
+      cooling:
+        type: string
+        enum:
+          - "uncooled"
+          - "cooled"
+          - "none"
+
+  observation:
+    type: object
+    additionalProperties: false
+
+    required:
+      - nominal_range_km
+      - typical_identification_ranges
+
+    properties:
+
+      nominal_range_km:
+        type: number
+        description: "Nominal observation distance class."
+
+      typical_identification_ranges:
+        type: object
+        additionalProperties: false
+
+        properties:
+
+          small_uav:
+            type:
+              - number
+              - "null"
+
+          human:
+            type:
+              - number
+              - "null"
+
+          vehicle:
+            type:
+              - number
+              - "null"
+
+          boat:
+            type:
+              - number
+              - "null"
+
+      notes:
+        type: array
+        items:
+          type: string
+
+  optics:
+    type: object
+    additionalProperties: false
+
+    properties:
+
+      visible_camera:
+        type: object
+        properties:
+          resolution:
+            type:
+              - string
+              - "null"
+          zoom:
+            type:
+              - string
+              - "null"
+
+      thermal_camera:
+        type: object
+        properties:
+          sensor_type:
+            type:
+              - string
+              - "null"
+          resolution:
+            type:
+              - string
+              - "null"
+          lens_mm:
+            type:
+              - number
+              - "null"
+
+  interfaces:
+    type: object
+    additionalProperties: false
+
+    properties:
+
+      power_input:
+        type:
+          - string
+          - "null"
+
+      data_interfaces:
+        type: array
+        items:
+          type: string
+
+      protocol_support:
+        type: array
+        items:
+          type: string
+
+      horizon_compatible:
+        type: boolean
+        default: true
+
+  platform_integration:
+    type: object
+    additionalProperties: false
+
+    required:
+      - compatible_platforms
+      - supported_modules
+
+    properties:
+
+      compatible_platforms:
+        type: array
+        items:
+          type: string
+
+      supported_modules:
+        type: array
+        items:
+          type: string
+          enum:
+            - "Horizon Sense"
+            - "Horizon Spatial"
+            - "Horizon Fusion"
+            - "Horizon Track"
+            - "Horizon AI"
+            - "Horizon Command"
+            - "Horizon Notify"
+            - "Horizon Archive"
+            - "Horizon Link"
+
+      radar_cueing_supported:
+        type: boolean
+
+  use_cases:
+    type: object
+    additionalProperties: false
+
+    properties:
+
+      primary:
+        type: array
+        items:
+          type: string
+
+      secondary:
+        type: array
+        items:
+          type: string
+
+  media:
+    type: object
+    additionalProperties: false
+
+    properties:
+
+      hero_image:
+        type:
+          - string
+          - "null"
+
+      gallery:
+        type: array
+        items:
+          type: string
+
+      datasheet_pdf:
+        type:
+          - string
+          - "null"
+
+  content:
+    type: object
+    additionalProperties: false
+
+    required:
+      - summary
+      - key_features
+
+    properties:
+
+      summary:
+        type: string
+
+      key_features:
+        type: array
+        items:
+          type: string
+
+      application_scenarios:
+        type: array
+        items:
+          type: string
+
+  seo:
+    type: object
+    additionalProperties: false
+
+    properties:
+
+      title:
+        type:
+          - string
+          - "null"
+
+      description:
+        type:
+          - string
+          - "null"
+
+      keywords:
+        type: array
+        items:
+          type: string
+
+  contact:
+    type: object
+    additionalProperties: false
+
+    properties:
+
+      inquiry_enabled:
+        type: boolean
+        default: true
+
+      recommended_cta:
+        type:
+          - string
+          - "null"

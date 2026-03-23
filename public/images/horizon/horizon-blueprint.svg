@@ -1,0 +1,101 @@
+<svg width="1400" height="920" viewBox="0 0 1400 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bp" x1="97" y1="72" x2="1314" y2="829" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F8FF"/>
+      <stop offset="1" stop-color="#F7FAFC"/>
+    </linearGradient>
+    <linearGradient id="sense" x1="120" y1="166" x2="420" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDF7FF"/>
+      <stop offset="1" stop-color="#CBE8FF"/>
+    </linearGradient>
+    <linearGradient id="brain" x1="538" y1="158" x2="918" y2="654" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEE7FF"/>
+      <stop offset="1" stop-color="#E1DDFF"/>
+    </linearGradient>
+    <linearGradient id="ops" x1="966" y1="172" x2="1273" y2="648" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF1D8"/>
+      <stop offset="1" stop-color="#FFE3B8"/>
+    </linearGradient>
+    <linearGradient id="link" x1="489" y1="715" x2="928" y2="862" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDFDEB"/>
+      <stop offset="1" stop-color="#CBF8DE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="920" rx="36" fill="url(#bp)"/>
+  <rect x="84" y="82" width="1248" height="756" rx="30" fill="white" stroke="#D7E3F0"/>
+
+  <rect x="120" y="144" width="282" height="408" rx="28" fill="url(#sense)" stroke="#9EDBFF"/>
+  <text x="156" y="196" font-family="Manrope, sans-serif" font-size="24" font-weight="800" fill="#0F2F47">Sensing Inputs</text>
+  <text x="156" y="232" font-family="Manrope, sans-serif" font-size="14" fill="#3E627E">
+    <tspan x="156" dy="0">Radar, electro-optical, and RF</tspan>
+    <tspan x="156" dy="20">devices enter one software context.</tspan>
+  </text>
+  <rect x="156" y="284" width="210" height="62" rx="18" fill="white"/>
+  <text x="181" y="322" font-family="Manrope, sans-serif" font-size="18" font-weight="700" fill="#184D73">Horizon Sense</text>
+  <rect x="156" y="368" width="210" height="62" rx="18" fill="white"/>
+  <text x="181" y="406" font-family="Manrope, sans-serif" font-size="18" font-weight="700" fill="#184D73">Horizon Spatial</text>
+  <circle cx="156" cy="493" r="10" fill="#35BFEF"/>
+  <text x="181" y="499" font-family="Manrope, sans-serif" font-size="16" fill="#315874">Coverage context</text>
+  <circle cx="156" cy="527" r="10" fill="#35BFEF"/>
+  <text x="181" y="533" font-family="Manrope, sans-serif" font-size="16" fill="#315874">Device health and status</text>
+
+  <rect x="510" y="144" width="392" height="546" rx="30" fill="url(#brain)" stroke="#CABDFF"/>
+  <text x="548" y="196" font-family="Manrope, sans-serif" font-size="24" font-weight="800" fill="#392872">Understanding Layer</text>
+  <text x="548" y="232" font-family="Manrope, sans-serif" font-size="14" fill="#5B4C8D">
+    <tspan x="548" dy="0">Correlation, tracking, and recognition</tspan>
+    <tspan x="548" dy="20">build operational awareness.</tspan>
+  </text>
+  <rect x="548" y="286" width="316" height="68" rx="20" fill="white"/>
+  <text x="576" y="327" font-family="Manrope, sans-serif" font-size="18" font-weight="700" fill="#45347F">Horizon Fusion</text>
+  <rect x="548" y="380" width="316" height="68" rx="20" fill="white"/>
+  <text x="576" y="421" font-family="Manrope, sans-serif" font-size="18" font-weight="700" fill="#45347F">Horizon Track</text>
+  <rect x="548" y="474" width="316" height="68" rx="20" fill="white"/>
+  <text x="576" y="515" font-family="Manrope, sans-serif" font-size="18" font-weight="700" fill="#45347F">Horizon AI</text>
+  <circle cx="561" cy="604" r="10" fill="#7A6EFF"/>
+  <text x="586" y="610" font-family="Manrope, sans-serif" font-size="15" fill="#5D4E8D">
+    <tspan x="586" dy="0">Event correlation and</tspan>
+    <tspan x="586" dy="18">trajectory continuity</tspan>
+  </text>
+  <circle cx="561" cy="656" r="10" fill="#7A6EFF"/>
+  <text x="586" y="662" font-family="Manrope, sans-serif" font-size="16" fill="#5D4E8D">Assistive target interpretation</text>
+
+  <rect x="966" y="144" width="266" height="546" rx="30" fill="url(#ops)" stroke="#FFD998"/>
+  <text x="1000" y="196" font-family="Manrope, sans-serif" font-size="24" font-weight="800" fill="#6E4816">Operations Layer</text>
+  <text x="1000" y="232" font-family="Manrope, sans-serif" font-size="14" fill="#8D6837">
+    <tspan x="1000" dy="0">Act on events, notify stakeholders,</tspan>
+    <tspan x="1000" dy="20">and preserve the record.</tspan>
+  </text>
+  <rect x="1000" y="286" width="198" height="62" rx="18" fill="white"/>
+  <text x="1026" y="324" font-family="Manrope, sans-serif" font-size="18" font-weight="700" fill="#7B4D15">Horizon Command</text>
+  <rect x="1000" y="368" width="198" height="62" rx="18" fill="white"/>
+  <text x="1026" y="406" font-family="Manrope, sans-serif" font-size="18" font-weight="700" fill="#7B4D15">Horizon Notify</text>
+  <rect x="1000" y="450" width="198" height="62" rx="18" fill="white"/>
+  <text x="1026" y="488" font-family="Manrope, sans-serif" font-size="18" font-weight="700" fill="#7B4D15">Horizon Archive</text>
+  <circle cx="1013" cy="590" r="10" fill="#F0A23D"/>
+  <text x="1038" y="596" font-family="Manrope, sans-serif" font-size="16" fill="#866233">Alarm and response workspace</text>
+  <circle cx="1013" cy="624" r="10" fill="#F0A23D"/>
+  <text x="1038" y="630" font-family="Manrope, sans-serif" font-size="15" fill="#866233">
+    <tspan x="1038" dy="0">Alert dispatch and</tspan>
+    <tspan x="1038" dy="18">evidence playback</tspan>
+  </text>
+
+  <rect x="456" y="728" width="518" height="92" rx="24" fill="url(#link)" stroke="#9FE7BF"/>
+  <text x="496" y="774" font-family="Manrope, sans-serif" font-size="22" font-weight="800" fill="#1F6A45">Horizon Link</text>
+  <text x="671" y="768" font-family="Manrope, sans-serif" font-size="15" fill="#3B7D58">
+    <tspan x="671" dy="0">Interfaces to third-party systems,</tspan>
+    <tspan x="671" dy="20">site platforms, and future extensions</tspan>
+  </text>
+
+  <path d="M402 348H510" stroke="#70CFFF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M402 412H510" stroke="#70CFFF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M902 380H966" stroke="#B998FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M902 474H966" stroke="#B998FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M700 690V728" stroke="#71D793" stroke-width="5" stroke-linecap="round"/>
+
+  <circle cx="510" cy="348" r="8" fill="#4DBEF0"/>
+  <circle cx="510" cy="412" r="8" fill="#4DBEF0"/>
+  <circle cx="966" cy="380" r="8" fill="#8A6DFF"/>
+  <circle cx="966" cy="474" r="8" fill="#8A6DFF"/>
+  <circle cx="700" cy="728" r="8" fill="#4FC279"/>
+</svg>

@@ -11,6 +11,9 @@ keywords:
   - "PRC export control"
   - "radar project compliance"
   - "end-user documentation"
+categories:
+  - "Compliance"
+  - "Export Control"
 image: "/images/knowledge-base/dual-use-export-compliance-flow.svg"
 weight: 12
 date: 2026-03-01
@@ -74,6 +77,6 @@ Before packaging and logistics booking, enforce a final compliance gate aligned 
 
 - [Choosing Radar Frequency Bands: Pros, Cons, and Application Scenarios](/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/)
 - [Comparison of Different Radar Scanning Architectures](/knowledge-base/comparison-of-different-radar-scanning-architectures/)
-- [Radar Product Catalog](/complete-products/radar/)
+- [Radar Product Catalog](/sensors/src/)
 
 > Compliance reminder: Civil security radar exports must follow applicable dual-use control requirements and required licensing procedures before international delivery.

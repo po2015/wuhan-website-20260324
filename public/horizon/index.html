@@ -4,12 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Horizon | Wuhan Cyrentis Technology Co., Ltd.</title>
-  <meta name="description" content="The Cyrentis software platform for unified sensing management, fusion, tracking, and command workflows.">
+  <meta name="description" content="Unified sensing management, fusion, tracking, and command workflows for multi-sensor security operations.">
   <link rel="icon" type="image/png" href="/images/icon.png">
   <link rel="shortcut icon" href="/images/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -33,12 +30,44 @@
             soft: '0 8px 30px rgba(15, 23, 42, 0.08)'
           },
           fontFamily: {
-            sans: ['Manrope', 'Noto Sans SC', 'sans-serif']
+            sans: ['Manrope', 'Aptos', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', 'Arial', 'sans-serif']
           }
         }
       }
     }
   </script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-H32XFR8H0R');
+
+    (function () {
+      var tagId = 'G-H32XFR8H0R';
+      var loaded = false;
+
+      function loadGoogleTag() {
+        if (loaded) return;
+        loaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId);
+        script.referrerPolicy = 'strict-origin-when-cross-origin';
+        script.onerror = function () {};
+        document.head.appendChild(script);
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGoogleTag, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', function () {
+          window.setTimeout(loadGoogleTag, 2000);
+        }, { once: true });
+      }
+    })();
+  </script>
+  
   <link rel="stylesheet" href="/css/site.css">
 </head>
 
@@ -60,8 +89,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/">
+            <a class="menu-link " href="/">
               Home
               
             </a>
@@ -71,13 +101,15 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/horizon/">
+            <a class="menu-link is-current" href="/horizon/">
               Horizon
               
             </a>
             
           </li>
+          
           
           
           
@@ -91,7 +123,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/sensors/">
+            <a class="menu-link " href="/sensors/">
               Sensors
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -113,6 +145,7 @@
           
           
           
+          
             
               
             
@@ -122,7 +155,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/services/">
+            <a class="menu-link " href="/services/">
               Services
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -144,8 +177,7 @@
           
           
           
-            
-              
+          
             
               
             
@@ -153,7 +185,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/info-center/">
+            <a class="menu-link " href="/info-center/">
               Information
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -165,8 +197,6 @@
                 
                 <a class="panel-link" href="/news/">News</a>
                 
-                <a class="panel-link" href="/download/">Download</a>
-                
               
             </div>
             
@@ -175,8 +205,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/contact-us/">
+            <a class="menu-link " href="/contact-us/">
               Contact
               
             </a>
@@ -262,10 +293,6 @@
                 <a href="/news/">News</a>
                 
               
-                
-                <a href="/download/">Download</a>
-                
-              
             </div>
           </details>
           
@@ -280,165 +307,517 @@
 </header>
 
   <main id="main-content" class="min-h-[60vh]">
-    <section class="bg-white py-14">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <p class="section-kicker">Software Platform</p>
-    <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">Horizon</h1>
-    
-    <div class="prose prose-slate mt-6 max-w-3xl"><p>Cyrentis Horizon acts as the central software layer of a multi-sensor monitoring system. It is designed to receive, organize, and present sensing data from radar, electro-optical, and RF devices in one operational environment.</p>
-<p>Horizon is typically deployed together with field sensors rather than as a standalone software package. The platform supports:</p>
-<ul>
-<li>device connectivity across multiple sensing technologies</li>
-<li>fused monitoring and target correlation</li>
-<li>visualization of sites, tracks, and alarm events</li>
-<li>integration with external command or management platforms</li>
-</ul>
-<p>This structure allows operators to move from detection to verification and response without switching between isolated subsystems.</p>
-</div>
-    
+    <section class="horizon-hero">
+  <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <div class="horizon-hero-shell">
+      <div class="grid gap-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(380px,1.08fr)] lg:items-center">
+        <div>
+          <nav class="site-breadcrumb" aria-label="Breadcrumb">
+  <ol class="site-breadcrumb-list"><li class="site-breadcrumb-item"><a href="/" class="site-breadcrumb-link">Home</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><span class="site-breadcrumb-current" aria-current="page">Horizon</span></li></ol>
+</nav>
+          <h1 class="horizon-title">Unified command software for multi-sensor security operations</h1>
+          <p class="horizon-lead">Cyrentis Horizon is designed to bring radar, electro-optical, and RF sensing into one coherent software environment for monitoring, target understanding, alert coordination, and operational command.</p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href='/contact-us/#contact-form' class="horizon-cta horizon-cta-primary">Discuss Platform</a>
+            <a href="#horizon-modules" class="horizon-cta horizon-cta-secondary">Explore Modules</a>
+          </div>
+        </div>
+
+        <div class="horizon-hero-media">
+          <img src="/images/horizon/horizon-platform-hero.svg" alt="Horizon platform visual" class="horizon-hero-image">
+        </div>
+      </div>
+
+      <div class="horizon-metrics">
+        
+        <article class="horizon-metric">
+          <p class="horizon-metric-label">Operations</p>
+          <p class="horizon-metric-value">Unified control surface</p>
+          <p class="horizon-metric-text">Bring devices, alarms, and task flow into one operator experience.</p>
+        </article>
+        
+        <article class="horizon-metric">
+          <p class="horizon-metric-label">Intelligence</p>
+          <p class="horizon-metric-value">Multi-sensor awareness</p>
+          <p class="horizon-metric-text">Correlate radar, optics, and RF events into a clearer target picture.</p>
+        </article>
+        
+        <article class="horizon-metric">
+          <p class="horizon-metric-label">Scalability</p>
+          <p class="horizon-metric-value">Open integration path</p>
+          <p class="horizon-metric-text">Connect Horizon with external systems, field assets, and future extensions.</p>
+        </article>
+        
+      </div>
+    </div>
   </div>
 </section>
-<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-  
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
+
+<section class="bg-white py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="horizon-positioning">
+      <div class="horizon-position-header">
+        <p class="horizon-section-tag">Positioning</p>
+        <h2 class="section-title">Why Horizon matters in complex monitoring systems</h2>
+        <p class="horizon-section-lead">Many monitoring projects become inefficient when each device keeps its own interface, alarm rules, and data logic. Horizon is designed to unify those layers into one readable operational system.</p>
+      </div>
+      <div class="horizon-position-grid">
+        
+        <article class="horizon-position-item">
+          <img src="/images/horizon/positioning-fragmented-ops.svg" alt="" class="horizon-position-icon">
+          <h3 class="horizon-position-title">Fragmented toolchains</h3>
+          <p class="horizon-position-text">Separate device tools create slow operator handoff between detection, verification, and response.</p>
+        </article>
+        
+        <article class="horizon-position-item">
+          <img src="/images/horizon/positioning-unified-view.svg" alt="" class="horizon-position-icon">
+          <h3 class="horizon-position-title">Unified site view</h3>
+          <p class="horizon-position-text">Sites need one view of assets, events, tracks, and alarms instead of multiple disconnected software layers.</p>
+        </article>
+        
+        <article class="horizon-position-item">
+          <img src="/images/horizon/positioning-workflow.svg" alt="" class="horizon-position-icon">
+          <h3 class="horizon-position-title">Workflow-first design</h3>
+          <p class="horizon-position-text">Software should align with real monitoring workflow rather than isolated device functions.</p>
+        </article>
+        
+        <article class="horizon-position-item">
+          <img src="/images/horizon/positioning-decision-flow.svg" alt="" class="horizon-position-icon">
+          <h3 class="horizon-position-title">Decision continuity</h3>
+          <p class="horizon-position-text">A unified platform reduces operational friction and improves decision continuity.</p>
+        </article>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="horizon-blueprint-section py-16"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="horizon-blueprint-shell">
+      <div class="horizon-blueprint-header">
+        <div class="horizon-blueprint-header-copy">
+          <p class="horizon-section-tag">Operational Blueprint</p>
+          <h2 class="section-title">An operational flow from sensing to coordinated response</h2>
           
-            <img src="/images/placeholder.png" alt="Horizon Sense"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          Horizon Sense
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Unified management of radar, electro-optical, and RF sensing devices.</p>
-      </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-            <img src="/images/placeholder.png" alt="Horizon Spatial"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          Horizon Spatial
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">3D scene visualization and digital site modeling for monitored areas.</p>
-      </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-            <img src="/images/placeholder.png" alt="Horizon Fusion"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          Horizon Fusion
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Multi-sensor fusion and target correlation across different detection sources.</p>
-      </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-            <img src="/images/placeholder.png" alt="Horizon Track"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+          <p class="horizon-section-lead">Horizon is organized as a forward-moving workflow. Site sensing establishes shared context, event understanding sharpens meaning, and coordinated response turns verified insight into action.</p>
           
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          Horizon Track
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Real-time multi-target tracking with trajectory presentation and history review.</p>
-      </article>
+      </div>
+
       
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
+      <aside class="horizon-blueprint-note">
+        <p class="horizon-blueprint-note-kicker">Flow Logic</p>
+        <p class="horizon-blueprint-note-text">Each stage is designed to pass context forward so operators are not forced to restart interpretation at every subsystem boundary.</p>
+      </aside>
+      
+
+      <div class="horizon-blueprint-flow">
+        
+        <article class="horizon-phase">
+          <div class="horizon-phase-head">
+            <span class="horizon-phase-tag">01</span>
+            
+            <img src="/images/horizon/blueprint-sense.svg" alt="" class="horizon-phase-icon">
+            
+          </div>
+          <div class="horizon-phase-copy">
+            <h3>Sense the site</h3>
+            <p>Bring radar, electro-optical, and RF devices into one managed software inventory with shared status, coverage, and event context.</p>
+          </div>
+          <div class="horizon-phase-meta">
+            
+            <div class="horizon-phase-meta-item">
+              <span class="horizon-phase-meta-label">Focus</span>
+              <p>Unify device state, scene coverage, and event origin.</p>
+            </div>
+            
+            
+            <div class="horizon-phase-meta-item">
+              <span class="horizon-phase-meta-label">Flow</span>
+              <p>Feeds consistent site context into the interpretation layer.</p>
+            </div>
+            
+          </div>
           
-            <img src="/images/placeholder.png" alt="Horizon AI"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+          <div class="horizon-phase-connector" aria-hidden="true">
+            <span class="horizon-phase-connector-line"></span>
+            <span class="horizon-phase-connector-arrow"></span>
+          </div>
+          
+        </article>
+        
+        <article class="horizon-phase">
+          <div class="horizon-phase-head">
+            <span class="horizon-phase-tag">02</span>
+            
+            <img src="/images/horizon/blueprint-understand.svg" alt="" class="horizon-phase-icon">
+            
+          </div>
+          <div class="horizon-phase-copy">
+            <h3>Understand the event</h3>
+            <p>Correlate sensor outputs, visualize scene geometry, track targets, and support faster recognition with AI-assisted interpretation.</p>
+          </div>
+          <div class="horizon-phase-meta">
+            
+            <div class="horizon-phase-meta-item">
+              <span class="horizon-phase-meta-label">Focus</span>
+              <p>Turn raw detections into readable target understanding.</p>
+            </div>
+            
+            
+            <div class="horizon-phase-meta-item">
+              <span class="horizon-phase-meta-label">Flow</span>
+              <p>Carries correlated insight forward for operator action and escalation.</p>
+            </div>
+            
+          </div>
+          
+          <div class="horizon-phase-connector" aria-hidden="true">
+            <span class="horizon-phase-connector-line"></span>
+            <span class="horizon-phase-connector-arrow"></span>
+          </div>
+          
+        </article>
+        
+        <article class="horizon-phase">
+          <div class="horizon-phase-head">
+            <span class="horizon-phase-tag">03</span>
+            
+            <img src="/images/horizon/blueprint-respond.svg" alt="" class="horizon-phase-icon">
+            
+          </div>
+          <div class="horizon-phase-copy">
+            <h3>Drive coordinated response</h3>
+            <p>Present commands, alerts, archives, and third-party interfaces through one operator workflow rather than fragmented subsystem views.</p>
+          </div>
+          <div class="horizon-phase-meta">
+            
+            <div class="horizon-phase-meta-item">
+              <span class="horizon-phase-meta-label">Focus</span>
+              <p>Move from verified awareness into action, notification, and record.</p>
+            </div>
+            
+            
+            <div class="horizon-phase-meta-item">
+              <span class="horizon-phase-meta-label">Flow</span>
+              <p>Maintains continuity from live response into evidence and external systems.</p>
+            </div>
+            
+          </div>
+          
+        </article>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="horizon-modules" class="bg-white py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl">
+      <p class="horizon-section-tag">Module Narrative</p>
+      <h2 class="section-title">Modules designed as parts of one operating story</h2>
+      <p class="horizon-section-lead">The Horizon module set is intended to work like an orchestrated software stack. Each module has a distinct role, but its real value appears when modules pass context to one another instead of behaving as isolated features.</p>
+    </div>
+
+    <div class="mt-12 space-y-12">
+      
+      <section class="horizon-module-group horizon-tone-cyan">
+        <div class="horizon-module-group-header">
+          <div>
+            <span class="horizon-group-index">01</span>
+            <h3>Perception and Scene</h3>
+          </div>
+          <p>Bring devices online and anchor what they see inside spatial context.</p>
+        </div>
+
+        <div class="mt-8 space-y-6">
+          <article class="horizon-module-story ">
+            <div class="horizon-module-icon-column">
+              
+              <img src="/images/horizon/module-sense.svg" alt="Horizon Sense icon" class="horizon-module-icon">
+              
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">Device orchestration</p>
+              <h4>Horizon Sense</h4>
+              <p class="horizon-module-focus">Connect radar, electro-optical, and RF assets under one managed device model.</p>
+              <p class="horizon-module-description">Horizon Sense centers on unified onboarding, status monitoring, and control visibility so operators no longer jump between vendor-specific interfaces.</p>
+              <div class="horizon-output-list">
+                
+                <span class="horizon-output-chip">Unified device roster</span>
+                
+                <span class="horizon-output-chip">Health and status</span>
+                
+                <span class="horizon-output-chip">Shared configuration baseline</span>
+                
+              </div>
+            </div>
+          </article>
+          <article class="horizon-module-story is-reverse">
+            <div class="horizon-module-icon-column">
+              
+              <img src="/images/horizon/module-spatial.svg" alt="Horizon Spatial icon" class="horizon-module-icon">
+              
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">Scene modeling</p>
+              <h4>Horizon Spatial</h4>
+              <p class="horizon-module-focus">Translate site geometry into a readable digital environment for monitoring and planning.</p>
+              <p class="horizon-module-description">Spatial context gives meaning to detections by tying sensor coverage, structures, and operating zones into one 3D-aware picture.</p>
+              <div class="horizon-output-list">
+                
+                <span class="horizon-output-chip">Digital site model</span>
+                
+                <span class="horizon-output-chip">Coverage and zone context</span>
+                
+                <span class="horizon-output-chip">Route and asset overlay</span>
+                
+              </div>
+            </div>
+          </article>
           
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          Horizon AI
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">AI-assisted target recognition and classification to improve monitoring efficiency.</p>
-      </article>
+      </section>
       
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-            <img src="/images/placeholder.png" alt="Horizon Command"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+      <section class="horizon-module-group horizon-tone-violet">
+        <div class="horizon-module-group-header">
+          <div>
+            <span class="horizon-group-index">02</span>
+            <h3>Correlation and Understanding</h3>
+          </div>
+          <p>Turn raw detections into trackable, interpretable operational awareness.</p>
+        </div>
+
+        <div class="mt-8 space-y-6">
+          <article class="horizon-module-story ">
+            <div class="horizon-module-icon-column">
+              
+              <img src="/images/horizon/module-fusion.svg" alt="Horizon Fusion icon" class="horizon-module-icon">
+              
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">Cross-sensor correlation</p>
+              <h4>Horizon Fusion</h4>
+              <p class="horizon-module-focus">Match events from different sensors into one target narrative.</p>
+              <p class="horizon-module-description">Fusion is intended to reduce duplicated alarms and help software explain whether multiple detections belong to the same object or event sequence.</p>
+              <div class="horizon-output-list">
+                
+                <span class="horizon-output-chip">Target correlation</span>
+                
+                <span class="horizon-output-chip">Merged event context</span>
+                
+                <span class="horizon-output-chip">Reduced duplicate alarms</span>
+                
+              </div>
+            </div>
+          </article>
+          <article class="horizon-module-story is-reverse">
+            <div class="horizon-module-icon-column">
+              
+              <img src="/images/horizon/module-track.svg" alt="Horizon Track icon" class="horizon-module-icon">
+              
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">Trajectory intelligence</p>
+              <h4>Horizon Track</h4>
+              <p class="horizon-module-focus">Maintain real-time target continuity across time, space, and sensing changes.</p>
+              <p class="horizon-module-description">Tracking supports live trajectories, handoff between sensing layers, and a clearer operational record of what moved where and when.</p>
+              <div class="horizon-output-list">
+                
+                <span class="horizon-output-chip">Live track history</span>
+                
+                <span class="horizon-output-chip">Trajectory replay</span>
+                
+                <span class="horizon-output-chip">Cross-sensor handoff</span>
+                
+              </div>
+            </div>
+          </article>
+          <article class="horizon-module-story ">
+            <div class="horizon-module-icon-column">
+              
+              <img src="/images/horizon/module-ai.svg" alt="Horizon AI icon" class="horizon-module-icon">
+              
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">Recognition assistance</p>
+              <h4>Horizon AI</h4>
+              <p class="horizon-module-focus">Support faster interpretation when operators need to classify ambiguous events.</p>
+              <p class="horizon-module-description">AI is positioned as an assistive layer, helping prioritize suspicious behavior and recognition tasks rather than replacing operator judgment.</p>
+              <div class="horizon-output-list">
+                
+                <span class="horizon-output-chip">Recognition hints</span>
+                
+                <span class="horizon-output-chip">Priority scoring</span>
+                
+                <span class="horizon-output-chip">Classification support</span>
+                
+              </div>
+            </div>
+          </article>
           
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          Horizon Command
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Operational workspace for monitoring, control, and alarm handling.</p>
-      </article>
+      </section>
       
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-            <img src="/images/placeholder.png" alt="Horizon Notify"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+      <section class="horizon-module-group horizon-tone-amber">
+        <div class="horizon-module-group-header">
+          <div>
+            <span class="horizon-group-index">03</span>
+            <h3>Command and Continuity</h3>
+          </div>
+          <p>Move from understanding to action, notification, and retained evidence.</p>
+        </div>
+
+        <div class="mt-8 space-y-6">
+          <article class="horizon-module-story ">
+            <div class="horizon-module-icon-column">
+              
+              <img src="/images/horizon/module-command.svg" alt="Horizon Command icon" class="horizon-module-icon">
+              
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">Operator workspace</p>
+              <h4>Horizon Command</h4>
+              <p class="horizon-module-focus">Provide the main operational interface for monitoring, control, and alarm handling.</p>
+              <p class="horizon-module-description">Command is where the software experience becomes actionable: tracks, alarms, video cues, and device responses are presented as one working surface.</p>
+              <div class="horizon-output-list">
+                
+                <span class="horizon-output-chip">Unified operations console</span>
+                
+                <span class="horizon-output-chip">Alarm workflow</span>
+                
+                <span class="horizon-output-chip">Task and response coordination</span>
+                
+              </div>
+            </div>
+          </article>
+          <article class="horizon-module-story is-reverse">
+            <div class="horizon-module-icon-column">
+              
+              <img src="/images/horizon/module-notify.svg" alt="Horizon Notify icon" class="horizon-module-icon">
+              
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">Alert delivery</p>
+              <h4>Horizon Notify</h4>
+              <p class="horizon-module-focus">Push important events to people and systems that are not sitting inside the main console.</p>
+              <p class="horizon-module-description">Notification logic is intended to bridge operations and escalation paths so important events can travel through SMS, email, or other approved channels.</p>
+              <div class="horizon-output-list">
+                
+                <span class="horizon-output-chip">Escalation triggers</span>
+                
+                <span class="horizon-output-chip">SMS and email dispatch</span>
+                
+                <span class="horizon-output-chip">External alert routing</span>
+                
+              </div>
+            </div>
+          </article>
+          <article class="horizon-module-story ">
+            <div class="horizon-module-icon-column">
+              
+              <img src="/images/horizon/module-archive.svg" alt="Horizon Archive icon" class="horizon-module-icon">
+              
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">Record and review</p>
+              <h4>Horizon Archive</h4>
+              <p class="horizon-module-focus">Keep an explorable memory of monitoring events, responses, and evidence trails.</p>
+              <p class="horizon-module-description">Archive helps turn real-time operations into revisitable material for investigation, review, training, and after-action analysis.</p>
+              <div class="horizon-output-list">
+                
+                <span class="horizon-output-chip">Event timeline</span>
+                
+                <span class="horizon-output-chip">Playback and recall</span>
+                
+                <span class="horizon-output-chip">Evidence continuity</span>
+                
+              </div>
+            </div>
+          </article>
           
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          Horizon Notify
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Automated alert distribution through channels such as SMS and email.</p>
-      </article>
+      </section>
       
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-            <img src="/images/placeholder.png" alt="Horizon Archive"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+      <section class="horizon-module-group horizon-tone-emerald">
+        <div class="horizon-module-group-header">
+          <div>
+            <span class="horizon-group-index">04</span>
+            <h3>Connectivity and Extension</h3>
+          </div>
+          <p>Ensure Horizon can participate in larger system environments.</p>
+        </div>
+
+        <div class="mt-8 space-y-6">
+          <article class="horizon-module-story ">
+            <div class="horizon-module-icon-column">
+              
+              <img src="/images/horizon/module-link.svg" alt="Horizon Link icon" class="horizon-module-icon">
+              
+            </div>
+
+            <div class="horizon-module-copy">
+              <p class="horizon-module-role">External connectivity</p>
+              <h4>Horizon Link</h4>
+              <p class="horizon-module-focus">Connect Horizon to third-party command platforms, business systems, and site infrastructure.</p>
+              <p class="horizon-module-description">Link is the integration edge of the platform, making Horizon useful within broader operational ecosystems rather than as a closed software island.</p>
+              <div class="horizon-output-list">
+                
+                <span class="horizon-output-chip">Third-party interfaces</span>
+                
+                <span class="horizon-output-chip">Data exchange pathways</span>
+                
+                <span class="horizon-output-chip">Expansion-ready architecture</span>
+                
+              </div>
+            </div>
+          </article>
           
         </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          Horizon Archive
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Recording and playback of monitoring events for traceability and review.</p>
-      </article>
-      
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          
-            <img src="/images/placeholder.png" alt="Horizon Link"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          
-          Horizon Link
-          
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Integration with third-party systems and external platforms.</p>
-      </article>
+      </section>
       
     </div>
-  
+  </div>
+</section>
+
+<section class="horizon-notice-section py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="horizon-notice-shell">
+      <div>
+        <p class="horizon-section-tag">Platform Value</p>
+        <h2 class="section-title">Built around operational requirements</h2>
+        <p class="horizon-section-lead">Horizon is intended to support real monitoring environments where sensor mix, workflow depth, and integration needs vary by site. The platform approach emphasizes operational clarity, extensibility, and scenario fit.</p>
+      </div>
+      <div class="horizon-bullet-stack mt-8 lg:mt-0">
+        
+        <div class="horizon-bullet-item">
+          <span class="horizon-bullet-dot"></span>
+          <p>Align software workflow with how the site actually operates.</p>
+        </div>
+        
+        <div class="horizon-bullet-item">
+          <span class="horizon-bullet-dot"></span>
+          <p>Match module depth and integration scope to the project mission.</p>
+        </div>
+        
+        <div class="horizon-bullet-item">
+          <span class="horizon-bullet-dot"></span>
+          <p>Keep the platform extensible as monitoring requirements evolve.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 </section>
 
   </main>
@@ -591,7 +970,7 @@
       <div class="space-y-1">
         <p>&copy; 2026 Wuhan Cyrentis Technology Co., Ltd.. All rights reserved.</p>
         
-        <p>鄂ICP备202405002号</p>
+        <p>é„‚ICPå¤‡202405002å·</p>
         
       </div>
       <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-slate-400">

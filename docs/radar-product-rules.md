@@ -21,11 +21,11 @@ SRC-[Band][DetectionLevel][Architecture]-[Generation][Purpose]
 - 50 = 50 km
 
 ### Scanning Architecture Codes
-- A = Azimuth Electronic Scanning
+- A = Azimuth Electronic Scan
 - B = Mechanical Azimuth Scan + Electronic Elevation Scan
-- C = Two-Dimensional Electronic Scanning (Single-Face AESA)
-- D = 2D Electronic Scanning + Mechanical Rotation
-- E = Four-Face AESA (Full Electronic Coverage)
+- C = Two-Dimensional Electronic Scan (Single-Face AESA)
+- D = 2D Electronic Scan + Mechanical Rotation
+- E = Four-Face AESA Array
 
 ### Generation Codes
 - 2 = Second Generation, FMCW
@@ -173,6 +173,15 @@ e. Civil Security Use and Export Compliance
 Clearly state that all radar products are intended strictly for civil security applications.  
 Radar systems fall under export control regulations of the People's Republic of China as dual-use items.  
 Export therefore requires the appropriate dual-use export license issued by the relevant authorities.
+
+Use the following official PRC sources as the basis for general compliance wording:
+- PRC Dual-Use Export Control List effective December 1, 2024
+- MOFCOM / GACC / CMC Equipment Development Department Announcement No. 31 of 2024
+
+For structured SRC radar data, apply an internal compliance escalation rule:
+- If `detection.typical_detection_ranges_km.small_uav_0_01m2 >= 10`, mark the product record as `special_permit_required`.
+- This 10 km threshold is a project review trigger for manual compliance escalation.
+- Do not describe the 10 km threshold as a verbatim quotation from PRC law unless separately verified for the exact product and transaction context.
 
 Include a link to a dedicated Knowledge Base article explaining dual-use export regulations and compliance procedures.
 

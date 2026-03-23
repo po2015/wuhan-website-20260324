@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" fill="none" role="img" aria-label="Auto tracking icon">
+  <rect x="8" y="8" width="72" height="72" rx="22" fill="#F5F0FF" stroke="#D9CAFF" stroke-width="2"/>
+  <circle cx="44" cy="44" r="18" fill="#E8DEFF" opacity="0.75"/>
+  <path d="M31 40V35.5C31 33.0147 33.0147 31 35.5 31H40" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48 31H52.5C54.9853 31 57 33.0147 57 35.5V40" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M57 48V52.5C57 54.9853 54.9853 57 52.5 57H48" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 57H35.5C33.0147 57 31 54.9853 31 52.5V48" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="44" cy="44" r="5" fill="#6D28D9"/>
+  <path d="M27 51.5C26.5 42.8 30.8 34.5 38.3 30.2" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M49.5 27.5L53.5 28L51.8 31.7" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

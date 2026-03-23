@@ -1,0 +1,253 @@
+{{ define "main" }}
+{{- $heroStats := .Params.hero_stats -}}
+{{- $featureCards := .Params.feature_cards -}}
+{{- $coverageTable := .Params.coverage_table -}}
+{{- $integrationModules := .Params.integration_modules -}}
+{{- $deploymentScenarios := .Params.deployment_scenarios -}}
+{{- $technicalSnapshot := .Params.technical_snapshot -}}
+{{- $compliance := .Params.compliance_notice -}}
+{{- $relatedProducts := .Params.related_products -}}
+
+<section class="src-sample-page">
+  <section class="src-sample-hero-wrap">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="src-sample-hero">
+        <div class="src-sample-hero-copy">
+          {{ partial "breadcrumb.html" . }}
+          {{ with .Params.series_label }}
+          <p class="src-sample-model">{{ . }}</p>
+          {{ end }}
+          <h1 class="src-sample-title">{{ .Params.model | default .Title }}</h1>
+          {{ with .Params.description }}
+          <p class="src-sample-lead">{{ . }}</p>
+          {{ end }}
+
+          <div class="src-sample-chip-row">
+            {{ with .Params.band }}<span class="src-sample-chip">{{ . }}</span>{{ end }}
+            {{ with .Params.system_type }}<span class="src-sample-chip">{{ . }}</span>{{ end }}
+            {{ with .Params.architecture_name }}<span class="src-sample-chip">{{ . }}</span>{{ end }}
+          </div>
+
+          <div class="src-sample-hero-actions">
+            <a href="{{ printf "%s#contact-form" ("contact-us/" | relLangURL) }}" class="src-sample-primary-action">Request Project Discussion</a>
+            <a href="{{ "/sensors/src/" | relLangURL }}" class="src-sample-secondary-action">Back to SRC List</a>
+          </div>
+        </div>
+
+        <div class="src-sample-hero-visual">
+          <span class="src-sample-hero-orbit src-sample-hero-orbit-a"></span>
+          <span class="src-sample-hero-orbit src-sample-hero-orbit-b"></span>
+          <span class="src-sample-hero-orbit src-sample-hero-orbit-c"></span>
+          <div class="src-sample-radar-stage">
+            <span class="src-sample-radar-beam src-sample-radar-beam-a"></span>
+            <span class="src-sample-radar-beam src-sample-radar-beam-b"></span>
+            {{ with .Params.hero_image }}
+            <img src="{{ . | relURL }}" alt="{{ $.Params.model | default $.Title }}" class="src-sample-hero-product">
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ with $compliance }}
+  <section class="src-sample-compliance-wrap">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="src-sample-compliance-card">
+        <div class="src-sample-compliance-copy">
+          <p class="src-sample-mini-kicker">Compliance</p>
+          <h2 class="src-sample-panel-title">{{ .title }}</h2>
+          <p class="src-sample-compliance-text">{{ .text }}</p>
+          {{ with .basis }}
+          <p class="src-sample-compliance-basis">{{ . }}</p>
+          {{ end }}
+        </div>
+        {{ with .links }}
+        <div class="src-sample-compliance-links">
+          {{ range . }}
+          <a href="{{ .url }}" class="src-sample-alert-link" target="_blank" rel="noreferrer">{{ .label }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with $heroStats }}
+  <section class="src-sample-stat-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="src-sample-stat-grid">
+        {{ range . }}
+        <article class="src-sample-stat-card">
+          {{ with .icon }}
+          <img src="{{ . | relURL }}" alt="" class="src-sample-stat-icon">
+          {{ end }}
+          <div class="src-sample-stat-copy">
+            <p class="src-sample-stat-label">{{ .label }}</p>
+            <p class="src-sample-stat-value">{{ .value }}</p>
+            {{ with .note }}
+            <p class="src-sample-stat-note">{{ . }}</p>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="src-sample-overview-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="src-sample-story-card">
+        <p class="src-sample-mini-kicker">Operational Position</p>
+        <h2 class="src-sample-section-title">{{ .Params.positioning_title | default "A radar page structured for fast project evaluation and site-fit review." }}</h2>
+        <div class="content-typography src-sample-story-copy">{{ .Content }}</div>
+      </article>
+
+      {{ with $featureCards }}
+      <div class="src-sample-feature-grid">
+        {{ range . }}
+        <article class="src-sample-feature-card">
+          <div class="src-sample-feature-copy">
+            <h3 class="src-sample-feature-title">{{ .title }}</h3>
+            <p class="src-sample-feature-text">{{ .text }}</p>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ with $coverageTable }}
+  <section class="src-sample-table-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="src-sample-table-card">
+        <div class="src-sample-table-head">
+          <p class="src-sample-mini-kicker">Detection Envelope</p>
+          <h2 class="src-sample-panel-title">Horizontal sector, vertical angle, and site area at maximum range.</h2>
+        </div>
+        <div class="src-sample-table-scroll">
+          <table class="src-sample-coverage-table">
+            <tbody>
+              <tr>
+                {{ range . }}
+                <td>
+                  <span class="src-sample-table-label">{{ .label }}</span>
+                  <strong class="src-sample-table-value">{{ .value }}</strong>
+                  {{ with .note }}
+                  <span class="src-sample-table-note">{{ . }}</span>
+                  {{ end }}
+                </td>
+                {{ end }}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with $technicalSnapshot }}
+  <section class="src-sample-table-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="src-sample-table-card">
+        <div class="src-sample-table-head">
+          <p class="src-sample-mini-kicker">Technical Snapshot</p>
+          <h2 class="src-sample-panel-title">Detailed specification, deployment, interface, and integration parameters.</h2>
+        </div>
+        <div class="src-sample-table-scroll">
+          <table class="src-sample-spec-table">
+            <tbody>
+              {{ range . }}
+              <tr>
+                <th scope="row">{{ .name }}</th>
+                <td>{{ .value }}</td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with $integrationModules }}
+  <section class="src-sample-integration-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="src-sample-story-card">
+        <p class="src-sample-mini-kicker">Integration Narrative</p>
+        <h2 class="src-sample-panel-title">Supported Horizon modules for coordinated site operations.</h2>
+        <div class="src-sample-module-grid">
+          {{ range . }}
+          <article class="src-sample-module-card">
+            {{ with .icon }}
+            <img src="{{ . | relURL }}" alt="" class="src-sample-module-icon">
+            {{ end }}
+            <div>
+              <h3 class="src-sample-feature-title">{{ .title }}</h3>
+              <p class="src-sample-feature-text">{{ .text }}</p>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with $deploymentScenarios }}
+  <section class="src-sample-detail-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="src-sample-story-card">
+        <p class="src-sample-mini-kicker">Deployment Fit</p>
+        <h2 class="src-sample-panel-title">Where this model should feel credible on the site.</h2>
+        <div class="src-sample-photo-grid">
+          {{ range . }}
+          <article class="src-sample-photo-card">
+            {{- $scenario := . -}}
+            {{ with .image }}
+            <img src="{{ . | relURL }}" alt="{{ $scenario.alt | default $scenario.title }}" class="src-sample-photo-image">
+            {{ end }}
+            <div class="src-sample-photo-copy">
+              <h3 class="src-sample-feature-title">{{ .title }}</h3>
+              <p class="src-sample-feature-text">{{ .text }}</p>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with $relatedProducts }}
+  <section class="src-sample-detail-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="src-sample-story-card">
+        <p class="src-sample-mini-kicker">Related Products</p>
+        <h2 class="src-sample-panel-title">Comparable models in the same operating class or alternate scan-mode family.</h2>
+        <div class="src-sample-related-grid">
+          {{ range . }}
+          <a href="{{ .url | relURL }}" class="src-sample-related-card">
+            <div class="src-sample-related-head">
+              <h3 class="src-sample-feature-title">{{ .model }}</h3>
+              <span class="src-sample-related-range">{{ .max_range }}</span>
+            </div>
+            <p class="src-sample-related-meta">{{ .band }} · {{ .system_type }} · {{ .architecture_name }}</p>
+            <p class="src-sample-feature-text">{{ .description }}</p>
+            {{ with .relation }}
+            <p class="src-sample-related-note">{{ . }}</p>
+            {{ end }}
+          </a>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+</section>
+{{ end }}

@@ -3,12 +3,50 @@ title: "Sensors"
 description: "SRC radar, SOC electro-optical, and SDC RF spectrum detection product families for layered security monitoring."
 kicker: "Sensor Portfolio"
 weight: 2
+sensor_page:
+  title: "Sensor Families."
+  lead: "Radar, optics, and RF awareness."
+  families:
+    - code: "SRC"
+      label: "Detection Layer"
+      title: "Surveillance Radar"
+      description: "Wide-area radar detection for early warning across ground and low-altitude airspace."
+      detail: "UAV, vehicle, vessel, and personnel monitoring for perimeter and low-altitude alerting."
+      visual_lines:
+        - "Surveillance"
+        - "Radar by"
+        - "Cyrentis"
+      url: "/sensors/src/"
+      background: "/images/sensors/bg-src.svg"
+      device: "/images/sensors/sample-radar.png"
+      cta: "Explore SRC"
+      tone: "radar"
+    - code: "SOC"
+      label: "Verification Layer"
+      title: "Surveillance Optics"
+      description: "Visible and infrared observation for confirmation, recognition, and visual tracking."
+      detail: "Day-night imaging for target validation, recognition, and follow-up tracking."
+      visual_lines:
+        - "Surveillance"
+        - "Optics by"
+        - "Cyrentis"
+      url: "/sensors/soc/"
+      background: "/images/sensors/bg-soc.svg"
+      device: "/images/sensors/device-soc-placeholder.svg"
+      cta: "Explore SOC"
+      tone: "optics"
+    - code: "SDC"
+      label: "Spectrum Layer"
+      title: "Spectrum Detection"
+      description: "RF awareness for wirel. signal monitoring, emitter detection, & low-altitude spectrum insight"
+      detail: "Emitter visibility, control-link awareness, and RF alerting."
+      visual_lines:
+        - "Spectrum"
+        - "Detection by"
+        - "Cyrentis"
+      url: "/sensors/sdc/"
+      background: "/images/sensors/bg-sdc.svg"
+      device: "/images/sensors/device-sdc-placeholder.svg"
+      cta: "Explore SDC"
+      tone: "spectrum"
 ---
-
-Cyrentis sensor products are organized into three readable categories that can operate independently or as part of the Horizon platform.
-
-- `Surveillance Radar (SRC)` provides wide-area radar detection for ground and low-altitude monitoring.
-- `Surveillance Optics (SOC)` provides visible and infrared observation for confirmation and visual tracking.
-- `Spectrum Detection (SDC)` provides RF spectrum awareness for wireless signal monitoring and emitter detection.
-
-Together, these families support a layered sensing architecture in which detection, verification, and spectrum awareness are coordinated through one operational workflow.

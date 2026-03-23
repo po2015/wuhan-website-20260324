@@ -1,5 +1,15 @@
 {{ define "main" }}
 {{- $ui := .Site.Params.ui -}}
+{{- $sourcePages := .RegularPagesRecursive -}}
+{{- with .Params.radar_source_prefix -}}
+  {{- $sourcePrefix := . -}}
+  {{- $sourcePages = slice -}}
+  {{- range site.RegularPages -}}
+    {{- if hasPrefix .RelPermalink $sourcePrefix -}}
+      {{- $sourcePages = $sourcePages | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- $bandMap := dict "C" "C band" "X" "X band" "K" "Ku band" -}}
 {{- $archMap := dict
 "A" "Azimuth electronic scanning"
@@ -11,13 +21,14 @@
 {{- $genMap := dict "1" "Pulse Doppler" "2" "FMCW" "3" "Pulse Doppler" -}}
 {{- $rangeMap := dict "01" 1.5 "03" 3 "05" 5 "08" 8 "10" 10 "12" 12 "25" 25 "50" 50 -}}
 {{- $targetMeta := dict
-"drone_small" (dict "label" "Small Drone" "icon" "/images/icons/target-drone.svg")
-"person" (dict "label" "Person" "icon" "/images/icons/target-person.svg")
-"vehicle" (dict "label" "Vehicle" "icon" "/images/icons/target-vehicle.svg")
-"vessel" (dict "label" "Vessel" "icon" "/images/icons/target-vessel.svg")
+"drone_small" (dict "label" "Small Drone" "icon" "/images/icons/radar-target-drone.svg")
+"person" (dict "label" "Person" "icon" "/images/icons/radar-target-person.svg")
+"vehicle" (dict "label" "Vehicle" "icon" "/images/icons/radar-target-vehicle.svg")
+"vessel" (dict "label" "Vessel" "icon" "/images/icons/radar-target-vessel.svg")
 -}}
+{{- $targetOrder := slice "person" "vehicle" "vessel" "drone_small" -}}
 {{- $sortedEntries := slice -}}
-{{- range .RegularPagesRecursive -}}
+{{- range $sourcePages -}}
 {{- if .Params.model -}}
 {{- $sortWeight := 99999 -}}
 {{- if isset .Params "weight" -}}
@@ -36,75 +47,56 @@
   <section class="radar-filter-hero py-14">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="radar-filter-hero-shell">
-        <div class="grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-start">
-          <div>
-            <p class="section-kicker">{{ $ui.section_kicker | default "Section" }}</p>
-            <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">{{ .Title }}</h1>
-            {{ with .Params.description }}
-            <p class="mt-4 max-w-3xl text-base leading-8 text-slate-600">{{ . }}</p>
-            {{ end }}
-            {{ with .Content }}
-            <div class="prose prose-slate mt-4 max-w-3xl">{{ . }}</div>
-            {{ end }}
-            <div class="mt-6 flex flex-wrap items-center gap-3 text-sm text-slate-600">
-              <span class="inline-flex rounded-full bg-white/80 px-3 py-1 font-semibold text-slate-700 ring-1 ring-inset ring-slate-200" aria-live="polite">
-                Showing <span class="ml-1" data-radar-results-count>{{ len $sortedEntries }}</span> of {{ len $sortedEntries }} models
-              </span>
-              <span>Target type uses the last model-code letter: <strong class="font-semibold text-slate-900">D</strong> for air targets, <strong class="font-semibold text-slate-900">G</strong> for ground targets.</span>
-            </div>
+        <div class="radar-filter-hero-copy">
+          {{ partial "breadcrumb.html" . }}
+          <h1 class="radar-filter-title">{{ .Title }}</h1>
+          {{ with .Params.description }}
+          <p class="radar-filter-lead">{{ . }}</p>
+          {{ end }}
+          {{ with .Content }}
+          <div class="radar-filter-note">{{ . }}</div>
+          {{ end }}
+        </div>
+
+        <div class="radar-filter-toolbar" aria-label="Radar filters">
+          <div class="radar-filter-row">
+            <fieldset class="radar-filter-inline-group">
+              <legend class="radar-filter-inline-label">Detection</legend>
+              <div class="radar-filter-chip-row">
+                <label class="radar-filter-choice">
+                  <input type="checkbox" value="g" data-radar-purpose checked>
+                  <span>
+                    <strong>Ground target</strong>
+                  </span>
+                </label>
+                <label class="radar-filter-choice">
+                  <input type="checkbox" value="d" data-radar-purpose checked>
+                  <span>
+                    <strong>Air target</strong>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="form-field radar-filter-select" for="radarArchitectureFilter">
+              <span>Architecture</span>
+              <select id="radarArchitectureFilter" data-radar-architecture>
+                <option value="all" selected>All architectures</option>
+                <option value="a">A - {{ index $archMap "A" }}</option>
+                <option value="b">B - {{ index $archMap "B" }}</option>
+                <option value="c">C - {{ index $archMap "C" }}</option>
+                <option value="d">D - {{ index $archMap "D" }}</option>
+                <option value="e">E - {{ index $archMap "E" }}</option>
+              </select>
+            </label>
           </div>
 
-          <aside class="radar-filter-panel" aria-label="Radar filters">
-            <div class="flex items-start justify-between gap-4">
-              <div>
-                <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-brand-700">Quick Filter</p>
-                <h2 class="mt-2 text-xl font-extrabold text-slate-900">Filter radar models</h2>
-              </div>
-              <button type="button" class="radar-filter-reset" data-radar-reset>Reset</button>
-            </div>
-
-            <p class="mt-3 text-sm leading-7 text-slate-600">
-              Narrow the catalog by detection type and scanning architecture. Filters update instantly and keep all models visible by default.
-            </p>
-
-            <div class="mt-6 space-y-5">
-              <fieldset class="space-y-3">
-                <legend class="text-sm font-bold text-slate-900">Detection type</legend>
-                <div class="grid gap-3 sm:grid-cols-2">
-                  <label class="radar-filter-choice">
-                    <input type="checkbox" value="g" data-radar-purpose checked>
-                    <span>
-                      <strong>Ground target</strong>
-                      <small>Model suffix ends with G</small>
-                    </span>
-                  </label>
-                  <label class="radar-filter-choice">
-                    <input type="checkbox" value="d" data-radar-purpose checked>
-                    <span>
-                      <strong>Air target</strong>
-                      <small>Model suffix ends with D</small>
-                    </span>
-                  </label>
-                </div>
-              </fieldset>
-
-              <label class="form-field" for="radarArchitectureFilter">
-                <span>Architecture</span>
-                <select id="radarArchitectureFilter" data-radar-architecture>
-                  <option value="all" selected>All architectures</option>
-                  <option value="a">A - {{ index $archMap "A" }}</option>
-                  <option value="b">B - {{ index $archMap "B" }}</option>
-                  <option value="c">C - {{ index $archMap "C" }}</option>
-                  <option value="d">D - {{ index $archMap "D" }}</option>
-                  <option value="e">E - {{ index $archMap "E" }}</option>
-                </select>
-              </label>
-            </div>
-
-            <p class="mt-5 text-xs leading-6 text-slate-500" data-radar-results-summary aria-live="polite">
-              Detection type defaults to both options selected, and architecture defaults to showing all models.
-            </p>
-          </aside>
+          <div class="radar-filter-toolbar-meta">
+            <span class="radar-filter-results" aria-live="polite">
+              Showing <span class="ml-1" data-radar-results-count>{{ len $sortedEntries }}</span> of {{ len $sortedEntries }} models
+            </span>
+            <button type="button" class="radar-filter-reset" data-radar-reset>Reset</button>
+          </div>
         </div>
       </div>
     </div>
@@ -135,65 +127,119 @@
       {{- if le $maxRange 0 -}}
       {{- $maxRange = 1 -}}
       {{- end -}}
-      {{- $highlightText := default "" $detailPage.Params.highlight -}}
+      {{- $systemIcon := "/images/icons/radar-wave-pulse.svg" -}}
+      {{- if or (eq $genCode "2") (in (lower $genName) "fmcw") (in (lower $genName) "continuous") -}}
+      {{- $systemIcon = "/images/icons/radar-wave-continuous.svg" -}}
+      {{- end -}}
       {{- $targetLabels := slice -}}
+      {{- $targetItems := slice -}}
+      {{- with $detailPage.Params.hero_stats -}}
+      {{- range . -}}
+      {{- if ne .label "Maximum Range" -}}
+      {{- $targetLabels = $targetLabels | append .label -}}
+      {{- $targetItems = $targetItems | append (dict "label" .label "icon" .icon) -}}
+      {{- end -}}
+      {{- end -}}
+      {{- end -}}
+      {{- if eq (len $targetItems) 0 -}}
+      {{- $targetScratch := newScratch -}}
+      {{- $targetScratch.Set "hasAirTarget" false -}}
+      {{- $targetScratch.Set "hasSurfaceTarget" false -}}
       {{- with $detailPage.Params.targets -}}
-      {{- range $targetName, $_ := . -}}
-      {{- $targetLabel := humanize $targetName -}}
-      {{- with index $targetMeta $targetName -}}
+      {{- $targets := . -}}
+      {{- range $targetOrder -}}
+      {{- if isset $targets . -}}
+      {{- $targetLabel := humanize . -}}
+      {{- with index $targetMeta . -}}
       {{- $targetLabel = default $targetLabel (index . "label") -}}
       {{- end -}}
       {{- $targetLabels = $targetLabels | append $targetLabel -}}
+      {{- if eq . "drone_small" -}}
+      {{- $targetScratch.Set "hasAirTarget" true -}}
+      {{- else -}}
+      {{- $targetScratch.Set "hasSurfaceTarget" true -}}
       {{- end -}}
       {{- end -}}
-      {{- $targetSummary := delimit $targetLabels ", " -}}
-
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl"
+      {{- end -}}
+      {{- end -}}
+      {{- if $targetScratch.Get "hasSurfaceTarget" -}}
+      {{- $targetItems = $targetItems | append (dict "label" "Ground or surface target" "icon" "/images/icons/radar-target-person.svg") -}}
+      {{- end -}}
+      {{- if $targetScratch.Get "hasAirTarget" -}}
+      {{- $targetItems = $targetItems | append (dict "label" "Air target" "icon" "/images/icons/radar-target-drone.svg") -}}
+      {{- end -}}
+      {{- end -}}
+      <article class="radar-catalog-card group"
         data-radar-card data-model="{{ lower $model }}" data-band="{{ lower $bandCode }}"
         data-architecture="{{ lower $archCode }}" data-generation="{{ $genCode }}" data-purpose="{{ lower $purposeCode }}"
         data-range="{{ $maxRange }}">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="{{ $detailPage.RelPermalink }}" class="block">
+        <a href="{{ $detailPage.RelPermalink }}" class="radar-catalog-media">
             <img src='{{ $cardImage | relURL }}' alt="{{ $model }}"
-              class="h-44 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
+              class="radar-catalog-image">
+        </a>
 
-        <div class="mt-4 flex items-start justify-between gap-3">
-          <h2 class="text-lg font-bold text-slate-900">
-            <a href="{{ $detailPage.RelPermalink }}"
-              class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-              {{ $model }}
-            </a>
-          </h2>
-          <span class="inline-flex rounded-full bg-brand-50 px-2.5 py-1 text-xs font-semibold text-brand-700">{{ $bandName }}</span>
-        </div>
+        <div class="radar-catalog-body">
+          <div class="radar-catalog-head">
+            <div>
+              <span class="radar-catalog-band">{{ $bandName }}</span>
+              <h2 class="radar-catalog-title">
+                <a href="{{ $detailPage.RelPermalink }}"
+                  class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                  {{ $model }}
+                </a>
+              </h2>
+            </div>
+          </div>
 
-        <div class="mt-3 flex items-center justify-between text-sm">
-          <span class="font-semibold text-slate-900">System type</span>
-          <span class="text-right text-slate-700">{{ $genName }}</span>
-        </div>
-        <div class="mt-1 flex items-center justify-between text-sm">
-          <span class="font-semibold text-slate-900">Architecture</span>
-          <span class="text-right text-slate-700">{{ $archName }}</span>
-        </div>
-        <div class="mt-1 flex items-center justify-between gap-3 text-sm">
-          <span class="font-semibold text-slate-900">Target</span>
-          <span class="text-right text-slate-700">{{ if $targetSummary }}{{ $targetSummary }}{{ else }}N/A{{ end }}</span>
-        </div>
-        <div class="mt-1 flex items-center justify-between text-sm">
-          <span class="font-semibold text-slate-900">Max Range</span>
-          <span class="text-right text-slate-700">{{ $maxRange }} km</span>
-        </div>
+          <div class="radar-catalog-stats">
+            <div class="radar-catalog-stat">
+              <img src='{{ $systemIcon | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">System type</span>
+                <p class="radar-catalog-stat-value">{{ $genName }}</p>
+              </div>
+            </div>
 
-        {{ with $highlightText }}
-        <div class="mt-3 flex justify-end">
-          <span
-            class="inline-flex rounded-full bg-sky-50 px-2.5 py-1 text-xs font-semibold text-sky-700 ring-1 ring-inset ring-sky-200">
-            {{ . }}
-          </span>
+            <div class="radar-catalog-stat">
+              <img src='{{ "/images/icons/radar-stat-architecture.svg" | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Architecture</span>
+                <p class="radar-catalog-stat-value">{{ $archName }}</p>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='{{ "/images/icons/radar-stat-target.svg" | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <div class="radar-catalog-target-line">
+                  <span class="radar-catalog-stat-label">Target</span>
+                  <div class="radar-catalog-target-row">
+                    {{- if gt (len $targetItems) 0 -}}
+                    {{- range $targetItems -}}
+                    <img src='{{ .icon | relURL }}' alt='{{ .label }}' title='{{ .label }}' class="radar-catalog-target-chip">
+                    {{- end -}}
+                    {{- else -}}
+                    <img src='{{ "/images/icons/radar-stat-target.svg" | relURL }}' alt="Target pending" title="Target pending" class="radar-catalog-target-chip">
+                    {{- end -}}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="radar-catalog-stat">
+              <img src='{{ "/images/icons/radar-stat-range.svg" | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <div>
+                <span class="radar-catalog-stat-label">Max range</span>
+                <p class="radar-catalog-stat-value">{{ $maxRange }} km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-catalog-foot">
+            <span>View model</span>
+            <span class="radar-catalog-foot-arrow" aria-hidden="true"></span>
+          </div>
         </div>
-        {{ end }}
       </article>
       {{ end }}
     </div>

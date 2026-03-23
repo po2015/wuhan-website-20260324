@@ -1,0 +1,132 @@
+product_family: SRC
+product_line_name: Surveillance Radar by Cyrentis
+model: SRC-X10A-2G
+product_name: SRC-X10A-2G Surveillance Radar
+status: active
+visibility: public
+featured: false
+positioning:
+  short: X band FMCW surveillance radar for ground surveillance.
+  tagline: FMCW radar for stable target detection and tracking.
+  primary_role: security surveillance radar
+  application_focus: &id001
+  - Land border surveillance
+  - maritime surveillance
+  - critical site protection
+naming:
+  format: SRC-[Band][DetectionLevel][Architecture]-[Generation][Purpose]
+  band_code: X
+  detection_level_code: '10'
+  architecture_code: A
+  generation_code: '2'
+  purpose_code: G
+technical_classification:
+  waveform:
+    code: F
+    name: FMCW
+  band:
+    code: X
+    name: X band
+  scan_architecture:
+    code: A
+    name: Electronic Azimuth Scanning
+  target_domains:
+  - ground
+  - maritime
+  primary_target_types:
+  - human
+  - vehicle
+  - boat
+detection:
+  nominal_class_km: 10
+  reference_target:
+    type: human
+    rcs_m2: 0.5
+  typical_detection_ranges_km:
+    human_0_5m2: 10
+  notes:
+  - Target-distance fields were inferred from the model naming code because the source
+    file did not include a structured targets block.
+  - Instrumented range uses the source preamble value 30 km, while nominal class follows
+    model code 10 km.
+performance:
+  blind_zone_m: null
+  horizontal_field_of_view_deg: 90.0
+  vertical_field_of_view_deg: null
+  speed_measurement_range_mps:
+    min: 0.5
+    max: 100.0
+  rotation_speed_rpm: N/A
+  rotation_speed_options_rpm: N/A
+  data_update_interval_s: 1.2
+  tracking_capacity:
+    tws_count: 200
+    tas_count: N/A
+  accuracy:
+    range_m: null
+    azimuth_deg: 0.35
+    elevation_deg: null
+coverage:
+  azimuth:
+    mode: electronic
+    coverage_deg: 90.0
+  elevation:
+    mode: electronic
+    coverage_deg: null
+  refresh_rate_s: 1.2
+  instrumented_range_km: 30.0
+physical:
+  deployment_type: portable
+  enclosure_rating: IP67
+  operating_temperature_c:
+    min: -30.0
+    max: 55.0
+  dimensions_mm:
+    length: 445.0
+    width: 395.0
+    height: 55.0
+  weight_kg: 10.0
+interfaces:
+  power_input: DC 18~28V (with AC 220V to DC 24V adapter)
+  data_interfaces:
+  - Ethernet
+  power_consumption_w: 120.0
+  protocol_support:
+  - Ethernet
+  horizon_compatible: true
+  third_party_integration: true
+platform_integration:
+  compatible_platforms:
+  - Cyrentis Horizon
+  supported_modules:
+  - Horizon Sense
+  - Horizon Fusion
+  - Horizon Track
+  - Horizon AI
+  - Horizon Command
+  supports_cueing_to_optics: false
+  supports_multi_sensor_fusion: true
+use_cases:
+  primary: *id001
+  secondary:
+  - cooperative multi-sensor detection
+media:
+  hero_image: /images/radar/src-x10a-2g.jpg
+content:
+  summary: The SRC-X10A-2G moving target surveillance radar employs an Active Electronically
+    Scanned Array (AESA) system, enabling continuous, all-day, all-weather detection
+    and tracking of moving targets within its coverage area. It offers advantages
+    such as high detection sensitivity, low false alarm rate, and excellent accuracy.
+  key_features:
+  - High accuracy and reliability;.
+  - low false alarm probability;.
+  - excellent tracking performance under dense target conditions;.
+  - wide coverage, supports portable operation.
+  application_scenarios:
+  - Land border surveillance
+  - maritime surveillance
+  - critical site protection
+  - portable reconnaissance
+contact:
+  inquiry_enabled: true
+  recommended_cta: Request radar consultation

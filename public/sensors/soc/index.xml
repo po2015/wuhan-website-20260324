@@ -7,5 +7,40 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <atom:link href="https://www.cyrentis.com/sensors/soc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOC-D05G-1U</title>
+      <link>https://www.cyrentis.com/sensors/soc/soc-d05g-1u/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/soc/soc-d05g-1u/</guid>
+      <description>&lt;p&gt;SOC-D05G-1U is the short-range member of the Cyrentis SOC line. It is designed for projects that need a lighter gyro-stabilized day-night payload with configurable daylight optics and an optional rangefinder, rather than the longer reach and heavier envelope of the cooled series.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SOC-D13G-2A</title>
+      <link>https://www.cyrentis.com/sensors/soc/soc-d13g-2a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/soc/soc-d13g-2a/</guid>
+      <description>&lt;p&gt;SOC-D13G-2A is positioned as a dual-spectrum observation payload for projects where an alert alone is not enough and the operator still needs readable confirmation. The visible and thermal channels are strong enough to support day-night target verification, while the gimbal architecture keeps the payload credible on rooftops, temporary field positions, and mobile platforms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SOC-V06G-2U</title>
+      <link>https://www.cyrentis.com/sensors/soc/soc-v06g-2u/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/soc/soc-v06g-2u/</guid>
+      <description>&lt;p&gt;SOC-V06G-2U brings a visible-only and laser-assisted option into the Cyrentis SOC library. It sits between compact dual-spectrum heads and the heavier cooled line, giving projects a dedicated long-zoom day-night camera where thermal sensing is not the primary purchase driver.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SOC-D20G-2U</title>
+      <link>https://www.cyrentis.com/sensors/soc/soc-d20g-2u/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/soc/soc-d20g-2u/</guid>
+      <description>&lt;p&gt;SOC-D20G-2U is the long-range cooled member of the current Cyrentis SOC product line. It is intended for projects that need deeper identification distance, a configurable daylight package, and a stronger fit for coastal, shipborne, or large fixed-site deployment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SOC-M13G-3U</title>
+      <link>https://www.cyrentis.com/sensors/soc/soc-m13g-3u/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/soc/soc-m13g-3u/</guid>
+      <description>&lt;p&gt;SOC-M13G-3U expands the Cyrentis SOC library with a multi-band visible and thermal platform aimed at longer-watch, fire-aware, and integration-heavy deployments. It sits above the medium dual-spectrum tier when the site needs broader analytics, more alarm context, and optional sensor expansion inside one outdoor payload.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" fill="none" role="img" aria-label="Harsh environment icon">
+  <rect x="8" y="8" width="72" height="72" rx="22" fill="#FFF6E7" stroke="#FFD48B" stroke-width="2"/>
+  <circle cx="44" cy="44" r="18" fill="#FDE7B4" opacity="0.72"/>
+  <path d="M44 28L57 33V42C57 49.9 51.4 57.1 44 59.5C36.6 57.1 31 49.9 31 42V33L44 28Z" fill="white" stroke="#D97706" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M40 44.5L43 47.5L48.5 39.5" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M62 31L65 27" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M66 39H70" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M20 53L24 57" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

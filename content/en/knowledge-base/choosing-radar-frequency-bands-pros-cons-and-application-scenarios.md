@@ -13,6 +13,9 @@ keywords:
   - "civil security radar"
   - "counter-UAS radar"
   - "ground surveillance radar"
+categories:
+  - "Radar Planning"
+  - "Frequency Selection"
 image: "/images/knowledge-base/radar-frequency-band-comparison.svg"
 weight: 10
 date: 2026-03-01
@@ -67,6 +70,6 @@ Band selection should be combined with clutter characteristics, coastline geomet
 
 - [Comparison of Different Radar Scanning Architectures](/knowledge-base/comparison-of-different-radar-scanning-architectures/)
 - [Compliance Overview for Dual-Use Export of Civil Security Radar Products](/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/)
-- [Radar Product Catalog](/complete-products/radar/)
+- [Radar Product Catalog](/sensors/src/)
 
 > Note: All recommendations in this article are for civil security applications only.

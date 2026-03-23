@@ -1,0 +1,28 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="48" fill="#F7FAFC"/>
+  <rect x="70" y="70" width="1460" height="760" rx="40" fill="url(#bg)"/>
+  <circle cx="350" cy="450" r="210" fill="#E0F2FE"/>
+  <circle cx="350" cy="450" r="150" stroke="#0F5FA8" stroke-width="6" stroke-dasharray="16 18"/>
+  <circle cx="350" cy="450" r="90" stroke="#0F5FA8" stroke-width="6"/>
+  <path d="M350 450L510 360" stroke="#0F5FA8" stroke-width="10" stroke-linecap="round"/>
+  <rect x="630" y="220" width="320" height="190" rx="28" fill="#FFF7ED" stroke="#F59E0B" stroke-width="6"/>
+  <path d="M700 320L760 260L850 290L880 340L790 370L700 320Z" fill="#FDBA74" stroke="#C2410C" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M1030 220L1420 220L1420 410L1030 410Z" rx="28" fill="#ECFDF5" stroke="#10B981" stroke-width="6"/>
+  <path d="M1060 380C1100 300 1160 250 1240 250C1320 250 1380 300 1410 380" stroke="#0F766E" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1060 350C1100 290 1160 260 1240 260C1320 260 1380 290 1410 350" stroke="#14B8A6" stroke-width="8" stroke-linecap="round"/>
+  <rect x="640" y="520" width="780" height="170" rx="30" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="4"/>
+  <path d="M730 610H1210" stroke="#94A3B8" stroke-width="4"/>
+  <circle cx="780" cy="610" r="18" fill="#0F5FA8"/>
+  <circle cx="940" cy="610" r="18" fill="#10B981"/>
+  <circle cx="1100" cy="610" r="18" fill="#F59E0B"/>
+  <circle cx="1260" cy="610" r="18" fill="#7C3AED"/>
+  <path d="M798 610H922" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M958 610H1082" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1118 610H1242" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="70" x2="1530" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+  </defs>
+</svg>

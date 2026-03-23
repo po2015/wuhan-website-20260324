@@ -7,9 +7,6 @@
   <meta name="description" content="SRC radar, SOC electro-optical, and SDC RF spectrum detection product families for layered security monitoring.">
   <link rel="icon" type="image/png" href="/images/icon.png">
   <link rel="shortcut icon" href="/images/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -33,12 +30,44 @@
             soft: '0 8px 30px rgba(15, 23, 42, 0.08)'
           },
           fontFamily: {
-            sans: ['Manrope', 'Noto Sans SC', 'sans-serif']
+            sans: ['Manrope', 'Aptos', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', 'Arial', 'sans-serif']
           }
         }
       }
     }
   </script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-H32XFR8H0R');
+
+    (function () {
+      var tagId = 'G-H32XFR8H0R';
+      var loaded = false;
+
+      function loadGoogleTag() {
+        if (loaded) return;
+        loaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId);
+        script.referrerPolicy = 'strict-origin-when-cross-origin';
+        script.onerror = function () {};
+        document.head.appendChild(script);
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGoogleTag, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', function () {
+          window.setTimeout(loadGoogleTag, 2000);
+        }, { once: true });
+      }
+    })();
+  </script>
+  
   <link rel="stylesheet" href="/css/site.css">
 </head>
 
@@ -60,8 +89,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/">
+            <a class="menu-link " href="/">
               Home
               
             </a>
@@ -71,13 +101,15 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/horizon/">
+            <a class="menu-link " href="/horizon/">
               Horizon
               
             </a>
             
           </li>
+          
           
           
           
@@ -91,7 +123,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/sensors/">
+            <a class="menu-link is-current" href="/sensors/">
               Sensors
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -113,6 +145,7 @@
           
           
           
+          
             
               
             
@@ -122,7 +155,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/services/">
+            <a class="menu-link " href="/services/">
               Services
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -144,8 +177,7 @@
           
           
           
-            
-              
+          
             
               
             
@@ -153,7 +185,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/info-center/">
+            <a class="menu-link " href="/info-center/">
               Information
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -165,8 +197,6 @@
                 
                 <a class="panel-link" href="/news/">News</a>
                 
-                <a class="panel-link" href="/download/">Download</a>
-                
               
             </div>
             
@@ -175,8 +205,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/contact-us/">
+            <a class="menu-link " href="/contact-us/">
               Contact
               
             </a>
@@ -262,10 +293,6 @@
                 <a href="/news/">News</a>
                 
               
-                
-                <a href="/download/">Download</a>
-                
-              
             </div>
           </details>
           
@@ -280,80 +307,142 @@
 </header>
 
   <main id="main-content" class="min-h-[60vh]">
-    <section class="bg-white py-14">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <p class="section-kicker">Sensor Portfolio</p>
-    <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">Sensors</h1>
-    
-    <div class="prose prose-slate mt-6 max-w-3xl"><p>Cyrentis sensor products are organized into three readable categories that can operate independently or as part of the Horizon platform.</p>
-<ul>
-<li><code>Surveillance Radar (SRC)</code> provides wide-area radar detection for ground and low-altitude monitoring.</li>
-<li><code>Surveillance Optics (SOC)</code> provides visible and infrared observation for confirmation and visual tracking.</li>
-<li><code>Spectrum Detection (SDC)</code> provides RF spectrum awareness for wireless signal monitoring and emitter detection.</li>
-</ul>
-<p>Together, these families support a layered sensing architecture in which detection, verification, and spectrum awareness are coordinated through one operational workflow.</p>
-</div>
-    
-  </div>
-</section>
-<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-  
-    
-    
-    
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <section class="sensors-page-section">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
+    <div class="sensors-page-intro">
+      <nav class="site-breadcrumb" aria-label="Breadcrumb">
+  <ol class="site-breadcrumb-list"><li class="site-breadcrumb-item"><a href="/" class="site-breadcrumb-link">Home</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><a href="/sensors/" class="site-breadcrumb-link">Sensors</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><span class="site-breadcrumb-current" aria-current="page">Sensors</span></li></ol>
+</nav>
+      <h1 class="sensors-page-title">Sensor Families.</h1>
       
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/sensors/src/" class="block">
-            <img src="/images/placeholder.png" alt="Surveillance Radar"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/sensors/src/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Surveillance Radar
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Surveillance Radar by Cyrentis for wide-area detection of UAVs, people, vehicles, and vessels.</p>
+      <p class="sensors-page-lead">Radar, optics, and RF awareness.</p>
+      
+    </div>
+
+    <div class="sensors-strip-grid">
+      
+      <article class="sensor-strip sensor-tone-radar">
+        <a href="/sensors/src/" class="sensor-strip-link">
+          <div class="sensor-strip-media">
+            
+            <img src="/images/sensors/bg-src.svg" alt="" class="sensor-strip-bg" aria-hidden="true">
+            
+            
+            <div class="sensor-strip-mark" aria-hidden="true">
+              
+              <span>Surveillance</span>
+              
+              <span>Radar by</span>
+              
+              <span>Cyrentis</span>
+              
+            </div>
+            
+            <div class="sensor-strip-device-stage" aria-hidden="true">
+              
+              <img src="/images/sensors/sample-radar.png" alt="" class="sensor-strip-device" aria-hidden="true">
+              
+            </div>
+          </div>
+
+          <div class="sensor-strip-copy">
+            
+            <p class="sensor-strip-label">Detection Layer</p>
+            
+            <h2>Surveillance Radar</h2>
+            <p class="sensor-strip-description">Wide-area radar detection for early warning across ground and low-altitude airspace.</p>
+            
+            <p class="sensor-strip-detail">UAV, vehicle, vessel, and personnel monitoring for perimeter and low-altitude alerting.</p>
+            
+            
+            <span class="sensor-strip-cta">Explore SRC</span>
+            
+          </div>
+        </a>
       </article>
       
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/sensors/soc/" class="block">
-            <img src="/images/placeholder.png" alt="Surveillance Optics"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/sensors/soc/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Surveillance Optics
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Surveillance Optics by Cyrentis for visual confirmation, identification, and day-night target tracking.</p>
+      <article class="sensor-strip sensor-tone-optics">
+        <a href="/sensors/soc/" class="sensor-strip-link">
+          <div class="sensor-strip-media">
+            
+            <img src="/images/sensors/bg-soc.svg" alt="" class="sensor-strip-bg" aria-hidden="true">
+            
+            
+            <div class="sensor-strip-mark" aria-hidden="true">
+              
+              <span>Surveillance</span>
+              
+              <span>Optics by</span>
+              
+              <span>Cyrentis</span>
+              
+            </div>
+            
+            <div class="sensor-strip-device-stage" aria-hidden="true">
+              
+              <img src="/images/sensors/device-soc-placeholder.svg" alt="" class="sensor-strip-device" aria-hidden="true">
+              
+            </div>
+          </div>
+
+          <div class="sensor-strip-copy">
+            
+            <p class="sensor-strip-label">Verification Layer</p>
+            
+            <h2>Surveillance Optics</h2>
+            <p class="sensor-strip-description">Visible and infrared observation for confirmation, recognition, and visual tracking.</p>
+            
+            <p class="sensor-strip-detail">Day-night imaging for target validation, recognition, and follow-up tracking.</p>
+            
+            
+            <span class="sensor-strip-cta">Explore SOC</span>
+            
+          </div>
+        </a>
       </article>
       
-      <article class="card-shell group flex h-full flex-col border border-slate-200 transition-all duration-300 hover:border-brand-400 hover:shadow-xl">
-        <div class="overflow-hidden rounded-2xl">
-          <a href="/sensors/sdc/" class="block">
-            <img src="/images/placeholder.png" alt="Spectrum Detection"
-              class="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-          </a>
-        </div>
-        <h2 class="mt-4 text-lg font-bold text-slate-900">
-          <a href="/sensors/sdc/"
-            class="rounded-sm transition-colors hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-            Spectrum Detection
-          </a>
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-slate-600">Spectrum Detection by Cyrentis for wireless signal monitoring, emitter detection, and low-altitude RF awareness.</p>
+      <article class="sensor-strip sensor-tone-spectrum">
+        <a href="/sensors/sdc/" class="sensor-strip-link">
+          <div class="sensor-strip-media">
+            
+            <img src="/images/sensors/bg-sdc.svg" alt="" class="sensor-strip-bg" aria-hidden="true">
+            
+            
+            <div class="sensor-strip-mark" aria-hidden="true">
+              
+              <span>Spectrum</span>
+              
+              <span>Detection by</span>
+              
+              <span>Cyrentis</span>
+              
+            </div>
+            
+            <div class="sensor-strip-device-stage" aria-hidden="true">
+              
+              <img src="/images/sensors/device-sdc-placeholder.svg" alt="" class="sensor-strip-device" aria-hidden="true">
+              
+            </div>
+          </div>
+
+          <div class="sensor-strip-copy">
+            
+            <p class="sensor-strip-label">Spectrum Layer</p>
+            
+            <h2>Spectrum Detection</h2>
+            <p class="sensor-strip-description">RF awareness for wirel. signal monitoring, emitter detection, &amp; low-altitude spectrum insight</p>
+            
+            <p class="sensor-strip-detail">Emitter visibility, control-link awareness, and RF alerting.</p>
+            
+            
+            <span class="sensor-strip-cta">Explore SDC</span>
+            
+          </div>
+        </a>
       </article>
       
     </div>
-    
-  
+  </div>
 </section>
 
   </main>
@@ -506,7 +595,7 @@
       <div class="space-y-1">
         <p>&copy; 2026 Wuhan Cyrentis Technology Co., Ltd.. All rights reserved.</p>
         
-        <p>鄂ICP备202405002号</p>
+        <p>é„‚ICPå¤‡202405002å·</p>
         
       </div>
       <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-slate-400">

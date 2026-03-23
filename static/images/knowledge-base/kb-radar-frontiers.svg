@@ -1,0 +1,25 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="48" fill="#F8FAFC"/>
+  <rect x="70" y="70" width="1460" height="760" rx="40" fill="url(#bg)"/>
+  <circle cx="350" cy="450" r="160" fill="#EEF2FF"/>
+  <circle cx="350" cy="450" r="120" stroke="#7C3AED" stroke-width="8"/>
+  <circle cx="350" cy="450" r="70" stroke="#A855F7" stroke-width="8" stroke-dasharray="12 12"/>
+  <rect x="620" y="210" width="260" height="180" rx="28" fill="#DBEAFE" stroke="#2563EB" stroke-width="6"/>
+  <rect x="930" y="210" width="260" height="180" rx="28" fill="#ECFDF5" stroke="#0F766E" stroke-width="6"/>
+  <rect x="1240" y="210" width="180" height="180" rx="28" fill="#FFF7ED" stroke="#EA580C" stroke-width="6"/>
+  <rect x="620" y="470" width="260" height="180" rx="28" fill="#F5F3FF" stroke="#7C3AED" stroke-width="6"/>
+  <rect x="930" y="470" width="260" height="180" rx="28" fill="#E0F2FE" stroke="#0F5FA8" stroke-width="6"/>
+  <rect x="1240" y="470" width="180" height="180" rx="28" fill="#F0FDF4" stroke="#10B981" stroke-width="6"/>
+  <path d="M490 360L620 300" stroke="#A855F7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M500 430L930 300" stroke="#0F5FA8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M500 490L1240 300" stroke="#EA580C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M490 540L620 560" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+  <path d="M470 600L930 560" stroke="#0F766E" stroke-width="8" stroke-linecap="round"/>
+  <path d="M430 650L1240 560" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="70" x2="1530" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+  </defs>
+</svg>

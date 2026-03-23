@@ -1,0 +1,134 @@
+{{ define "main" }}
+{{- $ui := .Site.Params.ui -}}
+{{- $entries := slice -}}
+{{- range .RegularPagesRecursive -}}
+  {{- if .Params.model -}}
+    {{- $sortWeight := 99999 -}}
+    {{- if isset .Params "catalog_order" -}}
+      {{- $orderVal := int (default 0 .Params.catalog_order) -}}
+      {{- if gt $orderVal 0 -}}
+        {{- $sortWeight = $orderVal -}}
+      {{- end -}}
+    {{- else if isset .Params "weight" -}}
+      {{- $weightVal := int (default 0 .Params.weight) -}}
+      {{- if gt $weightVal 0 -}}
+        {{- $sortWeight = $weightVal -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $sortKey := printf "%05d-%s" $sortWeight (lower (default .File.ContentBaseName .Params.model)) -}}
+    {{- $entries = $entries | append (dict "page" . "sortKey" $sortKey) -}}
+  {{- end -}}
+{{- end -}}
+{{- $entries = sort $entries "sortKey" "asc" -}}
+{{- $rangeMeta := dict
+  "1" (dict "label" "Short Range" "class" "is-short" "description" "Compact stabilized optics for perimeter, vehicle, and shipborne observation.")
+  "2" (dict "label" "Medium Range" "class" "is-medium" "description" "Balanced EO and thermal confirmation for radar-led site operations.")
+  "3" (dict "label" "Long Range" "class" "is-long" "description" "Extended cooled observation for tower, coastal, and open-area watch.")
+-}}
+
+<section class="soc-catalog-page">
+  <section class="soc-catalog-hero py-14">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="soc-catalog-hero-shell">
+        <div class="soc-catalog-hero-copy">
+          {{ partial "breadcrumb.html" . }}
+          <h1 class="section-title soc-catalog-title-main">{{ .Title }}</h1>
+          {{ with .Params.description }}
+          <p class="soc-catalog-lead">{{ . }}</p>
+          {{ end }}
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    {{ if gt (len $entries) 0 }}
+    <div class="soc-catalog-grid">
+      {{ range $entries }}
+      {{- $page := .page -}}
+      {{- $weightKey := string (default 0 $page.Weight) -}}
+      {{- $meta := index $rangeMeta $weightKey | default (dict "label" "SOC Product" "class" "is-medium" "description" "Surveillance optics for integrated site monitoring.") -}}
+      {{- $rangeLabel := index $meta "label" -}}
+      {{- $toneClass := index $meta "class" -}}
+      {{- $rangeText := index $meta "description" -}}
+      {{- $stats := first 4 ($page.Params.hero_stats | default slice) -}}
+      {{- $chips := first 3 ($page.Params.hero_chips | default slice) -}}
+      {{- $configs := $page.Params.config_suffixes | default slice -}}
+      {{- $heroImage := $page.Params.hero_image | default "" -}}
+      {{- $pngCandidate := replaceRE `(?i)\.(jpe?g|webp)$` ".png" $heroImage -}}
+      {{- $pngCandidateFile := printf "static%s" $pngCandidate -}}
+      {{- $cardImage := $heroImage -}}
+      {{- if and $pngCandidate (ne $pngCandidate $heroImage) (fileExists $pngCandidateFile) -}}
+        {{- $cardImage = $pngCandidate -}}
+      {{- end -}}
+      <article class="soc-catalog-card {{ $toneClass }}">
+        <a href="{{ $page.RelPermalink }}" class="soc-catalog-card-media">
+          <span class="soc-catalog-card-glow"></span>
+          {{ with $cardImage }}
+          <img src="{{ . | relURL }}" alt="{{ $page.Params.model | default $page.Title }}" class="soc-catalog-card-image">
+          {{ end }}
+        </a>
+
+        <div class="soc-catalog-card-body">
+          <div class="soc-catalog-card-head">
+            <span class="soc-catalog-range-tag">{{ $rangeLabel }}</span>
+            {{ if gt (len $configs) 0 }}
+            <span class="soc-catalog-config-tag">{{ len $configs }} config{{ if ne (len $configs) 1 }}s{{ end }}</span>
+            {{ end }}
+          </div>
+
+          <h2 class="soc-catalog-card-title">
+            <a href="{{ $page.RelPermalink }}">{{ $page.Params.model | default $page.Title }}</a>
+          </h2>
+
+          <p class="soc-catalog-card-text">{{ $page.Params.description | default $rangeText }}</p>
+
+          {{ if gt (len $chips) 0 }}
+          <div class="soc-catalog-chip-row">
+            {{ range $chips }}
+            <span class="soc-catalog-chip">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          {{ if gt (len $configs) 0 }}
+          <div class="soc-catalog-config-row">
+            {{ range $configs }}
+            <span class="soc-catalog-config-chip">{{ .full_model }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          {{ if gt (len $stats) 0 }}
+          <div class="soc-catalog-stat-grid">
+            {{ range $stats }}
+            <div class="soc-catalog-stat">
+              {{ with .icon }}
+              <img src="{{ . | relURL }}" alt="" class="soc-catalog-stat-icon" aria-hidden="true">
+              {{ end }}
+              <div>
+                <span class="soc-catalog-stat-label">{{ .label }}</span>
+                <p class="soc-catalog-stat-value">{{ .value }}</p>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          <div class="soc-catalog-card-foot">
+            <span>{{ $rangeText }}</span>
+            <span class="soc-catalog-card-arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div class="rounded-3xl border border-slate-200 bg-white p-10 text-center text-sm text-slate-600">
+      {{ $ui.no_items_label | default "No items available in this section yet." }}
+    </div>
+    {{ end }}
+  </section>
+</section>
+{{ end }}

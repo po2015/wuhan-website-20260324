@@ -1,6 +1,6 @@
 ---
 title: "Information"
-description: "Knowledge articles, company updates, and downloadable materials related to Horizon, sensors, and project delivery."
+description: "Explore practical articles and company updates related to Cyrentis platforms, sensors, and project planning."
 layout: "list"
 weight: 4
 info_center:
@@ -10,4 +10,4 @@ info_center:
   news_empty: "No news posts yet."
 ---
 
-Browse practical references, company updates, and downloadable materials for Cyrentis systems and sensor deployments.
+Find the latest guidance and announcements for Cyrentis solutions. Whether you are evaluating products, planning a project, or following company progress, this section helps you reach the most relevant information quickly.

@@ -7,5 +7,201 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <atom:link href="https://www.cyrentis.com/sensors/src/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SRC-C03A-1G</title>
+      <link>https://www.cyrentis.com/sensors/src/src-c03a-1g/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-c03a-1g/</guid>
+      <description>&lt;p&gt;SRC-C03A-1G Surveillance Radar is positioned for land border surveillance, critical site protection, and perimeter monitoring projects where operators need C band Pulse Doppler sensing and a readable site-warning layer. The electronic azimuth scanning architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-K01B-2D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-k01b-2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-k01b-2d/</guid>
+      <description>&lt;p&gt;SRC-K01B-2D Surveillance Radar is positioned for border surveillance, maritime surveillance, and key site protection projects where operators need Ku band FMCW sensing and a readable site-warning layer. The mechanical azimuth scanning + electronic elevation steering architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-K02E-2G</title>
+      <link>https://www.cyrentis.com/sensors/src/src-k02e-2g/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-k02e-2g/</guid>
+      <description>&lt;p&gt;SRC-K02E-2G moving target surveillance radar is positioned for land border surveillance, maritime surveillance, and critical site protection projects where operators need Ku band FMCW sensing and a readable site-warning layer. The four-face aesa array architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-K03B-2D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-k03b-2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-k03b-2d/</guid>
+      <description>&lt;p&gt;SRC-K03B-2D Surveillance Radar is positioned for border surveillance, maritime surveillance, and critical site protection projects where operators need Ku band FMCW sensing and a readable site-warning layer. The mechanical azimuth scanning + electronic elevation steering architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-K04A-2G</title>
+      <link>https://www.cyrentis.com/sensors/src/src-k04a-2g/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-k04a-2g/</guid>
+      <description>&lt;p&gt;SRC-K04A-2G Surveillance Radar is positioned for land border surveillance, maritime surveillance, and critical site protection projects where operators need Ku band FMCW sensing and a readable site-warning layer. The electronic azimuth scanning architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-K05C-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-k05c-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-k05c-1d/</guid>
+      <description>&lt;p&gt;SRC-K05C-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need Ku band Pulse Doppler sensing and a readable site-warning layer. The 2d electronic scanning (single-face aesa) architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-K05D-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-k05d-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-k05d-1d/</guid>
+      <description>&lt;p&gt;SRC-K05D-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need Ku band Pulse Doppler sensing and a readable site-warning layer. The electronic scanning with mechanical rotation architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-K05E-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-k05e-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-k05e-1d/</guid>
+      <description>&lt;p&gt;SRC-K05E-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need Ku band Pulse Doppler sensing and a readable site-warning layer. The four-face aesa array architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X01C-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x01c-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x01c-1d/</guid>
+      <description>&lt;p&gt;SRC-X01C-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The 2d electronic scanning (single-face aesa) architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X01D-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x01d-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x01d-1d/</guid>
+      <description>&lt;p&gt;SRC-X01D-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The electronic scanning with mechanical rotation architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X01E-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x01e-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x01e-1d/</guid>
+      <description>&lt;p&gt;SRC-X01E-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The four-face aesa array architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X03C-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x03c-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x03c-1d/</guid>
+      <description>&lt;p&gt;SRC-X03C-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The 2d electronic scanning (single-face aesa) architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X03D-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x03d-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x03d-1d/</guid>
+      <description>&lt;p&gt;SRC-X03D-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The electronic scanning with mechanical rotation architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X03E-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x03e-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x03e-1d/</guid>
+      <description>&lt;p&gt;SRC-X03E-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The four-face aesa array architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X05A-2G</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x05a-2g/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x05a-2g/</guid>
+      <description>&lt;p&gt;SRC-X05A-2G Surveillance Radar is positioned for land border surveillance, maritime surveillance, and critical site protection projects where operators need X band FMCW sensing and a readable site-warning layer. The electronic azimuth scanning architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X05B-2D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x05b-2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x05b-2d/</guid>
+      <description>&lt;p&gt;SRC-X05B-2D Surveillance Radar is positioned for border surveillance, maritime surveillance, and key site protection projects where operators need X band FMCW sensing and a readable site-warning layer. The mechanical azimuth scanning + electronic elevation steering architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X05C-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x05c-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x05c-1d/</guid>
+      <description>&lt;p&gt;SRC-X05C-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The 2d electronic scanning (single-face aesa) architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X05D-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x05d-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x05d-1d/</guid>
+      <description>&lt;p&gt;SRC-X05D-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The electronic scanning with mechanical rotation architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X05E-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x05e-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x05e-1d/</guid>
+      <description>&lt;p&gt;SRC-X05E-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The four-face aesa array architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X05E-3D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x05e-3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x05e-3d/</guid>
+      <description>&lt;p&gt;SRC-X05E-3D Surveillance Radar is positioned for border surveillance, maritime surveillance, and critical site protection projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The four-face aesa array architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X08B-2D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x08b-2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x08b-2d/</guid>
+      <description>&lt;p&gt;SRC-X08B-2D Surveillance Radar is positioned for border surveillance, maritime surveillance, and critical site protection projects where operators need X band FMCW sensing and a readable site-warning layer. The mechanical azimuth scanning + electronic elevation steering architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X08E-3D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x08e-3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x08e-3d/</guid>
+      <description>&lt;p&gt;SRC-X08E-3D Surveillance Radar is positioned for border surveillance, maritime surveillance, and critical site protection projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The four-face aesa array architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X10A-2G</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x10a-2g/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x10a-2g/</guid>
+      <description>&lt;p&gt;SRC-X10A-2G Surveillance Radar is positioned for land border surveillance, maritime surveillance, and critical site protection projects where operators need X band FMCW sensing and a readable site-warning layer. The electronic azimuth scanning architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X10B-2D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x10b-2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x10b-2d/</guid>
+      <description>&lt;p&gt;SRC-X10B-2D Low-Altitude Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band FMCW sensing and a readable site-warning layer. The mechanical azimuth scanning + electronic elevation steering architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X10C-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x10c-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x10c-1d/</guid>
+      <description>&lt;p&gt;SRC-X10C-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The 2d electronic scanning (single-face aesa) architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X10D-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x10d-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x10d-1d/</guid>
+      <description>&lt;p&gt;SRC-X10D-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The electronic scanning with mechanical rotation architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X10E-1D</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x10e-1d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x10e-1d/</guid>
+      <description>&lt;p&gt;SRC-X10E-1D Surveillance Radar is positioned for low-altitude surveillance, critical site protection, and counter-uas early warning projects where operators need X band Pulse Doppler sensing and a readable site-warning layer. The four-face aesa array architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRC-X16A-2G</title>
+      <link>https://www.cyrentis.com/sensors/src/src-x16a-2g/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/sensors/src/src-x16a-2g/</guid>
+      <description>&lt;p&gt;SRC-X16A-2G Surveillance Radar is positioned for land border surveillance, maritime surveillance, and critical site protection projects where operators need X band FMCW sensing and a readable site-warning layer. The electronic azimuth scanning architecture supports structured deployment planning and downstream response coordination.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

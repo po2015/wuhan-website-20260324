@@ -5,7 +5,7 @@ image: /images/radar/src-x10b-2d.jpg
 factory_location: Xi'an, China
 targets:
   drone_small: 10
-The T20SE Low-Altitude Surveillance Radar is an intelligent detection 3D radar. It can rapidly detect and continuously track targets such as UAVs, aircraft, vehicles and birds. It is widely used in critical sites to prevent hazards caused by aerial intruders and birds. 
+The SRC-X10B-2D Low-Altitude Surveillance Radar is an intelligent detection 3D radar. It can rapidly detect and continuously track targets such as UAVs, aircraft, vehicles and birds. It is widely used in critical sites to prevent hazards caused by aerial intruders and birds. 
 Utilizing simultaneous multi-beam technology and high-performance signal processing techniques, this radar can rapidly and accurately acquire target position and motion states even in complex, dense multi-target environments. The radar employs a continuous wave operation mode with low transmission power, significantly enhancing its resistance to stability compared to pulse-based systems.
 Within a cooperative detection system, this radar can serve as the core sensing unit, providing high-precision target data to other sensors (such as electro-optical devices, bird dispersal equipment) to achieve precise guidance.
 I. Product Features
@@ -45,11 +45,6 @@ II. Product Specifications
 ②　Power Consumption: ≤400W 
 ③　Communication: Ethernet (Circular Aviation Connector)
 10.	Size/Weight: ≤66 kg (Host +Turntable) 
- Item 	 Dimensions (mm)	Weight (kg)	Packed Dim (mm)	Packed Wt (kg)
-Host Unit	≤1253*537*113
-(Thickness including the handle) 	≤31	≤1354*654*210	≤51
-Pedestal	≤500*380*520	≤35	≤730*730*560	≤57
-Tripod	≤970*200*200	≤14	≤1175*250*250	≤17
 
                 
 

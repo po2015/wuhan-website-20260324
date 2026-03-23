@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" fill="none" role="img" aria-label="Track acquisition system icon">
+  <rect x="8" y="8" width="72" height="72" rx="22" fill="#ECFBFF" stroke="#97E2F8" stroke-width="2"/>
+  <circle cx="44" cy="44" r="18" fill="#BAE6FD" opacity="0.55"/>
+  <path d="M31 39V34.5C31 31.4624 33.4624 29 36.5 29H41" stroke="#0EA5E9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 29H51.5C54.5376 29 57 31.4624 57 34.5V39" stroke="#0EA5E9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M57 49V53.5C57 56.5376 54.5376 59 51.5 59H47" stroke="#0EA5E9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M41 59H36.5C33.4624 59 31 56.5376 31 53.5V49" stroke="#0EA5E9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="38" y="38" width="12" height="12" rx="4" fill="#0284C7"/>
+  <path d="M49.5 38.5L58 30" stroke="#0284C7" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="60.5" cy="27.5" r="4.5" fill="white" stroke="#0284C7" stroke-width="2.4"/>
+</svg>

@@ -1,0 +1,115 @@
+===== PAGE 1 =====
+规格书
+Specification Shee
+P4频谱探测器
+P4Spectrum Detector
+t
+
+
+===== PAGE 2 =====
+目
+录
+CONTENTS
+1 功能用途
+1 Function and Purpose........................................................................................................3
+1.1 产品特点
+1.1 Product Features.......................................................................................................4
+1.2 产品指标
+1.2 Product Specifications..............................................................................................5
+2 场景测试
+2. Scenarios test ..................................................................................................................7
+
+
+===== PAGE 3 =====
+3
+1 功能用途
+1 Function and Purpose
+UAMS-D02 无人机侦测定位探测器可通过解析通信链路实现对无人机探测
+和飞手的定位，具有黑白名单和轨迹追踪的功能，可灵活部署，适用于多场景和
+环境。
+UAMS-D02 drone detection and positioning detector can achieve drone
+detection and pilot positioning by analyzing the communication link. It features a
+blacklist and whitelist function as well as trajectory tracking, allowing for flexible
+deployment and is suitable for various scenarios and environments.
+
+
+===== PAGE 4 =====
+4
+1.1 产品特点
+1.1 Product Features
+1) 飞手定位、轨迹追踪
+1) Drone pilot positioning、Trajectory Tracking
+可以展示无人机实时飞行轨迹、遥控频段、型号、唯一ID、飞行高度速度、
+无人机位置、飞手位置等信息。
+D02 can display real-time flight trajectories of drones, remote control frequency
+bands, models, unique IDs, flight altitudes and speeds, locations of drones, and
+locations of pilots.
+2) 与多雷达、诱骗等设备联动
+2) conjunction with radars, GPS deception
+提供扩展接口，可方便实现与雷达、GPS 诱导、干扰等设备进行联动。
+D02 provide extended interfaces, which can conveniently realize the linkage
+with radar, GPS guidance, interference and other devices.
+3) 黑白名单
+3) Blacklist and Whitelist
+通过预定义或动态学习无人机信号特征，实现合法设备放行与非法目标拦截
+的精准管控，有效降低误报率，提升安全防护效率。
+By pre-defining or dynamically learning the signal characteristics of drones,
+precise control and management can be achieved to allow passage for legitimate
+devices and to intercept illegal targets, effectively reducing the false alarm rate and
+enhancing the efficiency of security protection.
+4) 灵活部署、操作简单
+4) Flexible deployment and Ease of Operation
+频谱重量轻，可单人应用架设，方便用户使用；同时人机界面直观简洁，配
+
+
+===== PAGE 5 =====
+5
+置简单。
+D02 is lightweight, can be set up by a single person, making it convenient for
+users. Additionally, the human-machine interface is intuitive and straightforward, and
+the configuration is simple.
+1.2 产品指标
+1.2 Product Specifications
+0.1W)
+1）频率范围：30MHz—6000MHz；
+1) Frequency range: 30MHz—6000MHz;
+2）探测距离：5-10km（无人机发射功率0.1W标准场地）；
+2)Detectionrange:5-10km(standard field with a drone transmission power of
+;
+3）扫描速度：20GHz/s (25kHz 分辨率)
+3) Scan speed: 20GHz/s (25kHz resolution);
+4）识别技术：频谱特征、定位解析(包括O4 解析)、RID 解析；
+4) Identification technology: spectral features, positioning analysis (including
+O4 analysis), RID analysis;
+5）极化方式：垂直极化；
+5) Polarization method: Vertical polarization;
+6）测向精度：≤5°(RMS 标准场地)；
+6) Range accuracy: ≤5m (RMS standard site);
+7）定位精度：≤10 米；
+7) Positioning accuracy: ≤10 m;
+8）同时探测目标数：≥30 架（同时定位飞手数量≥10 个）；
+8) Simultaneous target detection: ≥30 aircraft (simultaneous positioning of
+pilots ≥10;
+
+
+===== PAGE 6 =====
+6
+9）设备功率：≤100W；
+9) Equipment power consumption: ≤100W;
+10）结构尺寸450mm *450mm * 380mm；
+10) Structural dimensions 450mm * 450mm * 380mm;
+11）重量：≤13Kg；
+11) Weight :≤13Kg;
+12）供电方式：220V AC 交流电；
+12) Power supply method: 220V AC alternating current;
+13）数据接口：网口；
+13) Data Interface: Network Port;
+14）防护等级：IP65；
+14) Protection level: IP65;
+
+
+===== PAGE 7 =====
+7
+2 场景测试
+2. Scenarios Test
+

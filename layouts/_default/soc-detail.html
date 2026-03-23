@@ -1,0 +1,264 @@
+{{ define "main" }}
+<section class="soc-detail-page">
+  <section class="soc-detail-hero-wrap">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
+      <div class="soc-detail-hero">
+        <div class="soc-detail-hero-copy">
+          {{ partial "breadcrumb.html" . }}
+          {{ with .Params.series_label }}
+          <p class="soc-detail-series">{{ . }}</p>
+          {{ end }}
+          <h1 class="soc-detail-title">{{ .Params.model | default .Title }}</h1>
+          {{ with .Params.hero_lead | default .Params.description }}
+          <p class="soc-detail-lead">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.hero_chips }}
+          <div class="soc-detail-chip-row">
+            {{ range . }}
+            <span class="soc-detail-chip">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+          <div class="soc-detail-hero-actions">
+            <a href="{{ printf "%s#contact-form" ("contact-us/" | relLangURL) }}" class="soc-detail-primary-action">Request Project Discussion</a>
+            <a href="{{ "/sensors/soc/" | relLangURL }}" class="soc-detail-secondary-action">Back to SOC List</a>
+          </div>
+        </div>
+        <div class="soc-detail-hero-visual">
+          <span class="soc-detail-hero-glow soc-detail-hero-glow-a"></span>
+          <span class="soc-detail-hero-glow soc-detail-hero-glow-b"></span>
+          <div class="soc-detail-device-stage">
+            {{ with .Params.hero_image }}
+            <img src="{{ . | relURL }}" alt="{{ $.Params.model | default $.Title }}" class="soc-detail-hero-product">
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ with .Params.hero_stats }}
+  <section class="soc-detail-stat-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="soc-detail-stat-grid">
+        {{ range . }}
+        <article class="soc-detail-stat-card">
+          {{ with .icon }}
+          <img src="{{ . | relURL }}" alt="" class="soc-detail-stat-icon">
+          {{ end }}
+          <p class="soc-detail-stat-label">{{ .label }}</p>
+          <p class="soc-detail-stat-value">{{ .value }}</p>
+          {{ with .note }}
+          <p class="soc-detail-stat-note">{{ . }}</p>
+          {{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="soc-detail-overview-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Operational Position</p>
+        <h2 class="soc-detail-panel-title">{{ .Params.positioning_title | default "A long-range electro-optical payload for confirmation, tracking, and site command support." }}</h2>
+        <div class="content-typography soc-detail-story-copy">{{ .Content }}</div>
+      </article>
+    </div>
+  </section>
+
+  {{ with .Params.config_suffixes }}
+  <section class="soc-detail-feature-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Configurations</p>
+        <h2 class="soc-detail-panel-title">{{ $.Params.configurations_title | default "One product name, suffix-based configurations." }}</h2>
+        <div class="soc-detail-config-grid">
+          {{ range . }}
+          <article class="soc-detail-config-card">
+            <div class="soc-detail-config-head">
+              <span class="soc-detail-config-suffix">{{ .suffix }}</span>
+              <div>
+                <h3 class="soc-detail-config-model">{{ .full_model }}</h3>
+                <p class="soc-detail-config-title">{{ .title }}</p>
+              </div>
+            </div>
+            <p class="soc-detail-config-text">{{ .text }}</p>
+            {{ with .highlights }}
+            <ul class="soc-detail-config-list">
+              {{ range . }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+            {{ end }}
+          </article>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.feature_cards }}
+  <section class="soc-detail-feature-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="soc-detail-feature-grid">
+        {{ range . }}
+        <article class="soc-detail-feature-card">
+          {{ with .icon }}
+          <img src="{{ . | relURL }}" alt="" class="soc-detail-feature-icon">
+          {{ end }}
+          <div class="soc-detail-feature-copy">
+            <h3>{{ .title }}</h3>
+            <p>{{ .text }}</p>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.optical_channels }}
+  <section class="soc-detail-table-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Optical Channels</p>
+        <h2 class="soc-detail-panel-title">Sensor packages presented as separate decision blocks for first-pass selection.</h2>
+        <div class="soc-detail-optics-grid">
+          {{ range . }}
+          <article class="soc-detail-optics-card">
+            <h3>{{ .title }}</h3>
+            <table class="soc-detail-optics-table">
+              <tbody>
+                {{ range .rows }}
+                <tr>
+                  <th>{{ .name }}</th>
+                  <td>{{ .value }}</td>
+                </tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </article>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.technical_snapshot }}
+  <section class="soc-detail-table-section" id="technical-snapshot">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Technical Snapshot</p>
+        <h2 class="soc-detail-panel-title">The parameters that matter most for first-pass solution fit.</h2>
+        <div class="soc-detail-table-scroll">
+          <table class="soc-detail-spec-table">
+            <tbody>
+              {{ range . }}
+              <tr>
+                <th>{{ .name }}</th>
+                <td>{{ .value }}</td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="soc-detail-integration-section">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(360px,1.1fr)_minmax(0,1fr)] lg:px-8">
+      <article class="soc-detail-panel soc-detail-software-panel">
+        <p class="soc-detail-mini-kicker">Native Software</p>
+        <h2 class="soc-detail-panel-title">{{ .Params.integration_native_title | default "The original software path from alert to optical confirmation." }}</h2>
+        <div class="soc-detail-software-layout">
+          {{ with .Params.integration_image }}
+          <img src="{{ . | relURL }}" alt="{{ $.Params.integration_image_alt | default "SOC software view" }}" class="soc-detail-software-image">
+          {{ end }}
+          {{ with .Params.integration_text }}
+          <div class="soc-detail-software-copy">
+            <p class="soc-detail-software-note">{{ . }}</p>
+          </div>
+          {{ end }}
+        </div>
+      </article>
+      {{ with .Params.integration_modules }}
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Horizon Integration</p>
+        <h2 class="soc-detail-panel-title">{{ $.Params.integration_horizon_title | default "How the same payload logic can be absorbed into Horizon." }}</h2>
+        {{ with $.Params.integration_horizon_text }}
+        <p class="soc-detail-software-note soc-detail-horizon-note">{{ . }}</p>
+        {{ end }}
+        <div class="soc-detail-module-grid">
+          {{ range . }}
+          <article class="soc-detail-module-card">
+            {{ with .icon }}
+            <img src="{{ . | relURL }}" alt="" class="soc-detail-module-icon">
+            {{ end }}
+            <div>
+              <h3>{{ .title }}</h3>
+              <p>{{ .text }}</p>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ with .Params.performance_notes }}
+  <section class="soc-detail-table-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Applied Notes</p>
+        <h2 class="soc-detail-panel-title">Reference observations that still matter during project definition.</h2>
+        <div class="soc-detail-note-grid">
+          {{ range . }}
+          {{- $note := . -}}
+          <article class="soc-detail-note-card">
+            <div class="soc-detail-note-media">
+              {{ with $note.image }}
+              <img src="{{ . | relURL }}" alt="{{ $note.alt | default $note.title }}" class="soc-detail-note-image">
+              {{ end }}
+            </div>
+            <div class="soc-detail-note-copy">
+              <h3>{{ $note.title }}</h3>
+              <p>{{ $note.text }}</p>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.deployment_scenarios }}
+  <section class="soc-detail-deployment-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Deployment Fit</p>
+        <h2 class="soc-detail-panel-title">Real deployment forms supported by the current payload architecture.</h2>
+        <div class="soc-detail-photo-grid">
+          {{ range . }}
+          <article class="soc-detail-photo-card">
+            <img src="{{ .image | relURL }}" alt="{{ .alt | default .title }}" class="soc-detail-photo-image">
+            <div class="soc-detail-photo-copy">
+              <h3>{{ .title }}</h3>
+              <p>{{ .text }}</p>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+</section>
+{{ end }}

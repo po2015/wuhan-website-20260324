@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{- $ui := .Site.Params.ui -}}
+{{- $pageSize := int (.Params.page_size | default 6) -}}
+{{- $pages := sort .RegularPages "Date" "desc" -}}
+{{- $paginator := .Paginate $pages $pageSize -}}
+
+<section class="bg-white py-14">
+  <div class="mx-auto max-w-[88rem] px-4 sm:px-6 lg:px-8">
+    {{ partial "breadcrumb.html" . }}
+    <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">{{ .Title }}</h1>
+    {{ with .Params.description }}
+    <p class="mt-4 max-w-4xl text-base leading-8 text-slate-600">{{ . }}</p>
+    {{ end }}
+    {{ with .Content }}
+    <div class="prose prose-slate mt-6 max-w-4xl">{{ . }}</div>
+    {{ end }}
+  </div>
+</section>
+
+<section class="bg-white pb-16">
+  <div class="mx-auto max-w-[88rem] px-4 sm:px-6 lg:px-8">
+    {{ if gt (len $paginator.Pages) 0 }}
+    <div class="grid gap-6">
+      {{ range $paginator.Pages }}
+      {{- $pageImage := .Params.image | default (.Params.hero_image | default "images/placeholder.png") -}}
+      <article class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft transition duration-200 hover:-translate-y-0.5 hover:shadow-xl">
+        <div class="grid lg:grid-cols-[320px_minmax(0,1fr)]">
+          <a href="{{ .RelPermalink }}" class="block overflow-hidden border-b border-slate-200 bg-slate-100 lg:border-b-0 lg:border-r">
+            <img src="{{ $pageImage | relURL }}" alt="{{ .Title }}" class="h-[15rem] w-full object-cover object-center transition duration-200 hover:scale-[1.02] lg:h-full">
+          </a>
+
+          <div class="grid gap-5 p-6 lg:p-7">
+            <div class="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.08em] text-slate-500">
+              {{ if not .Date.IsZero }}<span>{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+              <span class="h-1 w-1 rounded-full bg-slate-300"></span>
+              <span>News</span>
+            </div>
+
+            <div>
+              <h2 class="text-[1.55rem] font-extrabold leading-tight text-slate-900">
+                <a href="{{ .RelPermalink }}" class="transition hover:text-brand-700">{{ .Title }}</a>
+              </h2>
+              <p class="mt-4 text-[0.98rem] leading-8 text-slate-600">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+            </div>
+
+            <div class="flex items-center justify-between border-t border-slate-200 pt-4">
+              <a href="{{ .RelPermalink }}" class="text-sm font-bold uppercase tracking-[0.12em] text-slate-800 transition hover:text-brand-700">Read article</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav class="mt-10 flex flex-wrap items-center justify-center gap-3" aria-label="Pagination">
+      {{ with $paginator.Prev }}
+      <a href="{{ .URL }}" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">Previous</a>
+      {{ end }}
+
+      {{ range $paginator.Pagers }}
+      {{ if eq .PageNumber $paginator.PageNumber }}
+      <span class="inline-flex h-10 min-w-10 items-center justify-center rounded-full bg-brand-700 px-4 text-sm font-bold text-white">{{ .PageNumber }}</span>
+      {{ else }}
+      <a href="{{ .URL }}" class="inline-flex h-10 min-w-10 items-center justify-center rounded-full border border-slate-300 bg-white px-4 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">{{ .PageNumber }}</a>
+      {{ end }}
+      {{ end }}
+
+      {{ with $paginator.Next }}
+      <a href="{{ .URL }}" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">Next</a>
+      {{ end }}
+    </nav>
+    {{ end }}
+    {{ else }}
+    <div class="rounded-3xl border border-slate-200 bg-white p-10 text-center text-sm text-slate-600">{{ $ui.no_items_label | default "No items available in this section yet." }}</div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

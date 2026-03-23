@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{- $page := .Params.sensor_page -}}
+{{- $title := $page.title | default .Title -}}
+{{- $lead := $page.lead | default (.Description | default .Summary) -}}
+
+<section class="sensors-page-section">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
+    <div class="sensors-page-intro">
+      {{ partial "breadcrumb.html" . }}
+      <h1 class="sensors-page-title">{{ $title }}</h1>
+      {{ with $lead }}
+      <p class="sensors-page-lead">{{ . }}</p>
+      {{ end }}
+    </div>
+
+    <div class="sensors-strip-grid">
+      {{ range $page.families }}
+      <article class="sensor-strip sensor-tone-{{ .tone }}">
+        <a href="{{ .url | relLangURL }}" class="sensor-strip-link">
+          <div class="sensor-strip-media">
+            {{ with .background }}
+            <img src="{{ . | relURL }}" alt="" class="sensor-strip-bg" aria-hidden="true">
+            {{ end }}
+            {{ with .visual_lines }}
+            <div class="sensor-strip-mark" aria-hidden="true">
+              {{ range . }}
+              <span>{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ end }}
+            <div class="sensor-strip-device-stage" aria-hidden="true">
+              {{ with .device }}
+              <img src="{{ . | relURL }}" alt="" class="sensor-strip-device" aria-hidden="true">
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="sensor-strip-copy">
+            {{ with .label }}
+            <p class="sensor-strip-label">{{ . }}</p>
+            {{ end }}
+            <h2>{{ .title }}</h2>
+            <p class="sensor-strip-description">{{ .description }}</p>
+            {{ with .detail }}
+            <p class="sensor-strip-detail">{{ . }}</p>
+            {{ end }}
+            {{ with .cta }}
+            <span class="sensor-strip-cta">{{ . }}</span>
+            {{ end }}
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

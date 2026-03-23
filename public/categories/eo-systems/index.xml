@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EO Systems on Wuhan Cyrentis Technology Co., Ltd.</title>
+    <link>https://www.cyrentis.com/categories/eo-systems/</link>
+    <description>Recent content in EO Systems on Wuhan Cyrentis Technology Co., Ltd.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.cyrentis.com/categories/eo-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bionic FMCW LiDAR and the Rise of Adaptive 4D Machine Vision</title>
+      <link>https://www.cyrentis.com/knowledge-base/bionic-fmcw-lidar-and-adaptive-4d-machine-vision/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.cyrentis.com/knowledge-base/bionic-fmcw-lidar-and-adaptive-4d-machine-vision/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-bionic-lidar.svg&#34; alt=&#34;Adaptive bionic lidar concept illustration&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Much of the excitement around lidar focuses on one number: resolution. But the more interesting question is where the system spends its resolution budget. That is what makes recent work on gaze-enabled FMCW lidar so important. Instead of trying to scan every direction with the same density, the system concentrates high-resolution sensing where it matters most.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

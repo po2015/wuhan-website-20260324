@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
+  <rect x="8" y="8" width="72" height="72" rx="22" fill="#E7F9FF" stroke="#8DD7F7" stroke-width="2"/>
+  <rect x="18" y="18" width="52" height="52" rx="14" fill="white" stroke="#BAE6FD" stroke-width="2"/>
+  <image href="/images/icon.png" x="24" y="23" width="40" height="38.94" preserveAspectRatio="xMidYMid meet"/>
+</svg>

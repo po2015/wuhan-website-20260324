@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOC-D13G-2A | Wuhan Cyrentis Technology Co., Ltd.</title>
+  <meta name="description" content="Dual-spectrum air-surveillance payload with visible zoom, thermal imaging, precision PTZ, and radar-linked target confirmation.">
+  <link rel="icon" type="image/png" href="/images/icon.png">
+  <link rel="shortcut icon" href="/images/icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef7ff',
+              100: '#d9ecff',
+              200: '#bcdfff',
+              300: '#8fcbff',
+              400: '#5eb0ff',
+              500: '#2f90ff',
+              600: '#1b72e6',
+              700: '#1558b4',
+              800: '#164a92',
+              900: '#173f77'
+            }
+          },
+          boxShadow: {
+            soft: '0 8px 30px rgba(15, 23, 42, 0.08)'
+          },
+          fontFamily: {
+            sans: ['Manrope', 'Aptos', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-H32XFR8H0R');
+
+    (function () {
+      var tagId = 'G-H32XFR8H0R';
+      var loaded = false;
+
+      function loadGoogleTag() {
+        if (loaded) return;
+        loaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId);
+        script.referrerPolicy = 'strict-origin-when-cross-origin';
+        script.onerror = function () {};
+        document.head.appendChild(script);
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGoogleTag, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', function () {
+          window.setTimeout(loadGoogleTag, 2000);
+        }, { once: true });
+      }
+    })();
+  </script>
+  
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/92 backdrop-blur-md">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between gap-4 lg:h-[4.5rem]">
+      <a href="/" class="shrink-0">
+        <img src="/images/logo.png" alt="Cyrentis" class="h-10 w-auto max-w-[210px] object-contain">
+      </a>
+
+      <button id="mobileMenuButton" type="button" class="inline-flex items-center rounded-lg border border-slate-300/90 bg-white px-3 py-2 text-sm font-semibold text-slate-700 lg:hidden" aria-expanded="false" aria-controls="mobileMenu">
+        Menu
+      </button>
+
+      <nav class="main-nav hidden lg:block" aria-label="Main Navigation">
+        <ul class="flex items-center gap-0.5 text-[0.92rem] font-semibold text-slate-700">
+          
+          
+          
+          
+          
+          <li class="menu-item ">
+            <a class="menu-link " href="/">
+              Home
+              
+            </a>
+            
+          </li>
+          
+          
+          
+          
+          
+          <li class="menu-item ">
+            <a class="menu-link " href="/horizon/">
+              Horizon
+              
+            </a>
+            
+          </li>
+          
+          
+          
+          
+          
+            
+              
+            
+              
+            
+              
+            
+          
+          <li class="menu-item has-children">
+            <a class="menu-link is-current" href="/sensors/">
+              Sensors
+              <span class="menu-caret" aria-hidden="true"></span>
+            </a>
+            
+            <div class="menu-panel w-[270px]">
+              
+                
+                <a class="panel-link" href="/sensors/src/">Surveillance Radar</a>
+                
+                <a class="panel-link" href="/sensors/soc/">Surveillance Optics</a>
+                
+                <a class="panel-link" href="/sensors/sdc/">Spectrum Detection</a>
+                
+              
+            </div>
+            
+          </li>
+          
+          
+          
+          
+          
+            
+              
+            
+              
+            
+              
+            
+          
+          <li class="menu-item has-children">
+            <a class="menu-link " href="/services/">
+              Services
+              <span class="menu-caret" aria-hidden="true"></span>
+            </a>
+            
+            <div class="menu-panel w-[270px]">
+              
+                
+                <a class="panel-link" href="/services/security-software-customization/">Security Software Customization</a>
+                
+                <a class="panel-link" href="/services/security-solution-design/">Security Solution Design</a>
+                
+                <a class="panel-link" href="/services/security-equipment-integration/">Security Equipment Integration</a>
+                
+              
+            </div>
+            
+          </li>
+          
+          
+          
+          
+          
+            
+              
+            
+              
+            
+          
+          <li class="menu-item has-children">
+            <a class="menu-link " href="/info-center/">
+              Information
+              <span class="menu-caret" aria-hidden="true"></span>
+            </a>
+            
+            <div class="menu-panel w-[270px]">
+              
+                
+                <a class="panel-link" href="/knowledge-base/">Knowledge Base</a>
+                
+                <a class="panel-link" href="/news/">News</a>
+                
+              
+            </div>
+            
+          </li>
+          
+          
+          
+          
+          
+          <li class="menu-item ">
+            <a class="menu-link " href="/contact-us/">
+              Contact
+              
+            </a>
+            
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-slate-200 py-4 lg:hidden">
+      <div class="space-y-2 text-sm font-semibold text-slate-700">
+        
+          
+          <a class="mobile-link" href="/">Home</a>
+          
+        
+          
+          <a class="mobile-link" href="/horizon/">Horizon</a>
+          
+        
+          
+          <details class="mobile-group">
+            <summary>
+              <span>Sensors</span>
+              <span class="mobile-caret" aria-hidden="true"></span>
+            </summary>
+            <div class="mobile-submenu">
+              
+                
+                <a href="/sensors/src/">Surveillance Radar</a>
+                
+              
+                
+                <a href="/sensors/soc/">Surveillance Optics</a>
+                
+              
+                
+                <a href="/sensors/sdc/">Spectrum Detection</a>
+                
+              
+            </div>
+          </details>
+          
+        
+          
+          <details class="mobile-group">
+            <summary>
+              <span>Services</span>
+              <span class="mobile-caret" aria-hidden="true"></span>
+            </summary>
+            <div class="mobile-submenu">
+              
+                
+                <a href="/services/security-software-customization/">Security Software Customization</a>
+                
+              
+                
+                <a href="/services/security-solution-design/">Security Solution Design</a>
+                
+              
+                
+                <a href="/services/security-equipment-integration/">Security Equipment Integration</a>
+                
+              
+            </div>
+          </details>
+          
+        
+          
+          <details class="mobile-group">
+            <summary>
+              <span>Information</span>
+              <span class="mobile-caret" aria-hidden="true"></span>
+            </summary>
+            <div class="mobile-submenu">
+              
+                
+                <a href="/knowledge-base/">Knowledge Base</a>
+                
+              
+                
+                <a href="/news/">News</a>
+                
+              
+            </div>
+          </details>
+          
+        
+          
+          <a class="mobile-link" href="/contact-us/">Contact</a>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main id="main-content" class="min-h-[60vh]">
+    
+<section class="soc-detail-page">
+  <section class="soc-detail-hero-wrap">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
+      <div class="soc-detail-hero">
+        <div class="soc-detail-hero-copy">
+          <nav class="site-breadcrumb" aria-label="Breadcrumb">
+  <ol class="site-breadcrumb-list"><li class="site-breadcrumb-item"><a href="/" class="site-breadcrumb-link">Home</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><a href="/sensors/" class="site-breadcrumb-link">Sensors</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><a href="/sensors/soc/" class="site-breadcrumb-link">Surveillance Optics</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><span class="site-breadcrumb-current" aria-current="page">SOC-D13G-2A</span></li></ol>
+</nav>
+          
+          <p class="soc-detail-series">SOC surveillance optics series</p>
+          
+          <h1 class="soc-detail-title">SOC-D13G-2A</h1>
+          
+          <p class="soc-detail-lead">A medium-range EO and thermal payload for visual confirmation, target tracking, and radar-cued response in low-altitude security and critical-site operations.</p>
+          
+          
+          <div class="soc-detail-chip-row">
+            
+            <span class="soc-detail-chip">Dual-spectrum EO &#43; thermal</span>
+            
+            <span class="soc-detail-chip">Gimbal-stabilized PTZ</span>
+            
+            <span class="soc-detail-chip">Air-surveillance mission profile</span>
+            
+          </div>
+          
+          <div class="soc-detail-hero-actions">
+            <a href="/contact-us/#contact-form" class="soc-detail-primary-action">Request Project Discussion</a>
+            <a href="/sensors/soc/" class="soc-detail-secondary-action">Back to SOC List</a>
+          </div>
+        </div>
+        <div class="soc-detail-hero-visual">
+          <span class="soc-detail-hero-glow soc-detail-hero-glow-a"></span>
+          <span class="soc-detail-hero-glow soc-detail-hero-glow-b"></span>
+          <div class="soc-detail-device-stage">
+            
+            <img src="/images/soc/soc-d13g-2a-hero.png" alt="SOC-D13G-2A" class="soc-detail-hero-product">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="soc-detail-stat-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="soc-detail-stat-grid">
+        
+        <article class="soc-detail-stat-card">
+          
+          <img src="/images/icons/radar-target-vehicle.svg" alt="" class="soc-detail-stat-icon">
+          
+          <p class="soc-detail-stat-label">Vehicle D / R / I</p>
+          <p class="soc-detail-stat-value">13 / 3.4 / 1.7 km</p>
+          
+          <p class="soc-detail-stat-note">2.3 x 2.3 m reference target</p>
+          
+        </article>
+        
+        <article class="soc-detail-stat-card">
+          
+          <img src="/images/icons/radar-target-person.svg" alt="" class="soc-detail-stat-icon">
+          
+          <p class="soc-detail-stat-label">Human D / R / I</p>
+          <p class="soc-detail-stat-value">4.8 / 2.5 / 1.3 km</p>
+          
+          <p class="soc-detail-stat-note">1.8 x 0.6 m reference target</p>
+          
+        </article>
+        
+        <article class="soc-detail-stat-card">
+          
+          <img src="/images/icons/radar-target-drone.svg" alt="" class="soc-detail-stat-icon">
+          
+          <p class="soc-detail-stat-label">Drone Cueing</p>
+          <p class="soc-detail-stat-value">2.5 / 1.5 km</p>
+          
+          <p class="soc-detail-stat-note">Visible / thermal tracking on a 0.3 x 0.3 m UAV</p>
+          
+        </article>
+        
+        <article class="soc-detail-stat-card">
+          
+          <img src="/images/icons/product-gimbal-precision.svg" alt="" class="soc-detail-stat-icon">
+          
+          <p class="soc-detail-stat-label">PTZ Performance</p>
+          <p class="soc-detail-stat-value">120 deg/s &#43; 0.01 deg</p>
+          
+          <p class="soc-detail-stat-note">High-speed pan with digital angle positioning</p>
+          
+        </article>
+        
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="soc-detail-overview-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Operational Position</p>
+        <h2 class="soc-detail-panel-title">Configured for radar-assisted confirmation, long-range visual verification, and day-night tracking where operators need one optical payload to close the gap between alert and decision.</h2>
+        <div class="content-typography soc-detail-story-copy"><p>SOC-D13G-2A is positioned as a dual-spectrum observation payload for projects where an alert alone is not enough and the operator still needs readable confirmation. The visible and thermal channels are strong enough to support day-night target verification, while the gimbal architecture keeps the payload credible on rooftops, temporary field positions, and mobile platforms.</p>
+<p>For the website, the page focuses on DRI values, cueing value, PTZ behavior, integration readiness, and deployment form. Deeper codec tables, alarm matrices, patrol counts, and image-processing option lists should stay in the Cyrentis datasheet or proposal package.</p>
+</div>
+      </article>
+    </div>
+  </section>
+
+  
+
+  
+  <section class="soc-detail-feature-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="soc-detail-feature-grid">
+        
+        <article class="soc-detail-feature-card">
+          
+          <img src="/images/icons/product-dual-spectrum.svg" alt="" class="soc-detail-feature-icon">
+          
+          <div class="soc-detail-feature-copy">
+            <h3>Dual-spectrum payload</h3>
+            <p>Combines 2560 x 1440 visible imaging with a 640 x 512 LWIR thermal channel so operators can verify activity across daylight, darkness, glare, haze, and thermal contrast conditions.</p>
+          </div>
+        </article>
+        
+        <article class="soc-detail-feature-card">
+          
+          <img src="/images/icons/product-autotrack.svg" alt="" class="soc-detail-feature-icon">
+          
+          <div class="soc-detail-feature-copy">
+            <h3>Front-end auto tracking</h3>
+            <p>Supports manual and automatic tracking logic at the payload side, reducing the need to re-acquire the target every time the optical channel changes or the scene shifts.</p>
+          </div>
+        </article>
+        
+        <article class="soc-detail-feature-card">
+          
+          <img src="/images/icons/product-radar-cueing.svg" alt="" class="soc-detail-feature-icon">
+          
+          <div class="soc-detail-feature-copy">
+            <h3>Radar and software cueing</h3>
+            <p>Fits workflows where radar provides the first alert and the optical payload delivers visual confirmation, classification support, and operator evidence inside a shared command screen.</p>
+          </div>
+        </article>
+        
+        <article class="soc-detail-feature-card">
+          
+          <img src="/images/icons/product-environment-hardening.svg" alt="" class="soc-detail-feature-icon">
+          
+          <div class="soc-detail-feature-copy">
+            <h3>Built for exposed sites</h3>
+            <p>IP66 sealing, anti-salt design, strong-light handling, and wind resistance make the payload more credible for rooftop, coastal, fixed-site, and mobile deployment.</p>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <section class="soc-detail-table-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Optical Channels</p>
+        <h2 class="soc-detail-panel-title">Sensor packages presented as separate decision blocks for first-pass selection.</h2>
+        <div class="soc-detail-optics-grid">
+          
+          <article class="soc-detail-optics-card">
+            <h3>Visible Channel</h3>
+            <table class="soc-detail-optics-table">
+              <tbody>
+                
+                <tr>
+                  <th>Sensor</th>
+                  <td>1/1.8 inch starlight CMOS</td>
+                </tr>
+                
+                <tr>
+                  <th>Resolution</th>
+                  <td>2560 x 1440</td>
+                </tr>
+                
+                <tr>
+                  <th>Lens</th>
+                  <td>8 to 500 mm, 62x optical zoom</td>
+                </tr>
+                
+                <tr>
+                  <th>Digital Zoom</th>
+                  <td>16x</td>
+                </tr>
+                
+                <tr>
+                  <th>Image Support</th>
+                  <td>WDR, defog, strong-light suppression, image stabilization</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </article>
+          
+          <article class="soc-detail-optics-card">
+            <h3>Thermal Channel</h3>
+            <table class="soc-detail-optics-table">
+              <tbody>
+                
+                <tr>
+                  <th>Sensor</th>
+                  <td>640 x 512 uncooled LWIR core</td>
+                </tr>
+                
+                <tr>
+                  <th>Thermal Sensitivity</th>
+                  <td>NETD &lt;= 30 mK</td>
+                </tr>
+                
+                <tr>
+                  <th>Spectral Range</th>
+                  <td>7.5 to 14 um</td>
+                </tr>
+                
+                <tr>
+                  <th>Lens</th>
+                  <td>31 to 155 mm continuous zoom, 5x optical range</td>
+                </tr>
+                
+                <tr>
+                  <th>Thermal Functions</th>
+                  <td>Pseudo color, image fusion, hot-spot alarm, temperature filtering</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </article>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+  
+
+  
+  <section class="soc-detail-table-section" id="technical-snapshot">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Technical Snapshot</p>
+        <h2 class="soc-detail-panel-title">The parameters that matter most for first-pass solution fit.</h2>
+        <div class="soc-detail-table-scroll">
+          <table class="soc-detail-spec-table">
+            <tbody>
+              
+              <tr>
+                <th>PTZ Coverage</th>
+                <td>Pan 0 to 360 degrees, tilt -30 to &#43;60 degrees</td>
+              </tr>
+              
+              <tr>
+                <th>PTZ Speed</th>
+                <td>Pan 0.01 to 120 degrees/s, tilt 0.01 to 100 degrees/s</td>
+              </tr>
+              
+              <tr>
+                <th>Pointing Accuracy</th>
+                <td>0.01 degrees</td>
+              </tr>
+              
+              <tr>
+                <th>Tracking And AI</th>
+                <td>Intrusion, boundary crossing, loitering, people and vehicle filtering, hot-spot alarm, manual and auto tracking</td>
+              </tr>
+              
+              <tr>
+                <th>Video And Control</th>
+                <td>Single-IP operation, H.265 / H.264 / MJPEG, ONVIF and standard IP protocols</td>
+              </tr>
+              
+              <tr>
+                <th>Environment</th>
+                <td>IP66, -25 to &#43;55 C, anti-salt, strong-light and 33 m/s wind resistance</td>
+              </tr>
+              
+              <tr>
+                <th>Power And Weight</th>
+                <td>DC48V, 150 W stable / 350 W peak, 40 kg</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+
+  <section class="soc-detail-integration-section">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(360px,1.1fr)_minmax(0,1fr)] lg:px-8">
+      <article class="soc-detail-panel soc-detail-software-panel">
+        <p class="soc-detail-mini-kicker">Native Software</p>
+        <h2 class="soc-detail-panel-title">The native software path from alert to visual confirmation.</h2>
+        <div class="soc-detail-software-layout">
+          
+          <img src="/images/soc/soc-d13g-2a-software.png" alt="SOC software view showing visual confirmation and mapped command context" class="soc-detail-software-image">
+          
+          
+          <div class="soc-detail-software-copy">
+            <p class="soc-detail-software-note">The source platform demonstrates the workflow this payload should support on the site: radar or rule-based alerting, live optical confirmation, operator tracking, mapped event context, and a visible path into command and archive. On Cyrentis projects, the same device outputs can be coordinated with Horizon for shared device, event, and response handling.</p>
+          </div>
+          
+        </div>
+      </article>
+      
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Horizon Integration</p>
+        <h2 class="soc-detail-panel-title">How the payload fits inside Horizon instead of remaining a stand-alone software island.</h2>
+        
+        <p class="soc-detail-software-note soc-detail-horizon-note">For Cyrentis projects, the objective is not to duplicate the native software screen forever. The payload should expose stream, angle, alert, and tracking context to Horizon so operators can move between radar cueing, optical confirmation, command action, and archive review without splitting the workflow across unrelated consoles.</p>
+        
+        <div class="soc-detail-module-grid">
+          
+          <article class="soc-detail-module-card">
+            
+            <img src="/images/horizon/module-sense.svg" alt="" class="soc-detail-module-icon">
+            
+            <div>
+              <h3>Horizon Sense</h3>
+              <p>Registers the EO payload as a managed device with shared health, angle, and stream context.</p>
+            </div>
+          </article>
+          
+          <article class="soc-detail-module-card">
+            
+            <img src="/images/horizon/module-track.svg" alt="" class="soc-detail-module-icon">
+            
+            <div>
+              <h3>Horizon Track</h3>
+              <p>Carries target state from radar alert to optical follow-up without forcing the operator to restart interpretation.</p>
+            </div>
+          </article>
+          
+          <article class="soc-detail-module-card">
+            
+            <img src="/images/horizon/module-ai.svg" alt="" class="soc-detail-module-icon">
+            
+            <div>
+              <h3>Horizon AI</h3>
+              <p>Supports downstream classification, rule evaluation, and scene-based prioritization when the payload detects ambiguous activity.</p>
+            </div>
+          </article>
+          
+          <article class="soc-detail-module-card">
+            
+            <img src="/images/horizon/module-command.svg" alt="" class="soc-detail-module-icon">
+            
+            <div>
+              <h3>Horizon Command</h3>
+              <p>Pushes optical confirmation, alert review, and operator actions into one dispatch workflow.</p>
+            </div>
+          </article>
+          
+          <article class="soc-detail-module-card">
+            
+            <img src="/images/horizon/module-archive.svg" alt="" class="soc-detail-module-icon">
+            
+            <div>
+              <h3>Horizon Archive</h3>
+              <p>Preserves event-linked imagery and operator evidence for review, reporting, and project audit needs.</p>
+            </div>
+          </article>
+          
+        </div>
+      </article>
+      
+    </div>
+  </section>
+
+  
+  <section class="soc-detail-table-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Applied Notes</p>
+        <h2 class="soc-detail-panel-title">Reference observations that still matter during project definition.</h2>
+        <div class="soc-detail-note-grid">
+          <article class="soc-detail-note-card">
+            <div class="soc-detail-note-media">
+              
+              <img src="/images/soc/soc-d13g-2a-software.png" alt="Native software showing tracked targets and mapped context" class="soc-detail-note-image">
+              
+            </div>
+            <div class="soc-detail-note-copy">
+              <h3>Drone tracking</h3>
+              <p>The visible channel supports UAV tracking to 2.5 km, while the thermal channel supports 1.5 km tracking on a 0.3 x 0.3 m target.</p>
+            </div>
+          </article>
+          <article class="soc-detail-note-card">
+            <div class="soc-detail-note-media">
+              
+              <img src="/images/soc/soc-d13g-2a-fire.png" alt="Thermal image showing hotspot detection" class="soc-detail-note-image">
+              
+            </div>
+            <div class="soc-detail-note-copy">
+              <h3>Fire detection</h3>
+              <p>Public project positioning can use a 10 km fire-detection figure, with 6 km on a 2 x 2 m fire target.</p>
+            </div>
+          </article>
+          <article class="soc-detail-note-card">
+            <div class="soc-detail-note-media">
+              
+              <img src="/images/soc/soc-d13g-2a-analytics.jpeg" alt="Thermal analytics view with multiple detected targets" class="soc-detail-note-image">
+              
+            </div>
+            <div class="soc-detail-note-copy">
+              <h3>IVS reach</h3>
+              <p>Intelligent video analysis is specified to 4.6 km for vehicles and 1.6 km for humans.</p>
+            </div>
+          </article>
+          <article class="soc-detail-note-card">
+            <div class="soc-detail-note-media">
+              
+              <img src="/images/soc/soc-d13g-2a-dri.jpeg" alt="Thermal image illustrating detection, recognition, and identification range" class="soc-detail-note-image">
+              
+            </div>
+            <div class="soc-detail-note-copy">
+              <h3>Thermal note</h3>
+              <p>DRI values are environmental reference values and should be read as solution-planning guidance rather than an unconditional field guarantee.</p>
+            </div>
+          </article>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+  
+
+  
+  <section class="soc-detail-deployment-section">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="soc-detail-panel">
+        <p class="soc-detail-mini-kicker">Deployment Fit</p>
+        <h2 class="soc-detail-panel-title">Real deployment forms supported by the current payload architecture.</h2>
+        <div class="soc-detail-photo-grid">
+          
+          <article class="soc-detail-photo-card">
+            <img src="/images/soc/soc-d13g-2a-rooftop.jpeg" alt="EO payload installed on a rooftop platform" class="soc-detail-photo-image">
+            <div class="soc-detail-photo-copy">
+              <h3>Fixed rooftop and perimeter watch</h3>
+              <p>Suitable for exposed fixed sites where long-range visual confirmation must remain stable through strong light, weather, and open-air installation.</p>
+            </div>
+          </article>
+          
+          <article class="soc-detail-photo-card">
+            <img src="/images/soc/soc-d13g-2a-field.jpeg" alt="EO payload deployed together with adjacent sensing equipment in the field" class="soc-detail-photo-image">
+            <div class="soc-detail-photo-copy">
+              <h3>Tripod and rapid field deployment</h3>
+              <p>Fits temporary low-altitude security setups where radar, RF, and optics need to be assembled quickly around one monitored area.</p>
+            </div>
+          </article>
+          
+          <article class="soc-detail-photo-card">
+            <img src="/images/soc/soc-d13g-2a-vehicle.jpeg" alt="EO payload mounted on a vehicle roof together with adjacent equipment" class="soc-detail-photo-image">
+            <div class="soc-detail-photo-copy">
+              <h3>Vehicle-mounted mobile observation</h3>
+              <p>Works for mobile surveillance teams that need a stabilized optical head and fast cueing response without a permanent mast installation.</p>
+            </div>
+          </article>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+  
+</section>
+
+  </main>
+  <footer class="border-t border-slate-800 bg-slate-950 text-slate-200">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-12 lg:gap-12">
+      <div class="lg:col-span-5">
+        <a href='/' class="inline-flex items-center">
+          <img src='/images/logo_white.png' alt="Wuhan Cyrentis Technology Co., Ltd."
+            class="h-10 w-auto max-w-[210px] object-contain">
+        </a>
+        <p class="mt-4 text-lg font-semibold text-white">Wuhan Cyrentis Technology Co., Ltd.</p>
+        
+        <p class="mt-3 max-w-xl text-sm leading-7 text-slate-300">Cyrentis builds integrated sensing systems by combining Horizon software, sensor devices, and deployment-oriented consulting for practical security monitoring projects.</p>
+        
+      </div>
+
+      <nav class="lg:col-span-3" aria-label='Explore'>
+        <h3 class="text-sm font-bold uppercase tracking-[0.12em] text-slate-100">Explore</h3>
+        <ul class="mt-4 space-y-3 text-sm text-slate-300">
+          
+          <li>
+            <a class="group inline-flex items-center gap-2 transition hover:text-white" href="/">
+              <svg class="h-4 w-4 text-brand-400 transition group-hover:translate-x-0.5 group-hover:text-brand-300"
+                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M3 10a.75.75 0 0 1 .75-.75h10.69l-2.22-2.22a.75.75 0 1 1 1.06-1.06l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06-1.06l2.22-2.22H3.75A.75.75 0 0 1 3 10Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="group inline-flex items-center gap-2 transition hover:text-white" href="/horizon/">
+              <svg class="h-4 w-4 text-brand-400 transition group-hover:translate-x-0.5 group-hover:text-brand-300"
+                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M3 10a.75.75 0 0 1 .75-.75h10.69l-2.22-2.22a.75.75 0 1 1 1.06-1.06l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06-1.06l2.22-2.22H3.75A.75.75 0 0 1 3 10Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Horizon</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="group inline-flex items-center gap-2 transition hover:text-white" href="/sensors/">
+              <svg class="h-4 w-4 text-brand-400 transition group-hover:translate-x-0.5 group-hover:text-brand-300"
+                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M3 10a.75.75 0 0 1 .75-.75h10.69l-2.22-2.22a.75.75 0 1 1 1.06-1.06l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06-1.06l2.22-2.22H3.75A.75.75 0 0 1 3 10Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Sensors</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="group inline-flex items-center gap-2 transition hover:text-white" href="/services/">
+              <svg class="h-4 w-4 text-brand-400 transition group-hover:translate-x-0.5 group-hover:text-brand-300"
+                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M3 10a.75.75 0 0 1 .75-.75h10.69l-2.22-2.22a.75.75 0 1 1 1.06-1.06l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06-1.06l2.22-2.22H3.75A.75.75 0 0 1 3 10Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Services</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="group inline-flex items-center gap-2 transition hover:text-white" href="/info-center/">
+              <svg class="h-4 w-4 text-brand-400 transition group-hover:translate-x-0.5 group-hover:text-brand-300"
+                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M3 10a.75.75 0 0 1 .75-.75h10.69l-2.22-2.22a.75.75 0 1 1 1.06-1.06l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06-1.06l2.22-2.22H3.75A.75.75 0 0 1 3 10Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Information</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="group inline-flex items-center gap-2 transition hover:text-white" href="/contact-us/">
+              <svg class="h-4 w-4 text-brand-400 transition group-hover:translate-x-0.5 group-hover:text-brand-300"
+                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M3 10a.75.75 0 0 1 .75-.75h10.69l-2.22-2.22a.75.75 0 1 1 1.06-1.06l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06-1.06l2.22-2.22H3.75A.75.75 0 0 1 3 10Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Contact</span>
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+
+      <div class="lg:col-span-4">
+        <h3 class="text-sm font-bold uppercase tracking-[0.12em] text-slate-100">Contact</h3>
+        <ul class="mt-4 space-y-4 text-sm text-slate-300">
+          <li class="flex items-start gap-3">
+            <span
+              class="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-900 ring-1 ring-slate-700">
+              <svg class="h-4 w-4 text-brand-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M9.69 18.933a.75.75 0 0 0 .62 0c5.22-2.27 7.94-6.388 7.94-9.933a8.25 8.25 0 1 0-16.5 0c0 3.545 2.72 7.663 7.94 9.933ZM10 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+            <div>
+              <p class="text-xs uppercase tracking-[0.1em] text-slate-400">Address</p>
+              <p class="mt-1 leading-6">Room 201-134, Building C9, Phase II, Wuhan Software New City, No. 8 Huacheng Avenue, East Lake High-tech Development Zone, Wuhan, China</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-900 ring-1 ring-slate-700">
+              <svg class="h-4 w-4 text-brand-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M2 3.5A1.5 1.5 0 0 1 3.5 2h2.174a1.5 1.5 0 0 1 1.482 1.272l.54 3.238a1.5 1.5 0 0 1-.814 1.567l-1.76.88a11.043 11.043 0 0 0 5.921 5.92l.88-1.759a1.5 1.5 0 0 1 1.567-.814l3.238.54A1.5 1.5 0 0 1 18 14.326V16.5a1.5 1.5 0 0 1-1.5 1.5h-1C7.492 18 2 12.508 2 5.5v-2Z" />
+              </svg>
+            </span>
+            <div>
+              <p class="text-xs uppercase tracking-[0.1em] text-slate-400">Phone
+              </p>
+              <a class="mt-1 inline-block leading-6 transition hover:text-white" href="tel:&#43;86-13986053927">&#43;86-13986053927</a>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-900 ring-1 ring-slate-700">
+              <svg class="h-4 w-4 text-brand-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M3.5 4A2.5 2.5 0 0 0 1 6.5v7A2.5 2.5 0 0 0 3.5 16h13a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 16.5 4h-13ZM2.5 6.91l7.11 4.268a.75.75 0 0 0 .778 0L17.5 6.91v6.59a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1V6.91Z" />
+              </svg>
+            </span>
+            <div>
+              <p class="text-xs uppercase tracking-[0.1em] text-slate-400">Email
+              </p>
+              <a class="mt-1 inline-block leading-6 transition hover:text-white"
+                href="mailto:info@cyrentis.com">info@cyrentis.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-slate-800 py-5">
+    <div
+      class="mx-auto flex max-w-7xl flex-col gap-4 px-4 text-xs text-slate-400 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div class="space-y-1">
+        <p>&copy; 2026 Wuhan Cyrentis Technology Co., Ltd.. All rights reserved.</p>
+        
+        <p>é„‚ICPå¤‡202405002å·</p>
+        
+      </div>
+      <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-slate-400">
+        <span class="mr-1 font-semibold text-slate-300">Tech Stack:</span>
+        <span class="inline-flex items-center gap-1">
+          <img src='/images/tech/hugo-official.svg' alt="" class="h-3.5 w-3.5 brightness-0 invert opacity-90">
+          <span>Hugo</span>
+        </span>
+        <span class="text-slate-600">&bull;</span>
+        <span class="inline-flex items-center gap-1">
+          <svg class="h-3.5 w-3.5 text-cyan-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8c2.5-4 5-4 7.5 0s5 4 7.5 0 5-4 7.5 0M3 16c2.5-4 5-4 7.5 0s5 4 7.5 0 5-4 7.5 0" />
+          </svg>
+          <span>Tailwind CSS</span>
+        </span>
+        <span class="text-slate-600">&bull;</span>
+        <span class="inline-flex items-center gap-1">
+          <img src='/images/tech/openai-codex-official.svg' alt="" class="h-3.5 w-3.5 brightness-0 invert opacity-90">
+          <span>OpenAI Codex</span>
+        </span>
+        <span class="text-slate-600">&bull;</span>
+        <span class="inline-flex items-center gap-1">
+          <svg class="h-3.5 w-3.5 text-violet-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.3 9.4 7.88 10.92.58.1.79-.25.79-.56v-1.96c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.68-1.27-1.68-1.04-.72.08-.71.08-.71 1.15.08 1.75 1.18 1.75 1.18 1.02 1.76 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.53-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.03 0 0 .97-.31 3.18 1.18a11.02 11.02 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.57.24 2.74.12 3.03.73.8 1.18 1.82 1.18 3.08 0 4.44-2.7 5.42-5.27 5.7.41.35.78 1.04.78 2.1v3.12c0 .31.2.67.8.56A11.53 11.53 0 0 0 23.5 12C23.5 5.66 18.35.5 12 .5Z" />
+          </svg>
+          <span>GitHub</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

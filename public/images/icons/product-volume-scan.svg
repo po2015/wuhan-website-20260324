@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 104" fill="none" role="img" aria-label="Volume scanning icon">
+  <rect x="8" y="8" width="88" height="88" rx="24" fill="#F5F0FF" stroke="#D9CAFF" stroke-width="2"/>
+  <path d="M52 26L31 41V66L52 80L73 66V41L52 26Z" fill="white" stroke="#6D28D9" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M52 26V80" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M31 41L52 53L73 41" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M37 58C43 52 49 50 52 50C55 50 61 52 67 58" stroke="#A78BFA" stroke-width="3" stroke-linecap="round"/>
+  <path d="M40 68C45 64 49 62 52 62C55 62 59 64 64 68" stroke="#C4B5FD" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,23 +1,9 @@
 ---
 title: "Surveillance Optics"
-description: "Surveillance Optics by Cyrentis for visual confirmation, identification, and day-night target tracking."
+description: "Explore Cyrentis SOC optics products for compact confirmation, visible laser watch, multi-band monitoring, and extended long-range observation."
 kicker: "SOC Family"
+layout: "soc-catalog"
 weight: 2
-list_cards:
-  - title: "HD Laser Detection"
-    description: "High-resolution target recognition and dynamic tracking for detailed confirmation tasks."
-    url: "/complete-products/electro-optical-detection/hd-laser-detection/"
-  - title: "Long-range Infrared Detection"
-    description: "Medium and long-range sensing in low-light and low-visibility conditions."
-    url: "/complete-products/electro-optical-detection/long-range-infrared-detection/"
 ---
 
-Surveillance Optics provides the visual observation layer of the monitoring system. The `SOC` family is used to confirm and identify targets detected by radar or other alerting devices.
-
-SOC systems typically combine:
-
-- visible-light imaging
-- infrared imaging
-- target verification and visual tracking workflows
-
-They are commonly deployed with SRC radar sensors so operators can move from alerting to visual confirmation in a single monitoring process.
+Surveillance Optics is the visual confirmation layer of the Cyrentis monitoring stack, spanning compact dual-spectrum heads, visible laser systems, multi-band long-watch platforms, and extended long-range observation payloads.

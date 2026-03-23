@@ -1,0 +1,132 @@
+product_family: SRC
+product_line_name: Surveillance Radar by Cyrentis
+model: SRC-C03A-1G
+product_name: SRC-C03A-1G Surveillance Radar
+status: active
+visibility: public
+featured: false
+positioning:
+  short: C band Pulse Doppler surveillance radar for ground surveillance.
+  tagline: Pulse Doppler radar for stable target detection and tracking.
+  primary_role: security surveillance radar
+  application_focus: &id001
+  - land border surveillance
+  - critical site protection
+  - perimeter monitoring
+naming:
+  format: SRC-[Band][DetectionLevel][Architecture]-[Generation][Purpose]
+  band_code: C
+  detection_level_code: '03'
+  architecture_code: A
+  generation_code: '1'
+  purpose_code: G
+technical_classification:
+  waveform:
+    code: P
+    name: Pulse Doppler
+  band:
+    code: C
+    name: C band
+  scan_architecture:
+    code: A
+    name: Electronic Azimuth Scanning
+  target_domains:
+  - ground
+  - maritime
+  primary_target_types:
+  - vehicle
+  - boat
+detection:
+  nominal_class_km: 3
+  reference_target:
+    type: human
+    rcs_m2: 0.5
+  typical_detection_ranges_km:
+    human_0_5m2: 3
+  notes:
+  - Target-distance fields were inferred from the model naming code because the source
+    file did not include a structured targets block.
+  - Instrumented range uses the source preamble value 10 km, while nominal class follows
+    model code 3 km.
+performance:
+  blind_zone_m: null
+  horizontal_field_of_view_deg: null
+  vertical_field_of_view_deg: null
+  speed_measurement_range_mps:
+    min: null
+    max: null
+  rotation_speed_rpm: N/A
+  rotation_speed_options_rpm: N/A
+  data_update_interval_s: 0.5
+  tracking_capacity:
+    tws_count: null
+    tas_count: N/A
+  accuracy:
+    range_m: 8.0
+    azimuth_deg: 1.0
+    elevation_deg: null
+coverage:
+  azimuth:
+    mode: electronic
+    coverage_deg: null
+  elevation:
+    mode: electronic
+    coverage_deg: null
+  refresh_rate_s: 0.5
+  instrumented_range_km: 10.0
+physical:
+  deployment_type: portable
+  enclosure_rating: null
+  operating_temperature_c:
+    min: -40.0
+    max: 55.0
+  dimensions_mm:
+    length: 436.0
+    width: 290.0
+    height: 61.0
+  weight_kg: 5.5
+interfaces:
+  power_input: AC200V~
+  data_interfaces:
+  - Ethernet
+  power_consumption_w: 45.0
+  protocol_support:
+  - Ethernet
+  horizon_compatible: true
+  third_party_integration: true
+platform_integration:
+  compatible_platforms:
+  - Cyrentis Horizon
+  supported_modules:
+  - Horizon Sense
+  - Horizon Fusion
+  - Horizon Track
+  - Horizon AI
+  - Horizon Command
+  supports_cueing_to_optics: false
+  supports_multi_sensor_fusion: true
+use_cases:
+  primary: *id001
+  secondary:
+  - cooperative multi-sensor detection
+media:
+  hero_image: /images/radar/src-c03a-1g.jpg
+content:
+  summary: The radar SRC-C03A-1G mainly consists of one radar array and one power
+    adapter. It uses MIMO and DBF technology to effectively remove false alarm clutter.
+    The product ismainly used for monitoring the detection, warning, and target indication
+    of ships in coastaland inland areas, and can accurately provide target trajectory
+    information.
+  key_features:
+  - 'Real time monitoring: Monitor the surrounding environment, promptly detect andrespond
+    to abnormal situations.'
+  - 'Strong fast target monitoring capability: high data refresh rate, able to continuouslyand
+    stably track rapidly moving targets.'
+  - 'Wide coverage: It can cover a large area, and multiple radars can also conduct
+    seriesarrays to further expand the monitoring range and achieve seamless supervision
+    ofoffshore and inland areas.'
+  - 'Easy to install: Can be completed using lamp poles or original infrastructure.'
+  application_scenarios: *id001
+contact:
+  inquiry_enabled: true
+  recommended_cta: Request radar consultation

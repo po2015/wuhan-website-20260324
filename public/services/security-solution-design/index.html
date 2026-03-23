@@ -1,15 +1,12 @@
 <!doctype html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Security Solution Design | Wuhan Cyrentis Technology Co., Ltd.</title>
-  <meta name="description" content="Scenario-based security solution design covering software, sensors, deployment logic, and operating workflows.">
+  <meta name="description" content="Scenario-based solution design covering sensor quantity, placement, data links, control room layout, and Horizon deployment logic.">
   <link rel="icon" type="image/png" href="/images/icon.png">
   <link rel="shortcut icon" href="/images/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -33,12 +30,44 @@
             soft: '0 8px 30px rgba(15, 23, 42, 0.08)'
           },
           fontFamily: {
-            sans: ['Manrope', 'Noto Sans SC', 'sans-serif']
+            sans: ['Manrope', 'Aptos', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', 'Arial', 'sans-serif']
           }
         }
       }
     }
   </script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-H32XFR8H0R');
+
+    (function () {
+      var tagId = 'G-H32XFR8H0R';
+      var loaded = false;
+
+      function loadGoogleTag() {
+        if (loaded) return;
+        loaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId);
+        script.referrerPolicy = 'strict-origin-when-cross-origin';
+        script.onerror = function () {};
+        document.head.appendChild(script);
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGoogleTag, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', function () {
+          window.setTimeout(loadGoogleTag, 2000);
+        }, { once: true });
+      }
+    })();
+  </script>
+  
   <link rel="stylesheet" href="/css/site.css">
 </head>
 
@@ -60,8 +89,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/">
+            <a class="menu-link " href="/">
               Home
               
             </a>
@@ -71,13 +101,15 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/horizon/">
+            <a class="menu-link " href="/horizon/">
               Horizon
               
             </a>
             
           </li>
+          
           
           
           
@@ -91,7 +123,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/sensors/">
+            <a class="menu-link " href="/sensors/">
               Sensors
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -113,6 +145,7 @@
           
           
           
+          
             
               
             
@@ -122,7 +155,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/services/">
+            <a class="menu-link is-current" href="/services/">
               Services
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -144,8 +177,7 @@
           
           
           
-            
-              
+          
             
               
             
@@ -153,7 +185,7 @@
             
           
           <li class="menu-item has-children">
-            <a class="menu-link" href="/info-center/">
+            <a class="menu-link " href="/info-center/">
               Information
               <span class="menu-caret" aria-hidden="true"></span>
             </a>
@@ -165,8 +197,6 @@
                 
                 <a class="panel-link" href="/news/">News</a>
                 
-                <a class="panel-link" href="/download/">Download</a>
-                
               
             </div>
             
@@ -175,8 +205,9 @@
           
           
           
+          
           <li class="menu-item ">
-            <a class="menu-link" href="/contact-us/">
+            <a class="menu-link " href="/contact-us/">
               Contact
               
             </a>
@@ -262,10 +293,6 @@
                 <a href="/news/">News</a>
                 
               
-                
-                <a href="/download/">Download</a>
-                
-              
             </div>
           </details>
           
@@ -280,44 +307,371 @@
 </header>
 
   <main id="main-content" class="min-h-[60vh]">
-    <section class="bg-white py-14">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <p class="section-kicker">Service</p>
-    <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">Security Solution Design</h1>
     
-    <p class="mt-4 max-w-3xl text-base leading-8 text-slate-600">Scenario-based security solution design covering software, sensors, deployment logic, and operating workflows.</p>
-    
-  </div>
-</section>
-<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-  <div class="grid gap-8 lg:grid-cols-12">
-    <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft lg:col-span-8">
-      <div class="prose prose-slate content-typography max-w-none"><p>This service focuses on turning site requirements into a workable security solution. Cyrentis helps define how Horizon, sensor families, and field subsystems should be combined to meet coverage, verification, and operational goals.</p>
-<p>Typical deliverables include system architecture, sensor-role planning, deployment logic, workflow mapping, and integration recommendations for the intended monitoring scenario.</p>
+<section class="bg-slate-50">
+  <section class="py-14">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
+        <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(340px,0.96fr)] lg:items-center">
+          <div>
+            <nav class="site-breadcrumb" aria-label="Breadcrumb">
+  <ol class="site-breadcrumb-list"><li class="site-breadcrumb-item"><a href="/" class="site-breadcrumb-link">Home</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><a href="/services/" class="site-breadcrumb-link">Services</a></li><li class="site-breadcrumb-separator" aria-hidden="true">/</li><li class="site-breadcrumb-item"><span class="site-breadcrumb-current" aria-current="page">Security Solution Design</span></li></ol>
+</nav>
+            <h1 class="mt-2 text-[clamp(2rem,2vw+1.2rem,3.2rem)] font-extrabold leading-[1.05] tracking-[-0.03em] text-slate-900">Security Solution Design</h1>
+            
+            <p class="mt-4 max-w-3xl text-base leading-8 text-slate-600">Turn a monitoring scenario into a deployable architecture, including how many radars and optics are needed, where they go, how the data links are arranged, and how the control room should work.</p>
+            
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="/contact-us/#contact-form" class="inline-flex items-center justify-center rounded-full bg-sky-700 px-5 py-3 text-sm font-bold text-white transition hover:bg-sky-800">Discuss This Service</a>
+              <a href="/services/" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">Back to Services</a>
+            </div>
+          </div>
+
+          <div class="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-b from-slate-100 via-sky-50 to-slate-200/70">
+            
+            <img src="/images/services/service-solution-design-hero.svg" alt="Security Solution Design" class="block h-[24rem] w-full object-cover object-center">
+            
+            
+            <span class="absolute left-5 top-5 inline-flex rounded-full bg-white/92 px-3 py-1 text-[0.72rem] font-extrabold uppercase tracking-[0.15em] text-sky-700 ring-1 ring-sky-100">Scenario Solution Design</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="pb-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
+          <p class="text-[0.72rem] font-extrabold uppercase tracking-[0.16em] text-slate-500">Sensor Layout</p>
+          <p class="mt-2 text-lg font-extrabold leading-7 text-slate-900">Radar, optics, and RF quantity planning</p>
+          
+          <p class="mt-2 text-sm leading-7 text-slate-600">Defines the number and position of sensing nodes for the target site.</p>
+          
+        </article>
+        
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
+          <p class="text-[0.72rem] font-extrabold uppercase tracking-[0.16em] text-slate-500">Data Link</p>
+          <p class="mt-2 text-lg font-extrabold leading-7 text-slate-900">Backhaul, switch, and topology design</p>
+          
+          <p class="mt-2 text-sm leading-7 text-slate-600">Plans how field nodes connect to the control room and server layer.</p>
+          
+        </article>
+        
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
+          <p class="text-[0.72rem] font-extrabold uppercase tracking-[0.16em] text-slate-500">Control Room</p>
+          <p class="mt-2 text-lg font-extrabold leading-7 text-slate-900">Console, display, and server arrangement</p>
+          
+          <p class="mt-2 text-sm leading-7 text-slate-600">Shapes the operator environment for command, review, and coordination.</p>
+          
+        </article>
+        
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
+          <p class="text-[0.72rem] font-extrabold uppercase tracking-[0.16em] text-slate-500">Delivery Package</p>
+          <p class="mt-2 text-lg font-extrabold leading-7 text-slate-900">Blueprint, BOM, and deployment logic</p>
+          
+          <p class="mt-2 text-sm leading-7 text-slate-600">Produces a practical package for implementation and project review.</p>
+          
+        </article>
+        
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(340px,0.96fr)]">
+        <article class="card-shell">
+          <p class="section-kicker">Service Position</p>
+          <div class="content-typography mt-4"><p>Security solution design turns a monitoring scenario into a deployable site architecture. Cyrentis defines how many radars and optics are needed, where they should be installed, how the data links should be designed, and how the control room should be configured around Horizon.</p>
+<p>The service is intended for customers who need a practical deployment package instead of isolated product selection. It covers sensing geometry, verification chain, field topology, equipment-room logic, operator environment, and phased implementation thinking for the target scenario.</p>
 </div>
-    </article>
-    <aside class="space-y-6 lg:col-span-4">
-      
-      <section class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
-        <h2 class="text-lg font-bold text-slate-900">Key Points</h2>
-        <ul class="mt-4 space-y-3 text-sm leading-7 text-slate-600">
+        </article>
+
+        
+        <div class="grid gap-4 sm:grid-cols-2">
           
-          <li class="rounded-2xl bg-slate-50 px-4 py-3">Define a practical sensing and response architecture for the target scenario.</li>
+          <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
+            <h2 class="text-lg font-extrabold leading-tight text-slate-900">How many sensing nodes</h2>
+            <p class="mt-3 text-sm leading-7 text-slate-600">The design determines the quantity and role of radar, optics, and RF nodes needed to achieve usable coverage and verification.</p>
+          </article>
           
-          <li class="rounded-2xl bg-slate-50 px-4 py-3">Match software, sensor families, and field layout to real site conditions.</li>
+          <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
+            <h2 class="text-lg font-extrabold leading-tight text-slate-900">Where each unit should go</h2>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Placement is planned around terrain, structures, viewing angles, ranges, and maintenance practicality rather than simple product stacking.</p>
+          </article>
           
-          <li class="rounded-2xl bg-slate-50 px-4 py-3">Turn monitoring goals into a deployable system blueprint.</li>
+          <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
+            <h2 class="text-lg font-extrabold leading-tight text-slate-900">How the data should move</h2>
+            <p class="mt-3 text-sm leading-7 text-slate-600">The service defines backbone links, distribution switches, server access, storage paths, and equipment-room coordination.</p>
+          </article>
           
-        </ul>
-      </section>
-      
-      <section class="rounded-3xl border border-brand-100 bg-brand-50 p-6">
-        <h2 class="text-lg font-bold text-brand-900">Project Inquiry</h2>
-        <p class="mt-3 text-sm leading-7 text-brand-800">Need custom solutions, product selection, or quotation support? Send us your requirements.</p>
-        <a href="/contact-us/" class="mt-4 inline-flex rounded-full bg-brand-600 px-5 py-2 text-sm font-bold text-white transition hover:bg-brand-700">Contact Team</a>
-      </section>
-    </aside>
-  </div>
+          <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
+            <h2 class="text-lg font-extrabold leading-tight text-slate-900">How the control room should work</h2>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Console count, operator role split, display wall layout, and response flow are designed around the mission.</p>
+          </article>
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="card-shell">
+        <p class="section-kicker">Working Method</p>
+        <h2 class="mt-4 text-[1.5rem] font-extrabold leading-tight text-slate-900">How Cyrentis structures the service delivery.</h2>
+        <div class="mt-6 grid gap-4 xl:grid-cols-4">
+          
+          <article class="rounded-3xl border border-slate-200 bg-slate-50/90 p-5">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-700 text-sm font-extrabold text-white">1</span>
+            <h3 class="mt-4 text-base font-extrabold text-slate-900">Scenario and site study</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Clarify the mission, operating boundaries, terrain, structures, and practical project constraints.</p>
+          </article>
+          
+          <article class="rounded-3xl border border-slate-200 bg-slate-50/90 p-5">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-700 text-sm font-extrabold text-white">2</span>
+            <h3 class="mt-4 text-base font-extrabold text-slate-900">Coverage and verification planning</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Work out sensing geometry, sensor quantity, target verification chain, and the reserve needed for blind spots or expansion.</p>
+          </article>
+          
+          <article class="rounded-3xl border border-slate-200 bg-slate-50/90 p-5">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-700 text-sm font-extrabold text-white">3</span>
+            <h3 class="mt-4 text-base font-extrabold text-slate-900">Link and room architecture</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Define the field topology, network strategy, server path, control room layout, and operator positions.</p>
+          </article>
+          
+          <article class="rounded-3xl border border-slate-200 bg-slate-50/90 p-5">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-700 text-sm font-extrabold text-white">4</span>
+            <h3 class="mt-4 text-base font-extrabold text-slate-900">Design package delivery</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Deliver drawings, equipment logic, phased implementation notes, and the basis for procurement or deployment review.</p>
+          </article>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+  
+
+  
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="card-shell">
+        <p class="section-kicker">Service Scope</p>
+        <h2 class="mt-4 text-[1.5rem] font-extrabold leading-tight text-slate-900">What the service is expected to define and deliver.</h2>
+        <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          
+          <article class="rounded-3xl border border-slate-200 bg-white p-5">
+            <h3 class="text-base font-extrabold text-slate-900">Sensor quantity planning</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">How many radars, optics, and RF detectors are needed for the specific scenario and desired response depth.</p>
+          </article>
+          
+          <article class="rounded-3xl border border-slate-200 bg-white p-5">
+            <h3 class="text-base font-extrabold text-slate-900">Deployment geometry</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Where each tower, mast, rooftop, or shoreline point should sit to support continuous coverage and confirmation.</p>
+          </article>
+          
+          <article class="rounded-3xl border border-slate-200 bg-white p-5">
+            <h3 class="text-base font-extrabold text-slate-900">Data link and power path</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">How field nodes connect to switches, equipment rooms, servers, and backup resources across the site.</p>
+          </article>
+          
+          <article class="rounded-3xl border border-slate-200 bg-white p-5">
+            <h3 class="text-base font-extrabold text-slate-900">Control room arrangement</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">How operator seats, display walls, servers, and workflow zones should be arranged for daily operation.</p>
+          </article>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+  
+
+  
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="card-shell">
+        <p class="section-kicker">Scenario Examples</p>
+        <h2 class="mt-4 text-[1.5rem] font-extrabold leading-tight text-slate-900">Illustrative planning examples for different operating environments.</h2>
+        <div class="mt-6 grid gap-6 xl:grid-cols-3">
+          
+          <article class="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white">
+            
+            <img src="/images/services/solution-airport.svg" alt="Security Solution Design" class="h-[16rem] w-full object-cover object-center">
+            
+            <div class="grid gap-4 p-5">
+              <div>
+                <h3 class="text-lg font-extrabold text-slate-900">Airport low-altitude protection</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">Radar and optics can be distributed around runway ends, apron edges, and key approach sectors, with Horizon bringing detection, verification, and response into one control room view.</p>
+              </div>
+              
+              <div class="grid gap-3 border-t border-slate-200 pt-4">
+                
+                <div class="grid grid-cols-[auto_1fr] gap-3">
+                  <span class="mt-2 h-2.5 w-2.5 rounded-full bg-sky-600"></span>
+                  <p class="text-sm leading-7 text-slate-700">Example planning output: perimeter radar ring with cross-verification optics.</p>
+                </div>
+                
+                <div class="grid grid-cols-[auto_1fr] gap-3">
+                  <span class="mt-2 h-2.5 w-2.5 rounded-full bg-sky-600"></span>
+                  <p class="text-sm leading-7 text-slate-700">Dedicated backhaul to the control room and display wall.</p>
+                </div>
+                
+                <div class="grid grid-cols-[auto_1fr] gap-3">
+                  <span class="mt-2 h-2.5 w-2.5 rounded-full bg-sky-600"></span>
+                  <p class="text-sm leading-7 text-slate-700">Operator layout split between watchkeeping and incident review.</p>
+                </div>
+                
+              </div>
+              
+            </div>
+          </article>
+          
+          <article class="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white">
+            
+            <img src="/images/services/solution-mariculture.svg" alt="Security Solution Design" class="h-[16rem] w-full object-cover object-center">
+            
+            <div class="grid gap-4 p-5">
+              <div>
+                <h3 class="text-lg font-extrabold text-slate-900">Marine fishery and aquaculture security</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">Shoreline radars, elevated optics, and long-reach communications can be designed around fishery zones, cage clusters, and service channels where visibility and access are uneven.</p>
+              </div>
+              
+              <div class="grid gap-3 border-t border-slate-200 pt-4">
+                
+                <div class="grid grid-cols-[auto_1fr] gap-3">
+                  <span class="mt-2 h-2.5 w-2.5 rounded-full bg-sky-600"></span>
+                  <p class="text-sm leading-7 text-slate-700">Example planning output: shoreline sensing nodes and control cabin link.</p>
+                </div>
+                
+                <div class="grid grid-cols-[auto_1fr] gap-3">
+                  <span class="mt-2 h-2.5 w-2.5 rounded-full bg-sky-600"></span>
+                  <p class="text-sm leading-7 text-slate-700">Wireless or fiber backhaul depending on coast geometry.</p>
+                </div>
+                
+                <div class="grid grid-cols-[auto_1fr] gap-3">
+                  <span class="mt-2 h-2.5 w-2.5 rounded-full bg-sky-600"></span>
+                  <p class="text-sm leading-7 text-slate-700">Shared view for vessel activity, perimeter alerts, and verification tasks.</p>
+                </div>
+                
+              </div>
+              
+            </div>
+          </article>
+          
+          <article class="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white">
+            
+            <img src="/images/services/solution-industrial.svg" alt="Security Solution Design" class="h-[16rem] w-full object-cover object-center">
+            
+            <div class="grid gap-4 p-5">
+              <div>
+                <h3 class="text-lg font-extrabold text-slate-900">Industrial and critical-site perimeter</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">For industrial parks, depots, and critical compounds, the design can combine perimeter radar, verification optics, equipment-room topology, and layered operator responsibilities.</p>
+              </div>
+              
+              <div class="grid gap-3 border-t border-slate-200 pt-4">
+                
+                <div class="grid grid-cols-[auto_1fr] gap-3">
+                  <span class="mt-2 h-2.5 w-2.5 rounded-full bg-sky-600"></span>
+                  <p class="text-sm leading-7 text-slate-700">Example planning output: perimeter sectors matched to roads, walls, and open ground.</p>
+                </div>
+                
+                <div class="grid grid-cols-[auto_1fr] gap-3">
+                  <span class="mt-2 h-2.5 w-2.5 rounded-full bg-sky-600"></span>
+                  <p class="text-sm leading-7 text-slate-700">Switch and server path sized for continuous site operation.</p>
+                </div>
+                
+                <div class="grid grid-cols-[auto_1fr] gap-3">
+                  <span class="mt-2 h-2.5 w-2.5 rounded-full bg-sky-600"></span>
+                  <p class="text-sm leading-7 text-slate-700">Control room design aligned to security watch, dispatch, and incident handling.</p>
+                </div>
+                
+              </div>
+              
+            </div>
+          </article>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+  
+
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 pb-14 sm:px-6 lg:px-8">
+      <div class="grid gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(320px,0.96fr)]">
+        
+        <article class="card-shell">
+          <p class="section-kicker">Deliverables</p>
+          <h2 class="mt-4 text-[1.5rem] font-extrabold leading-tight text-slate-900">What the client should receive from the engagement.</h2>
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            
+            <article class="rounded-3xl border border-slate-200 bg-slate-50/90 p-5">
+              <h3 class="text-base font-extrabold text-slate-900">Site design basis</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Mission assumptions, design boundaries, scenario logic, and the criteria used to shape the architecture.</p>
+            </article>
+            
+            <article class="rounded-3xl border border-slate-200 bg-slate-50/90 p-5">
+              <h3 class="text-base font-extrabold text-slate-900">Sensor deployment drawings</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Proposed locations, coverage logic, and role assignment for radar, optics, RF, and supporting field devices.</p>
+            </article>
+            
+            <article class="rounded-3xl border border-slate-200 bg-slate-50/90 p-5">
+              <h3 class="text-base font-extrabold text-slate-900">Network and control room package</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Data-link topology, equipment-room notes, server structure, workstation count, and display-wall recommendations.</p>
+            </article>
+            
+            <article class="rounded-3xl border border-slate-200 bg-slate-50/90 p-5">
+              <h3 class="text-base font-extrabold text-slate-900">Implementation guidance</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Phased deployment notes, equipment selection basis, and the logic that supports procurement or construction review.</p>
+            </article>
+            
+          </div>
+        </article>
+        
+
+        <article class="card-shell">
+          <p class="section-kicker">From Design To Delivery</p>
+          <h2 class="mt-4 text-[1.5rem] font-extrabold leading-tight text-slate-900">How the service connects to the wider deployment outcome.</h2>
+          
+          <p class="mt-4 text-sm leading-8 text-slate-600">Solution design is not limited to device quantity. It defines how the sensors, Horizon software, field links, and operator environment should work together as one system, leaving room for future expansion and integration choices.</p>
+          
+          
+          <div class="mt-6 grid gap-4">
+            
+            <article class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="text-base font-extrabold text-slate-900">Vendor-neutral architecture</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">The design can combine Cyrentis products with selected third-party devices when that improves project fit.</p>
+            </article>
+            
+            <article class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="text-base font-extrabold text-slate-900">Horizon deployment logic</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">The software role is planned together with the field architecture rather than added after equipment procurement.</p>
+            </article>
+            
+            <article class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="text-base font-extrabold text-slate-900">Expansion reserve</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Coverage, link capacity, and room layout can be prepared for later site growth instead of only the first delivery phase.</p>
+            </article>
+            
+            <article class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="text-base font-extrabold text-slate-900">Implementation continuity</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">The design package is structured so procurement, integration, and commissioning teams can work from one coherent basis.</p>
+            </article>
+            
+          </div>
+          
+        </article>
+      </div>
+    </div>
+  </section>
 </section>
 
   </main>
@@ -470,7 +824,7 @@
       <div class="space-y-1">
         <p>&copy; 2026 Wuhan Cyrentis Technology Co., Ltd.. All rights reserved.</p>
         
-        <p>鄂ICP备202405002号</p>
+        <p>é„‚ICPå¤‡202405002å·</p>
         
       </div>
       <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-slate-400">

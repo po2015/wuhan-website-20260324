@@ -1,0 +1,138 @@
+product_family: SRC
+product_line_name: Surveillance Radar by Cyrentis
+model: SRC-X08B-2D
+product_name: SRC-X08B-2D Surveillance Radar
+status: active
+visibility: public
+featured: false
+positioning:
+  short: X band FMCW surveillance radar for drone detection.
+  tagline: FMCW radar for stable target detection and tracking.
+  primary_role: security surveillance radar
+  application_focus: &id001
+  - Border surveillance
+  - maritime surveillance
+  - critical site protection
+naming:
+  format: SRC-[Band][DetectionLevel][Architecture]-[Generation][Purpose]
+  band_code: X
+  detection_level_code: 08
+  architecture_code: B
+  generation_code: '2'
+  purpose_code: D
+technical_classification:
+  waveform:
+    code: F
+    name: FMCW
+  band:
+    code: X
+    name: X band
+  scan_architecture:
+    code: B
+    name: Mechanical Azimuth Scanning + Electronic Elevation Steering
+  target_domains:
+  - air
+  - maritime
+  primary_target_types:
+  - small_uav
+  - fixed_wing_uav
+  - human
+  - vehicle
+  - boat
+detection:
+  nominal_class_km: 8
+  reference_target:
+    type: small_uav
+    rcs_m2: 0.01
+  typical_detection_ranges_km:
+    small_uav_0_01m2: 8
+  notes:
+  - Target-distance fields were inferred from the model naming code because the source
+    file did not include a structured targets block.
+  - Instrumented range uses the source preamble value 20 km, while nominal class follows
+    model code 8 km.
+performance:
+  blind_zone_m: 50.0
+  horizontal_field_of_view_deg: null
+  vertical_field_of_view_deg: null
+  speed_measurement_range_mps:
+    min: 1.0
+    max: 150.0
+  rotation_speed_rpm: 20
+  rotation_speed_options_rpm:
+  - 20
+  - 30
+  - 60
+  data_update_interval_s: null
+  tracking_capacity:
+    tws_count: 300
+    tas_count: N/A
+  accuracy:
+    range_m: null
+    azimuth_deg: 0.4
+    elevation_deg: 0.4
+coverage:
+  azimuth:
+    mode: mechanical
+    coverage_deg: null
+  elevation:
+    mode: electronic
+    coverage_deg: null
+  refresh_rate_s: null
+  instrumented_range_km: 20.0
+physical:
+  deployment_type: portable
+  enclosure_rating: IP66 (main unit IP67)
+  operating_temperature_c:
+    min: -40.0
+    max: 55.0
+  dimensions_mm:
+    length: 655.0
+    width: 680.0
+    height: 115.0
+  weight_kg: 40.0
+interfaces:
+  power_input: DC 36
+  data_interfaces:
+  - Ethernet
+  power_consumption_w: 330.0
+  protocol_support:
+  - Ethernet
+  horizon_compatible: true
+  third_party_integration: true
+platform_integration:
+  compatible_platforms:
+  - Cyrentis Horizon
+  supported_modules:
+  - Horizon Sense
+  - Horizon Fusion
+  - Horizon Track
+  - Horizon AI
+  - Horizon Command
+  supports_cueing_to_optics: true
+  supports_multi_sensor_fusion: true
+use_cases:
+  primary: *id001
+  secondary:
+  - cooperative multi-sensor detection
+media:
+  hero_image: /images/radar/src-x08b-2d.jpg
+content:
+  summary: The SRC-X08B-2D moving target surveillance radar utilizes an azimuth mechanical
+    scanning and elevation digital beamforming system. It enables continuous, all-day,
+    all-weather detection and tracking of moving targets within the designated area,
+    offering advantages such as high detection sensitivity, low false alarm rate,
+    and high accuracy.
+  key_features:
+  - High data rate and strong tracking capability;.
+  - low false alarm probability;.
+  - wide detection range and high accuracy;.
+  - cost-effective and easy to operate.
+  application_scenarios:
+  - Border surveillance
+  - maritime surveillance
+  - critical site protection
+  - battlefield reconnaissance
+contact:
+  inquiry_enabled: true
+  recommended_cta: Request radar consultation

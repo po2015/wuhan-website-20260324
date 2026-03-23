@@ -8,12 +8,18 @@ summaryLength = 24
 [pagination]
   pagerSize = 9
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   company_name = "Wuhan Cyrentis Technology Co., Ltd."
   address = "Room 201-134, Building C9, Phase II, Wuhan Software New City, No. 8 Huacheng Avenue, East Lake High-tech Development Zone, Wuhan, China"
   phone = "+86-13986053927"
   email = "info@cyrentis.com"
-  icp_license = "鄂ICP备202405002号"
+  google_tag_id = "G-H32XFR8H0R"
+  icp_license = "é„‚ICPå¤‡202405002å·"
   default_description = "Integrated sensing systems for security monitoring and low-altitude awareness, combining Horizon software, sensor devices, and consulting services."
 
   [params.ui]
@@ -25,6 +31,10 @@ summaryLength = 24
     inquiry_title = "Project Inquiry"
     inquiry_text = "Need custom solutions, product selection, or quotation support? Send us your requirements."
     inquiry_button_label = "Contact Team"
+    breadcrumb_home_label = "Home"
+    news_meta_author_label = "Author"
+    news_meta_posted_at_label = "Posted at"
+    news_related_title = "Related News"
 
 [languages]
   [languages.en]
@@ -111,12 +121,6 @@ summaryLength = 24
   weight = 20
 
 [[menus.main]]
-  name = "Download"
-  parent = "information-center"
-  pageRef = "/download"
-  weight = 30
-
-[[menus.main]]
   name = "Contact"
   pageRef = "/contact-us"
   weight = 50
@@ -150,3 +154,5 @@ summaryLength = 24
   name = "Contact"
   pageRef = "/contact-us"
   weight = 40
+
+

@@ -1,73 +1,163 @@
 {{ define "main" }}
 {{- $cfg := .Params.contact_page -}}
+{{- $formAnchor := $cfg.form_anchor | default "contact-form" -}}
 <section class="bg-white py-14">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <p class="section-kicker">{{ $cfg.kicker | default "Contact Us" }}</p>
+    {{ partial "breadcrumb.html" . }}
     <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">{{ .Title }}</h1>
     {{ with .Params.description }}
-    <p class="mt-4 max-w-3xl text-base leading-8 text-slate-600">{{ . }}</p>
+    <p class="mt-4 max-w-4xl text-base leading-8 text-slate-600">{{ . }}</p>
+    {{ end }}
+    {{ with .Content }}
+    <div class="content-typography mt-4 max-w-4xl">{{ . }}</div>
     {{ end }}
   </div>
 </section>
 <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-  <div class="grid gap-8 lg:grid-cols-12">
-    <div class="space-y-6 lg:col-span-5">
-      <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
-        <h2 class="text-lg font-bold text-slate-900">{{ $cfg.details_title | default "Contact Details" }}</h2>
-        <dl class="mt-4 space-y-3 text-sm text-slate-600">
-          {{ range $cfg.details }}
+  <div class="grid gap-6 md:grid-cols-2">
+      <article class="contact-panel">
+        <div class="contact-card-head">
+          {{ with $cfg.about_icon }}
+          <img src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
+          {{ end }}
           <div>
-            <dt class="font-semibold text-slate-900">{{ .label }}</dt>
-            <dd>
-              {{ if .href }}
-              <a href="{{ .href | safeURL }}" class="hover:text-brand-700">{{ .value }}</a>
-              {{ else }}
-              {{ .value }}
-              {{ end }}
-            </dd>
+            <p class="contact-card-eyebrow">Brand</p>
+            <h2 class="contact-card-title">{{ $cfg.about_title | default "About Cyrentis" }}</h2>
+          </div>
+        </div>
+        <p class="contact-card-text">{{ $cfg.about_text }}</p>
+      </article>
+
+      <article class="contact-panel">
+        <div class="contact-card-head">
+          {{ with $cfg.vision_icon }}
+          <img src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
+          {{ end }}
+          <div>
+            <p class="contact-card-eyebrow">Direction</p>
+            <h2 class="contact-card-title">{{ $cfg.vision_title | default "Vision" }}</h2>
+          </div>
+        </div>
+        <p class="contact-card-text">{{ $cfg.vision_text }}</p>
+      </article>
+  </div>
+</section>
+
+<section class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+  <div class="grid gap-8 xl:grid-cols-[minmax(320px,0.92fr)_minmax(0,1.08fr)]">
+    <div class="space-y-6">
+      <article class="contact-panel">
+        <h2 class="text-lg font-bold text-slate-900">{{ $cfg.details_title | default "Contact Details" }}</h2>
+        <dl class="contact-detail-list">
+          {{ range $cfg.details }}
+          <div class="contact-detail-row">
+            {{ with .icon }}
+            <img src="{{ . | relURL }}" alt="" class="contact-detail-icon" aria-hidden="true">
+            {{ end }}
+            <div class="min-w-0">
+              <dt class="contact-detail-label">{{ .label }}</dt>
+              <dd class="contact-detail-value">
+                {{ if .href }}
+                <a href="{{ .href | safeURL }}" class="font-semibold transition hover:text-brand-700">{{ .value }}</a>
+                {{ else }}
+                {{ .value }}
+                {{ end }}
+              </dd>
+            </div>
           </div>
           {{ end }}
         </dl>
       </article>
+
       <article class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft">
-        <iframe title="{{ $cfg.map_title | default "Google Map" }}" class="h-72 w-full" loading="lazy" allowfullscreen src="{{ $cfg.map_embed_url | safeURL }}"></iframe>
+        <div class="contact-map-head">
+          <div class="contact-card-head">
+            {{ with $cfg.map_icon }}
+            <img src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
+            {{ end }}
+            <div>
+              <p class="contact-card-eyebrow">Location</p>
+              <h2 class="contact-card-title contact-card-title-sm">{{ $cfg.map_panel_title | default "Visit The Office" }}</h2>
+              {{ with $cfg.map_panel_text }}
+              <p class="contact-form-note">{{ . }}</p>
+              {{ end }}
+            </div>
+          </div>
+          {{ with $cfg.map_link }}
+          <a href="{{ . | safeURL }}" target="_blank" rel="noreferrer" class="inline-flex text-sm font-bold text-brand-700 transition hover:text-brand-800">{{ $cfg.map_link_label | default "Open in Google Maps" }}</a>
+          {{ end }}
+        </div>
+        <iframe title="{{ $cfg.map_title | default "Google Map" }}" class="h-[26rem] w-full" loading="lazy" allowfullscreen src="{{ $cfg.map_embed_url | safeURL }}"></iframe>
       </article>
     </div>
 
-    <article class="rounded-3xl border border-slate-200 bg-white p-7 shadow-soft lg:col-span-7">
-      <h2 class="text-2xl font-bold text-slate-900">{{ $cfg.form_title | default "Send Us a Message" }}</h2>
-      <form class="mt-6 grid gap-4 sm:grid-cols-2" method="post" action="#">
-        <label class="form-field sm:col-span-1">
-          <span>{{ $cfg.fields.name_label | default "Name *" }}</span>
-          <input type="text" name="name" required>
-        </label>
-        <label class="form-field sm:col-span-1">
-          <span>{{ $cfg.fields.company_label | default "Company" }}</span>
-          <input type="text" name="company">
-        </label>
-        <label class="form-field sm:col-span-1">
-          <span>{{ $cfg.fields.email_label | default "Email *" }}</span>
-          <input type="email" name="email" required>
-        </label>
-        <label class="form-field sm:col-span-1">
-          <span>{{ $cfg.fields.phone_label | default "Phone" }}</span>
-          <div class="grid grid-cols-[110px_1fr] gap-2">
-            <input type="text" name="country_code" placeholder="{{ $cfg.fields.country_code_placeholder | default "+86" }}">
-            <input type="text" name="phone_number" placeholder="{{ $cfg.fields.phone_placeholder | default "13986053927" }}">
+    <div class="space-y-6">
+      <article id="{{ $formAnchor }}" class="contact-panel contact-form-anchor p-7">
+        <div class="contact-card-head">
+          {{ with $cfg.form_icon }}
+          <img src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
+          {{ end }}
+          <div>
+            <p class="contact-card-eyebrow">Project Contact</p>
+            <h2 class="contact-card-title contact-form-title">{{ $cfg.form_title | default "Send Us a Message" }}</h2>
+            {{ with $cfg.form_note }}
+            <p class="contact-form-note">{{ . }}</p>
+            {{ end }}
           </div>
-        </label>
-        <label class="form-field sm:col-span-2">
-          <span>{{ $cfg.fields.message_label | default "Message" }}</span>
-          <textarea name="message" rows="5"></textarea>
-        </label>
-        <div class="sm:col-span-2 rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-center text-sm text-slate-500">
-          {{ $cfg.captcha_label | default "CAPTCHA Placeholder Area" }}
         </div>
-        <div class="sm:col-span-2">
-          <button type="submit" class="inline-flex rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-700">{{ $cfg.submit_label | default "Submit" }}</button>
+        {{ with $cfg.form_intro }}
+        <p class="contact-card-text">{{ . }}</p>
+        {{ end }}
+
+        {{ with $cfg.availability_cards }}
+        <div class="contact-meta-grid">
+          {{ range . }}
+          <article class="contact-meta-card">
+            {{ with .icon }}
+            <img src="{{ . | relURL }}" alt="" class="contact-meta-icon" aria-hidden="true">
+            {{ end }}
+            <div>
+              <h3 class="contact-meta-title">{{ .title }}</h3>
+              <p class="contact-meta-text">{{ .text }}</p>
+            </div>
+          </article>
+          {{ end }}
         </div>
-      </form>
-    </article>
+        {{ end }}
+
+        <form class="mt-6 grid gap-4 sm:grid-cols-2" method="post" action="#">
+          <label class="form-field sm:col-span-1">
+            <span>{{ $cfg.fields.name_label | default "Name *" }}</span>
+            <input type="text" name="name" required>
+          </label>
+          <label class="form-field sm:col-span-1">
+            <span>{{ $cfg.fields.company_label | default "Company" }}</span>
+            <input type="text" name="company">
+          </label>
+          <label class="form-field sm:col-span-1">
+            <span>{{ $cfg.fields.email_label | default "Email *" }}</span>
+            <input type="email" name="email" required>
+          </label>
+          <label class="form-field sm:col-span-1">
+            <span>{{ $cfg.fields.phone_label | default "Phone" }}</span>
+            <div class="grid grid-cols-[110px_1fr] gap-2">
+              <input type="text" name="country_code" placeholder="{{ $cfg.fields.country_code_placeholder | default "+86" }}">
+              <input type="text" name="phone_number" placeholder="{{ $cfg.fields.phone_placeholder }}">
+            </div>
+          </label>
+          <label class="form-field sm:col-span-2">
+            <span>{{ $cfg.fields.message_label | default "Message" }}</span>
+            <textarea name="message" rows="5"></textarea>
+          </label>
+          <div class="sm:col-span-2 rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-center text-sm text-slate-500">
+            {{ $cfg.captcha_label | default "CAPTCHA Placeholder Area" }}
+          </div>
+          <div class="sm:col-span-2">
+            <button type="submit" class="inline-flex rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-700">{{ $cfg.submit_label | default "Submit" }}</button>
+          </div>
+        </form>
+      </article>
+    </div>
   </div>
 </section>
 {{ end }}

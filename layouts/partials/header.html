@@ -14,13 +14,14 @@
           {{ range .Site.Menus.main }}
           {{ $hasChildren := .HasChildren }}
           {{ $hasGrandchildren := false }}
+          {{ $isCurrent := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
           {{ if $hasChildren }}
             {{ range .Children }}
               {{ if .HasChildren }}{{ $hasGrandchildren = true }}{{ end }}
             {{ end }}
           {{ end }}
           <li class="menu-item {{ if $hasChildren }}has-children{{ end }}">
-            <a class="menu-link" href="{{ .URL }}">
+            <a class="menu-link {{ if $isCurrent }}is-current{{ end }}" href="{{ .URL }}">
               {{ .Name }}
               {{ if $hasChildren }}<span class="menu-caret" aria-hidden="true"></span>{{ end }}
             </a>
