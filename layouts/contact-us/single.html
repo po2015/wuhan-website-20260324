@@ -17,9 +17,6 @@
   <div class="grid gap-6 md:grid-cols-2">
       <article class="contact-panel">
         <div class="contact-card-head">
-          {{ with $cfg.about_icon }}
-          <img src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
-          {{ end }}
           <div>
             <p class="contact-card-eyebrow">Brand</p>
             <h2 class="contact-card-title">{{ $cfg.about_title | default "About Cyrentis" }}</h2>
@@ -30,9 +27,6 @@
 
       <article class="contact-panel">
         <div class="contact-card-head">
-          {{ with $cfg.vision_icon }}
-          <img src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
-          {{ end }}
           <div>
             <p class="contact-card-eyebrow">Direction</p>
             <h2 class="contact-card-title">{{ $cfg.vision_title | default "Vision" }}</h2>
@@ -125,37 +119,39 @@
         </div>
         {{ end }}
 
-        <form class="mt-6 grid gap-4 sm:grid-cols-2" method="post" action="#">
-          <label class="form-field sm:col-span-1">
-            <span>{{ $cfg.fields.name_label | default "Name *" }}</span>
-            <input type="text" name="name" required>
-          </label>
-          <label class="form-field sm:col-span-1">
-            <span>{{ $cfg.fields.company_label | default "Company" }}</span>
-            <input type="text" name="company">
-          </label>
-          <label class="form-field sm:col-span-1">
-            <span>{{ $cfg.fields.email_label | default "Email *" }}</span>
-            <input type="email" name="email" required>
-          </label>
-          <label class="form-field sm:col-span-1">
-            <span>{{ $cfg.fields.phone_label | default "Phone" }}</span>
-            <div class="grid grid-cols-[110px_1fr] gap-2">
-              <input type="text" name="country_code" placeholder="{{ $cfg.fields.country_code_placeholder | default "+86" }}">
-              <input type="text" name="phone_number" placeholder="{{ $cfg.fields.phone_placeholder }}">
+        {{ with $cfg.contact_actions }}
+        <div class="contact-action-grid">
+          {{ range . }}
+          <a href="{{ .href | safeURL }}" class="contact-action-card" {{ if hasPrefix .href "http" }}target="_blank" rel="noreferrer"{{ end }}>
+            {{ with .icon }}
+            <img src="{{ . | relURL }}" alt="" class="contact-action-icon" aria-hidden="true">
+            {{ end }}
+            <div class="min-w-0">
+              <h3 class="contact-meta-title">{{ .title }}</h3>
+              <p class="contact-meta-text">{{ .text }}</p>
+              <p class="contact-action-label">{{ .label }}</p>
             </div>
-          </label>
-          <label class="form-field sm:col-span-2">
-            <span>{{ $cfg.fields.message_label | default "Message" }}</span>
-            <textarea name="message" rows="5"></textarea>
-          </label>
-          <div class="sm:col-span-2 rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-center text-sm text-slate-500">
-            {{ $cfg.captcha_label | default "CAPTCHA Placeholder Area" }}
-          </div>
-          <div class="sm:col-span-2">
-            <button type="submit" class="inline-flex rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-700">{{ $cfg.submit_label | default "Submit" }}</button>
-          </div>
-        </form>
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with $cfg.qr_codes }}
+        <div class="contact-qr-grid">
+          {{ range . }}
+          {{ $qr := . }}
+          <article class="contact-qr-card">
+            {{ with .image }}
+            <img src="{{ . | relURL }}" alt="{{ $qr.title | default "QR placeholder" }}" class="contact-qr-image">
+            {{ end }}
+            <div>
+              <h3 class="contact-meta-title">{{ .title }}</h3>
+              <p class="contact-meta-text">{{ .text }}</p>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+        {{ end }}
       </article>
     </div>
   </div>
