@@ -7,7 +7,7 @@ horizon_page:
   hero:
     title: "Unified command software for multi-sensor security operations"
     lead: "Cyrentis Horizon is designed to bring radar, electro-optical, and RF sensing into one coherent software environment for monitoring, target understanding, alert coordination, and operational command."
-    image: "/images/horizon/horizon-platform-hero.svg"
+    image: "/images/horizon/horizon-platform-hero.png"
     metrics:
       - value: "Unified control surface"
         label: "Operations"

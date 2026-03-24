@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" fill="#F8FBFF"/>
+  <rect x="116" y="92" width="1368" height="716" rx="40" fill="url(#paint0_linear)"/>
+  <circle cx="314" cy="236" r="88" fill="#D8ECFF"/>
+  <circle cx="1306" cy="244" r="70" fill="#E1EEFF"/>
+  <circle cx="1280" cy="670" r="116" fill="#DDEBFF"/>
+  <rect x="258" y="198" width="1084" height="504" rx="36" fill="#102846"/>
+  <rect x="330" y="272" width="244" height="92" rx="24" fill="#1A4C81"/>
+  <rect x="616" y="272" width="244" height="92" rx="24" fill="#205C98"/>
+  <rect x="902" y="272" width="244" height="92" rx="24" fill="#2672B7"/>
+  <rect x="330" y="430" width="816" height="184" rx="28" fill="#15355A"/>
+  <rect x="388" y="486" width="278" height="18" rx="9" fill="#E4F2FF"/>
+  <rect x="388" y="526" width="402" height="12" rx="6" fill="#8BBEF0"/>
+  <rect x="388" y="560" width="332" height="12" rx="6" fill="#B0D2F7"/>
+  <path d="M990 480 1016 532 1074 540 1032 580 1042 636 990 610 938 636 948 580 906 540 964 532 990 480Z" fill="#DDEFFF"/>
+  <path d="M1150 474 1168 510 1208 516 1179 544 1186 584 1150 565 1114 584 1121 544 1092 516 1132 510 1150 474Z" fill="#8EC2F7"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="116" y1="92" x2="1484" y2="808" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F9FF"/>
+      <stop offset="1" stop-color="#EEF4FF"/>
+    </linearGradient>
+  </defs>
+</svg>

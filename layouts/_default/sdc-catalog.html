@@ -32,7 +32,7 @@
             {{ end }}
           </div>
 
-          <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+          <div class="grid gap-4 sm:grid-cols-3">
             <article class="rounded-3xl border border-sky-100 bg-sky-50/70 p-5">
               <span class="text-[0.72rem] font-extrabold uppercase tracking-[0.16em] text-sky-700">Coverage</span>
               <p class="mt-2 text-lg font-extrabold text-slate-900">30 MHz to 6000 MHz</p>
@@ -89,7 +89,7 @@
               {{ end }}
 
               {{ if gt (len $stats) 0 }}
-              <div class="grid gap-3 border-t border-slate-200 pt-4 sm:grid-cols-2">
+              <div class="grid gap-3 border-t border-slate-200 pt-4">
                 {{ range $stats }}
                 <div class="grid grid-cols-[auto_1fr] gap-3">
                   {{ with .icon }}

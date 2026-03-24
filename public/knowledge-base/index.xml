@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Knowledge Base on Wuhan Cyrentis Technology Co., Ltd.</title>
-    <link>https://www.cyrentis.com/knowledge-base/</link>
+    <link>http://localhost:1313/knowledge-base/</link>
     <description>Recent content in Knowledge Base on Wuhan Cyrentis Technology Co., Ltd.</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.cyrentis.com/knowledge-base/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/knowledge-base/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Choosing Radar Frequency Bands: Pros, Cons, and Application Scenarios</title>
-      <link>https://www.cyrentis.com/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/</link>
+      <link>http://localhost:1313/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/radar-frequency-band-comparison.svg&#34; alt=&#34;Radar frequency band comparison chart&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Civil security radar projects rarely fail because of one parameter. They fail when frequency band choice is disconnected from site conditions, target mix, and system integration objectives.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/choosing-radar-frequency-bands-pros-cons-and-application-scenarios/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/radar-frequency-band-comparison.svg&#34; alt=&#34;Radar frequency band comparison chart&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Civil security radar projects rarely fail because of one parameter. They fail when frequency band choice is disconnected from site conditions, target mix, and system integration objectives.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Comparison of Different Radar Scanning Architectures</title>
-      <link>https://www.cyrentis.com/knowledge-base/comparison-of-different-radar-scanning-architectures/</link>
+      <link>http://localhost:1313/knowledge-base/comparison-of-different-radar-scanning-architectures/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/comparison-of-different-radar-scanning-architectures/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/radar-scanning-architecture-comparison.svg&#34; alt=&#34;Radar scanning architecture comparison diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In civil security radar deployment, architecture is not a cosmetic option. It determines coverage behavior, revisit pattern, mechanical wear profile, and how tracks are consumed by upper-layer command platforms.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/comparison-of-different-radar-scanning-architectures/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/radar-scanning-architecture-comparison.svg&#34; alt=&#34;Radar scanning architecture comparison diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In civil security radar deployment, architecture is not a cosmetic option. It determines coverage behavior, revisit pattern, mechanical wear profile, and how tracks are consumed by upper-layer command platforms.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compliance Overview for Dual-Use Export of Civil Security Radar Products</title>
-      <link>https://www.cyrentis.com/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/</link>
+      <link>http://localhost:1313/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/dual-use-export-compliance-flow.svg&#34; alt=&#34;Dual-use export compliance flow diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Civil security radar projects can fail late in the delivery cycle if compliance planning starts too late. For cross-border deployment, technical readiness and regulatory readiness must progress in parallel.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/compliance-overview-for-dual-use-export-of-civil-security-radar-products/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/dual-use-export-compliance-flow.svg&#34; alt=&#34;Dual-use export compliance flow diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Civil security radar projects can fail late in the delivery cycle if compliance planning starts too late. For cross-border deployment, technical readiness and regulatory readiness must progress in parallel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Radar, LiDAR, Ultrasonic, and OTH Radar: Which Sensing Layer Solves Which Problem?</title>
-      <link>https://www.cyrentis.com/knowledge-base/radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem/</link>
+      <link>http://localhost:1313/knowledge-base/radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem/</link>
       <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-sensing-modalities.svg&#34; alt=&#34;Concept illustration comparing sensing modalities&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Security projects often go wrong at the first decision: sensors are compared as if they were substitutes, when in practice they are layers with different jobs. The right question is not &amp;ldquo;Which technology is best?&amp;rdquo; but &amp;ldquo;Which sensing layer solves which part of the mission?&amp;rdquo;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-sensing-modalities.svg&#34; alt=&#34;Concept illustration comparing sensing modalities&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Security projects often go wrong at the first decision: sensors are compared as if they were substitutes, when in practice they are layers with different jobs. The right question is not &amp;ldquo;Which technology is best?&amp;rdquo; but &amp;ldquo;Which sensing layer solves which part of the mission?&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Radar System Components Explained: Front End, Back End, and Data Flow</title>
-      <link>https://www.cyrentis.com/knowledge-base/radar-system-components-front-end-back-end-and-data-flow/</link>
+      <link>http://localhost:1313/knowledge-base/radar-system-components-front-end-back-end-and-data-flow/</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/radar-system-components-front-end-back-end-and-data-flow/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-radar-components.svg&#34; alt=&#34;Radar front end and back end concept diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When people say &amp;ldquo;radar,&amp;rdquo; they often picture a rotating antenna. In real projects, that is only the visible tip of the system. What matters operationally is the entire chain that generates a waveform, sends it into space, receives the echo, extracts useful meaning, and presents the result to an operator or command platform.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/radar-system-components-front-end-back-end-and-data-flow/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-radar-components.svg&#34; alt=&#34;Radar front end and back end concept diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When people say &amp;ldquo;radar,&amp;rdquo; they often picture a rotating antenna. In real projects, that is only the visible tip of the system. What matters operationally is the entire chain that generates a waveform, sends it into space, receives the echo, extracts useful meaning, and presents the result to an operator or command platform.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Synthetic Aperture Radar Explained: Principles, Imaging Modes, and Civil Applications</title>
-      <link>https://www.cyrentis.com/knowledge-base/synthetic-aperture-radar-sar-principles-imaging-modes-and-civil-applications/</link>
+      <link>http://localhost:1313/knowledge-base/synthetic-aperture-radar-sar-principles-imaging-modes-and-civil-applications/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/synthetic-aperture-radar-sar-principles-imaging-modes-and-civil-applications/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-sar-imaging.svg&#34; alt=&#34;Synthetic aperture radar imaging concept&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Synthetic Aperture Radar, usually shortened to SAR, is one of the most important sensing technologies for observing the Earth when optics cannot be trusted. It matters because it does not wait for daylight, clear sky, or ideal weather. It creates its own illumination, measures with microwaves, and can keep producing useful imagery when optical systems struggle.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/synthetic-aperture-radar-sar-principles-imaging-modes-and-civil-applications/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-sar-imaging.svg&#34; alt=&#34;Synthetic aperture radar imaging concept&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Synthetic Aperture Radar, usually shortened to SAR, is one of the most important sensing technologies for observing the Earth when optics cannot be trusted. It matters because it does not wait for daylight, clear sky, or ideal weather. It creates its own illumination, measures with microwaves, and can keep producing useful imagery when optical systems struggle.&lt;/p&gt;</description>
     </item>
     <item>
       <title>From GaAs to GaN: What Makes AESA Radar Industrially Ready?</title>
-      <link>https://www.cyrentis.com/knowledge-base/from-gaas-to-gan-what-makes-aesa-radar-industrially-ready/</link>
+      <link>http://localhost:1313/knowledge-base/from-gaas-to-gan-what-makes-aesa-radar-industrially-ready/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/from-gaas-to-gan-what-makes-aesa-radar-industrially-ready/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-aesa-gan.svg&#34; alt=&#34;AESA and semiconductor maturity concept graphic&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When people talk about modern electronically scanned radar, the discussion quickly turns to AESA, T/R modules, GaAs, and GaN. Those terms are important, but they are often used too loosely. The real question for an engineering team or buyer is not whether a supplier can say &amp;ldquo;AESA&amp;rdquo; or &amp;ldquo;GaN.&amp;rdquo; It is whether the radar has reached industrial maturity.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/from-gaas-to-gan-what-makes-aesa-radar-industrially-ready/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-aesa-gan.svg&#34; alt=&#34;AESA and semiconductor maturity concept graphic&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When people talk about modern electronically scanned radar, the discussion quickly turns to AESA, T/R modules, GaAs, and GaN. Those terms are important, but they are often used too loosely. The real question for an engineering team or buyer is not whether a supplier can say &amp;ldquo;AESA&amp;rdquo; or &amp;ldquo;GaN.&amp;rdquo; It is whether the radar has reached industrial maturity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why RF Digitization Is Reshaping Modern Radar Systems</title>
-      <link>https://www.cyrentis.com/knowledge-base/why-rf-digitization-is-reshaping-modern-radar-systems/</link>
+      <link>http://localhost:1313/knowledge-base/why-rf-digitization-is-reshaping-modern-radar-systems/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/why-rf-digitization-is-reshaping-modern-radar-systems/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-rf-digitization.svg&#34; alt=&#34;RF digitization concept illustration&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;RF digitization is one of the clearest signals that radar is no longer just an RF hardware business. It is increasingly a software, processing, and system-integration business as well.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/why-rf-digitization-is-reshaping-modern-radar-systems/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-rf-digitization.svg&#34; alt=&#34;RF digitization concept illustration&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;RF digitization is one of the clearest signals that radar is no longer just an RF hardware business. It is increasingly a software, processing, and system-integration business as well.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Layered Radar Architectures: What Civil Security Planners Can Borrow from Long-, Mid-, and Short-Range Systems</title>
-      <link>https://www.cyrentis.com/knowledge-base/layered-radar-architectures-what-civil-security-planners-can-borrow/</link>
+      <link>http://localhost:1313/knowledge-base/layered-radar-architectures-what-civil-security-planners-can-borrow/</link>
       <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/layered-radar-architectures-what-civil-security-planners-can-borrow/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-layered-radar.svg&#34; alt=&#34;Layered radar architecture concept graphic&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Large radar ecosystems are often described in terms of long-range, mid-range, and short-range layers. Civil security teams do not need to copy that structure literally, but they can learn a great deal from the logic behind it.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/layered-radar-architectures-what-civil-security-planners-can-borrow/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-layered-radar.svg&#34; alt=&#34;Layered radar architecture concept graphic&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Large radar ecosystems are often described in terms of long-range, mid-range, and short-range layers. Civil security teams do not need to copy that structure literally, but they can learn a great deal from the logic behind it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bionic FMCW LiDAR and the Rise of Adaptive 4D Machine Vision</title>
-      <link>https://www.cyrentis.com/knowledge-base/bionic-fmcw-lidar-and-adaptive-4d-machine-vision/</link>
+      <link>http://localhost:1313/knowledge-base/bionic-fmcw-lidar-and-adaptive-4d-machine-vision/</link>
       <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/bionic-fmcw-lidar-and-adaptive-4d-machine-vision/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-bionic-lidar.svg&#34; alt=&#34;Adaptive bionic lidar concept illustration&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Much of the excitement around lidar focuses on one number: resolution. But the more interesting question is where the system spends its resolution budget. That is what makes recent work on gaze-enabled FMCW lidar so important. Instead of trying to scan every direction with the same density, the system concentrates high-resolution sensing where it matters most.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/bionic-fmcw-lidar-and-adaptive-4d-machine-vision/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-bionic-lidar.svg&#34; alt=&#34;Adaptive bionic lidar concept illustration&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Much of the excitement around lidar focuses on one number: resolution. But the more interesting question is where the system spends its resolution budget. That is what makes recent work on gaze-enabled FMCW lidar so important. Instead of trying to scan every direction with the same density, the system concentrates high-resolution sensing where it matters most.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Radar Basics: Mechanical Scan, Phased Array, AESA, and Over-the-Horizon Detection</title>
-      <link>https://www.cyrentis.com/knowledge-base/radar-basics-mechanical-scan-phased-array-aesa-and-over-the-horizon/</link>
+      <link>http://localhost:1313/knowledge-base/radar-basics-mechanical-scan-phased-array-aesa-and-over-the-horizon/</link>
       <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/radar-basics-mechanical-scan-phased-array-aesa-and-over-the-horizon/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-radar-basics.svg&#34; alt=&#34;Radar basics concept illustration&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Radar is often described as if it were mysterious or purely military. In reality, its basic logic is straightforward: send energy, wait for the echo, and calculate what the return tells you about distance, direction, speed, or movement.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/radar-basics-mechanical-scan-phased-array-aesa-and-over-the-horizon/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-radar-basics.svg&#34; alt=&#34;Radar basics concept illustration&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Radar is often described as if it were mysterious or purely military. In reality, its basic logic is straightforward: send energy, wait for the echo, and calculate what the return tells you about distance, direction, speed, or movement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>High-Power Microwave Counter-UAS Systems: Where They Fit in Layered Defense</title>
-      <link>https://www.cyrentis.com/knowledge-base/high-power-microwave-counter-uas-systems-where-they-fit-in-layered-defense/</link>
+      <link>http://localhost:1313/knowledge-base/high-power-microwave-counter-uas-systems-where-they-fit-in-layered-defense/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/high-power-microwave-counter-uas-systems-where-they-fit-in-layered-defense/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-counter-uas-chain.svg&#34; alt=&#34;Layered counter-UAS chain concept graphic&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;High-power microwave counter-UAS systems attract attention because they promise a non-kinetic way to disrupt electronics rather than physically intercept a target. That promise is strategically important, but it is often described too narrowly. The system is not the whole solution. It is only one part of a layered chain.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/high-power-microwave-counter-uas-systems-where-they-fit-in-layered-defense/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-counter-uas-chain.svg&#34; alt=&#34;Layered counter-UAS chain concept graphic&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;High-power microwave counter-UAS systems attract attention because they promise a non-kinetic way to disrupt electronics rather than physically intercept a target. That promise is strategically important, but it is often described too narrowly. The system is not the whole solution. It is only one part of a layered chain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Frontier Radar Technologies: What Is Real, What Is Emerging, and What to Watch</title>
-      <link>https://www.cyrentis.com/knowledge-base/frontier-radar-technologies-what-is-real-what-is-emerging-and-what-to-watch/</link>
+      <link>http://localhost:1313/knowledge-base/frontier-radar-technologies-what-is-real-what-is-emerging-and-what-to-watch/</link>
       <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/knowledge-base/frontier-radar-technologies-what-is-real-what-is-emerging-and-what-to-watch/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.cyrentis.com/images/knowledge-base/kb-radar-frontiers.svg&#34; alt=&#34;Frontier radar technology concept illustration&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Radar research headlines can be misleading because they mix together technologies that are shipping now, technologies that are entering early operational use, and ideas that are still fundamentally research-stage. For engineers, buyers, and program planners, that mix is dangerous. It creates confusion about what can be deployed this year and what should only shape longer-term roadmap thinking.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/knowledge-base/frontier-radar-technologies-what-is-real-what-is-emerging-and-what-to-watch/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/knowledge-base/kb-radar-frontiers.svg&#34; alt=&#34;Frontier radar technology concept illustration&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Radar research headlines can be misleading because they mix together technologies that are shipping now, technologies that are entering early operational use, and ideas that are still fundamentally research-stage. For engineers, buyers, and program planners, that mix is dangerous. It creates confusion about what can be deployed this year and what should only shape longer-term roadmap thinking.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

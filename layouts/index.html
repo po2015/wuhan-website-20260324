@@ -6,81 +6,79 @@
 {{- $advantages := $home.advantages -}}
 {{- $cta := $home.cta -}}
 
-<section class="py-8 sm:py-10 lg:py-12">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div id="heroCarousel" class="hero-carousel carousel relative overflow-hidden rounded-[1.65rem]">
-      <div class="carousel-track flex transition-transform duration-700 ease-out">
-        {{ range $index, $slide := $hero.slides }}
-        <article class="hero-slide relative w-full shrink-0">
-          <div class="hero-slide-inner">
-            <div class="hero-slide-copy">
-              <p class="hero-slide-tag">{{ $slide.tag }}</p>
-              <h2 class="hero-slide-title">{{ $slide.title }}</h2>
-              <p class="hero-slide-desc">{{ $slide.description }}</p>
-              <a href="{{ $slide.url | relLangURL }}" class="hero-slide-cta">{{ $hero.button_label | default "Explore" }}</a>
-            </div>
-            <div class="hero-slide-media">
-              <img src="{{ "images/placeholder.png" | relURL }}" alt="{{ $slide.title }}" class="hero-slide-image">
-            </div>
+<section class="home-hero-section">
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
+    <div class="home-hero-shell">
+      <div class="home-hero-visual">
+        <div id="heroCarousel" class="hero-carousel home-hero-carousel carousel relative overflow-hidden">
+          <div class="carousel-track flex transition-transform duration-700 ease-out">
+            {{ range $index, $slide := $hero.slides }}
+            <article class="home-hero-slide relative w-full shrink-0">
+              <div class="home-hero-media-frame">
+                <img src="{{ $slide.image | relURL }}" alt="{{ $slide.image_alt | default $slide.title }}" class="home-hero-image">
+                <div class="home-hero-overlay">
+                  <div class="home-hero-copy">
+                    <div class="home-hero-meta">
+                      <p class="home-hero-kicker">{{ $hero.kicker }}</p>
+                      <span class="home-hero-topic">{{ $slide.tag }}</span>
+                    </div>
+                    {{ if eq $index 0 }}
+                    <h1 class="home-hero-title">{{ $slide.title }}</h1>
+                    {{ else }}
+                    <h2 class="home-hero-title">{{ $slide.title }}</h2>
+                    {{ end }}
+                    <p class="home-hero-lead">{{ $slide.description }}</p>
+
+                    <div class="home-hero-actions">
+                      <a href="{{ $slide.url | relLangURL }}" class="home-hero-primary">{{ $slide.button_label | default "Explore" }}</a>
+                      <a href="{{ $hero.secondary_button_url | relLangURL }}" class="home-hero-secondary">{{ $hero.secondary_button_label }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            {{ end }}
           </div>
+
+          <button class="carousel-control left-3 sm:left-4" type="button" data-carousel-prev aria-label="Previous slide">&#8249;</button>
+          <button class="carousel-control right-3 sm:right-4" type="button" data-carousel-next aria-label="Next slide">&#8250;</button>
+
+          <div class="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+            {{ range $index, $slide := $hero.slides }}
+            <button class="carousel-dot {{ if eq $index 0 }}is-active{{ end }}" data-carousel-dot="{{ $index }}" aria-label="Slide {{ add $index 1 }}"></button>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      {{ with $hero.metrics }}
+      <div class="home-hero-metrics">
+        {{ range . }}
+        <article class="home-hero-metric">
+          <strong>{{ .title }}</strong>
+          <span>{{ .description }}</span>
         </article>
         {{ end }}
       </div>
-      <button class="carousel-control left-3 sm:left-4" type="button" data-carousel-prev aria-label="Previous slide">&#8249;</button>
-      <button class="carousel-control right-3 sm:right-4" type="button" data-carousel-next aria-label="Next slide">&#8250;</button>
-      <div class="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2 sm:bottom-4">
-        {{ range $index, $slide := $hero.slides }}
-        <button class="carousel-dot {{ if eq $index 0 }}is-active{{ end }}" data-carousel-dot="{{ $index }}" aria-label="Slide {{ add $index 1 }}"></button>
-        {{ end }}
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
 
-<section class="bg-white">
-  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-    <div class="grid gap-8 lg:grid-cols-12">
-      <div class="lg:col-span-4">
-        <p class="section-kicker">{{ $about.kicker }}</p>
-        <h2 class="section-title">{{ $about.title }}</h2>
-      </div>
-      <article class="card-shell lg:col-span-8">
-        {{ range $index, $paragraph := $about.paragraphs }}
-        <p class="text-base leading-8 text-slate-700 {{ if gt $index 0 }}mt-4{{ end }}">{{ $paragraph }}</p>
-        {{ end }}
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-  <div class="mb-10 flex flex-wrap items-end justify-between gap-4">
-    <div>
-      <p class="section-kicker">{{ $business.kicker }}</p>
-      <h2 class="section-title">{{ $business.title }}</h2>
-    </div>
-    <a href="{{ $business.cta_url | relLangURL }}" class="inline-flex rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-700">{{ $business.cta_label }}</a>
-  </div>
-  <div class="grid gap-6 md:grid-cols-3">
-    {{ range $business.cards }}
-    <article class="card-shell">
-      <h3 class="text-xl font-bold text-slate-900">{{ .title }}</h3>
-      <p class="mt-3 text-sm leading-7 text-slate-600">{{ .description }}</p>
-      <a href="{{ .button_url | relLangURL }}" class="card-link">{{ .button_label }}</a>
-    </article>
-    {{ end }}
-  </div>
-</section>
-
-<section class="bg-white py-16">
+<section class="py-20">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="mb-10">
-      <p class="section-kicker">{{ $advantages.kicker }}</p>
-      <h2 class="section-title">{{ $advantages.title }}</h2>
+    <div class="home-section-head">
+      <p class="section-kicker">{{ $about.kicker }}</p>
+      <h2 class="section-title">{{ $about.title }}</h2>
+      <p class="home-section-lead">{{ $about.lead }}</p>
     </div>
-    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-      {{ range $advantages.items }}
-      <article class="adv-card">
+
+    <div class="home-story-grid">
+      {{ range $about.items }}
+      <article class="home-story-card">
+        <div class="home-story-icon">
+          {{ partial "home-icon.html" (dict "name" .icon "class" "h-6 w-6") }}
+        </div>
         <h3>{{ .title }}</h3>
         <p>{{ .description }}</p>
       </article>
@@ -89,11 +87,60 @@
   </div>
 </section>
 
-<section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-  <div class="rounded-3xl border border-brand-200 bg-brand-50 p-8 sm:p-10">
-    <h2 class="text-2xl font-extrabold text-brand-900 sm:text-3xl">{{ $cta.title }}</h2>
-    <p class="mt-3 max-w-3xl text-sm leading-7 text-brand-800">{{ $cta.description }}</p>
-    <a href="{{ $cta.button_url | relLangURL }}" class="mt-6 inline-flex rounded-full bg-brand-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-700">{{ $cta.button_label }}</a>
+<section class="bg-white/70 py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mb-10 flex flex-wrap items-end justify-between gap-4">
+      <div class="max-w-3xl">
+        <p class="section-kicker">{{ $business.kicker }}</p>
+        <h2 class="section-title">{{ $business.title }}</h2>
+        <p class="home-section-lead">{{ $business.lead }}</p>
+      </div>
+      <a href="{{ $business.cta_url | relLangURL }}" class="home-section-link">{{ $business.cta_label }}</a>
+    </div>
+
+    <div class="home-offer-grid">
+      {{ range $business.cards }}
+      <article class="home-offer-card">
+        <div class="home-offer-icon">
+          {{ partial "home-icon.html" (dict "name" .icon "class" "h-6 w-6") }}
+        </div>
+        <p class="home-offer-label">{{ .label }}</p>
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+        <a href="{{ .button_url | relLangURL }}" class="card-link">{{ .button_label }}</a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="home-section-head">
+      <p class="section-kicker">{{ $advantages.kicker }}</p>
+      <h2 class="section-title">{{ $advantages.title }}</h2>
+      <p class="home-section-lead">{{ $advantages.intro }}</p>
+    </div>
+
+    <div class="home-advantage-grid">
+      {{ range $index, $item := $advantages.items }}
+      <article class="home-adv-card">
+        <span class="home-adv-number">{{ printf "%02d" (add $index 1) }}</span>
+        <h3>{{ $item.title }}</h3>
+        <p>{{ $item.description }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+  <div class="home-cta-shell">
+    <div class="max-w-3xl">
+      <h2 class="home-cta-title">{{ $cta.title }}</h2>
+      <p class="home-cta-text">{{ $cta.description }}</p>
+    </div>
+    <a href="{{ $cta.button_url | relLangURL }}" class="home-cta-button">{{ $cta.button_label }}</a>
   </div>
 </section>
 {{ end }}

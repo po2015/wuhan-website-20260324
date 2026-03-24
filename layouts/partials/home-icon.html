@@ -1,0 +1,56 @@
+{{- $name := index . "name" -}}
+{{- $class := index . "class" | default "h-6 w-6" -}}
+
+{{- if eq $name "platform" -}}
+<svg class="{{ $class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <rect x="3.75" y="5" width="16.5" height="10.5" rx="2"></rect>
+  <path d="M8.75 19h6.5"></path>
+  <path d="M8 9h3.5"></path>
+  <path d="M8 12h5.5"></path>
+  <circle cx="16.5" cy="10.5" r="1"></circle>
+</svg>
+{{- else if eq $name "layers" -}}
+<svg class="{{ $class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M12 4.75 4.75 8.5 12 12.25 19.25 8.5 12 4.75Z"></path>
+  <path d="M4.75 12.25 12 16 19.25 12.25"></path>
+  <path d="M4.75 16 12 19.25 19.25 16"></path>
+</svg>
+{{- else if eq $name "sitefit" -}}
+<svg class="{{ $class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M12 20s4.75-4.39 4.75-8.25a4.75 4.75 0 1 0-9.5 0C7.25 15.61 12 20 12 20Z"></path>
+  <circle cx="12" cy="11.75" r="2.25"></circle>
+  <path d="M17.5 6.5 19.5 4.5"></path>
+</svg>
+{{- else if eq $name "software" -}}
+<svg class="{{ $class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <rect x="3.75" y="4.75" width="16.5" height="12.5" rx="2"></rect>
+  <path d="M9 19.25h6"></path>
+  <path d="M8 9h3"></path>
+  <path d="M13.5 9h2.5"></path>
+  <path d="M8 12.5h2.5"></path>
+  <path d="M12 12.5h4"></path>
+</svg>
+{{- else if eq $name "sensors" -}}
+<svg class="{{ $class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <circle cx="12" cy="12" r="1.5"></circle>
+  <path d="M12 6.5a5.5 5.5 0 0 1 5.5 5.5"></path>
+  <path d="M12 3.75A8.25 8.25 0 0 1 20.25 12"></path>
+  <path d="M12 17.5A5.5 5.5 0 0 0 17.5 12"></path>
+  <path d="M12 20.25A8.25 8.25 0 0 0 20.25 12"></path>
+  <path d="M6.5 12A5.5 5.5 0 0 1 12 6.5"></path>
+</svg>
+{{- else if eq $name "integration" -}}
+<svg class="{{ $class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <circle cx="6" cy="8" r="2"></circle>
+  <circle cx="18" cy="6" r="2"></circle>
+  <circle cx="18" cy="18" r="2"></circle>
+  <path d="M7.75 8.75 16.25 6.5"></path>
+  <path d="M7.5 9.5 16.5 16.5"></path>
+  <path d="M18 8v8"></path>
+</svg>
+{{- else -}}
+<svg class="{{ $class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <circle cx="12" cy="12" r="8"></circle>
+  <path d="M12 8v4l2.5 2.5"></path>
+</svg>
+{{- end -}}

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Wuhan Cyrentis Technology Co., Ltd.</title>
-    <link>https://www.cyrentis.com/news/</link>
+    <link>http://localhost:1313/news/</link>
     <description>Recent content in News on Wuhan Cyrentis Technology Co., Ltd.</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.cyrentis.com/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Editorial Layout Sample for News Publishing</title>
-      <link>https://www.cyrentis.com/news/editorial-layout-sample/</link>
-      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/news/editorial-layout-sample/</guid>
-      <description>&lt;h1 id=&#34;heading-level-1-example&#34;&gt;Heading Level 1 Example&lt;/h1&gt;&#xA;&lt;p&gt;This sample article is intended to show how a Cyrentis news page can handle richer editorial content when a simple announcement is not enough. It combines multiple heading levels, inline imagery, note emphasis, and a compact table so future news writing can follow one consistent pattern.&lt;/p&gt;</description>
+      <title>Cyrentis Shares Its 2026 New Year Message</title>
+      <link>http://localhost:1313/news/cyrentis-new-year-message-2026/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/cyrentis-new-year-message-2026/</guid>
+      <description>&lt;p&gt;Cyrentis shared its 2026 New Year message with thanks to customers, project partners, suppliers, and collaborators who supported the company during its first stage of development.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Logistics Coordination Network Expanded</title>
-      <link>https://www.cyrentis.com/news/logistics-network-expansion/</link>
-      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/news/logistics-network-expansion/</guid>
-      <description>&lt;p&gt;News placeholder: expanded logistics coordination enables more adaptable transport planning by project type.&lt;/p&gt;</description>
+      <title>Cyrentis Signs a New Electro-Optical Equipment Contract</title>
+      <link>http://localhost:1313/news/cyrentis-signs-electro-optical-equipment-contract/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/cyrentis-signs-electro-optical-equipment-contract/</guid>
+      <description>&lt;p&gt;Cyrentis announced in December 2025 that it had signed a new customer contract for electro-optical equipment supply and project support, marking another step in moving the &lt;code&gt;SOC&lt;/code&gt; product family from product definition into actual delivery activity.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Pilot Shipment Progress for Overseas Project</title>
-      <link>https://www.cyrentis.com/news/sample-shipment-update/</link>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/news/sample-shipment-update/</guid>
-      <description>&lt;p&gt;News placeholder: the first pilot shipment reached destination and moved into on-site integration testing.&lt;/p&gt;</description>
+      <title>Cyrentis Expands Horizon with Fusion, Command, Archive, and Link</title>
+      <link>http://localhost:1313/news/horizon-expands-with-fusion-command-and-link/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/horizon-expands-with-fusion-command-and-link/</guid>
+      <description>&lt;p&gt;Following the public introduction of Horizon Sense, Cyrentis announced the next visible set of Horizon platform components in May 2025, extending the software direction from device management into operational workflow.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Cyrentis Defined Its Platform, Sensors, and Services Structure</title>
-      <link>https://www.cyrentis.com/news/company-launch-and-focus/</link>
-      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.cyrentis.com/news/company-launch-and-focus/</guid>
-      <description>&lt;p&gt;Wuhan Cyrentis Technology introduced its operating structure around three connected areas: the Horizon software platform, sensor products, and service capabilities covering software customization, solution design, and equipment integration.&lt;/p&gt;</description>
+      <title>Cyrentis Formally Established and Introduces Horizon Sense</title>
+      <link>http://localhost:1313/news/cyrentis-founded-and-launches-horizon-sense/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/cyrentis-founded-and-launches-horizon-sense/</guid>
+      <description>&lt;p&gt;Wuhan Cyrentis Technology Co., Ltd. announced its formal establishment on April 1, 2025, with a business focus on integrated monitoring systems built around software, sensing products, and deployment-oriented engineering services.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
