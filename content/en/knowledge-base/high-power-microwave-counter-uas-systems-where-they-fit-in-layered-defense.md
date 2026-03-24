@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Counter-UAS"
   - "Layered Defense"
+tags:
+  - "Counter-UAS"
+  - "Layered Defense"
 image: "/images/knowledge-base/kb-counter-uas-chain.svg"
 weight: 28
 date: 2025-05-02

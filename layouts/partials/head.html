@@ -1,13 +1,139 @@
+{{- $siteTitle := .Site.Title | default (.Site.Params.brand_name | default "Cyrentis") -}}
+{{- $siteName := .Site.Params.site_name | default $siteTitle -}}
+{{- $defaultTitle := .Site.Params.default_title | default $siteTitle -}}
 {{- $defaultDescription := .Site.Params.default_description | default .Site.Home.Params.description -}}
+{{- $pageBaseTitle := .Title | default $siteTitle -}}
+{{- $seoTitle := .Params.seo_title | default "" -}}
+{{- $pageDescription := .Params.seo_description | default (.Params.description | default $defaultDescription) -}}
+{{- $pageKeywords := .Params.keywords | default (.Site.Params.default_keywords | default (slice)) -}}
+{{- $keywordsContent := "" -}}
+{{- if gt (len $pageKeywords) 0 -}}
+  {{- $keywordsContent = delimit $pageKeywords ", " -}}
+{{- end -}}
+{{- $pageTitle := "" -}}
+{{- if .IsHome -}}
+  {{- $pageTitle = cond (ne $seoTitle "") $seoTitle $defaultTitle -}}
+{{- else if ne $seoTitle "" -}}
+  {{- $pageTitle = $seoTitle -}}
+{{- else if in (lower $pageBaseTitle) (lower $siteTitle) -}}
+  {{- $pageTitle = $pageBaseTitle -}}
+{{- else -}}
+  {{- $pageTitle = printf "%s | %s" $pageBaseTitle $siteTitle -}}
+{{- end -}}
+{{- $canonical := .Permalink -}}
+{{- $pageImage := .Params.image | default (.Params.hero_image | default "") -}}
+{{- if and (eq $pageImage "") .IsHome -}}
+  {{- $pageImage = .Site.Params.default_social_image | default "images/home_horizon.png" -}}
+{{- end -}}
+{{- if and (eq $pageImage "") (isset .Params "horizon_page") -}}
+  {{- with index .Params.horizon_page "hero" -}}
+    {{- $pageImage = index . "image" | default "" -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $pageImage "" -}}
+  {{- $pageImage = .Site.Params.default_social_image | default "images/home_horizon.png" -}}
+{{- end -}}
+{{- $pageImageAlt := .Params.image_alt | default (.Site.Params.default_social_image_alt | default $siteName) -}}
+{{- $pageImageAbs := $pageImage | absURL -}}
+{{- $logoAbs := "images/logo.png" | absURL -}}
+{{- $isArticle := and .IsPage (or (eq .Section "news") (eq .Section "knowledge-base")) -}}
+{{- $ogType := cond $isArticle "article" "website" -}}
+{{- $robots := cond (.Params.noindex | default false) "noindex,nofollow,noarchive" "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" -}}
+{{- $ogLocale := replaceRE "-" "_" (.Site.Language.LanguageCode | default "en-US") -}}
+{{- $orgData := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "@id" (printf "%s#organization" .Site.BaseURL)
+  "name" (.Site.Params.company_name | default $siteName)
+  "alternateName" $siteName
+  "url" .Site.BaseURL
+  "logo" (dict "@type" "ImageObject" "url" $logoAbs)
+  "email" (.Site.Params.email | default "")
+  "telephone" (.Site.Params.phone | default "")
+  "address" (dict "@type" "PostalAddress" "streetAddress" (.Site.Params.address | default "") "addressCountry" "CN")
+-}}
+{{- $websiteData := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "@id" (printf "%s#website" .Site.BaseURL)
+  "url" .Site.BaseURL
+  "name" $siteName
+  "description" $defaultDescription
+  "inLanguage" (.Site.Language.LanguageCode | default "en-US")
+  "publisher" (dict "@id" (printf "%s#organization" .Site.BaseURL))
+-}}
 <!doctype html>
 <html lang="{{ .Site.Language.Lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ $defaultDescription }}{{ end }}">
+  <title>{{ $pageTitle }}</title>
+  <meta name="description" content="{{ $pageDescription }}">
+  {{- if ne $keywordsContent "" }}
+  <meta name="keywords" content="{{ $keywordsContent }}">
+  {{- end }}
+  {{- with .Params.author }}
+  <meta name="author" content="{{ . }}">
+  {{- end }}
+  <meta name="robots" content="{{ $robots }}">
+  <meta name="googlebot" content="{{ $robots }}">
+  <meta name="theme-color" content="#1C3962">
+  <link rel="canonical" href="{{ $canonical }}">
   <link rel="icon" type="image/png" href="{{ "images/icon.png" | relURL }}">
   <link rel="shortcut icon" href="{{ "images/icon.png" | relURL }}">
+
+  <meta property="og:site_name" content="{{ $siteName }}">
+  <meta property="og:type" content="{{ $ogType }}">
+  <meta property="og:title" content="{{ $pageTitle }}">
+  <meta property="og:description" content="{{ $pageDescription }}">
+  <meta property="og:url" content="{{ $canonical }}">
+  <meta property="og:image" content="{{ $pageImageAbs }}">
+  <meta property="og:image:alt" content="{{ $pageImageAlt }}">
+  <meta property="og:locale" content="{{ $ogLocale }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $pageTitle }}">
+  <meta name="twitter:description" content="{{ $pageDescription }}">
+  <meta name="twitter:image" content="{{ $pageImageAbs }}">
+  <meta name="twitter:image:alt" content="{{ $pageImageAlt }}">
+
+  {{- if $isArticle }}
+  {{- if not .Date.IsZero }}
+  <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+  {{- end }}
+  {{- if not .Lastmod.IsZero }}
+  <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+  {{- end }}
+  {{- range .Params.tags }}
+  <meta property="article:tag" content="{{ . }}">
+  {{- end }}
+  {{- end }}
+
+  <script type="application/ld+json">{{ $orgData | jsonify | safeHTML }}</script>
+  <script type="application/ld+json">{{ $websiteData | jsonify | safeHTML }}</script>
+  {{- if $isArticle }}
+  {{- $articleType := cond (eq .Section "news") "NewsArticle" "Article" -}}
+  {{- $articleData := dict
+    "@context" "https://schema.org"
+    "@type" $articleType
+    "headline" $pageBaseTitle
+    "description" $pageDescription
+    "url" $canonical
+    "mainEntityOfPage" $canonical
+    "inLanguage" (.Site.Language.LanguageCode | default "en-US")
+    "image" (slice $pageImageAbs)
+    "author" (dict "@type" "Organization" "name" (.Params.author | default $siteName))
+    "publisher" (dict "@id" (printf "%s#organization" .Site.BaseURL))
+  -}}
+  {{- if not .Date.IsZero -}}
+    {{- $articleData = merge $articleData (dict "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")) -}}
+  {{- end -}}
+  {{- if not .Lastmod.IsZero -}}
+    {{- $articleData = merge $articleData (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
+  {{- end -}}
+  <script type="application/ld+json">{{ $articleData | jsonify | safeHTML }}</script>
+  {{- end }}
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {

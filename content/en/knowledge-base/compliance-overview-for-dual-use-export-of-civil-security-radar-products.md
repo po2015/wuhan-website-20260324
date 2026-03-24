@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Compliance"
   - "Export Control"
+tags:
+  - "Compliance"
+  - "Export Control"
 image: "/images/knowledge-base/dual-use-export-compliance-flow.svg"
 weight: 12
 date: 2026-03-01

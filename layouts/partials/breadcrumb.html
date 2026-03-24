@@ -15,6 +15,8 @@
 {{- $newsPage := .Site.GetPage "/news" -}}
 {{- $contactPage := .Site.GetPage "/contact-us" -}}
 {{- $horizonPage := .Site.GetPage "/horizon" -}}
+{{- $tagsPage := .Site.GetPage "/tags" -}}
+{{- $categoriesPage := .Site.GetPage "/categories" -}}
 
 {{- if hasPrefix $path "/sensors/" -}}
   {{- $crumbs = $crumbs | append (dict "title" (cond $sensorsPage $sensorsPage.Title "Sensors") "url" ("/sensors/" | relLangURL)) -}}
@@ -44,6 +46,14 @@
   {{- $crumbs = $crumbs | append (dict "title" (cond $infoPage $infoPage.Title "Information") "url" ("/info-center/" | relLangURL)) -}}
   {{- if ne $path "/news/" -}}
     {{- $crumbs = $crumbs | append (dict "title" (cond $newsPage $newsPage.Title "News") "url" ("/news/" | relLangURL)) -}}
+  {{- end -}}
+{{- else if hasPrefix $path "/categories/" -}}
+  {{- if ne $path "/categories/" -}}
+    {{- $crumbs = $crumbs | append (dict "title" (cond $categoriesPage $categoriesPage.Title "Categories") "url" ("/categories/" | relLangURL)) -}}
+  {{- end -}}
+{{- else if hasPrefix $path "/tags/" -}}
+  {{- if ne $path "/tags/" -}}
+    {{- $crumbs = $crumbs | append (dict "title" (cond $tagsPage $tagsPage.Title "Tags") "url" ("/tags/" | relLangURL)) -}}
   {{- end -}}
 {{- else if hasPrefix $path "/info-center/" -}}
 {{- else if hasPrefix $path "/contact-us/" -}}

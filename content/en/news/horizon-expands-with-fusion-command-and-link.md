@@ -11,8 +11,12 @@ keywords:
   - "Horizon Command"
   - "Horizon Archive"
   - "Horizon Link"
+
 author: "Cyrentis Editorial Team"
 author_role: "Platform Communications"
+categories:
+  - "Platform Updates"
+  - "Horizon"
 tags:
   - "Horizon"
   - "Platform Update"

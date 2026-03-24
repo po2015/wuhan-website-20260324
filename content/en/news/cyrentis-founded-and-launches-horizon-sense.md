@@ -11,8 +11,12 @@ keywords:
   - "Horizon Sense"
   - "Cyrentis software platform"
   - "integrated monitoring software"
+
 author: "Cyrentis Editorial Team"
 author_role: "Corporate Communications"
+categories:
+  - "Company News"
+  - "Horizon"
 tags:
   - "Company Update"
   - "Horizon"

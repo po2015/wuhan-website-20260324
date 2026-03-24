@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Digital RF"
   - "Radar Architecture"
+tags:
+  - "Digital RF"
+  - "Radar Architecture"
 image: "/images/knowledge-base/kb-rf-digitization.svg"
 weight: 24
 date: 2025-04-18

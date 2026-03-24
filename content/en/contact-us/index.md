@@ -1,6 +1,8 @@
 ---
 title: "Contact"
 description: "Talk to Cyrentis about Horizon customization, sensor projects, solution planning, or integrated site deployments."
+seo_title: "Contact Cyrentis | Horizon, Sensors and Integration Projects"
+seo_description: "Contact Cyrentis about Horizon software, sensor products, solution design, and integrated monitoring system projects."
 contact_page:
   form_anchor: "contact-form"
   details_title: "Contact Details"

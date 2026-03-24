@@ -1,6 +1,8 @@
 ---
 title: "Horizon"
 description: "Unified sensing management, fusion, tracking, and command workflows for multi-sensor security operations."
+seo_title: "Horizon | Multi-Sensor Command Software by Cyrentis"
+seo_description: "Explore Horizon, the Cyrentis software platform for unified sensing management, fusion, tracking, alerts, archive, and command workflow."
 kicker: "Software Platform"
 weight: 1
 horizon_page:

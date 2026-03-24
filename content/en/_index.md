@@ -1,6 +1,8 @@
 ---
-title: "Wuhan Cyrentis Technology Co., Ltd."
+title: "Cyrentis"
 description: "Cyrentis combines Horizon software, layered sensing products, and deployment support for practical low-altitude and site monitoring projects."
+seo_title: "Cyrentis | Horizon Software, Surveillance Radar, EO & RF Systems"
+seo_description: "Cyrentis provides Horizon software, surveillance radar, electro-optical and RF sensing products, plus integration services for site security and low-altitude awareness."
 footer:
   company_name: "Wuhan Cyrentis Technology Co., Ltd."
   description: "Cyrentis helps visitors plan practical monitoring systems with Horizon software, layered sensing products, and deployment-oriented engineering support."

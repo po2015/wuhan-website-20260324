@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Radar Architecture"
   - "Semiconductor Technology"
+tags:
+  - "Radar Architecture"
+  - "Semiconductor Technology"
 image: "/images/knowledge-base/kb-aesa-gan.svg"
 weight: 23
 date: 2025-04-14

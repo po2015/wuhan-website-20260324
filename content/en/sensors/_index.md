@@ -1,6 +1,8 @@
 ---
 title: "Sensors"
 description: "SRC radar, SOC electro-optical, and SDC RF spectrum detection product families for layered security monitoring."
+seo_title: "Sensors | Surveillance Radar, EO and RF Systems by Cyrentis"
+seo_description: "Browse Cyrentis sensor families including SRC surveillance radar, SOC electro-optical products, and SDC spectrum detection systems."
 kicker: "Sensor Portfolio"
 weight: 2
 sensor_page:

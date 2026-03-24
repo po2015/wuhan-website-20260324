@@ -1,5 +1,5 @@
 baseURL = "https://www.cyrentis.com/"
-title = "Wuhan Cyrentis Technology Co., Ltd."
+title = "Cyrentis"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
@@ -14,13 +14,20 @@ summaryLength = 24
       unsafe = true
 
 [params]
+  brand_name = "Cyrentis"
   company_name = "Wuhan Cyrentis Technology Co., Ltd."
+  site_name = "Cyrentis"
+  site_title_suffix = "Integrated Monitoring Systems"
+  default_title = "Cyrentis | Horizon Software, Surveillance Radar, EO & RF Systems"
   address = "Room 201-134, Building C9, Phase II, Wuhan Software New City, No. 8 Huacheng Avenue, East Lake High-tech Development Zone, Wuhan, China"
   phone = "+86-13986053927"
   email = "info@cyrentis.com"
   google_tag_id = "G-H32XFR8H0R"
   icp_license = "鄂ICP备2024048791号-3"
-  default_description = "Integrated sensing systems for security monitoring and low-altitude awareness, combining Horizon software, sensor devices, and consulting services."
+  default_description = "Cyrentis provides Horizon software, surveillance radar, electro-optical and RF sensing products, plus system design and integration services for site security and low-altitude awareness."
+  default_social_image = "/images/home_horizon.png"
+  default_social_image_alt = "Cyrentis integrated monitoring systems built around Horizon software and sensor products."
+  default_keywords = ["Cyrentis", "Horizon software", "surveillance radar", "electro-optical systems", "spectrum detection", "system integration", "low-altitude awareness"]
 
   [params.ui]
     page_kicker = "Page"
@@ -42,7 +49,11 @@ summaryLength = 24
     languageCode = "en-US"
     weight = 1
     contentDir = "content/en"
-    title = "Wuhan Cyrentis Technology Co., Ltd."
+    title = "Cyrentis"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 
 [[menus.main]]
   name = "Home"

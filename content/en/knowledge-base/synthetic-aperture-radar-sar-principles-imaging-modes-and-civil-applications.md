@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Remote Sensing"
   - "Radar Basics"
+tags:
+  - "Remote Sensing"
+  - "Radar Basics"
 image: "/images/knowledge-base/kb-sar-imaging.svg"
 weight: 22
 date: 2025-04-11

@@ -16,6 +16,9 @@ keywords:
 categories:
   - "Radar Planning"
   - "Frequency Selection"
+tags:
+  - "Radar Planning"
+  - "Frequency Selection"
 image: "/images/knowledge-base/radar-frequency-band-comparison.svg"
 weight: 10
 date: 2026-03-01

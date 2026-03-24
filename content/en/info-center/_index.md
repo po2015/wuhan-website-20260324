@@ -1,6 +1,8 @@
 ---
 title: "Information"
 description: "Explore practical articles and company updates related to Cyrentis platforms, sensors, and project planning."
+seo_title: "Information | Cyrentis Articles and Company Updates"
+seo_description: "Read Cyrentis knowledge-base articles and company news covering platforms, sensors, deployment planning, and project delivery."
 layout: "list"
 weight: 4
 info_center:

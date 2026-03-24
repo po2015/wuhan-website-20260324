@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Radar Architecture"
   - "System Design"
+tags:
+  - "Radar Architecture"
+  - "System Design"
 image: "/images/knowledge-base/radar-scanning-architecture-comparison.svg"
 weight: 11
 date: 2026-03-01

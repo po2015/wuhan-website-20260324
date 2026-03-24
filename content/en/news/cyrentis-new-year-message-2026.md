@@ -11,8 +11,12 @@ keywords:
   - "2026 message"
   - "Horizon roadmap"
   - "sensor systems"
+
 author: "Cyrentis Editorial Team"
 author_role: "Corporate Communications"
+categories:
+  - "Company News"
+  - "Seasonal Message"
 tags:
   - "Company Update"
   - "New Year"

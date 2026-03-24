@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Sensor Selection"
   - "System Design"
+tags:
+  - "Sensor Selection"
+  - "System Design"
 image: "/images/knowledge-base/kb-sensing-modalities.svg"
 weight: 20
 date: 2025-04-04

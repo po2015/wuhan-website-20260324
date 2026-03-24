@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Emerging Technology"
   - "Radar Futures"
+tags:
+  - "Emerging Technology"
+  - "Radar Futures"
 image: "/images/knowledge-base/kb-radar-frontiers.svg"
 weight: 29
 date: 2025-05-05

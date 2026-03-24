@@ -11,8 +11,12 @@ keywords:
   - "Cyrentis SOC"
   - "surveillance optics"
   - "project delivery"
+
 author: "Cyrentis Editorial Team"
 author_role: "Business Development Office"
+categories:
+  - "Business Updates"
+  - "Contracts"
 tags:
   - "Contract"
   - "SOC"

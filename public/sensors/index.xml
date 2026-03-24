@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sensors on Wuhan Cyrentis Technology Co., Ltd.</title>
-    <link>http://localhost:1313/sensors/</link>
-    <description>Recent content in Sensors on Wuhan Cyrentis Technology Co., Ltd.</description>
+    <title>Sensors on Cyrentis</title>
+    <link>https://www.cyrentis.com/sensors/</link>
+    <description>Recent content in Sensors on Cyrentis</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="http://localhost:1313/sensors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.cyrentis.com/sensors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

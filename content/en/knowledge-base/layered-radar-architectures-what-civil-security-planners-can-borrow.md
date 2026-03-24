@@ -14,6 +14,9 @@ keywords:
 categories:
   - "System Design"
   - "Deployment"
+tags:
+  - "System Design"
+  - "Deployment"
 image: "/images/knowledge-base/kb-layered-radar.svg"
 weight: 25
 date: 2025-04-21

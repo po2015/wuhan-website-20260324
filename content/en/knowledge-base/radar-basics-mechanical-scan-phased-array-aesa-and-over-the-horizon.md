@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Radar Basics"
   - "Radar Architecture"
+tags:
+  - "Radar Basics"
+  - "Radar Architecture"
 image: "/images/knowledge-base/kb-radar-basics.svg"
 weight: 27
 date: 2025-04-28

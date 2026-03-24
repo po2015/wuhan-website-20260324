@@ -14,6 +14,9 @@ keywords:
 categories:
   - "Radar Architecture"
   - "System Design"
+tags:
+  - "Radar Architecture"
+  - "System Design"
 image: "/images/knowledge-base/kb-radar-components.svg"
 weight: 21
 date: 2025-04-07

@@ -14,6 +14,9 @@ keywords:
 categories:
   - "EO Systems"
   - "Emerging Technology"
+tags:
+  - "EO Systems"
+  - "Emerging Technology"
 image: "/images/knowledge-base/kb-bionic-lidar.svg"
 weight: 26
 date: 2025-04-25
