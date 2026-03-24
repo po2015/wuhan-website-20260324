@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 104" fill="none" role="img" aria-label="Continuous wave holding icon">
-  <rect x="8" y="8" width="88" height="88" rx="24" fill="#E7F9FF" stroke="#8DD7F7" stroke-width="2"/>
-  <circle cx="52" cy="53" r="12" fill="white" stroke="#0284C7" stroke-width="2.5"/>
-  <path d="M21 55C27 45 33 45 39 55C45 65 51 65 57 55C63 45 69 45 75 55" stroke="#0EA5E9" stroke-width="3.5" stroke-linecap="round"/>
-  <path d="M25 42C30 36 35 36 40 42" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round"/>
-  <path d="M64 42C69 36 74 36 79 42" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="52" cy="53" r="4" fill="#38BDF8"/>
-</svg>
