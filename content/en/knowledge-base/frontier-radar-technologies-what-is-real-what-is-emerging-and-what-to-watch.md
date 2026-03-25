@@ -12,12 +12,16 @@ keywords:
   - "cognitive radar"
   - "integrated sensing and communications"
 categories:
-  - "Emerging Technology"
-  - "Radar Futures"
+  - "Emerging Radar"
+  - "Technology Watch"
 tags:
-  - "Emerging Technology"
-  - "Radar Futures"
-image: "/images/knowledge-base/kb-radar-frontiers.svg"
+  - "4D Radar"
+  - "Cognitive Sensing"
+  - "Future Systems"
+image: "/images/knowledge-base/frontier-radar-technologies-emerging-systems-cover.jpg"
+image_alt: "Advanced radar technology environment representing emerging surveillance systems."
+image_source_url: "https://www.pexels.com/photo/military-truck-with-advanced-weaponry-display-28975867/"
+image_source_name: "Sergey Koznov"
 weight: 29
 date: 2025-05-05
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "Photonics and cognitive adaptation matter because they change bandwidth and control flexibility."
   - "The best way to read frontier sensing is by maturity horizon, not by hype cycle."
 ---
-
-![Frontier radar technology concept illustration](/images/knowledge-base/kb-radar-frontiers.svg)
-
 Radar research headlines can be misleading because they mix together technologies that are shipping now, technologies that are entering early operational use, and ideas that are still fundamentally research-stage. For engineers, buyers, and program planners, that mix is dangerous. It creates confusion about what can be deployed this year and what should only shape longer-term roadmap thinking.
 
 A more useful approach is to group frontier sensing ideas by maturity horizon.

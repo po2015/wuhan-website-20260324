@@ -1,5 +1,7 @@
 /public/
 /resources/_gen/
 /.hugo_build.lock
+/.codex/
+/.vscode/
 node_modules/
 .DS_Store

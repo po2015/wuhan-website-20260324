@@ -18,11 +18,13 @@ categories:
   - "Platform Updates"
   - "Horizon"
 tags:
-  - "Horizon"
-  - "Platform Update"
-  - "Software"
-image: "/images/news/horizon-module-expansion.svg"
-image_alt: "Illustration of multiple Horizon modules expanding from one software core."
+  - "Fusion Module"
+  - "Command Workflow"
+  - "Archive Layer"
+image: "/images/news/horizon-expands-with-fusion-command-and-link-cover.jpg"
+image_alt: "Operations room with coordinated monitoring displays representing Horizon software modules."
+image_source_url: "https://www.pexels.com/photo/close-up-photo-of-control-panel-3582392/"
+image_source_name: "Ibrahim Boran"
 keypoints:
   - "Horizon is moving beyond device orchestration into correlation, command, archive, and connectivity."
   - "The announced modules are intended to work as one operational chain rather than isolated feature blocks."

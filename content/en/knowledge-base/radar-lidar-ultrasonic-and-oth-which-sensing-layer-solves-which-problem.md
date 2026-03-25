@@ -12,12 +12,16 @@ keywords:
   - "millimeter wave radar"
   - "layered security sensing"
 categories:
-  - "Sensor Selection"
+  - "Radar Planning"
   - "System Design"
 tags:
-  - "Sensor Selection"
-  - "System Design"
-image: "/images/knowledge-base/kb-sensing-modalities.svg"
+  - "Sensor Fusion"
+  - "LiDAR"
+  - "Ultrasonic"
+image: "/images/knowledge-base/radar-lidar-ultrasonic-and-oth-sensing-layers-cover.jpg"
+image_alt: "Sensor equipment and aerial surveillance scene representing multiple sensing layers."
+image_source_url: "https://www.pexels.com/photo/military-awacs-aircraft-in-flight-over-blue-sky-36028039/"
+image_source_name: "Rafael Minguet Delgado"
 weight: 20
 date: 2025-04-04
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "LiDAR and ultrasonic sensing are strongest when geometry is constrained and precision is the priority."
   - "The best projects use layered sensing instead of forcing one sensor to do every job."
 ---
-
-![Concept illustration comparing sensing modalities](/images/knowledge-base/kb-sensing-modalities.svg)
-
 Security projects often go wrong at the first decision: sensors are compared as if they were substitutes, when in practice they are layers with different jobs. The right question is not "Which technology is best?" but "Which sensing layer solves which part of the mission?"
 
 For civil security and infrastructure monitoring, five sensing families appear again and again: conventional microwave radar, millimeter-wave radar, ultrasonic sensing, lidar, and over-the-horizon radar. Their strengths are different, and trying to force one technology into another layer's job usually creates poor coverage, poor economics, or both.

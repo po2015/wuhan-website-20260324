@@ -15,11 +15,15 @@ categories:
   - "Compliance"
   - "Export Control"
 tags:
-  - "Compliance"
-  - "Export Control"
-image: "/images/knowledge-base/dual-use-export-compliance-flow.svg"
+  - "Export Licensing"
+  - "Dual-Use Review"
+  - "China Compliance"
+image: "/images/knowledge-base/dual-use-export-compliance-civil-security-radar-cover.jpg"
+image_alt: "Shipping containers and export logistics scene related to compliance review."
+image_source_url: "https://www.pexels.com/photo/stacked-metal-shipping-containers-6752846/"
+image_source_name: "Jonas  F"
 weight: 12
-date: 2026-03-01
+date: 2026-03-05
 draft: false
 keypoints:
   - "Civil security radar exports may be subject to dual-use control requirements."
@@ -27,9 +31,6 @@ keypoints:
   - "End-use clarity and document consistency reduce avoidable delays."
   - "Compliance planning should run in parallel with technical integration planning."
 ---
-
-![Dual-use export compliance flow diagram](/images/knowledge-base/dual-use-export-compliance-flow.svg)
-
 Civil security radar projects can fail late in the delivery cycle if compliance planning starts too late. For cross-border deployment, technical readiness and regulatory readiness must progress in parallel.
 
 This article provides a high-level process overview for dual-use export compliance in civil security radar delivery.

@@ -12,12 +12,16 @@ keywords:
   - "AESA radar"
   - "over the horizon radar"
 categories:
-  - "Radar Basics"
   - "Radar Architecture"
+  - "Technology Basics"
 tags:
-  - "Radar Basics"
-  - "Radar Architecture"
-image: "/images/knowledge-base/kb-radar-basics.svg"
+  - "Mechanical Scan"
+  - "Phased Array"
+  - "AESA"
+image: "/images/knowledge-base/radar-basics-mechanical-scan-phased-array-aesa-cover.jpg"
+image_alt: "Radar antenna scene representing basic radar scanning architectures."
+image_source_url: "https://www.pexels.com/photo/parabolic-antenna-12102906/"
+image_source_name: "SONIC"
 weight: 27
 date: 2025-04-28
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "AESA improves flexibility, availability, and multi-function behavior."
   - "Over-the-horizon radar solves a different problem than normal site-security radar."
 ---
-
-![Radar basics concept illustration](/images/knowledge-base/kb-radar-basics.svg)
-
 Radar is often described as if it were mysterious or purely military. In reality, its basic logic is straightforward: send energy, wait for the echo, and calculate what the return tells you about distance, direction, speed, or movement.
 
 What makes radar interesting is how many ways engineers have found to improve that basic loop.

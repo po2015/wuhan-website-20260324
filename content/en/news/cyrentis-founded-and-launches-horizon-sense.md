@@ -18,11 +18,13 @@ categories:
   - "Company News"
   - "Horizon"
 tags:
-  - "Company Update"
-  - "Horizon"
-  - "Software"
-image: "/images/news/cyrentis-founding-horizon-sense.svg"
-image_alt: "Cyrentis founding announcement with Horizon Sense software concept."
+  - "Corporate Launch"
+  - "Software Roadmap"
+  - "Integrated Monitoring"
+image: "/images/news/cyrentis-founded-and-launches-horizon-sense-cover.jpg"
+image_alt: "Monitoring software and multi-screen control room environment related to Horizon Sense."
+image_source_url: "https://www.pexels.com/photo/sound-engineering-software-on-monitors-11044812/"
+image_source_name: "John Taran"
 keypoints:
   - "Cyrentis officially established its business direction around integrated monitoring systems."
   - "Horizon Sense was introduced as the first public module in the Horizon platform line."

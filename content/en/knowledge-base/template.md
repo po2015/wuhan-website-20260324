@@ -10,13 +10,16 @@ keywords:
   - "keyword two"
   - "keyword three"
 categories:
-  - "Primary Category"
-  - "Secondary Category"
+  - "Radar Architecture"
+  - "System Design"
 tags:
-  - "Tag One"
-  - "Tag Two"
-image: "/images/knowledge-base/template-kb-image.svg"
+  - "AESA"
+  - "Signal Processing"
+  - "Operator Workflow"
+image: "/images/knowledge-base/template-kb-image.jpg"
 image_alt: "Describe the knowledge-base cover image clearly."
+image_source_name: "Photographer Name"
+image_source_url: "https://www.pexels.com/photo/example/"
 weight: 999
 date: 2026-01-01
 lastmod: 2026-01-01
@@ -35,12 +38,11 @@ Knowledge-base writing rules:
 1. Use a practical, explanatory tone.
 2. Lead with a short explanation of the topic in plain language.
 3. Use H2 and H3 headings to organize the article.
-4. Recommend existing Cyrentis products or services only when there is a real fit.
-5. External links should be authoritative and directly relevant.
-6. Keep terminology consistent with existing Cyrentis product naming.
+4. Use charts or tables only when the underlying data is public and citable.
+5. Recommend existing Cyrentis products or services only when there is a real fit.
+6. External links should be authoritative and directly relevant.
+7. Keep terminology consistent with existing Cyrentis product naming.
 -->
-
-![Template knowledge-base illustration](/images/knowledge-base/template-kb-image.svg)
 
 Write a short introduction that explains the topic, the real-world question behind it, and why the reader should care.
 

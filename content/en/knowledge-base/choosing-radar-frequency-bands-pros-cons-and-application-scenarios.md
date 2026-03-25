@@ -17,9 +17,13 @@ categories:
   - "Radar Planning"
   - "Frequency Selection"
 tags:
-  - "Radar Planning"
-  - "Frequency Selection"
-image: "/images/knowledge-base/radar-frequency-band-comparison.svg"
+  - "C Band"
+  - "X Band"
+  - "Ku Band"
+image: "/images/knowledge-base/choosing-radar-frequency-bands-application-scenarios-cover.jpg"
+image_alt: "Antenna and monitoring equipment scene representing radar frequency band planning."
+image_source_url: "https://www.pexels.com/photo/white-surveillance-cameras-786123/"
+image_source_name: "Frederic Bartl"
 weight: 10
 date: 2026-03-01
 draft: false
@@ -29,9 +33,6 @@ keypoints:
   - "Ku band usually provides stronger sensitivity for small or low-RCS targets."
   - "Band choice should be made together with architecture, site geometry, and integration plan."
 ---
-
-![Radar frequency band comparison chart](/images/knowledge-base/radar-frequency-band-comparison.svg)
-
 Civil security radar projects rarely fail because of one parameter. They fail when frequency band choice is disconnected from site conditions, target mix, and system integration objectives.
 
 This guide provides a practical decision method for C, X, and Ku band selection in airport perimeter security, industrial park protection, port monitoring, and counter-UAS projects.

@@ -12,12 +12,16 @@ keywords:
   - "adaptive perception"
   - "gaze enabled lidar"
 categories:
-  - "EO Systems"
-  - "Emerging Technology"
+  - "Emerging Sensors"
+  - "Machine Vision"
 tags:
-  - "EO Systems"
-  - "Emerging Technology"
-image: "/images/knowledge-base/kb-bionic-lidar.svg"
+  - "FMCW LiDAR"
+  - "Adaptive Perception"
+  - "4D Sensing"
+image: "/images/knowledge-base/bionic-fmcw-lidar-adaptive-machine-vision-cover.jpg"
+image_alt: "LiDAR and machine vision technology scene representing adaptive 4D sensing."
+image_source_url: "https://www.pexels.com/photo/close-up-of-autonomous-vehicle-s-sensor-technology-35076211/"
+image_source_name: "Stephen Leonardi"
 weight: 26
 date: 2025-04-25
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "FMCW lidar is interesting because it supports richer motion-aware sensing."
   - "The near-term lesson for industry is architectural, not just optical."
 ---
-
-![Adaptive bionic lidar concept illustration](/images/knowledge-base/kb-bionic-lidar.svg)
-
 Much of the excitement around lidar focuses on one number: resolution. But the more interesting question is where the system spends its resolution budget. That is what makes recent work on gaze-enabled FMCW lidar so important. Instead of trying to scan every direction with the same density, the system concentrates high-resolution sensing where it matters most.
 
 That idea is deeply practical because it mirrors how useful perception systems tend to work. They do not treat every pixel, angle, and region as equally important. They direct attention.

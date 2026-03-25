@@ -15,9 +15,13 @@ categories:
   - "Digital RF"
   - "Radar Architecture"
 tags:
-  - "Digital RF"
-  - "Radar Architecture"
-image: "/images/knowledge-base/kb-rf-digitization.svg"
+  - "Direct RF Sampling"
+  - "Digital Beamforming"
+  - "Software-Defined Radar"
+image: "/images/knowledge-base/rf-digitization-modern-radar-systems-cover.jpg"
+image_alt: "Signal processing and RF electronics environment related to radar digitization."
+image_source_url: "https://www.pexels.com/photo/cables-connected-to-mixing-console-on-stage-7513422/"
+image_source_name: "Bence Szemerey"
 weight: 24
 date: 2025-04-18
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "Digitization can improve upgradeability, calibration, and lifecycle management."
   - "The value is not just performance; it is system adaptability over time."
 ---
-
-![RF digitization concept illustration](/images/knowledge-base/kb-rf-digitization.svg)
-
 RF digitization is one of the clearest signals that radar is no longer just an RF hardware business. It is increasingly a software, processing, and system-integration business as well.
 
 At a high level, RF digitization means moving the conversion between analog RF signals and digital data closer to the antenna and earlier in the signal chain. Once more of the signal exists in the digital domain, the system becomes far more flexible in how it filters, forms beams, detects targets, and evolves over time.

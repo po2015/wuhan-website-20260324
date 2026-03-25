@@ -70,8 +70,18 @@
         </div>
 
         {{ with $heroImage }}
-        <div class="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-100">
-          <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" class="h-[21rem] w-full object-cover object-center">
+        <div>
+          <div class="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-100">
+            <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" class="h-[21rem] w-full object-cover object-center">
+          </div>
+          {{ with $.Params.image_source_url }}
+          <p class="mt-3 text-xs leading-6 text-slate-500">
+            Image source:
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-600 underline decoration-slate-300 underline-offset-2 transition hover:text-brand-700 hover:decoration-brand-400">
+              Photo by {{ $.Params.image_source_name | default "Pexels contributor" }} on Pexels
+            </a>
+          </p>
+          {{ end }}
         </div>
         {{ end }}
       </div>

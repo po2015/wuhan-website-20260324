@@ -15,14 +15,16 @@ keywords:
 author: "Cyrentis Editorial Team"
 author_role: "Business Development Office"
 categories:
-  - "Business Updates"
-  - "Contracts"
+  - "Business News"
+  - "Electro-Optical"
 tags:
-  - "Contract"
-  - "SOC"
+  - "Contract Signing"
+  - "SOC Product Line"
   - "Project Delivery"
-image: "/images/news/eo-contract-signing.svg"
-image_alt: "Illustration of a Cyrentis electro-optical equipment contract signing."
+image: "/images/news/cyrentis-signs-electro-optical-equipment-contract-cover.jpg"
+image_alt: "Business contract meeting for electro-optical equipment cooperation."
+image_source_url: "https://www.pexels.com/photo/photo-of-people-shaking-hands-6814554/"
+image_source_name: "cottonbro studio"
 keypoints:
   - "The contract covers Cyrentis electro-optical equipment and project delivery coordination."
   - "The scope includes equipment planning, configuration alignment, and deployment support."

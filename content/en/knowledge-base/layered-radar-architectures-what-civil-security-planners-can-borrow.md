@@ -15,9 +15,13 @@ categories:
   - "System Design"
   - "Deployment"
 tags:
-  - "System Design"
-  - "Deployment"
-image: "/images/knowledge-base/kb-layered-radar.svg"
+  - "Layered Surveillance"
+  - "Civil Security Planning"
+  - "Range Architecture"
+image: "/images/knowledge-base/layered-radar-architectures-civil-security-cover.jpg"
+image_alt: "Radar installation overlooking a wide protected area for layered security planning."
+image_source_url: "https://www.pexels.com/photo/spherical-radome-on-top-of-the-mountain-13766369/"
+image_source_name: "Kelly"
 weight: 25
 date: 2025-04-21
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "Wide-area detection, local confirmation, and close-in continuity should be designed together."
   - "Radar, optics, RF sensing, and command software are strongest when planned as one stack."
 ---
-
-![Layered radar architecture concept graphic](/images/knowledge-base/kb-layered-radar.svg)
-
 Large radar ecosystems are often described in terms of long-range, mid-range, and short-range layers. Civil security teams do not need to copy that structure literally, but they can learn a great deal from the logic behind it.
 
 The real lesson is simple: sensing layers are not there to impress on a diagram. They exist to buy time, reduce operator overload, and hand off responsibility from one layer to the next.

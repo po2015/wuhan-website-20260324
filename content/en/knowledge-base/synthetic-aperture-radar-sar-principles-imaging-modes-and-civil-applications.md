@@ -12,12 +12,16 @@ keywords:
   - "all weather remote sensing"
   - "civil applications of SAR"
 categories:
-  - "Remote Sensing"
-  - "Radar Basics"
+  - "Radar Architecture"
+  - "Civil Applications"
 tags:
-  - "Remote Sensing"
-  - "Radar Basics"
-image: "/images/knowledge-base/kb-sar-imaging.svg"
+  - "SAR"
+  - "Earth Observation"
+  - "Imaging Modes"
+image: "/images/knowledge-base/synthetic-aperture-radar-sar-civil-applications-cover.jpg"
+image_alt: "Earth observation satellite scene related to synthetic aperture radar applications."
+image_source_url: "https://www.pexels.com/photo/half-moon-in-dark-night-sky-31505743/"
+image_source_name: "Jimmy  Padilla"
 weight: 22
 date: 2025-04-11
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "Different SAR modes trade swath width, revisit behavior, and local detail."
   - "SAR is especially valuable for terrain change, infrastructure monitoring, and disaster response."
 ---
-
-![Synthetic aperture radar imaging concept](/images/knowledge-base/kb-sar-imaging.svg)
-
 Synthetic Aperture Radar, usually shortened to SAR, is one of the most important sensing technologies for observing the Earth when optics cannot be trusted. It matters because it does not wait for daylight, clear sky, or ideal weather. It creates its own illumination, measures with microwaves, and can keep producing useful imagery when optical systems struggle.
 
 ## What Makes SAR Different

@@ -15,11 +15,15 @@ categories:
   - "Radar Architecture"
   - "System Design"
 tags:
-  - "Radar Architecture"
-  - "System Design"
-image: "/images/knowledge-base/radar-scanning-architecture-comparison.svg"
+  - "Mechanical Rotation"
+  - "Electronic Scan"
+  - "Volume Search"
+image: "/images/knowledge-base/comparison-of-radar-scanning-architectures-cover.jpg"
+image_alt: "Surveillance installation scene representing different radar scanning architectures."
+image_source_url: "https://www.pexels.com/photo/modern-apartment-building-with-rooftop-antenna-36065457/"
+image_source_name: "Peter Dyllong"
 weight: 11
-date: 2026-03-01
+date: 2026-03-02
 draft: false
 keypoints:
   - "Architecture choice affects refresh pattern, maintenance profile, and integration workload."
@@ -27,9 +31,6 @@ keypoints:
   - "Four-face AESA is strong for high-availability 360-degree continuous coverage."
   - "Architecture should be selected together with band and command-platform requirements."
 ---
-
-![Radar scanning architecture comparison diagram](/images/knowledge-base/radar-scanning-architecture-comparison.svg)
-
 In civil security radar deployment, architecture is not a cosmetic option. It determines coverage behavior, revisit pattern, mechanical wear profile, and how tracks are consumed by upper-layer command platforms.
 
 This article compares the five architecture codes used in the SRC model naming system.

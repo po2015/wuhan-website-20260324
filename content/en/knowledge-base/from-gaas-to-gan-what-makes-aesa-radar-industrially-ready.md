@@ -13,11 +13,15 @@ keywords:
   - "radar semiconductor materials"
 categories:
   - "Radar Architecture"
-  - "Semiconductor Technology"
+  - "Manufacturing"
 tags:
-  - "Radar Architecture"
-  - "Semiconductor Technology"
-image: "/images/knowledge-base/kb-aesa-gan.svg"
+  - "GaAs"
+  - "GaN"
+  - "AESA Production"
+image: "/images/knowledge-base/gaas-to-gan-aesa-radar-industrial-maturity-cover.jpg"
+image_alt: "Semiconductor wafer and advanced electronics manufacturing scene related to radar hardware maturity."
+image_source_url: "https://www.pexels.com/photo/shallow-focus-photography-of-black-circuit-board-1448561/"
+image_source_name: "ClickerHappy"
 weight: 23
 date: 2025-04-14
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "Industrial readiness requires calibration, packaging, thermal design, and repeatable manufacturing."
   - "For buyers, maturity is more important than marketing language."
 ---
-
-![AESA and semiconductor maturity concept graphic](/images/knowledge-base/kb-aesa-gan.svg)
-
 When people talk about modern electronically scanned radar, the discussion quickly turns to AESA, T/R modules, GaAs, and GaN. Those terms are important, but they are often used too loosely. The real question for an engineering team or buyer is not whether a supplier can say "AESA" or "GaN." It is whether the radar has reached industrial maturity.
 
 That maturity shows up in power handling, thermal behavior, calibration stability, serviceability, and repeatable manufacturing quality.

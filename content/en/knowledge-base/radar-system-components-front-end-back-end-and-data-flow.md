@@ -15,9 +15,13 @@ categories:
   - "Radar Architecture"
   - "System Design"
 tags:
-  - "Radar Architecture"
-  - "System Design"
-image: "/images/knowledge-base/kb-radar-components.svg"
+  - "Transmit Chain"
+  - "Signal Processing"
+  - "Operator Workflow"
+image: "/images/knowledge-base/radar-system-components-front-end-back-end-data-flow-cover.jpg"
+image_alt: "Electronics and radar hardware environment representing radar system components and data flow."
+image_source_url: "https://www.pexels.com/photo/motherboard-on-a-black-surface-14887694/"
+image_source_name: "Nicolas  Foster"
 weight: 21
 date: 2025-04-07
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "Front-end and back-end separation helps explain deployment, maintenance, and interface design."
   - "Operator value appears only when tracks, alarms, and visualization are designed together."
 ---
-
-![Radar front end and back end concept diagram](/images/knowledge-base/kb-radar-components.svg)
-
 When people say "radar," they often picture a rotating antenna. In real projects, that is only the visible tip of the system. What matters operationally is the entire chain that generates a waveform, sends it into space, receives the echo, extracts useful meaning, and presents the result to an operator or command platform.
 
 Understanding that chain helps buyers and integrators ask better questions. It also helps explain why two products with similar headline range numbers can perform very differently in the field.

@@ -13,11 +13,15 @@ keywords:
   - "electromagnetic defense systems"
 categories:
   - "Counter-UAS"
-  - "Layered Defense"
+  - "System Design"
 tags:
-  - "Counter-UAS"
+  - "Directed Energy"
   - "Layered Defense"
-image: "/images/knowledge-base/kb-counter-uas-chain.svg"
+  - "Airspace Security"
+image: "/images/knowledge-base/high-power-microwave-counter-uas-layered-defense-cover.jpg"
+image_alt: "Drone surveillance and airspace monitoring scene related to counter-UAS defense."
+image_source_url: "https://www.pexels.com/photo/selective-focus-photograph-of-white-quadcopter-drone-during-blue-hour-319968/"
+image_source_name: "Atlantic Ambience"
 weight: 28
 date: 2025-05-02
 draft: false
@@ -27,9 +31,6 @@ keypoints:
   - "Sensor cueing, engagement geometry, and site safety remain decisive."
   - "For most civil users, layered sensing and command integration are still the first priority."
 ---
-
-![Layered counter-UAS chain concept graphic](/images/knowledge-base/kb-counter-uas-chain.svg)
-
 High-power microwave counter-UAS systems attract attention because they promise a non-kinetic way to disrupt electronics rather than physically intercept a target. That promise is strategically important, but it is often described too narrowly. The system is not the whole solution. It is only one part of a layered chain.
 
 For that reason, the most useful way to discuss high-power microwave systems is not as isolated weapons technology, but as a node inside a broader detection, identification, decision, and response architecture.

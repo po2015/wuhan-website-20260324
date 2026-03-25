@@ -15,14 +15,16 @@ keywords:
 author: "Cyrentis Editorial Team"
 author_role: "Corporate Communications"
 categories:
+  - "Corporate Message"
   - "Company News"
-  - "Seasonal Message"
 tags:
-  - "Company Update"
-  - "New Year"
-  - "Horizon"
-image: "/images/news/new-year-greeting-2026.svg"
-image_alt: "Cyrentis 2026 new year greeting illustration."
+  - "New Year Message"
+  - "Customer Thanks"
+  - "2026 Outlook"
+image: "/images/news/cyrentis-new-year-message-2026-cover.jpg"
+image_alt: "Festive city skyline and lights for a corporate new year message."
+image_source_url: "https://www.pexels.com/photo/fireworks-display-at-night-3597632/"
+image_source_name: "Juha Tuomi"
 keypoints:
   - "Cyrentis thanked customers and partners for their support during its early growth stage."
   - "The company will continue strengthening Horizon, sensor products, and delivery capability in 2026."
