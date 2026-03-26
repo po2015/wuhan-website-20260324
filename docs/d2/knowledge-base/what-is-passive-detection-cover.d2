@@ -1,0 +1,79 @@
+direction: right
+
+classes: {
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+  blue_card: {
+    shape: rectangle
+    width: 210
+    height: 120
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  gold_card: {
+    shape: rectangle
+    width: 210
+    height: 120
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  green_card: {
+    shape: rectangle
+    width: 210
+    height: 120
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  hero: {
+    shape: hexagon
+    width: 300
+    height: 180
+    style.fill: "#F8FAFC"
+    style.stroke: "#334155"
+    style.font-color: "#0F172A"
+    style.font-size: 22
+  }
+  note: {
+    shape: rectangle
+    width: 210
+    height: 140
+    style.fill: "#FEF2F2"
+    style.stroke: "#F87171"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+sensor_row: {
+  class: stack
+  direction: down
+
+  rf_sense: "RF LISTENING\n\nHear transmitters\nalready in the air"
+  rf_sense.class: blue_card
+
+  eo_view: "EO / IR VIEW\n\nWatch light or\nheat from the scene"
+  eo_view.class: gold_card
+
+  passive_radar: "PASSIVE RADAR\n\nExploit third-party\nillumination"
+  passive_radar.class: green_card
+}
+
+hero_panel: "PASSIVE DETECTION\n\nSense without sending\nyour own dedicated\nsearch beam"
+hero_panel.class: hero
+
+quiet_note: "KEY IDEA\n\nObserve existing\nenergy, not a new\nsearch transmission"
+quiet_note.class: note
+
+sensor_row.rf_sense -> hero_panel: emissions
+sensor_row.eo_view -> hero_panel: ambient light
+sensor_row.passive_radar -> hero_panel: third-party signal
+hero_panel -> quiet_note: low signature

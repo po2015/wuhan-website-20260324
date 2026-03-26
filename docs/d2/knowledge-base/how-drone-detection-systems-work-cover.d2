@@ -1,0 +1,84 @@
+direction: down
+
+classes: {
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+  sensor_blue: {
+    shape: rectangle
+    width: 190
+    height: 110
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  sensor_gold: {
+    shape: rectangle
+    width: 190
+    height: 110
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  sensor_green: {
+    shape: rectangle
+    width: 190
+    height: 110
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  sensor_purple: {
+    shape: rectangle
+    width: 190
+    height: 110
+    style.fill: "#FAF5FF"
+    style.stroke: "#A78BFA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  fusion: {
+    shape: hexagon
+    width: 320
+    height: 170
+    style.fill: "#F8FAFC"
+    style.stroke: "#0F172A"
+    style.font-color: "#0F172A"
+    style.font-size: 22
+  }
+}
+
+sensors: {
+  class: stack
+  direction: right
+
+  radar: "RADAR\n\nSearch and track"
+  radar.class: sensor_blue
+
+  rf: "RF\n\nListen for signals"
+  rf.class: sensor_gold
+
+  eo: "EO / IR\n\nConfirm visually"
+  eo.class: sensor_green
+
+  acoustic: "ACOUSTIC\n\nShort-range cue"
+  acoustic.class: sensor_purple
+}
+
+fusion_engine: "DRONE DETECTION\nSYSTEM\n\nCorrelate sensors,\nreduce false alarms,\nand alert operators"
+fusion_engine.class: fusion
+
+output: "ACTIONABLE TRACK\n\nMap position,\nconfidence, cueing,\nand event log"
+output.class: sensor_blue
+
+sensors.radar -> fusion_engine: search
+sensors.rf -> fusion_engine: signal
+sensors.eo -> fusion_engine: image
+sensors.acoustic -> fusion_engine: audio
+
+fusion_engine -> output: alert

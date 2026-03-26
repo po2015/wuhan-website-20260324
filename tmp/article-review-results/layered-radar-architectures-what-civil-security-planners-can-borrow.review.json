@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article now explains layered radar as a timing and workflow architecture rather than a generic multi-range slogan, which pushes it above the pass threshold.",
+  "overall_score": 8.4,
+  "word_count": 1303,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The outer-, middle-, and inner-layer framing is now operationally specific and easy to apply.",
+    "The article connects sensing layers to response timing, ambiguity reduction, and workflow ownership.",
+    "Scenario mapping for airports, ports, and industrial sites adds practical planning value."
+  ],
+  "summary_assessment": "This version is now a strong knowledge-base article. It is more structured, more technical, and substantially more useful for civil-security planning."
+}

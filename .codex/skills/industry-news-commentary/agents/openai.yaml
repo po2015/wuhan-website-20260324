@@ -1,0 +1,8 @@
+interface:
+  display_name: "Industry News Commentary"
+  short_description: "Draft SEO news analysis with Cyrentis commentary"
+  brand_color: "#1C3962"
+  default_prompt: "Use $industry-news-commentary to turn a relevant industry news event into a Cyrentis viewpoint article with links and supporting context."
+
+policy:
+  allow_implicit_invocation: true

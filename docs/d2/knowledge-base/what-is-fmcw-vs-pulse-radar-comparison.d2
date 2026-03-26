@@ -1,0 +1,43 @@
+direction: right
+
+classes: {
+  pulse_card: {
+    shape: rectangle
+    width: 240
+    height: 260
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  center_card: {
+    shape: hexagon
+    width: 220
+    height: 180
+    style.fill: "#F8FAFC"
+    style.stroke: "#94A3B8"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  fmcw_card: {
+    shape: rectangle
+    width: 240
+    height: 260
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+pulse_view: "PULSE RADAR\n\nBurst\nPause\nListen\nRepeat\n\nOften linked with\nlonger-range or\nhigher-power roles"
+pulse_view.class: pulse_card
+
+compare_panel: "BASIC DIFFERENCE\n\nHow the radar\ntransmits and\nextracts range"
+compare_panel.class: center_card
+
+fmcw_view: "FMCW RADAR\n\nContinuous transmit\nFrequency chirp\nCompare echo\nand reference\n\nOften linked with\ncompact sensing roles"
+fmcw_view.class: fmcw_card
+
+pulse_view -> compare_panel: burst logic
+fmcw_view -> compare_panel: chirp logic

@@ -11,30 +11,6 @@ const initMobileMenu = () => {
   }
 };
 
-const syncModelBreakdowns = () => {
-  const breakdowns = document.querySelectorAll('[data-model-breakdown]');
-
-  breakdowns.forEach((breakdown) => {
-    const breakdownRect = breakdown.getBoundingClientRect();
-    const firstNote = breakdown.querySelector('.model-breakdown-note');
-
-    if (firstNote) {
-      const noteRect = firstNote.getBoundingClientRect();
-      breakdown.style.setProperty('--note-column-px', `${noteRect.left - breakdownRect.left}px`);
-    }
-
-    breakdown.querySelectorAll('[data-model-note]').forEach((row) => {
-      const key = row.getAttribute('data-model-note');
-      const anchor = breakdown.querySelector(`[data-model-anchor="${key}"]`);
-      if (!anchor) return;
-
-      const anchorRect = anchor.getBoundingClientRect();
-      const centerX = anchorRect.left - breakdownRect.left + (anchorRect.width / 2);
-      row.style.setProperty('--anchor-left-px', `${centerX}px`);
-    });
-  });
-};
-
 const initCarousel = () => {
   const carousel = document.getElementById('heroCarousel');
   if (!carousel) return;
@@ -174,9 +150,6 @@ const initRadarFilters = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
-
-  syncModelBreakdowns();
-  window.addEventListener('resize', syncModelBreakdowns);
 
   initCarousel();
   initRadarFilters();

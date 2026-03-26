@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article clears the pass threshold with better deployment framing, clearer dependence logic, and stronger role assignment for passive and active sensing.",
+  "overall_score": 8.2,
+  "word_count": 1017,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 8,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The piece now explains how the active-versus-passive distinction changes operational dependence, not only sensing physics.",
+    "It gives useful deployment scenarios instead of leaving the article at textbook definitions.",
+    "The conclusion ties the comparison back to uncertainty reduction rather than to a simplistic technology preference."
+  ],
+  "summary_assessment": "This version passes because it is more applied and more credible than a generic active-versus-passive explainer. It now works as a system-planning article."
+}

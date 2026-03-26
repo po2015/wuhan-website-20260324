@@ -1,0 +1,8 @@
+interface:
+  display_name: "Knowledge Base Writer"
+  short_description: "Write rigorous knowledge-base articles for SEO"
+  brand_color: "#1C3962"
+  default_prompt: "Use $professional-kb-articles to draft a rigorous Cyrentis knowledge-base article with evidence, charts, and non-promotional analysis."
+
+policy:
+  allow_implicit_invocation: true

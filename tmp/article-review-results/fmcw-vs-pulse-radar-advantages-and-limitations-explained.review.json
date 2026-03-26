@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article clears the pass threshold with stronger system-level waveform framing, better mission-fit logic, and clearer selection sequence.",
+  "overall_score": 8.3,
+  "word_count": 1000,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article now explains how waveform choice affects the rest of the radar platform rather than leaving it as a narrow theory comparison.",
+    "It handles FMCW and pulse trade-offs without drifting into a newer-versus-older narrative.",
+    "The selection sequence gives readers a usable way to connect waveform family to project constraints."
+  ],
+  "summary_assessment": "This version passes because it makes waveform choice operationally meaningful. It is more coherent and more useful than the earlier draft."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SRC Radar Detail Pages"
+  short_description: "Generate YAML-driven SRC radar detail pages."
+  default_prompt: "Use the repo YAML radar data to generate or refresh SRC detail pages under content/en/sensors/src and keep detail links routed there."

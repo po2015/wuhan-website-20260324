@@ -1,0 +1,88 @@
+direction: down
+
+classes: {
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+  sensor_blue: {
+    shape: rectangle
+    width: 200
+    height: 120
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  sensor_gold: {
+    shape: rectangle
+    width: 200
+    height: 120
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  sensor_green: {
+    shape: rectangle
+    width: 200
+    height: 120
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  hero: {
+    shape: hexagon
+    width: 300
+    height: 170
+    style.fill: "#FAF5FF"
+    style.stroke: "#8B5CF6"
+    style.font-color: "#0F172A"
+    style.font-size: 22
+  }
+  output_card: {
+    shape: rectangle
+    width: 220
+    height: 120
+    style.fill: "#F8FAFC"
+    style.stroke: "#334155"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+sensor_row: {
+  class: stack
+  direction: right
+
+  radar_sensor: "RADAR\n\nRange and motion"
+  radar_sensor.class: sensor_blue
+
+  rf_sensor: "RF\n\nEmitter activity"
+  rf_sensor.class: sensor_gold
+
+  eo_sensor: "EO / IR\n\nVisual context"
+  eo_sensor.class: sensor_green
+}
+
+hero_panel: "MULTI-SENSOR FUSION\n\nCombine several inputs\ninto one clearer track"
+hero_panel.class: hero
+
+output_row: {
+  class: stack
+  direction: right
+
+  track: "FUSED TRACK\n\nOne shared object view"
+  track.class: output_card
+
+  cue: "OPERATOR CUE\n\nAlert, map, or handoff"
+  cue.class: output_card
+}
+
+sensor_row.radar_sensor -> hero_panel: range
+sensor_row.rf_sensor -> hero_panel: emitter clue
+sensor_row.eo_sensor -> hero_panel: image cue
+hero_panel -> output_row.track: correlate
+hero_panel -> output_row.cue: present

@@ -1,0 +1,115 @@
+{{- $shareUrl := .Permalink -}}
+{{- $linkedinUrl := printf "https://www.linkedin.com/sharing/share-offsite/?url=%s" ($shareUrl | urlquery) -}}
+{{- $facebookUrl := printf "https://www.facebook.com/sharer/sharer.php?u=%s" ($shareUrl | urlquery) -}}
+{{- $lineUrl := printf "https://social-plugins.line.me/lineit/share?url=%s" ($shareUrl | urlquery) -}}
+{{- $qrUrl := printf "https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=%s" ($shareUrl | urlquery) -}}
+
+<section class="share-inline mt-8 border-t border-slate-200 pt-5">
+  <div class="share-inline-row">
+    <span class="share-inline-text">Share:</span>
+    <a href="{{ $linkedinUrl }}" target="_blank" rel="noopener noreferrer"
+      class="share-inline-link share-inline-linkedin" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+      <span class="share-inline-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="#0A66C2"></rect>
+          <path d="M7.1 9.2h2.52V17H7.1V9.2Zm1.26-1.1a1.46 1.46 0 1 1 0-2.92 1.46 1.46 0 0 1 0 2.92ZM11.1 9.2h2.42v1.06h.03c.34-.64 1.16-1.31 2.39-1.31 2.56 0 3.03 1.68 3.03 3.86V17h-2.52v-3.7c0-.88-.02-2.01-1.22-2.01-1.23 0-1.42.96-1.42 1.95V17H11.1V9.2Z" fill="#fff"></path>
+        </svg>
+      </span>
+    </a>
+
+    <a href="{{ $facebookUrl }}" target="_blank" rel="noopener noreferrer"
+      class="share-inline-link share-inline-facebook" aria-label="Share on Facebook" title="Share on Facebook">
+      <span class="share-inline-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="#1877F2"></rect>
+          <path d="M13.25 19v-5.84h1.96l.29-2.28h-2.25V9.42c0-.66.18-1.11 1.13-1.11h1.2V6.27c-.21-.03-.92-.09-1.74-.09-1.72 0-2.9 1.05-2.9 2.98v1.72H9.98v2.28h1.96V19h1.31Z" fill="#fff"></path>
+        </svg>
+      </span>
+    </a>
+
+    <a href="{{ $lineUrl }}" target="_blank" rel="noopener noreferrer"
+      class="share-inline-link share-inline-line" aria-label="Share on LINE" title="Share on LINE">
+      <span class="share-inline-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="4.8" fill="#06C755"></rect>
+          <path d="M12 6.3c-3.52 0-6.38 2.3-6.38 5.14 0 2.55 2.25 4.68 5.29 5.06l-.34 1.95c-.04.23.21.4.42.27l2.24-1.53h.2c3.52 0 6.38-2.3 6.38-5.14S15.52 6.3 12 6.3Z" fill="#fff"></path>
+          <path d="M9.2 10h-.85v3.2h2.02v-.7H9.2V10Zm2.08 0h-.85v3.2h.85V10Zm1.95 0h-.86v1.9l-1.43-1.9h-.73v3.2h.86v-1.9l1.43 1.9h.73V10Zm2.4 0h-2.1v3.2h2.1v-.7h-1.24v-.57h1.24v-.7h-1.24v-.53h1.24V10Z" fill="#06C755"></path>
+        </svg>
+      </span>
+    </a>
+
+    <button type="button"
+      class="share-inline-link share-inline-wechat js-share-qr"
+      data-qr-image="{{ $qrUrl }}"
+      data-qr-title="Share to WeChat"
+      data-qr-note="Scan in WeChat to open this page."
+      aria-label="Share to WeChat"
+      title="Share to WeChat">
+      <span class="share-inline-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="4.8" fill="#07C160"></rect>
+          <path d="M9.7 7.1c-2.6 0-4.7 1.64-4.7 3.67 0 1.19.73 2.24 1.86 2.91l-.32 1.32 1.49-.76c.52.12 1.08.19 1.67.19 2.59 0 4.7-1.64 4.7-3.66 0-2.03-2.11-3.67-4.7-3.67Z" fill="#fff"></path>
+          <path d="M15.76 10.24c-1.8 0-3.24 1.14-3.24 2.55 0 1.42 1.45 2.56 3.24 2.56.39 0 .77-.06 1.12-.17l1 .5-.21-.92c.72-.47 1.17-1.17 1.17-1.97 0-1.41-1.45-2.55-3.08-2.55Z" fill="#fff"></path>
+          <circle cx="8.35" cy="10.66" r=".72" fill="#07C160"></circle>
+          <circle cx="11.18" cy="10.66" r=".72" fill="#07C160"></circle>
+          <circle cx="14.73" cy="12.78" r=".56" fill="#07C160"></circle>
+          <circle cx="16.97" cy="12.78" r=".56" fill="#07C160"></circle>
+        </svg>
+      </span>
+    </button>
+  </div>
+
+  <div class="share-inline-popover" hidden>
+    <div class="share-inline-popover-card">
+      <div class="share-inline-popover-head">
+        <p class="share-inline-popover-title">Share</p>
+        <button type="button" class="share-inline-popover-close" aria-label="Close share QR">&times;</button>
+      </div>
+      <img src="" alt="" class="share-inline-popover-qr">
+      <p class="share-inline-popover-note"></p>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    if (window.__cyrentisShareInlineBound) return;
+    window.__cyrentisShareInlineBound = true;
+
+    document.addEventListener("click", function (event) {
+      var trigger = event.target.closest(".js-share-qr");
+      var closeButton = event.target.closest(".share-inline-popover-close");
+      var popover = document.querySelector(".share-inline-popover");
+
+      if (closeButton && popover) {
+        popover.hidden = true;
+        return;
+      }
+
+      if (!trigger) {
+        if (popover && !popover.hidden && !event.target.closest(".share-inline-popover-card")) {
+          popover.hidden = true;
+        }
+        return;
+      }
+
+      if (!popover) return;
+
+      var card = popover.querySelector(".share-inline-popover-card");
+      var title = popover.querySelector(".share-inline-popover-title");
+      var note = popover.querySelector(".share-inline-popover-note");
+      var image = popover.querySelector(".share-inline-popover-qr");
+      var qrImage = trigger.getAttribute("data-qr-image");
+      var qrTitle = trigger.getAttribute("data-qr-title") || "Share";
+      var qrNote = trigger.getAttribute("data-qr-note") || "";
+
+      if (!card || !title || !note || !image || !qrImage) return;
+
+      title.textContent = qrTitle;
+      note.textContent = qrNote;
+      image.src = qrImage;
+      image.alt = qrTitle + " QR code";
+      popover.hidden = false;
+    });
+  })();
+</script>

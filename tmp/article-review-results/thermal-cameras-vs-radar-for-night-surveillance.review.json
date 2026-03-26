@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article clears the pass threshold with stronger night-operations framing, clearer sensor-boundary logic, and lower promotional drift.",
+  "overall_score": 8.3,
+  "word_count": 1058,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article now explains night surveillance as a workflow problem instead of a one-sensor contest.",
+    "It states the limits of thermal imaging and radar in a balanced way without flattening their roles.",
+    "The procurement framing is more useful because it starts from search, confirmation, and ambiguity rather than from generic preference."
+  ],
+  "summary_assessment": "This version passes because it is clearer, more operationally useful, and more disciplined than the earlier comparison draft."
+}

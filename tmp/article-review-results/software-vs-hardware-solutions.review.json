@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article clears the pass threshold with better bottleneck framing, clearer limits of software, and more practical prioritization logic.",
+  "overall_score": 8.3,
+  "word_count": 1009,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article now treats software-versus-hardware as a bottleneck diagnosis problem instead of a simplistic budget debate.",
+    "It states the limits of software clearly, which prevents the piece from drifting into vague software-first claims.",
+    "The prioritization sequence is concrete enough to support real project planning."
+  ],
+  "summary_assessment": "This version passes because it moves beyond abstract comparison into practical investment logic. It is more disciplined and more useful than the original draft."
+}

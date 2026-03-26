@@ -1,0 +1,84 @@
+direction: down
+
+classes: {
+  card_blue: {
+    shape: rectangle
+    width: 170
+    height: 120
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  card_gold: {
+    shape: rectangle
+    width: 170
+    height: 120
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  card_green: {
+    shape: rectangle
+    width: 170
+    height: 120
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  card_purple: {
+    shape: rectangle
+    width: 170
+    height: 120
+    style.fill: "#FAF5FF"
+    style.stroke: "#8B5CF6"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  core: {
+    shape: hexagon
+    width: 250
+    height: 150
+    style.fill: "#F8FAFC"
+    style.stroke: "#334155"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+}
+
+top_row: {
+  class: stack
+  direction: right
+
+  shape_card: "SHAPE\n\nPanels and corners"
+  shape_card.class: card_blue
+
+  aspect_card: "ASPECT\n\nFront, side, top"
+  aspect_card.class: card_gold
+}
+
+core: "WHAT CHANGES RCS?\n\nTarget geometry and\nradar conditions"
+core.class: core
+
+bottom_row: {
+  class: stack
+  direction: right
+
+  material_card: "MATERIAL\n\nReflective or\nabsorbing surface"
+  material_card.class: card_green
+
+  band_card: "FREQUENCY\nAND POLARIZATION"
+  band_card.class: card_purple
+}
+
+top_row.shape_card -> core: shape
+top_row.aspect_card -> core: angle
+bottom_row.material_card -> core: surface
+bottom_row.band_card -> core: band

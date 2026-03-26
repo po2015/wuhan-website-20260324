@@ -1,0 +1,37 @@
+{
+  "final_decision": "PASS | REQUIRE_REVISION | REQUIRE_REWRITE",
+  "reason_for_decision": "string",
+  "overall_score": 0.0,
+  "word_count": 0,
+  "dimension_scores": {
+    "structure_logical_clarity": 0,
+    "target_classification_content_framing": 0,
+    "marketing_noise_control": 0,
+    "content_depth": 0,
+    "readability_human_quality": 0,
+    "information_density": 0,
+    "seo_knowledge_base_fitness": 0,
+    "technical_credibility": 0,
+    "decision_value": 0,
+    "original_insight": 0
+  },
+  "failed_dimensions_below_5": [
+    "string"
+  ],
+  "ai_signals_detected": [
+    "string"
+  ],
+  "major_issues": [
+    "string"
+  ],
+  "revision_actions": [
+    "string"
+  ],
+  "rewrite_actions": [
+    "string"
+  ],
+  "strengths": [
+    "string"
+  ],
+  "summary_assessment": "string"
+}

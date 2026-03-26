@@ -1,0 +1,40 @@
+direction: right
+
+classes: {
+  compare_blue: {
+    shape: rectangle
+    width: 230
+    height: 270
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  compare_gold: {
+    shape: rectangle
+    width: 230
+    height: 270
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  compare_green: {
+    shape: rectangle
+    width: 230
+    height: 270
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+radar: "RADAR\n\nSends energy\n\nBest for search,\nrange, speed,\nand track continuity"
+radar.class: compare_blue
+
+rf: "RF DETECTION\n\nListens only\n\nBest for wireless clues,\ncontrol links,\nand Remote ID data"
+rf.class: compare_gold
+
+eo: "EO SURVEILLANCE\n\nLooks directly\n\nBest for confirmation,\nvisual detail,\nand evidence"
+eo.class: compare_green

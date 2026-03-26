@@ -1,0 +1,43 @@
+direction: right
+
+classes: {
+  compare_blue: {
+    shape: rectangle
+    width: 260
+    height: 240
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+  compare_gold: {
+    shape: rectangle
+    width: 260
+    height: 240
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+  core: {
+    shape: hexagon
+    width: 220
+    height: 180
+    style.fill: "#F8FAFC"
+    style.stroke: "#334155"
+    style.font-color: "#0F172A"
+    style.font-size: 20
+  }
+}
+
+pulse: "PULSE RADAR\n\nBurst\nListen\nRepeat\n\nOften used where\nlonger reach or\nhigh peak power matters"
+pulse.class: compare_gold
+
+compare_panel: "RANGE\nAND MOTION\n\nTwo waveform families,\ntwo operating rhythms"
+compare_panel.class: core
+
+fmcw: "FMCW RADAR\n\nContinuous transmit\nFrequency chirp\nCompare echo\n\nOften used in compact\ncontinuous sensing"
+fmcw.class: compare_blue
+
+pulse -> compare_panel: send / wait
+fmcw -> compare_panel: chirp / compare

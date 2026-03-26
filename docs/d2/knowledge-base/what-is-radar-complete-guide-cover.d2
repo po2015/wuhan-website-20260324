@@ -1,0 +1,99 @@
+direction: down
+
+classes: {
+  hero_card: {
+    shape: rectangle
+    width: 300
+    height: 180
+    style.fill: "#081722"
+    style.stroke: "#244863"
+    style.font-color: "#F8FAFC"
+    style.font-size: 24
+  }
+  dark_card: {
+    shape: rectangle
+    width: 240
+    height: 140
+    style.fill: "#0B2235"
+    style.stroke: "#244863"
+    style.font-color: "#E2E8F0"
+    style.font-size: 20
+  }
+  radar_panel: {
+    shape: hexagon
+    width: 220
+    height: 140
+    style.fill: "#E0F2FE"
+    style.stroke: "#0EA5E9"
+    style.font-color: "#0F172A"
+    style.font-size: 22
+  }
+  target_air: {
+    shape: oval
+    width: 140
+    height: 68
+    style.fill: "#F8FAFC"
+    style.stroke: "#67E8F9"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  target_ground: {
+    shape: oval
+    width: 140
+    height: 68
+    style.fill: "#F8FAFC"
+    style.stroke: "#86EFAC"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+}
+
+summary: "WHAT IS RADAR?\n\nSend radio waves.\nReceive echoes.\nEstimate range,\ndirection, and motion."
+summary.class: hero_card
+
+body: {
+  class: stack
+  direction: right
+
+  scene: {
+    class: stack
+    direction: right
+
+    radar: "PANEL RADAR\nScan sector\nand returns"
+    radar.class: radar_panel
+
+    targets: {
+      class: stack
+      direction: down
+
+      aircraft: "Aircraft"
+      aircraft.class: target_air
+
+      drone: "Drone"
+      drone.class: target_air
+
+      vehicle: "Vehicle"
+      vehicle.class: target_ground
+    }
+  }
+
+  info: {
+    class: stack
+    direction: down
+
+    loop: "SIGNAL LOOP\n\n1. Transmit energy\n2. Receive echo\n3. Process returns"
+    loop.class: dark_card
+
+    outputs: "COMMON OUTPUTS\n\nRange and bearing\nRelative motion\nEcho strength"
+    outputs.class: dark_card
+  }
+}
+
+body.scene.radar -> body.scene.targets.aircraft: scan
+body.scene.radar -> body.scene.targets.drone: track
+body.scene.radar -> body.scene.targets.vehicle: detect

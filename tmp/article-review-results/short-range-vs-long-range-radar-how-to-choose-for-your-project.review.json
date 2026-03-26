@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article now clears the pass threshold with stronger geometry framing, clearer target-type dependence, and more useful layered-range guidance.",
+  "overall_score": 8.3,
+  "word_count": 1005,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article now moves beyond headline range and explains why minimum range and decision distance matter.",
+    "It correctly ties range class to target type and workflow timing rather than to maximum detection claims alone.",
+    "The layered-range conclusion gives the reader a practical planning model instead of a one-number answer."
+  ],
+  "summary_assessment": "This version is strong enough to pass. It is more realistic about range planning and more useful for actual project selection."
+}

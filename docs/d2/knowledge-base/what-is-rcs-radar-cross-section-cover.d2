@@ -1,0 +1,69 @@
+direction: right
+
+classes: {
+  blue_card: {
+    shape: rectangle
+    width: 180
+    height: 120
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  gold_card: {
+    shape: rectangle
+    width: 180
+    height: 120
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  green_card: {
+    shape: rectangle
+    width: 180
+    height: 120
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  purple_card: {
+    shape: rectangle
+    width: 180
+    height: 120
+    style.fill: "#FAF5FF"
+    style.stroke: "#8B5CF6"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  hero: {
+    shape: hexagon
+    width: 280
+    height: 180
+    style.fill: "#FAF5FF"
+    style.stroke: "#8B5CF6"
+    style.font-color: "#0F172A"
+    style.font-size: 22
+  }
+}
+
+shape_factor: "SHAPE\n\nPanels and corners"
+shape_factor.class: blue_card
+
+hero_panel: "RADAR CROSS SECTION\n\nEffective radar visibility,\nnot simple physical size"
+hero_panel.class: hero
+
+aspect_factor: "ASPECT\n\nFront, side, top"
+aspect_factor.class: gold_card
+
+material_factor: "MATERIAL\n\nReflect or absorb"
+material_factor.class: green_card
+
+band_factor: "FREQUENCY\n\nBand and polarization"
+band_factor.class: purple_card
+
+shape_factor -> hero_panel: redirect
+aspect_factor -> hero_panel: angle
+hero_panel -> material_factor: surface
+hero_panel -> band_factor: radar settings

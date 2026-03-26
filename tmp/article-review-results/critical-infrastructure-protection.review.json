@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article now clears the pass threshold with stronger consequence framing, clearer security-resilience integration, and improved workflow focus.",
+  "overall_score": 8.2,
+  "word_count": 1001,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 8,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article now starts from consequence and dependency, which is the right organizing logic for critical-infrastructure protection.",
+    "It connects surveillance architecture to escalation, continuity, and operator ownership instead of treating security as a device catalog.",
+    "The added exercise and workflow language improves realism and lowers the risk of the piece reading like a generic template."
+  ],
+  "summary_assessment": "This version passes because it is more specific, more operationally grounded, and less generic than the earlier draft. It now behaves like a real system-design article rather than a high-level checklist."
+}

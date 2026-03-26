@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article now clears the pass threshold with stronger low-light framing, clearer identification boundaries, and a more practical dual-channel selection model.",
+  "overall_score": 8.3,
+  "word_count": 1008,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article explains low-light performance in operational terms instead of leaving it at a superficial sensor comparison.",
+    "It correctly distinguishes detection advantage from identification advantage, which improves credibility.",
+    "The final selection guidance now matches how teams actually use visible and thermal channels together."
+  ],
+  "summary_assessment": "This is now a strong comparison article. It is more grounded, more decision-oriented, and less likely to mislead readers into a false either-or choice."
+}

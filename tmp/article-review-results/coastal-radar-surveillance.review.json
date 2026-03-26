@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article clears the pass threshold with stronger coastal-specific trade-offs, clearer VTS context, and better operational evaluation criteria.",
+  "overall_score": 8.2,
+  "word_count": 1010,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 8,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is grounded in real coastal constraints such as sea clutter, shoreline masking, and mixed target populations.",
+    "It makes the AIS-versus-radar distinction clearly enough to avoid a common conceptual error.",
+    "The closing performance section improves decision value by focusing attention on constrained waters instead of nominal open-water range."
+  ],
+  "summary_assessment": "This version is strong enough to pass. It is narrower, more maritime-aware, and more operationally useful than a generic radar deployment article."
+}

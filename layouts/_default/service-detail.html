@@ -54,6 +54,7 @@
         <article class="card-shell">
           <p class="section-kicker">Service Position</p>
           <div class="content-typography mt-4">{{ .Content }}</div>
+          {{ partial "social-share-panel.html" . }}
         </article>
 
         {{ with .Params.focus_cards }}

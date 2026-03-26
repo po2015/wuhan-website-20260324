@@ -1,0 +1,75 @@
+direction: right
+
+classes: {
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+  tall_panel: {
+    shape: rectangle
+    width: 220
+    height: 150
+    style.fill: "#DBEAFE"
+    style.stroke: "#2563EB"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+  hero: {
+    shape: hexagon
+    width: 300
+    height: 170
+    style.fill: "#E0F2FE"
+    style.stroke: "#0284C7"
+    style.font-color: "#0F172A"
+    style.font-size: 22
+  }
+  beam_card: {
+    shape: rectangle
+    width: 190
+    height: 110
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  task_card: {
+    shape: rectangle
+    width: 190
+    height: 110
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+left_stack: {
+  class: stack
+  direction: down
+
+  array_face: "ARRAY FACE\n\nFixed panel with\nmany elements"
+  array_face.class: tall_panel
+
+  module_layer: "T/R MODULES\n\nDistributed transmit\nand receive control"
+  module_layer.class: tall_panel
+}
+
+hero_panel: "AESA RADAR\n\nActive electronically\nscanned array"
+hero_panel.class: hero
+
+right_stack: {
+  class: stack
+  direction: down
+
+  steer_beam: "STEER BEAM\n\nShift attention fast"
+  steer_beam.class: beam_card
+
+  revisit: "FAST REVISIT\n\nSearch and update\nwithout full rotation"
+  revisit.class: task_card
+}
+
+left_stack.array_face -> hero_panel: fixed face
+left_stack.module_layer -> hero_panel: many channels
+hero_panel -> right_stack.steer_beam: phase control
+hero_panel -> right_stack.revisit: task schedule

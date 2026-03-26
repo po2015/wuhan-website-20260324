@@ -42,6 +42,7 @@ Knowledge-base writing rules:
 5. Recommend existing Cyrentis products or services only when there is a real fit.
 6. External links should be authoritative and directly relevant.
 7. Keep terminology consistent with existing Cyrentis product naming.
+8. Do not reuse the same lead image, stock photo source, or article-specific figure from another knowledge-base article unless the user explicitly requests reuse.
 -->
 
 Write a short introduction that explains the topic, the real-world question behind it, and why the reader should care.

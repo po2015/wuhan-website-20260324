@@ -20,9 +20,9 @@ tags:
   - "Target Handoff"
   - "Low-Altitude Monitoring"
 image: "/images/knowledge-base/how-radar-and-electro-optical-systems-work-together-in-low-altitude-security-cover.jpg"
-image_alt: "CCTV cameras mounted outdoors against the sky, representing optical surveillance in low-altitude security."
-image_source_name: "Thomas Windisch"
-image_source_url: "https://www.pexels.com/photo/black-and-white-cctv-cameras-179993/"
+image_alt: "A person holding a camera beside a tripod outdoors."
+image_source_name: "Min An"
+image_source_url: "https://www.pexels.com/photo/man-holding-dslr-camera-with-tripod-970592/"
 weight: 30
 date: 2025-05-09
 lastmod: 2026-03-25

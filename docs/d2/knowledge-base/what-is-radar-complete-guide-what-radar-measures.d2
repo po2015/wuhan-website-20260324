@@ -1,0 +1,84 @@
+direction: down
+
+classes: {
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+  radar_panel: {
+    shape: hexagon
+    width: 260
+    height: 130
+    style.fill: "#E0F2FE"
+    style.stroke: "#0EA5E9"
+    style.font-color: "#0F172A"
+    style.font-size: 21
+  }
+  blue_card: {
+    shape: rectangle
+    width: 250
+    height: 120
+    style.fill: "#EFF6FF"
+    style.stroke: "#93C5FD"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  gold_card: {
+    shape: rectangle
+    width: 250
+    height: 120
+    style.fill: "#FFFBEB"
+    style.stroke: "#FCD34D"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  green_card: {
+    shape: rectangle
+    width: 250
+    height: 120
+    style.fill: "#F0FDF4"
+    style.stroke: "#86EFAC"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  purple_card: {
+    shape: rectangle
+    width: 250
+    height: 120
+    style.fill: "#FAF5FF"
+    style.stroke: "#D8B4FE"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+upper_row: {
+  class: stack
+  direction: right
+
+  direction_card: "DIRECTION\n\nBeam pointing tells the\nradar where the target\nsits in angle."
+  direction_card.class: blue_card
+
+  range_card: "RANGE\n\nTime delay shows how far\nthe signal traveled\nand returned."
+  range_card.class: gold_card
+}
+
+radar: "RADAR PANEL\n\nMeasure return time,\nbeam angle, Doppler,\nand echo strength"
+radar.class: radar_panel
+
+lower_row: {
+  class: stack
+  direction: right
+
+  speed_card: "SPEED\n\nDoppler shift shows\nwhether a target is\napproaching or receding."
+  speed_card.class: green_card
+
+  echo_card: "ECHO STRENGTH\n\nSignal power can hint at\nsize, shape, material,\nor weather intensity."
+  echo_card.class: purple_card
+}
+
+radar -> upper_row.direction_card: angle
+radar -> upper_row.range_card: time delay
+radar -> lower_row.speed_card: Doppler
+radar -> lower_row.echo_card: signal power

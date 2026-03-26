@@ -1,0 +1,92 @@
+direction: down
+
+classes: {
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+  factor_blue: {
+    shape: rectangle
+    width: 200
+    height: 120
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  factor_gold: {
+    shape: rectangle
+    width: 200
+    height: 120
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  factor_green: {
+    shape: rectangle
+    width: 200
+    height: 120
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  distance_card: {
+    shape: rectangle
+    width: 160
+    height: 110
+    style.fill: "#F8FAFC"
+    style.stroke: "#64748B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  hero: {
+    shape: hexagon
+    width: 300
+    height: 170
+    style.fill: "#F8FAFC"
+    style.stroke: "#334155"
+    style.font-color: "#0F172A"
+    style.font-size: 22
+  }
+}
+
+factor_row: {
+  class: stack
+  direction: right
+
+  target_factor: "TARGET SIZE\nAND RCS"
+  target_factor.class: factor_blue
+
+  clutter_factor: "CLUTTER AND\nENVIRONMENT"
+  clutter_factor.class: factor_gold
+
+  system_factor: "POWER, ANTENNA,\nAND PROCESSING"
+  system_factor.class: factor_green
+}
+
+hero_panel: "DETECTION RANGE\n\nA conditional distance,\nnot one universal\nnumber"
+hero_panel.class: hero
+
+distance_row: {
+  class: stack
+  direction: right
+
+  near_zone: "NEAR\n\nEasy case"
+  near_zone.class: distance_card
+
+  mid_zone: "MID\n\nConditional"
+  mid_zone.class: distance_card
+
+  far_zone: "FAR\n\nHard case"
+  far_zone.class: distance_card
+}
+
+factor_row.target_factor -> hero_panel: target
+factor_row.clutter_factor -> hero_panel: environment
+factor_row.system_factor -> hero_panel: radar
+hero_panel -> distance_row.near_zone: stronger return
+hero_panel -> distance_row.mid_zone: depends
+hero_panel -> distance_row.far_zone: weak return

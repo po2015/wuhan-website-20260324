@@ -1,0 +1,8 @@
+interface:
+  display_name: "Article Reviewer"
+  short_description: "Review one article and return strict JSON"
+  brand_color: "#8A2D2D"
+  default_prompt: "Use $article-reviewer to review this article and return strict JSON only."
+
+policy:
+  allow_implicit_invocation: true

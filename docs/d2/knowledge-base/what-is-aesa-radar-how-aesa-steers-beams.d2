@@ -1,0 +1,56 @@
+direction: right
+
+classes: {
+  step_blue: {
+    shape: rectangle
+    width: 220
+    height: 180
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step_green: {
+    shape: rectangle
+    width: 220
+    height: 180
+    style.fill: "#ECFDF5"
+    style.stroke: "#34D399"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step_gold: {
+    shape: rectangle
+    width: 220
+    height: 180
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step_purple: {
+    shape: rectangle
+    width: 220
+    height: 180
+    style.fill: "#FAF5FF"
+    style.stroke: "#A78BFA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+elements: "1. ARRAY ELEMENTS\n\nMany small elements\nsit across the face\nof the antenna."
+elements.class: step_blue
+
+phase_shift: "2. PHASE CONTROL\n\nElectronics adjust\nthe timing across\nthe array."
+phase_shift.class: step_green
+
+beam_point: "3. BEAM POINTING\n\nThe combined energy\nleans toward the\nchosen direction."
+beam_point.class: step_gold
+
+task_switch: "4. FAST REVISIT\n\nThe radar can shift\nattention to a new\nsector quickly."
+task_switch.class: step_purple
+
+elements -> phase_shift: control
+phase_shift -> beam_point: combine
+beam_point -> task_switch: steer

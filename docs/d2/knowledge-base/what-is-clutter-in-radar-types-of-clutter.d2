@@ -1,0 +1,52 @@
+direction: right
+
+classes: {
+  clutter_gray: {
+    shape: rectangle
+    width: 220
+    height: 230
+    style.fill: "#F8FAFC"
+    style.stroke: "#94A3B8"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  clutter_blue: {
+    shape: rectangle
+    width: 220
+    height: 230
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  clutter_green: {
+    shape: rectangle
+    width: 220
+    height: 230
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  clutter_gold: {
+    shape: rectangle
+    width: 220
+    height: 230
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+ground_clutter: "GROUND\n\nTerrain\nBuildings\nInfrastructure\n\nStrong and persistent"
+ground_clutter.class: clutter_gray
+
+sea_clutter: "SEA\n\nWaves\nWind\nSurface motion\n\nChanges with sea state"
+sea_clutter.class: clutter_blue
+
+weather_clutter: "WEATHER\n\nRain\nSnow\nCloud effects\n\nMay hide small targets"
+weather_clutter.class: clutter_green
+
+bio_clutter: "BIO / MAN-MADE\n\nBirds\nWind farms\nVehicles\n\nCan confuse trackers"
+bio_clutter.class: clutter_gold

@@ -13,6 +13,7 @@
   <div class="grid gap-8 lg:grid-cols-12">
     <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft lg:col-span-8">
       <div class="prose prose-slate content-typography max-w-none">{{ .Content }}</div>
+      {{ partial "social-share-panel.html" . }}
     </article>
     <aside class="space-y-6 lg:col-span-4">
       {{ with .Params.keypoints }}

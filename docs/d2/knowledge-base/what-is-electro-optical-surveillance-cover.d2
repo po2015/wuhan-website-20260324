@@ -1,0 +1,84 @@
+direction: down
+
+classes: {
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+  hero: {
+    shape: hexagon
+    width: 300
+    height: 160
+    style.fill: "#ECFEFF"
+    style.stroke: "#06B6D4"
+    style.font-color: "#0F172A"
+    style.font-size: 22
+  }
+  card_blue: {
+    shape: rectangle
+    width: 220
+    height: 120
+    style.fill: "#EFF6FF"
+    style.stroke: "#93C5FD"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  card_gold: {
+    shape: rectangle
+    width: 220
+    height: 120
+    style.fill: "#FFFBEB"
+    style.stroke: "#FCD34D"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  card_green: {
+    shape: rectangle
+    width: 220
+    height: 120
+    style.fill: "#F0FDF4"
+    style.stroke: "#86EFAC"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+channels: {
+  class: stack
+  direction: right
+
+  daylight: "DAYLIGHT CAMERA\n\nDetail, shape,\nand scene context"
+  daylight.class: card_blue
+
+  thermal: "THERMAL CHANNEL\n\nHeat contrast in\nlow-light conditions"
+  thermal.class: card_gold
+
+  ptz: "PTZ CONTROL\n\nAim, slew,\nand zoom"
+  ptz.class: card_green
+}
+
+sensor_head: "EO SENSOR HEAD\n\nTurn incoming light\ninto video and\nusable imagery"
+sensor_head.class: hero
+
+uses: {
+  class: stack
+  direction: right
+
+  confirm: "CONFIRM\n\nSee whether a target\nis really there"
+  confirm.class: card_blue
+
+  identify: "INTERPRET\n\nUnderstand shape,\nbehavior, and detail"
+  identify.class: card_gold
+
+  record: "RECORD\n\nCapture visual or\nthermal evidence"
+  record.class: card_green
+}
+
+channels.daylight -> sensor_head: reflected light
+channels.thermal -> sensor_head: heat contrast
+channels.ptz -> sensor_head: pointing
+
+sensor_head -> uses.confirm: observe
+sensor_head -> uses.identify: inspect
+sensor_head -> uses.record: document

@@ -1,0 +1,39 @@
+{
+  "final_decision": "REQUIRE_REVISION",
+  "reason_for_decision": "The article is publishable in structure and readability terms, but it falls below the new 8.0 pass threshold and stays too qualitative in key comparison areas.",
+  "overall_score": 7.6,
+  "word_count": 1014,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 8,
+    "marketing_noise_control": 7,
+    "content_depth": 7,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 7,
+    "decision_value": 8,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [
+    "The Cyrentis product-stack section uses a templated platform-positioning pattern instead of adding new technical evidence."
+  ],
+  "major_issues": [
+    "The comparison remains mostly qualitative and does not explain enough about operating limits or selection boundaries.",
+    "The over-the-horizon radar section is too brief to show why it belongs to a different architectural category.",
+    "The brand-positioning paragraph weakens editorial neutrality."
+  ],
+  "revision_actions": [
+    "Add a more technical comparison layer that explains physical mechanisms and operational breakdown points.",
+    "Expand the OTH section with clearer scale and procurement-boundary logic.",
+    "Remove or neutralize the brand-led stack paragraph."
+  ],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article has a clear comparison frame and easy-to-scan section structure.",
+    "The table gives the reader immediate orientation across the sensing families.",
+    "The piece already has usable knowledge-base topic focus."
+  ],
+  "summary_assessment": "Under the revised pass threshold, the original article is no longer strong enough to clear publication without deeper explanation and more neutral system guidance."
+}

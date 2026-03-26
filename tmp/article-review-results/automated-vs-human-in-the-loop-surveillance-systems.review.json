@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article clears the pass threshold with stronger authority-boundary framing, better consequence-based oversight logic, and clearer trust requirements.",
+  "overall_score": 8.3,
+  "word_count": 1000,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article now explains that the real design question is where authority changes hands, not whether automation exists.",
+    "It connects automation level to consequence, which improves both governance and system-design value.",
+    "The oversight requirements are concrete enough to move beyond generic human-in-the-loop rhetoric."
+  ],
+  "summary_assessment": "This version passes because it treats automation as a risk and authority design problem rather than as a staffing question. It now reads like a serious surveillance-systems article."
+}

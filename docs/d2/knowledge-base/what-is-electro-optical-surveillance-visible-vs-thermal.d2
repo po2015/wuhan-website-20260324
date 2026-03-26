@@ -1,0 +1,43 @@
+direction: right
+
+classes: {
+  compare_blue: {
+    shape: rectangle
+    width: 280
+    height: 250
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  compare_gold: {
+    shape: rectangle
+    width: 280
+    height: 250
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  center: {
+    shape: hexagon
+    width: 250
+    height: 170
+    style.fill: "#F8FAFC"
+    style.stroke: "#94A3B8"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+}
+
+visible: "VISIBLE VIEW\n\nUses reflected light\n\nBest for detail,\nshape, color, and\nnatural-looking imagery"
+visible.class: compare_blue
+
+scene: "SAME SCENE\n\nOne target,\ntwo viewing methods"
+scene.class: center
+
+thermal: "THERMAL VIEW\n\nUses heat contrast\n\nBest for night watch,\npoor illumination,\nand hot/cold separation"
+thermal.class: compare_gold
+
+visible -> scene: daylight
+thermal -> scene: infrared

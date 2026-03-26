@@ -1,0 +1,70 @@
+direction: down
+
+classes: {
+  stack: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+  threat: {
+    shape: rectangle
+    width: 210
+    height: 120
+    style.fill: "#FEF2F2"
+    style.stroke: "#F87171"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  clutter: {
+    shape: rectangle
+    width: 210
+    height: 120
+    style.fill: "#F8FAFC"
+    style.stroke: "#94A3B8"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  hero: {
+    shape: hexagon
+    width: 300
+    height: 170
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 22
+  }
+}
+
+top_row: {
+  class: stack
+  direction: right
+
+  target_echo: "DESIRED TARGET\n\nThe echo you want\nto keep"
+  target_echo.class: threat
+
+  ground_echo: "GROUND CLUTTER\n\nTerrain, buildings,\nand structures"
+  ground_echo.class: clutter
+
+  weather_echo: "WEATHER / SEA\n\nRain, waves,\nand environment"
+  weather_echo.class: clutter
+}
+
+hero_panel: "RADAR CLUTTER\n\nUnwanted echoes that\ncompete with the\nreal target"
+hero_panel.class: hero
+
+bottom_row: {
+  class: stack
+  direction: right
+
+  bird_echo: "BIO / BIRD\nCLUTTER"
+  bird_echo.class: clutter
+
+  urban_echo: "URBAN\nCLUTTER"
+  urban_echo.class: clutter
+}
+
+top_row.target_echo -> hero_panel: detect
+top_row.ground_echo -> hero_panel: unwanted
+top_row.weather_echo -> hero_panel: unwanted
+bottom_row.bird_echo -> hero_panel: unwanted
+bottom_row.urban_echo -> hero_panel: unwanted

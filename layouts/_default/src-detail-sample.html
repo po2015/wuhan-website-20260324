@@ -103,6 +103,7 @@
         <p class="src-sample-mini-kicker">Operational Position</p>
         <h2 class="src-sample-section-title">{{ .Params.positioning_title | default "A radar page structured for fast project evaluation and site-fit review." }}</h2>
         <div class="content-typography src-sample-story-copy">{{ .Content }}</div>
+        {{ partial "social-share-panel.html" . }}
       </article>
 
       {{ with $featureCards }}

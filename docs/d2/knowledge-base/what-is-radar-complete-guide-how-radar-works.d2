@@ -1,0 +1,65 @@
+direction: right
+
+classes: {
+  step: {
+    shape: rectangle
+    width: 210
+    height: 180
+    style.fill: "#F8FBFF"
+    style.stroke: "#CBD5E1"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+  step_blue: {
+    shape: rectangle
+    width: 210
+    height: 180
+    style.fill: "#E0F2FE"
+    style.stroke: "#38BDF8"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+  step_green: {
+    shape: rectangle
+    width: 210
+    height: 180
+    style.fill: "#DCFCE7"
+    style.stroke: "#4ADE80"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+  step_gold: {
+    shape: rectangle
+    width: 210
+    height: 180
+    style.fill: "#FEF3C7"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+  step_purple: {
+    shape: rectangle
+    width: 210
+    height: 180
+    style.fill: "#EDE9FE"
+    style.stroke: "#8B5CF6"
+    style.font-color: "#0F172A"
+    style.font-size: 19
+  }
+}
+
+transmit: "1. TRANSMIT\n\nThe radar sends a\npulse or waveform\nthrough its antenna."
+transmit.class: step_blue
+
+travel: "2. TRAVEL\n\nThe energy moves\nthrough space until it\nhits a target or surface."
+travel.class: step_green
+
+echo: "3. ECHO\n\nPart of the energy\nscatters back as a\nreflected signal."
+echo.class: step_gold
+
+process: "4. PROCESS\n\nSoftware uses time,\nangle, and frequency\nchange to estimate\nposition and motion."
+process.class: step_purple
+
+transmit -> travel: pulse
+travel -> echo: hit target
+echo -> process: return

@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article clears the pass threshold with stronger operating-model framing, clearer hybrid-fleet logic, and more honest treatment of setup burden.",
+  "overall_score": 8.3,
+  "word_count": 1001,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article no longer treats mobility as self-evident value and instead asks what kind of flexibility the mission actually needs.",
+    "The added setup and calibration discussion improves realism significantly.",
+    "The hybrid-fleet model makes the comparison more useful for real programs than a simple fixed-versus-mobile dichotomy."
+  ],
+  "summary_assessment": "This version passes because it ties flexibility to operations, staffing, and support burden rather than to transportability alone."
+}

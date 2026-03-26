@@ -1,0 +1,56 @@
+direction: right
+
+classes: {
+  step_blue: {
+    shape: rectangle
+    width: 220
+    height: 170
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step_green: {
+    shape: rectangle
+    width: 220
+    height: 170
+    style.fill: "#F0FDF4"
+    style.stroke: "#4ADE80"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step_gold: {
+    shape: rectangle
+    width: 220
+    height: 170
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step_purple: {
+    shape: rectangle
+    width: 220
+    height: 170
+    style.fill: "#FAF5FF"
+    style.stroke: "#A78BFA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+collect: "1. COLLECT\n\nAn antenna hears RF\nenergy across one or\nmore frequency bands."
+collect.class: step_blue
+
+receive: "2. RECEIVE\n\nThe receiver measures\nor digitizes the signal\nfor software analysis."
+receive.class: step_green
+
+analyze: "3. ANALYZE\n\nSoftware checks band,\ntiming, modulation,\nand protocol patterns."
+analyze.class: step_gold
+
+decide: "4. DECIDE\n\nThe system logs,\nclassifies, alerts,\nor estimates direction."
+decide.class: step_purple
+
+collect -> receive: signal
+receive -> analyze: samples
+analyze -> decide: results

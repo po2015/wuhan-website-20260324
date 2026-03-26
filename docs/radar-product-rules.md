@@ -39,7 +39,7 @@ SRC-[Band][DetectionLevel][Architecture]-[Generation][Purpose]
 
 ## 2. Hugo File Location
 Each radar product detail page must be created under:
-content/en/complete-products/radar/<slug>/index.md
+content/en/sensors/src/<slug>/index.md
 
 ## 3. Frontmatter Requirements
 Each radar product page must include:
@@ -71,48 +71,11 @@ Each detail page must contain:
 1. Hero section with title, introduction, explaition of model string according to the naming rule, and main product image.
 
 ### Fixed Model Code Breakdown Style
-The explanation of the model string is now a fixed visual pattern and must be reused consistently in future radar detail pages.
+This section is deprecated.
 
-Required presentation:
-- Show the full model code in one single line, for example: `SRC-C03A-1G`
-- Split the code into six logical fields: `SRC`, band code, detection level, architecture code, generation code, purpose code
-- Add a blue underline directly under each field
-- From each underline, draw a vertical line downward from the real visual center of that field
-- Then turn right into a horizontal line
-- All explanation text blocks must be left-aligned to the same text column
-- All horizontal elbow lines must end at that same shared text column
-- Explanation rows must be arranged from the right-most field on the first row to the left-most field on the last row, so connector lines do not cross
-- The left-most code field must therefore appear on the bottom explanation row
-- Do not add an extra summary sentence such as "For this reason..." under the breakdown diagram
+Current SRC detail pages are generated from `docs/SRC-*.yaml` into `content/en/sensors/src/<slug>/index.md` and rendered with the standard detail-page template at `layouts/_default/src-detail-sample.html`.
 
-Required wording rule:
-- `SRC` must always be explained as: `Surveillance Radar by Cyrentis.`
-
-Required implementation rule:
-- Reuse the existing shortcode at `layouts/shortcodes/model-breakdown.html`
-- Reuse the supporting styles in `static/css/site.css`
-- Reuse the runtime connector alignment logic in `static/js/site.js`
-- Do not rebuild this section as ad hoc Markdown bullet points or plain paragraphs
-- For future radar detail pages, only replace the shortcode parameters and explanation text, while keeping the same structural pattern
-
-Standard shortcode pattern:
-
-```go-html-template
-{{< model-breakdown
-  t1="SRC"
-  d1="Surveillance Radar by Cyrentis."
-  t2="<BandCode>"
-  d2="<Band explanation>"
-  t3="<DetectionLevel>"
-  d3="<Detection level explanation>"
-  t4="<ArchitectureCode>"
-  d4="<Architecture explanation>"
-  t5="<GenerationCode>"
-  d5="<Generation explanation>"
-  t6="<PurposeCode>"
-  d6="<Purpose explanation>"
->}}
-```
+Do not use the deleted `model-breakdown` shortcode or the removed `radar-product` layout for new pages.
 
 2. Key feature badges displayed near the title:
    - Band (C / X / Ku Band)

@@ -64,6 +64,7 @@
         <p class="soc-detail-mini-kicker">Operational Position</p>
         <h2 class="soc-detail-panel-title">{{ .Params.positioning_title | default "A long-range electro-optical payload for confirmation, tracking, and site command support." }}</h2>
         <div class="content-typography soc-detail-story-copy">{{ .Content }}</div>
+        {{ partial "social-share-panel.html" . }}
       </article>
     </div>
   </section>

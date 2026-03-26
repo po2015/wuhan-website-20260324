@@ -1,0 +1,56 @@
+direction: right
+
+classes: {
+  step1: {
+    shape: rectangle
+    width: 210
+    height: 180
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step2: {
+    shape: rectangle
+    width: 210
+    height: 180
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step3: {
+    shape: rectangle
+    width: 210
+    height: 180
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step4: {
+    shape: rectangle
+    width: 210
+    height: 180
+    style.fill: "#FAF5FF"
+    style.stroke: "#8B5CF6"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+detect_step: "1. DETECT\n\nFind a possible\nnew target hit."
+detect_step.class: step1
+
+track_step: "2. CREATE TRACK\n\nStart a track file\nfor repeated hits."
+track_step.class: step2
+
+predict_step: "3. PREDICT\n\nEstimate where the\ntarget should appear\nnext time."
+predict_step.class: step3
+
+update_step: "4. UPDATE\n\nConfirm, coast,\nor drop the track\non later scans."
+update_step.class: step4
+
+detect_step -> track_step: repeat hits
+track_step -> predict_step: estimate
+predict_step -> update_step: next scan

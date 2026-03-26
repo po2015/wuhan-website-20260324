@@ -1,0 +1,56 @@
+direction: right
+
+classes: {
+  step1: {
+    shape: rectangle
+    width: 220
+    height: 180
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step2: {
+    shape: rectangle
+    width: 220
+    height: 180
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step3: {
+    shape: rectangle
+    width: 220
+    height: 180
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+  step4: {
+    shape: rectangle
+    width: 220
+    height: 180
+    style.fill: "#FAF5FF"
+    style.stroke: "#8B5CF6"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+ingest: "1. INGEST\n\nCollect radar, RF,\nEO, or other sensor\nobservations."
+ingest.class: step1
+
+align: "2. ALIGN\n\nMatch time,\ncoordinates,\nand calibration."
+align.class: step2
+
+associate: "3. ASSOCIATE\n\nDecide which events\nbelong to the same\nobject or track."
+associate.class: step3
+
+output: "4. OUTPUT\n\nPresent one fused\ntrack, cue, or alert\nfor the operator."
+output.class: step4
+
+ingest -> align: synchronize
+align -> associate: compare
+associate -> output: fused result

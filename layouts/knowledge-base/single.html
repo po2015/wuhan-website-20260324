@@ -49,6 +49,7 @@
         </figure>
         {{ end }}
         <div class="prose prose-slate content-typography max-w-none">{{ .Content }}</div>
+        {{ partial "social-share-panel.html" . }}
       </article>
       <aside class="space-y-6 lg:col-span-4">
         {{ if or (.GetTerms "categories") (.GetTerms "tags") }}
