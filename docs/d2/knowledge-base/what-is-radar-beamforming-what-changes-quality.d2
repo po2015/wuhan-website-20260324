@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes radar\nbeamforming quality?"
+root.class: core
+
+geometry_node: "Element count\nand array geometry"
+geometry_node.class: factor
+
+weight_node: "Weighting strategy\nand sidelobe trade-offs"
+weight_node.class: factor
+
+angle_node: "Steering angle\nand scan position"
+angle_node.class: factor
+
+cal_node: "Calibration of\nmany distributed channels"
+cal_node.class: factor
+
+arch_node: "Analog, sub-array,\nor digital architecture"
+arch_node.class: factor
+
+cost_node: "Processing load,\npower, and cost"
+cost_node.class: factor
+
+root -> geometry_node
+root -> weight_node
+root -> angle_node
+root -> cal_node
+root -> arch_node
+root -> cost_node

@@ -50,6 +50,16 @@ Knowledge-base writing rules:
 9. Keep terminology consistent with existing Cyrentis product naming.
 10. Do not reuse the same lead image, stock photo source, or article-specific figure from another knowledge-base article unless the user explicitly requests reuse.
 11. Do not pad for word count; add mechanism, implications, comparison value, or reader judgment instead.
+12. For workflow, comparison, service-stack, or architecture figures, use D2 and keep the `.d2` source when practical.
+13. Do not hand-author complex text-heavy SVGs with many labeled boxes or long single-line labels.
+14. Before finalizing, inspect figures for article-width and mobile-width readability; reject any figure with overlaps, cropped labels, or giant text blocks.
+15. For Foundation articles, use the standardized `what-is-utm-u-space` style cover: title block, subtitle, and topic-specific background, with at most `2-3` short support items. Keep this cover only as the lead image.
+16. Keep the Foundation cover title fully inside the title block. If the title is shorter than about `80%` of the image width, do not wrap it.
+17. Do not embed the cover image again inside the article body.
+18. Make at least one internal figure topic-native rather than generic, using shapes or spatial logic that belong to the subject.
+19. Avoid slide-like figures dominated by large rectangular text blocks.
+20. Use hand-authored SVG for the standardized Foundation cover. Keep D2 for internal workflow, comparison, service-stack, or architecture figures.
+21. In D2, default text-bearing boxes to auto height, use manual line breaks, and keep labels to short phrases so text stays inside the rendered box.
 -->
 
 Write a 2-3 paragraph introduction that explains the topic, the real-world question behind it, and why the reader should care.

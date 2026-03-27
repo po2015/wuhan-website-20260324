@@ -1,0 +1,44 @@
+direction: right
+
+classes: {
+  step_blue: {
+    shape: rectangle
+    width: 180
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  step_gold: {
+    shape: rectangle
+    width: 180
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  step_green: {
+    shape: rectangle
+    width: 180
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+elements: "Array elements\n\nTransmit and\nreceive points"
+elements.class: step_blue
+
+phase: "Phase shift\n\nChange timing\nacross the face"
+phase.class: step_gold
+
+wavefront: "Wavefront tilt\n\nEnergy adds in\none direction"
+wavefront.class: step_blue
+
+beam: "Beam direction\n\nLook angle changes\nwithout rotation"
+beam.class: step_green
+
+elements -> phase: coordinate
+phase -> wavefront: shape field
+wavefront -> beam: steer

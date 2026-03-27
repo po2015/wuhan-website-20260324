@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes line-of-sight\nquality in surveillance?"
+root.class: core
+
+mount_height: "Mounting height\nand near blind zones"
+mount_height.class: factor
+
+terrain: "Terrain shape,\nridges, embankments"
+terrain.class: factor
+
+obstacles: "Buildings, trees,\nand temporary obstacles"
+obstacles.class: factor
+
+target_path: "Target height\nand movement path"
+target_path.class: factor
+
+angle: "Field of view,\nangle, and detail"
+angle.class: factor
+
+horizon: "Range, horizon,\nand atmosphere"
+horizon.class: factor
+
+root -> mount_height
+root -> terrain
+root -> obstacles
+root -> target_path
+root -> angle
+root -> horizon

@@ -1,0 +1,56 @@
+direction: down
+
+classes: {
+  level_slate: {
+    shape: rectangle
+    width: 700
+    height: 110
+    style.fill: "#F8FAFC"
+    style.stroke: "#94A3B8"
+    style.font-color: "#0F172A"
+    style.font-size: 20
+  }
+  level_blue: {
+    shape: rectangle
+    width: 700
+    height: 120
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 20
+  }
+  level_gold: {
+    shape: rectangle
+    width: 700
+    height: 120
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 20
+  }
+  level_green: {
+    shape: rectangle
+    width: 700
+    height: 110
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 20
+  }
+}
+
+operators: "1. OPERATOR INPUTS\n\nMission planning, route intent, aircraft status,\nand operational responsibility."
+operators.class: level_slate
+
+services: "2. DIGITAL SERVICES\n\nAuthorization, geo-awareness, network identification,\ntraffic information, and conflict support."
+services.class: level_blue
+
+shared: "3. SHARED AIRSPACE DATA\n\nGeo-zones, constraints, approvals, live traffic picture,\nand public-safety inputs."
+shared.class: level_gold
+
+outcome: "4. OPERATING OUTCOME\n\nSafer coordination for multiple drone operations\nin the same low-altitude environment."
+outcome.class: level_green
+
+operators -> services: requests
+services -> shared: uses
+shared -> outcome: supports

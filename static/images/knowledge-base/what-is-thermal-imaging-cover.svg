@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">What is Thermal Imaging cover</title>
+  <desc id="desc">Foundation cover with a thermal camera scene, hot and cool targets, and short summary tags.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#081b2e"/>
+      <stop offset="100%" stop-color="#13476f"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f9fcff"/>
+      <stop offset="100%" stop-color="#e3f4ff"/>
+    </linearGradient>
+    <linearGradient id="heat" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#11253a"/>
+      <stop offset="30%" stop-color="#24547b"/>
+      <stop offset="55%" stop-color="#ffd34f"/>
+      <stop offset="78%" stop-color="#ff8b3d"/>
+      <stop offset="100%" stop-color="#ff5b54"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#03121d" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1018" cy="118" r="108" fill="#53b8ff" opacity="0.09"/>
+  <circle cx="1096" cy="512" r="152" fill="#0a2437" opacity="0.34"/>
+  <path d="M0 546c192-54 304-12 442-38s228-136 356-138 206 96 402 76V630H0Z" fill="#0a2437" opacity="0.62"/>
+  <g filter="url(#shadow)">
+    <rect x="100" y="86" width="612" height="108" rx="24" fill="#0f304b" stroke="#4cb2ff" stroke-opacity="0.3"/>
+  </g>
+  <text x="132" y="128" fill="#8fd3ff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">FOUNDATION</text>
+  <text x="132" y="168" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">What is Thermal Imaging?</text>
+  <text x="100" y="264" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Infrared contrast turned into a visible image</text>
+  <text x="100" y="308" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="100" dy="0">The camera does not see color or identity by itself. It measures</tspan>
+    <tspan x="100" dy="28">radiated energy and turns thermal differences into an image.</tspan>
+  </text>
+  <g transform="translate(100 392)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="182" height="84" rx="22" fill="url(#chip)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Infrared scene</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Heat patterns</text>
+  </g>
+  <g transform="translate(308 392)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="194" height="84" rx="22" fill="url(#chip)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Thermal contrast</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Relative temperature</text>
+  </g>
+  <g transform="translate(532 392)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="186" height="84" rx="22" fill="url(#chip)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Visible output</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Readable image</text>
+  </g>
+  <g transform="translate(704 122)">
+    <ellipse cx="258" cy="392" rx="274" ry="80" fill="#061827" opacity="0.44"/>
+    <g filter="url(#shadow)">
+      <rect x="228" y="136" width="230" height="164" rx="26" fill="url(#heat)" stroke="#89d0ff" stroke-width="4"/>
+    </g>
+    <circle cx="292" cy="198" r="26" fill="#ffe27a"/>
+    <rect x="272" y="226" width="40" height="76" rx="20" fill="#ff9a40"/>
+    <rect x="236" y="288" width="112" height="18" rx="9" fill="#8ad4ff" opacity="0.34"/>
+    <rect x="344" y="200" width="52" height="96" rx="18" fill="#ff703d"/>
+    <rect x="402" y="170" width="22" height="124" rx="11" fill="#ffd34f"/>
+    <rect x="420" y="278" width="24" height="16" rx="8" fill="#82cfff" opacity="0.4"/>
+    <g filter="url(#shadow)">
+      <rect x="70" y="214" width="112" height="82" rx="20" fill="#10314d" stroke="#8bd2ff" stroke-width="4"/>
+    </g>
+    <circle cx="110" cy="256" r="18" fill="#0b1727" stroke="#9bdbff" stroke-width="4"/>
+    <rect x="130" y="246" width="26" height="20" rx="10" fill="#dff1ff"/>
+    <path d="M182 255h36" stroke="#9bdbff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M218 255c18 0 32-14 32-32" fill="none" stroke="#69c4ff" stroke-width="5" stroke-dasharray="8 10"/>
+    <path d="M182 255c48 0 74 18 100 48" fill="none" stroke="#69c4ff" stroke-width="4" stroke-dasharray="8 10" opacity="0.7"/>
+  </g>
+</svg>

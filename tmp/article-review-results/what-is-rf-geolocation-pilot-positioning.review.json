@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article clearly explains RF geolocation as an emitter-location problem, separates it from Remote ID and simple detection, and gives enough method and limitation context to pass without revision.",
+  "overall_score": 8.5,
+  "word_count": 2050,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article clearly separates detection, geolocation, and pilot-position interpretation rather than blurring them together.",
+    "It gives beginners a usable explanation of why AOA, TDOA, and hybrid methods exist together.",
+    "The limits section correctly narrows the promise of pilot positioning by emphasizing emitter origin, confidence, and workflow context."
+  ],
+  "summary_assessment": "This is a strong Foundation article: it is readable, technically grounded, and useful enough to pass without revision.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-rf-geolocation-pilot-positioning.md",
+    "article_sha256": "a61746e438953c429aa0f9200b69d37a6ae437c2d25cdf8b7b5522fa170e9418",
+    "normalized_review_input_sha256": "06595e67901851129d63d3d00ee380a029129568be0d687e87611b631f39d302",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-rf-geolocation-pilot-positioning\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T07:38:46+00:00"
+  }
+}

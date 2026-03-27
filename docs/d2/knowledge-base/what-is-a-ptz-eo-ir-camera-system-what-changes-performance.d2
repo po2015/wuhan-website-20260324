@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 280
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes\nPTZ / EO-IR performance?"
+root.class: core
+
+optics: "Field of view\nand optical zoom"
+optics.class: factor
+
+channels: "Visible vs thermal\nchannel usefulness"
+channels.class: factor
+
+stability: "Stabilization\nand mount motion"
+stability.class: factor
+
+geometry: "Line of sight,\nheight, and obstacles"
+geometry.class: factor
+
+atmosphere: "Light, haze,\nheat shimmer, weather"
+atmosphere.class: factor
+
+workflow: "Presets, cueing,\ncontrol latency"
+workflow.class: factor
+
+root -> optics
+root -> channels
+root -> stability
+root -> geometry
+root -> atmosphere
+root -> workflow

@@ -1,0 +1,49 @@
+direction: right
+
+classes: {
+  light_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  dark_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  gold: {
+    shape: rectangle
+    width: 220
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+inputs_node: "Inputs\n\nSensors, maps,\nreports, alarms"
+inputs_node.class: light_blue
+
+platform_node: "Command-and-control\nplatform\n\nCorrelate and organize"
+platform_node.class: dark_blue
+
+cop_node: "Shared picture\n\nRole-based views"
+cop_node.class: light_blue
+
+tasks_node: "Tasks and escalation\n\nAcknowledge,\nassign, update"
+tasks_node.class: gold
+
+decisions_node: "Decisions and record\n\nResponse, handoff,\naudit history"
+decisions_node.class: dark_blue
+
+inputs_node -> platform_node: ingest
+platform_node -> cop_node: visualize
+platform_node -> tasks_node: trigger workflow
+cop_node -> decisions_node: support action
+tasks_node -> decisions_node: track progress

@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article gives beginners a clear and usable explanation of a common operating picture, distinguishes it from dashboards and data dumps, and carries enough operational depth to pass without revision.",
+  "overall_score": 8.5,
+  "word_count": 2338,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article clearly explains that a COP is a shared operational view rather than just a dashboard or video wall.",
+    "It gives practical value by showing how incident, sensor, and workflow information become more useful when viewed together.",
+    "The common-mistakes section helps beginners avoid equating integration volume with real situational awareness."
+  ],
+  "summary_assessment": "This is a strong Foundation article: it is readable, operationally grounded, and useful enough to pass without revision.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-a-common-operating-picture-cop.md",
+    "article_sha256": "fa25e89a8ac20ea611d58b26e7b17345157cf829d732120aa4f6ed8e760b4e6d",
+    "normalized_review_input_sha256": "8793fa3aa121d31f0895c5f8e7a5915d0382cd1b66c0ef5c4e6def0ca19de783",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-a-common-operating-picture-cop\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T07:57:03+00:00"
+  }
+}

@@ -1,0 +1,49 @@
+direction: right
+
+classes: {
+  light_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  dark_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  gold: {
+    shape: rectangle
+    width: 220
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+detection_node: "Detection\n\nSomething is there"
+detection_node.class: light_blue
+
+tracking_node: "Tracking\n\nWhere it is moving"
+tracking_node.class: dark_blue
+
+coop_node: "Cooperative path\n\nRemote ID or shared data"
+coop_node.class: light_blue
+
+noncoop_node: "Non-cooperative path\n\nEO, RF, radar, fusion"
+noncoop_node.class: gold
+
+id_node: "Identification\n\nSpecific, actionable\nunderstanding"
+id_node.class: dark_blue
+
+detection_node -> tracking_node: follow over time
+tracking_node -> coop_node: if broadcast exists
+tracking_node -> noncoop_node: if stronger evidence is needed
+coop_node -> id_node: correlate data
+noncoop_node -> id_node: fuse evidence

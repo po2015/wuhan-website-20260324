@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes\nAOA bearing quality?"
+root.class: core
+
+snr: "Signal-to-noise\nratio"
+snr.class: factor
+
+multipath: "Multipath and\nreflections"
+multipath.class: factor
+
+antenna: "Antenna aperture,\ncalibration, stability"
+antenna.class: factor
+
+site: "Site geometry\nand obstacle clearance"
+site.class: factor
+
+signal: "Frequency,\nwaveform, burst behavior"
+signal.class: factor
+
+workflow: "How the bearing is\nfused and interpreted"
+workflow.class: factor
+
+root -> snr
+root -> multipath
+root -> antenna
+root -> site
+root -> signal
+root -> workflow

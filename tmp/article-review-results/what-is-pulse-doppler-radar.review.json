@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article is clear, technically responsible, and strong enough to pass as a Foundation entry on pulse-Doppler radar without revision.",
+  "overall_score": 8.4,
+  "word_count": 1908,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 8,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article gives beginners a useful mental model by separating pulse-based ranging from Doppler-based motion measurement.",
+    "The clutter section explains why pulse-Doppler matters operationally instead of stopping at a narrow definition.",
+    "The limitations section correctly explains radial velocity and prevents overclaiming about what the radar can infer by itself."
+  ],
+  "summary_assessment": "This is a strong Foundation article: it is readable, technically grounded, and decision-useful enough to pass without revision.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-pulse-doppler-radar.md",
+    "article_sha256": "9fa762d9e5a821923c41bfaa003a9ead752b9d6b5b5811c436147f3b5dd9df9c",
+    "normalized_review_input_sha256": "aa3a858677e0f11343c65416be5ebdc83aaca7de494ec6ace51a4eb58d8d7a01",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-pulse-doppler-radar\\round-02.review.json",
+    "sealed_at_utc": "2026-03-27T06:27:57+00:00"
+  }
+}

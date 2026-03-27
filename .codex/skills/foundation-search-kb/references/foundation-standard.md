@@ -77,6 +77,30 @@ Good section types include:
 - Store generated figures in `static/images/knowledge-base/`.
 - Use SEO-friendly filenames based on the article slug.
 - If the figure is synthesized rather than sourced from one public dataset, state that near the figure.
+- Treat Foundation covers and internal figures differently:
+  - covers should use one standardized cover layout across the series
+  - internal figures should remain topic-specific
+- Standardized Foundation covers should follow the same visual language as `what-is-utm-u-space` and `what-is-remote-id`:
+  - dark technical background
+  - title block
+  - subtitle
+  - topic-specific background illustration
+  - optional `2-3` short support items
+- Keep the Foundation cover title fully inside the title block.
+- If the title would still fit within about `80%` of the full image width, keep it on one line rather than wrapping it.
+- For workflow, comparison, service-stack, or architecture diagrams, use D2 by default.
+- If a figure has more than `3` labeled boxes, arrows between labeled blocks, or sentence-length labels, treat D2 as mandatory.
+- Reserve hand-authored SVG for the standardized Foundation cover system or simple object diagrams with short labels and predictable layout.
+- When D2 is used, keep the `.d2` source alongside the rendered SVG when practical so the figure can be revised cleanly later.
+- In D2, prefer auto-height text boxes. Do not lock a text-bearing box to a fixed height unless the rendered SVG has been checked and the text is still inside the shape.
+- Break D2 labels manually into short lines. Avoid sentence-length single lines inside shapes.
+- Before finalizing, visually inspect the figure at article width and narrow mobile width. Reject it if text overlaps, spills, or turns into one large unreadable block.
+- Use one shared Foundation cover skeleton across the series unless the user explicitly asks for a special cover.
+- Keep Foundation covers simpler than internal figures: title, subtitle, background scene, and `2-3` short support items are usually enough.
+- Adjust the title block width before shrinking the title font. The default should be a clear, readable title that does not spill past the colored panel.
+- Do not place the cover image again inside the article body.
+- Each article should include at least one internal visual motif that belongs to the topic itself rather than to a generic diagram template.
+- Avoid diagrams that look like presentation slides with large text cards. Prefer lighter labels, physical relationships, and topic-native shapes when possible.
 
 ## SEO Rules
 

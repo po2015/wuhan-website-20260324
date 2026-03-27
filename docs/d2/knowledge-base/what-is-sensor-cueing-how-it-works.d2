@@ -1,0 +1,48 @@
+direction: right
+
+classes: {
+  light_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  dark_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  gold: {
+    shape: rectangle
+    width: 220
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+source_node: "Source event\n\nRadar, RF, analytics,\nor rule trigger"
+source_node.class: light_blue
+
+logic_node: "Cueing logic\n\nTranslate event into\nusable instructions"
+logic_node.class: dark_blue
+
+sensor_node: "Receiving sensor\nor workflow layer"
+sensor_node.class: light_blue
+
+verify_node: "Verify or track\n\nPTZ view, map, task,\nrecording, escalation"
+verify_node.class: dark_blue
+
+control_node: "Operator control\n\nOverride, confirm,\nreprioritize"
+control_node.class: gold
+
+source_node -> logic_node: alert
+logic_node -> sensor_node: handoff
+sensor_node -> verify_node: focused attention
+verify_node -> control_node: human judgment

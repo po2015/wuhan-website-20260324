@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes RF geolocation\nor pilot-position quality?"
+root.class: core
+
+geometry: "Number and placement\nof sensors"
+geometry.class: factor
+
+snr: "Signal strength,\nnoise, interference"
+snr.class: factor
+
+multipath: "Urban multipath\nand reflections"
+multipath.class: factor
+
+emitter: "Emitter behavior:\nbursts, hopping, duty cycle"
+emitter.class: factor
+
+method: "AOA, TDOA,\nor hybrid method"
+method.class: factor
+
+latency: "Confidence reporting\nand workflow latency"
+latency.class: factor
+
+root -> geometry
+root -> snr
+root -> multipath
+root -> emitter
+root -> method
+root -> latency

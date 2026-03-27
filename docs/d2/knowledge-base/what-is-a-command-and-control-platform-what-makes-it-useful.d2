@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What makes a command-and-\ncontrol platform useful?"
+root.class: core
+
+data_node: "Shared data\nfoundation"
+data_node.class: factor
+
+role_node: "Role-based views\nfrom one truth set"
+role_node.class: factor
+
+workflow_node: "Tasking, escalation,\nand status workflow"
+workflow_node.class: factor
+
+state_node: "Clear incident state\nand ownership"
+state_node.class: factor
+
+human_node: "Human override\nand judgment"
+human_node.class: factor
+
+history_node: "Trusted history,\naudit, and review"
+history_node.class: factor
+
+root -> data_node
+root -> role_node
+root -> workflow_node
+root -> state_node
+root -> human_node
+root -> history_node

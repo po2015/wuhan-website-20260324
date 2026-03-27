@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes sensor\ncueing quality?"
+root.class: core
+
+geometry_node: "Geometry and line of sight"
+geometry_node.class: factor
+
+align_node: "Calibration and\ncoordinate alignment"
+align_node.class: factor
+
+timing_node: "Timing and\nlatency"
+timing_node.class: factor
+
+confidence_node: "Confidence rules\nand false-cue control"
+confidence_node.class: factor
+
+priority_node: "Multiple targets\nand priority logic"
+priority_node.class: factor
+
+operator_node: "Operator workflow\nand override"
+operator_node.class: factor
+
+root -> geometry_node
+root -> align_node
+root -> timing_node
+root -> confidence_node
+root -> priority_node
+root -> operator_node

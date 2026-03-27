@@ -1,0 +1,48 @@
+direction: right
+
+classes: {
+  light_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  dark_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  gold: {
+    shape: rectangle
+    width: 220
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+scene: "Infrared scene\n\nHeat from target\nand background"
+scene.class: light_blue
+
+uncooled: "Uncooled path\n\nMicrobolometer\nmeasures heating effect"
+uncooled.class: dark_blue
+
+cooled: "Cooled path\n\nCryocooled detector\nreads weak photons"
+cooled.class: dark_blue
+
+practical: "Typical result\n\nLower burden,\nwidely deployable"
+practical.class: light_blue
+
+high_perf: "Typical result\n\nHigher sensitivity\nfor demanding tasks"
+high_perf.class: gold
+
+scene -> uncooled: IR energy
+scene -> cooled: IR energy
+uncooled -> practical: simpler package
+cooled -> high_perf: lower detector noise

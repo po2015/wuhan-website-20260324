@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">What is Urban Air Mobility cover</title>
+  <desc id="desc">Foundation cover showing an urban air mobility aircraft, vertiport, and digital route context.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#081b2e"/>
+      <stop offset="100%" stop-color="#154c74"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fcff"/>
+      <stop offset="100%" stop-color="#dff1ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#02111c" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1054" cy="110" r="98" fill="#4eb8ff" opacity="0.10"/>
+  <circle cx="1112" cy="510" r="154" fill="#79cbff" opacity="0.08"/>
+  <path d="M0 526c178-42 304-8 430-34s198-118 326-122 232 88 444 66V630H0Z" fill="#0a2437" opacity="0.64"/>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="82" width="512" height="108" rx="26" fill="#0f304b" stroke="#4cb2ff" stroke-opacity="0.32"/>
+  </g>
+  <text x="124" y="126" fill="#8fd3ff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">FOUNDATION</text>
+  <text x="124" y="166" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="39" font-weight="700">What is Urban Air Mobility (UAM)?</text>
+
+  <text x="96" y="266" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">New city air transport needs more than new aircraft</text>
+  <text x="96" y="310" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="96" dy="0">UAM depends on aircraft, vertiports, traffic services, and a</tspan>
+    <tspan x="96" dy="28">cooperative low-altitude environment that cities can actually manage.</tspan>
+  </text>
+
+  <g transform="translate(96 392)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="164" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Aircraft + vertiports</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Traffic coordination</text>
+  </g>
+  <g transform="translate(282 418)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="198" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Rules + public trust</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Operational readiness</text>
+  </g>
+
+  <g transform="translate(728 128)">
+    <ellipse cx="224" cy="300" rx="238" ry="56" fill="#061827" opacity="0.50"/>
+    <path d="M20 238c92-34 192-60 314-90" fill="none" stroke="#7fd1ff" stroke-width="4" stroke-dasharray="10 12"/>
+    <path d="M14 250c108 2 218 8 340 36" fill="none" stroke="#7fd1ff" stroke-width="4" stroke-opacity="0.35" stroke-dasharray="10 12"/>
+    <rect x="18" y="212" width="144" height="24" rx="12" fill="#18384f"/>
+    <rect x="204" y="162" width="98" height="16" rx="8" fill="#18384f"/>
+    <rect x="304" y="138" width="86" height="16" rx="8" fill="#18384f"/>
+    <path d="M42 252h112l32-18 84 0 28 18h102" fill="#9ad9ff"/>
+    <circle cx="132" cy="246" r="16" fill="#9ad9ff"/>
+    <circle cx="322" cy="246" r="16" fill="#9ad9ff"/>
+    <g filter="url(#shadow)">
+      <rect x="40" y="276" width="130" height="44" rx="18" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <text x="70" y="305" fill="#144061" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Vertiport</text>
+    <g filter="url(#shadow)">
+      <rect x="240" y="74" width="150" height="48" rx="18" fill="#0f304b" stroke="#7ed0ff" stroke-width="3"/>
+    </g>
+    <text x="270" y="105" fill="#dff2ff" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Route / xTM</text>
+  </g>
+</svg>

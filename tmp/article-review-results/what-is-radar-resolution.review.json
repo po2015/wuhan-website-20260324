@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article gives beginners a clear distinction between range resolution, angular resolution, range, and accuracy, and it provides enough operational context to pass without revision.",
+  "overall_score": 8.5,
+  "word_count": 2032,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article keeps the central distinction between resolution and accuracy clear all the way through.",
+    "It explains range and angular resolution in plain language without flattening them into one concept.",
+    "The piece turns a technical topic into practical evaluation questions about beamwidth, range growth, and target separation."
+  ],
+  "summary_assessment": "This is a strong Foundation article: it is readable, technically grounded, and useful enough to pass without revision.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-radar-resolution.md",
+    "article_sha256": "16a4f63cfd812a674080705078f8aa02316e658a3fe8218e2ed73e95d6c38b38",
+    "normalized_review_input_sha256": "219e326e8d29cfd2426d57307ca3a3879e537379e606d5d38efa5708c3da3d9e",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-radar-resolution\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T08:15:28+00:00"
+  }
+}

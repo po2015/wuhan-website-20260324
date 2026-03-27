@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">What is Direction Finding AOA cover</title>
+  <desc id="desc">Foundation cover showing an RF direction finder, bearing lines, and an emitter direction cue.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#081b2e"/>
+      <stop offset="100%" stop-color="#13476f"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f9fcff"/>
+      <stop offset="100%" stop-color="#e3f4ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#03121d" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1018" cy="118" r="108" fill="#53b8ff" opacity="0.09"/>
+  <circle cx="1100" cy="510" r="150" fill="#0a2437" opacity="0.34"/>
+  <path d="M0 546c192-54 304-12 442-38s228-136 356-138 206 96 402 76V630H0Z" fill="#0a2437" opacity="0.62"/>
+  <g filter="url(#shadow)">
+    <rect x="100" y="86" width="660" height="108" rx="24" fill="#0f304b" stroke="#4cb2ff" stroke-opacity="0.3"/>
+  </g>
+  <text x="132" y="128" fill="#8fd3ff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">FOUNDATION</text>
+  <text x="132" y="168" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="39" font-weight="700">What is Direction Finding (AOA)?</text>
+  <text x="100" y="264" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Estimate signal direction before solving full location</text>
+  <text x="100" y="308" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="100" dy="0">A direction finder turns an RF source into a bearing problem, which</tspan>
+    <tspan x="100" dy="28">can then be fused with other bearings or locating methods.</tspan>
+  </text>
+  <g transform="translate(100 392)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="178" height="84" rx="22" fill="url(#chip)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Antenna array</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Wavefront compare</text>
+  </g>
+  <g transform="translate(306 392)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="190" height="84" rx="22" fill="url(#chip)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Bearing output</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Direction, not fix</text>
+  </g>
+  <g transform="translate(524 392)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="196" height="84" rx="22" fill="url(#chip)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Fuse later</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Cross-bearings / TDOA</text>
+  </g>
+  <g transform="translate(734 122)">
+    <ellipse cx="230" cy="392" rx="246" ry="80" fill="#061827" opacity="0.44"/>
+    <g filter="url(#shadow)">
+      <rect x="44" y="202" width="106" height="120" rx="22" fill="#10314d" stroke="#8ad1ff" stroke-width="4"/>
+    </g>
+    <path d="M64 218h66M64 246h66M64 274h66" stroke="#7fd1ff" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+    <rect x="82" y="324" width="30" height="46" rx="10" fill="#174564" stroke="#8fd3ff" stroke-width="4"/>
+    <path d="M98 324v-22" stroke="#9bdbff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M150 262c108-78 226-126 352-132" fill="none" stroke="#66c0ff" stroke-width="5" stroke-dasharray="9 12"/>
+    <path d="M150 262c132-18 256-10 362 26" fill="none" stroke="#66c0ff" stroke-width="5" stroke-dasharray="9 12" opacity="0.62"/>
+    <circle cx="524" cy="126" r="14" fill="#7fd1ff"/>
+    <circle cx="548" cy="290" r="14" fill="#7fd1ff" opacity="0.75"/>
+    <path d="M488 128h40" stroke="#9bdbff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M538 124 566 106" stroke="#9bdbff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

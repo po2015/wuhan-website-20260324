@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article explains PTZ and EO/IR in plain language, distinguishes verification from search, and gives enough operational limits and decision guidance to pass as a Foundation article without revision.",
+  "overall_score": 8.5,
+  "word_count": 2066,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article clearly separates PTZ movement control from EO/IR sensing roles, which prevents beginner confusion.",
+    "It explains why these systems are usually confirmation and tracking layers instead of first-search sensors.",
+    "The performance section gives practical judgment on zoom, stabilization, line of sight, and workflow rather than repeating brochure claims."
+  ],
+  "summary_assessment": "This is a strong Foundation article: it is readable, technically grounded, and useful enough to pass without revision.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-a-ptz-eo-ir-camera-system.md",
+    "article_sha256": "11b696df49b4f1442a647568889856d54f1e4611b9c6d4ba92689c8c136c52ec",
+    "normalized_review_input_sha256": "33c900f63f7c0b7f59384674fe14b0851f9cd6accb4b70ce1b3902b1e1d376d5",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-a-ptz-eo-ir-camera-system\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T07:33:09+00:00"
+  }
+}

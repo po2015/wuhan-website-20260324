@@ -1,0 +1,49 @@
+direction: right
+
+classes: {
+  light_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  dark_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  gold: {
+    shape: rectangle
+    width: 220
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+aircraft_node: "UAM aircraft\n\nPassenger or cargo flight"
+aircraft_node.class: dark_blue
+
+vertiport_node: "Vertiport or stop\n\nTakeoff, landing,\nturnaround"
+vertiport_node.class: light_blue
+
+xtm_node: "Traffic management\n\nRouting, approvals,\nshared information"
+xtm_node.class: dark_blue
+
+city_node: "City and operators\n\nGround access,\nservices, response"
+city_node.class: light_blue
+
+trust_node: "Safety and trust\n\nRules, monitoring,\npublic acceptance"
+trust_node.class: gold
+
+aircraft_node -> vertiport_node: operate from
+vertiport_node -> xtm_node: planned movements
+xtm_node -> city_node: coordinated operations
+city_node -> trust_node: depends on
+xtm_node -> trust_node: supports

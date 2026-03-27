@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">What is Remote ID cover</title>
+  <desc id="desc">A drone broadcasting a Remote ID signal to nearby receivers and an operator marker.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#081a2a"/>
+      <stop offset="100%" stop-color="#123f67"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fcff"/>
+      <stop offset="100%" stop-color="#dff1ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#02111c" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1020" cy="116" r="104" fill="#4eb8ff" opacity="0.11"/>
+  <circle cx="1128" cy="506" r="144" fill="#78cbff" opacity="0.08"/>
+  <path d="M0 520C162 470 254 542 382 520s198-120 324-118 214 92 494 60V630H0Z" fill="#0a2437" opacity="0.62"/>
+  <path d="M738 218c0-90 72-162 162-162s162 72 162 162" fill="none" stroke="#49b6ff" stroke-width="3" stroke-dasharray="8 12" opacity="0.3"/>
+  <path d="M766 218c0-74 60-134 134-134s134 60 134 134" fill="none" stroke="#49b6ff" stroke-width="4" stroke-dasharray="8 12" opacity="0.5"/>
+  <path d="M796 218c0-58 46-104 104-104s104 46 104 104" fill="none" stroke="#49b6ff" stroke-width="5" stroke-dasharray="8 12" opacity="0.72"/>
+  <g transform="translate(806 188)">
+    <ellipse cx="124" cy="208" rx="132" ry="34" fill="#061827" opacity="0.5"/>
+    <circle cx="126" cy="58" r="16" fill="#5dd6ff"/>
+    <path d="M126 44v-22" stroke="#9bdbff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M126 8c56 0 102 46 102 102" fill="none" stroke="#69c4ff" stroke-width="5" stroke-dasharray="8 10"/>
+    <path d="M126 -8c74 0 134 60 134 134" fill="none" stroke="#69c4ff" stroke-width="5" stroke-dasharray="8 10" opacity="0.55"/>
+    <path d="M126 18c42 0 76 34 76 76" fill="none" stroke="#69c4ff" stroke-width="5" stroke-dasharray="8 10" opacity="0.9"/>
+    <circle cx="126" cy="102" r="54" fill="#10314d" stroke="#8bd2ff" stroke-width="4"/>
+    <rect x="100" y="156" width="52" height="58" rx="12" fill="#164564" stroke="#8bd2ff" stroke-width="4"/>
+    <path d="M92 132 38 164M160 132 214 164M98 180 42 214M154 180 210 214" stroke="#9bdbff" stroke-width="11" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="108" y="86" width="304" height="104" rx="24" fill="#0f304b" opacity="0.9" stroke="#4cb2ff" stroke-opacity="0.3"/>
+  </g>
+  <text x="138" y="128" fill="#8fd3ff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">FOUNDATION</text>
+  <text x="138" y="164" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">What is Remote ID?</text>
+  <text x="110" y="268" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Broadcast identity for drones in flight</text>
+  <text x="110" y="312" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="110" dy="0">A cooperative signal that helps nearby receivers understand</tspan>
+    <tspan x="110" dy="28">which drone is flying, where it is, and where pilot context may be.</tspan>
+  </text>
+  <g transform="translate(110 390)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="170" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Identity</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Position</text>
+  </g>
+  <g transform="translate(308 416)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="192" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Pilot / takeoff point</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Time / status</text>
+  </g>
+  <g transform="translate(1012 390)">
+    <circle cx="0" cy="0" r="18" fill="#7fd1ff"/>
+    <path d="M0-32c16 0 28 12 28 28 0 24-28 54-28 54S-28 20-28-4c0-16 12-28 28-28z" fill="#7fd1ff"/>
+    <circle cx="0" cy="-4" r="8" fill="#0f304b"/>
+  </g>
+  <path d="M512 454c70-26 140-56 222-82" fill="none" stroke="#67c0ff" stroke-width="4" stroke-dasharray="8 12"/>
+  <path d="M756 358c84 18 160 42 228 66" fill="none" stroke="#67c0ff" stroke-width="4" stroke-dasharray="8 12"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">UTM and U-space service stack</title>
+  <desc id="desc">A light four-level stack showing operators, services, shared data, and operating outcome.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="100%" stop-color="#eef7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="520" rx="28" fill="url(#bg)"/>
+  <text x="60" y="62" fill="#12324d" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">UTM / U-space service stack</text>
+  <text x="60" y="96" fill="#52708a" font-family="Segoe UI, Arial, sans-serif" font-size="18">Short labels only: who supplies the data, where it goes, and what it supports.</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g transform="translate(120 142)">
+      <rect x="0" y="0" width="720" height="64" rx="22" fill="#ffffff" stroke="#8fcfff" stroke-width="3"/>
+      <circle cx="34" cy="32" r="10" fill="#55c7ff"/>
+      <text x="60" y="38" fill="#143e60" font-size="22" font-weight="700">Operator inputs</text>
+      <text x="278" y="38" fill="#4d6a84" font-size="18">Mission plan</text>
+      <text x="422" y="38" fill="#4d6a84" font-size="18">Route intent</text>
+      <text x="562" y="38" fill="#4d6a84" font-size="18">Aircraft status</text>
+    </g>
+    <g transform="translate(120 232)">
+      <rect x="0" y="0" width="720" height="64" rx="22" fill="#ffffff" stroke="#8fcfff" stroke-width="3"/>
+      <circle cx="34" cy="32" r="10" fill="#55c7ff"/>
+      <text x="60" y="38" fill="#143e60" font-size="22" font-weight="700">Digital services</text>
+      <text x="262" y="38" fill="#4d6a84" font-size="18">Authorization</text>
+      <text x="410" y="38" fill="#4d6a84" font-size="18">Geo-awareness</text>
+      <text x="596" y="38" fill="#4d6a84" font-size="18">Traffic info</text>
+    </g>
+    <g transform="translate(120 322)">
+      <rect x="0" y="0" width="720" height="64" rx="22" fill="#ffffff" stroke="#8fcfff" stroke-width="3"/>
+      <circle cx="34" cy="32" r="10" fill="#55c7ff"/>
+      <text x="60" y="38" fill="#143e60" font-size="22" font-weight="700">Shared airspace data</text>
+      <text x="302" y="38" fill="#4d6a84" font-size="18">Geo-zones</text>
+      <text x="428" y="38" fill="#4d6a84" font-size="18">Constraints</text>
+      <text x="580" y="38" fill="#4d6a84" font-size="18">Traffic picture</text>
+    </g>
+    <g transform="translate(214 414)">
+      <rect x="0" y="0" width="532" height="58" rx="20" fill="#10314d"/>
+      <text x="266" y="36" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700">Outcome: safer coordination for multiple drone flights</text>
+    </g>
+  </g>
+  <path d="M480 206v24M480 296v24M480 386v24" fill="none" stroke="#68bfff" stroke-width="4" stroke-dasharray="8 10"/>
+</svg>

@@ -38,5 +38,5 @@ Publishing cadence:
 
 Current batch status:
 
-- Completed and sealed PASS: `What is Counter-UAS?`
-- Next pending topic: `What is Remote ID?`
+- Completed and sealed PASS: `What is Counter-UAS?`, `What is Remote ID?`, `What is UTM / U-space?`, `What is Pulse-Doppler Radar?`, `What is Phased Array Radar?`, `What is Thermal Imaging?`, `What is a PTZ / EO-IR Camera System?`, `What is Direction Finding (AOA)?`, `What is RF Geolocation / Pilot Positioning?`, `What is a Common Operating Picture (COP)?`, `What is Line of Sight in Surveillance?`, `What is Cooled vs Uncooled Thermal Imaging?`, `What is Radar Beamforming?`, `What is Radar Resolution?`, `What is Drone Identification?`, `What is Urban Air Mobility (UAM)?`, `What is a Command-and-Control Platform?`, `What is Sensor Cueing?`
+- Next pending topic: none. Roadmap complete.

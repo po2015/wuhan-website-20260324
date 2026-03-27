@@ -1,0 +1,48 @@
+direction: right
+
+classes: {
+  light_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  dark_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  gold: {
+    shape: rectangle
+    width: 220
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+elements_node: "Array elements\n\nMany small channels"
+elements_node.class: light_blue
+
+weights_node: "Weights and phase\n\nAmplitude, delay,\nphase control"
+weights_node.class: dark_blue
+
+beam_node: "Formed beam\n\nStrong main lobe"
+beam_node.class: dark_blue
+
+side_node: "Side-lobe control\n\nLower unwanted energy"
+side_node.class: gold
+
+scan_node: "Beam steering\n\nLook at another angle"
+scan_node.class: light_blue
+
+elements_node -> weights_node: combine coherently
+weights_node -> beam_node: shape pattern
+weights_node -> side_node: taper or suppress
+beam_node -> scan_node: steer if needed

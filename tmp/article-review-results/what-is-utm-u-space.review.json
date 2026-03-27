@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article is clear, technically responsible, and strong enough to pass as a Foundation entry on UTM and U-space without revision.",
+  "overall_score": 8.5,
+  "word_count": 2325,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article gives beginners a reliable mental model by separating UTM as a broader coordination concept from U-space as a specific European framework.",
+    "The service-layer explanation is practical and helps readers understand why traffic management is more than a tracking dashboard.",
+    "The comparison with traditional air traffic control and the section on Remote ID add strong decision value and reduce common beginner confusion."
+  ],
+  "summary_assessment": "This is a strong Foundation article: it is readable, accurately framed, and useful enough to pass without revision.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-utm-u-space.md",
+    "article_sha256": "0477c543fa4ca2daa9f45a41ca2a292f36e6abe2f62763de09daf548813106f4",
+    "normalized_review_input_sha256": "d077511b55e92ff5a2f9da51082ffed3897bc14c7640e214586cdf90281ef81a",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-utm-u-space\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T05:44:46+00:00"
+  }
+}

@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes UAM\nviability?"
+root.class: core
+
+infra_node: "Vertiports,\ncharging, support sites"
+infra_node.class: factor
+
+traffic_node: "Traffic management\nand cooperative behavior"
+traffic_node.class: factor
+
+safety_node: "Certification,\nsafety, and reliability"
+safety_node.class: factor
+
+public_node: "Public acceptance,\nnoise, and trust"
+public_node.class: factor
+
+security_node: "Monitoring,\nauthorization, and response"
+security_node.class: factor
+
+economics_node: "Fleet economics,\nroutes, and demand"
+economics_node.class: factor
+
+root -> infra_node
+root -> traffic_node
+root -> safety_node
+root -> public_node
+root -> security_node
+root -> economics_node

@@ -1,0 +1,48 @@
+direction: right
+
+classes: {
+  light_blue: {
+    shape: rectangle
+    width: 210
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  dark_blue: {
+    shape: rectangle
+    width: 210
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  gold: {
+    shape: rectangle
+    width: 210
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+emitter: "RF emitter\n\nUnknown source"
+emitter.class: light_blue
+
+array: "Direction-finding antenna\nor array"
+array.class: dark_blue
+
+compare: "Signal comparison\n\nPhase / amplitude\nrelationship"
+compare.class: gold
+
+bearing: "AOA result\n\nBearing line"
+bearing.class: dark_blue
+
+map: "Map cue\n\nPossible origin\nalong the line"
+map.class: light_blue
+
+emitter -> array: incoming signal
+array -> compare: sampled channels
+compare -> bearing: angle estimate
+bearing -> map: directional output

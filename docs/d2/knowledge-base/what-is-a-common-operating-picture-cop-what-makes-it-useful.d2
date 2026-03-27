@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What makes a common\noperating picture useful?"
+root.class: core
+
+time: "Timely updates\nand low latency"
+time.class: factor
+
+definitions: "Shared definitions\nfor status and location"
+definitions.class: factor
+
+context: "Relevant context,\nnot display clutter"
+context.class: factor
+
+roles: "Role-based views\nfrom one truth set"
+roles.class: factor
+
+discipline: "Update discipline\nfrom people and process"
+discipline.class: factor
+
+trust: "Trusted data,\nconfidence, and history"
+trust.class: factor
+
+root -> time
+root -> definitions
+root -> context
+root -> roles
+root -> discipline
+root -> trust

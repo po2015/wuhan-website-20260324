@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article is clear, technically responsible, and strong enough to pass as a Foundation entry on thermal imaging without revision.",
+  "overall_score": 8.5,
+  "word_count": 1912,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article gives beginners a clear distinction between infrared contrast and ordinary visible-light imaging.",
+    "The limitations section directly addresses common myths such as seeing through walls and misreading glass.",
+    "The interpretation section adds real practical judgment by covering emissivity, reflections, atmosphere, and calibration."
+  ],
+  "summary_assessment": "This is a strong Foundation article: it is readable, technically grounded, and useful enough to pass without revision.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-thermal-imaging.md",
+    "article_sha256": "a169c8bbbe377fc6e11492ea6218c3afa7938903ac6e0a9842feabe003d3e80f",
+    "normalized_review_input_sha256": "8c4a7e844c3e3d7aeda7450a601d78cfd0f14ff3da450cb6b49ef371fed6b8cd",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-thermal-imaging\\round-02.review.json",
+    "sealed_at_utc": "2026-03-27T06:27:59+00:00"
+  }
+}

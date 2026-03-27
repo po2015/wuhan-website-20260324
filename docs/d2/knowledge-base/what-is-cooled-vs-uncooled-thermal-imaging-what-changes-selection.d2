@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes cooled vs\nuncooled selection?"
+root.class: core
+
+range_need: "Range and contrast\nsensitivity need"
+range_need.class: factor
+
+sustainment: "Sustainment,\nmaintenance, lifecycle"
+sustainment.class: factor
+
+platform_limits: "Power, size,\nand platform limits"
+platform_limits.class: factor
+
+environment: "Environment,\nweather, viewing task"
+environment.class: factor
+
+budget: "Budget, fleet size,\nand coverage strategy"
+budget.class: factor
+
+workflow: "Operator workflow\nand readiness tempo"
+workflow.class: factor
+
+root -> range_need
+root -> sustainment
+root -> platform_limits
+root -> environment
+root -> budget
+root -> workflow

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">What is Sensor Cueing cover</title>
+  <desc id="desc">Foundation cover showing one sensor cueing another toward a target area.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#081b2e"/>
+      <stop offset="100%" stop-color="#154c74"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fcff"/>
+      <stop offset="100%" stop-color="#dff1ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#02111c" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1054" cy="110" r="98" fill="#4eb8ff" opacity="0.10"/>
+  <circle cx="1112" cy="510" r="154" fill="#79cbff" opacity="0.08"/>
+  <path d="M0 526c178-42 304-8 430-34s198-118 326-122 232 88 444 66V630H0Z" fill="#0a2437" opacity="0.64"/>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="82" width="438" height="108" rx="26" fill="#0f304b" stroke="#4cb2ff" stroke-opacity="0.32"/>
+  </g>
+  <text x="124" y="126" fill="#8fd3ff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">FOUNDATION</text>
+  <text x="124" y="166" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="39" font-weight="700">What is Sensor Cueing?</text>
+
+  <text x="96" y="266" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">One layer directs the next layer where to look</text>
+  <text x="96" y="310" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="96" dy="0">Cueing turns a broad alert from radar, RF, analytics, or rules into</tspan>
+    <tspan x="96" dy="28">focused attention for a camera, map, recorder, task, or operator.</tspan>
+  </text>
+
+  <g transform="translate(96 392)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="164" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Broad detection</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Focused follow-up</text>
+  </g>
+  <g transform="translate(282 418)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="198" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Cueing is not tracking</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Geometry still matters</text>
+  </g>
+
+  <g transform="translate(724 126)">
+    <ellipse cx="226" cy="300" rx="238" ry="56" fill="#061827" opacity="0.50"/>
+    <rect x="26" y="164" width="26" height="112" rx="10" fill="#9ad9ff"/>
+    <rect x="68" y="186" width="34" height="90" rx="10" fill="#9ad9ff"/>
+    <circle cx="260" cy="110" r="12" fill="#79d0ff"/>
+    <path d="M260 92v-16" stroke="#9bdbff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="260" cy="148" r="42" fill="#10314d" stroke="#8bd2ff" stroke-width="4"/>
+    <rect x="240" y="194" width="40" height="42" rx="10" fill="#164564" stroke="#8bd2ff" stroke-width="3"/>
+    <path d="M222 168 142 212M298 168 364 200" fill="none" stroke="#9bdbff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M102 210c66-30 118-44 122-44" fill="none" stroke="#7fd1ff" stroke-width="4" stroke-dasharray="8 10"/>
+    <g filter="url(#shadow)">
+      <rect x="0" y="112" width="110" height="46" rx="18" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <text x="24" y="142" fill="#144061" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Radar cue</text>
+    <g filter="url(#shadow)">
+      <rect x="296" y="44" width="116" height="46" rx="18" fill="#0f304b" stroke="#7ed0ff" stroke-width="3"/>
+    </g>
+    <text x="324" y="74" fill="#dff2ff" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">PTZ follow-up</text>
+  </g>
+</svg>

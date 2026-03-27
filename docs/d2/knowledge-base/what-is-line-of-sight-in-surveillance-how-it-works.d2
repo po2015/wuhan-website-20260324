@@ -1,0 +1,49 @@
+direction: right
+
+classes: {
+  light_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  dark_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  gold: {
+    shape: rectangle
+    width: 220
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+sensor: "Sensor position\n\nCamera, radar,\nor thermal head"
+sensor.class: dark_blue
+
+clear: "Clear observation path\n\nUsable LOS corridor"
+clear.class: light_blue
+
+target: "Target area\n\nWhat the team\nneeds to observe"
+target.class: dark_blue
+
+obstacle: "Obstacle or mask\n\nWall, terrain,\nvegetation, building"
+obstacle.class: gold
+
+masked_zone: "Hidden zone\n\nInside range, but\nnot visible"
+masked_zone.class: light_blue
+
+sensor -> clear: direct path
+clear -> target: usable coverage
+obstacle -> clear: blocks path
+obstacle -> masked_zone: creates masking
+sensor -> masked_zone: weak or no view

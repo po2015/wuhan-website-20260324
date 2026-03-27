@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">What is a Common Operating Picture cover</title>
+  <desc id="desc">Foundation cover showing a shared command picture with map overlays, incidents, and team status cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#081b2e"/>
+      <stop offset="100%" stop-color="#154c74"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fcff"/>
+      <stop offset="100%" stop-color="#dff1ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#02111c" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1054" cy="106" r="102" fill="#4eb8ff" opacity="0.10"/>
+  <circle cx="1110" cy="514" r="156" fill="#79cbff" opacity="0.08"/>
+  <path d="M0 520c166-50 278 8 410-20s208-122 334-126 228 88 456 68V630H0Z" fill="#0a2437" opacity="0.64"/>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="82" width="572" height="132" rx="26" fill="#0f304b" stroke="#4cb2ff" stroke-opacity="0.32"/>
+  </g>
+  <text x="124" y="126" fill="#8fd3ff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">FOUNDATION</text>
+  <text x="124" y="168" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">What is a Common Operating</text>
+  <text x="124" y="208" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Picture (COP)?</text>
+
+  <text x="96" y="274" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">A shared operational view for coordinated decisions</text>
+  <text x="96" y="318" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="96" dy="0">Incidents, sensors, assets, and task status are combined into one</tspan>
+    <tspan x="96" dy="28">working picture so operators and leaders can act from the same facts.</tspan>
+  </text>
+
+  <g transform="translate(96 390)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="176" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Shared incident state</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Cross-team context</text>
+  </g>
+  <g transform="translate(290 416)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="192" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Map + workflow view</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Live status updates</text>
+  </g>
+
+  <g transform="translate(728 122)">
+    <ellipse cx="220" cy="308" rx="236" ry="54" fill="#061827" opacity="0.50"/>
+    <g filter="url(#shadow)">
+      <rect x="0" y="22" width="392" height="250" rx="28" fill="#10314d" stroke="#7ed0ff" stroke-width="4"/>
+    </g>
+    <rect x="28" y="52" width="248" height="160" rx="18" fill="#0d2740" stroke="#5bb7ff" stroke-width="3"/>
+    <path d="M54 176 98 122 146 148 196 104 236 134" fill="none" stroke="#8cd2ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="98" cy="122" r="8" fill="#7fd1ff"/>
+    <circle cx="196" cy="104" r="8" fill="#7fd1ff"/>
+    <circle cx="236" cy="134" r="8" fill="#7fd1ff"/>
+    <rect x="56" y="76" width="82" height="26" rx="13" fill="#154564"/>
+    <text x="72" y="94" fill="#dff2ff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">INCIDENTS</text>
+    <rect x="296" y="54" width="68" height="66" rx="16" fill="#eff6ff" stroke="#8fcdff" stroke-width="3"/>
+    <circle cx="330" cy="80" r="13" fill="#2d9fff"/>
+    <text x="316" y="110" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">ALERT</text>
+    <rect x="296" y="136" width="68" height="66" rx="16" fill="#eff6ff" stroke="#8fcdff" stroke-width="3"/>
+    <circle cx="330" cy="162" r="13" fill="#2d9fff"/>
+    <text x="314" y="192" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">TASK</text>
+    <g filter="url(#shadow)">
+      <rect x="94" y="224" width="246" height="74" rx="20" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <text x="124" y="252" fill="#144061" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Shared picture</text>
+    <text x="124" y="280" fill="#144061" font-family="Segoe UI, Arial, sans-serif" font-size="17">Incidents  Resources  Status</text>
+  </g>
+</svg>

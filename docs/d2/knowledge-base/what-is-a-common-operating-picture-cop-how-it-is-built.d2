@@ -1,0 +1,49 @@
+direction: right
+
+classes: {
+  feed: {
+    shape: rectangle
+    width: 220
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  process: {
+    shape: rectangle
+    width: 220
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  support: {
+    shape: rectangle
+    width: 220
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+feeds: "Sensors and reports\n\nCameras, radar, RF,\noperator notes, alarms"
+feeds.class: feed
+
+normalize: "Normalize and align\n\nTime, location,\nstatus, identity"
+normalize.class: process
+
+context: "Add context\n\nMaps, zones,\nweather, assets"
+context.class: support
+
+cop: "Common operating picture\n\nShared incident view"
+cop.class: process
+
+actions: "Operators and leaders\n\nAssess, assign,\ntrack, escalate"
+actions.class: feed
+
+feeds -> normalize: ingest
+normalize -> context: enrich
+context -> cop: present
+cop -> actions: decision support
+actions -> cop: updates and status

@@ -13,10 +13,6 @@ contact_page:
     - label: "Address"
       value: "Room 201-134, Building C9, Phase II, Wuhan Software New City, No. 8 Huacheng Avenue, East Lake High-tech Development Zone, Wuhan, China"
       icon: "/images/icons/contact-address.svg"
-    - label: "Email"
-      value: "info@cyrentis.com"
-      href: "mailto:info@cyrentis.com"
-      icon: "/images/icons/contact-email.svg"
   map_title: "Google Map"
   map_embed_url: "https://www.google.com/maps?q=30.557662647460553,114.50104472074759&z=17&output=embed"
   map_link: "https://maps.app.goo.gl/LWDcEk2WE9SPqoUU7"
@@ -52,13 +48,6 @@ contact_page:
       href: "https://wa.me/8613986053927"
       label: "+86 139 8605 3927"
       icon: "/images/icons/contact-whatsapp.svg"
-  qr_codes:
-    - title: "WeChat"
-      text: "Scan this code to connect with Cyrentis on WeChat."
-      image: "/images/contact/qr-wechat-placeholder.svg"
-    - title: "WhatsApp"
-      text: "Scan this code to open a WhatsApp chat with Cyrentis."
-      image: "/images/contact/qr-whatsapp-placeholder.svg"
 ---
 
 Share your project scope, site conditions, sensing priorities, and integration expectations. Cyrentis can respond with product suggestions, solution architecture direction, or a more structured project discussion based on your scenario.

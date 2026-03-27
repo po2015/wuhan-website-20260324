@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">What is Cooled vs Uncooled Thermal Imaging cover</title>
+  <desc id="desc">Foundation cover showing cooled and uncooled thermal imaging concepts with contrasting detector panels and infrared scene elements.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#081b2e"/>
+      <stop offset="100%" stop-color="#154c74"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fcff"/>
+      <stop offset="100%" stop-color="#dff1ff"/>
+    </linearGradient>
+    <linearGradient id="heat" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#0d3a5d"/>
+      <stop offset="40%" stop-color="#1d6b8e"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#02111c" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1056" cy="112" r="98" fill="#4eb8ff" opacity="0.10"/>
+  <circle cx="1114" cy="508" r="154" fill="#79cbff" opacity="0.08"/>
+  <path d="M0 526c174-44 292-10 422-34s202-118 330-120 232 90 448 66V630H0Z" fill="#0a2437" opacity="0.64"/>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="82" width="640" height="132" rx="26" fill="#0f304b" stroke="#4cb2ff" stroke-opacity="0.32"/>
+  </g>
+  <text x="124" y="126" fill="#8fd3ff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">FOUNDATION</text>
+  <text x="124" y="168" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">What is Cooled vs Uncooled</text>
+  <text x="124" y="206" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">Thermal Imaging?</text>
+
+  <text x="96" y="274" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Two detector paths with different performance burdens</text>
+  <text x="96" y="318" fill="#d9edff" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="96" dy="0">Thermal cameras do not all work the same way. Sensitivity, power,</tspan>
+    <tspan x="96" dy="28">startup, maintenance, and range all shift with detector design.</tspan>
+  </text>
+
+  <g transform="translate(96 390)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="172" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Microbolometer path</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Cryocooled path</text>
+  </g>
+  <g transform="translate(286 418)">
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="194" height="84" rx="22" fill="url(#panel)" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <circle cx="28" cy="30" r="7" fill="#2d9fff"/>
+    <text x="46" y="36" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Performance vs burden</text>
+    <circle cx="28" cy="58" r="7" fill="#2d9fff"/>
+    <text x="46" y="64" fill="#133653" font-family="Segoe UI, Arial, sans-serif" font-size="18">Mission-driven choice</text>
+  </g>
+
+  <g transform="translate(744 132)">
+    <ellipse cx="198" cy="292" rx="220" ry="54" fill="#061827" opacity="0.50"/>
+    <g filter="url(#shadow)">
+      <rect x="12" y="104" width="396" height="120" rx="30" fill="url(#heat)" opacity="0.92"/>
+    </g>
+    <circle cx="208" cy="164" r="48" fill="#ffffff" fill-opacity="0.18" stroke="#dff2ff" stroke-width="3"/>
+    <circle cx="208" cy="164" r="22" fill="#ffffff" fill-opacity="0.38"/>
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="148" height="84" rx="24" fill="#eff6ff" stroke="#8fcdff" stroke-width="3"/>
+    </g>
+    <text x="28" y="32" fill="#144061" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Uncooled</text>
+    <text x="28" y="60" fill="#144061" font-family="Segoe UI, Arial, sans-serif" font-size="17">Lower burden</text>
+    <g filter="url(#shadow)">
+      <rect x="260" y="0" width="148" height="84" rx="24" fill="#0f304b" stroke="#7ed0ff" stroke-width="3"/>
+    </g>
+    <text x="288" y="32" fill="#dff2ff" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Cooled</text>
+    <text x="288" y="60" fill="#dff2ff" font-family="Segoe UI, Arial, sans-serif" font-size="17">Higher sensitivity</text>
+    <path d="M148 42h96" fill="none" stroke="#8fd3ff" stroke-width="4" stroke-dasharray="9 11"/>
+  </g>
+</svg>

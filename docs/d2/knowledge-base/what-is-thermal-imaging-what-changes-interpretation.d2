@@ -1,0 +1,79 @@
+direction: down
+
+classes: {
+  factor_blue: {
+    shape: rectangle
+    width: 170
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 16
+  }
+  factor_gold: {
+    shape: rectangle
+    width: 170
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 16
+  }
+  factor_green: {
+    shape: rectangle
+    width: 170
+    style.fill: "#ECFDF5"
+    style.stroke: "#10B981"
+    style.font-color: "#0F172A"
+    style.font-size: 16
+  }
+  center: {
+    shape: rectangle
+    width: 260
+    style.fill: "#E0F2FE"
+    style.stroke: "#0284C7"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+    style.bold: true
+  }
+  note: {
+    shape: rectangle
+    width: 520
+    style.fill: "#F8FAFC"
+    style.stroke: "#94A3B8"
+    style.font-color: "#0F172A"
+    style.font-size: 16
+  }
+  group: {
+    label: ""
+    style.fill: "transparent"
+    style.stroke: "transparent"
+  }
+}
+
+factors: {
+  class: group
+  direction: right
+
+  emissivity: "Emissivity\n\nMaterial changes\nhow strongly it emits"
+  emissivity.class: factor_blue
+
+  reflections: "Reflections\n\nShiny surfaces\ncan mislead"
+  reflections.class: factor_gold
+
+  atmosphere: "Atmosphere\n\nRain, haze, and\ndistance matter"
+  atmosphere.class: factor_green
+
+  setup: "Camera setup\n\nFocus and\ncalibration matter"
+  setup.class: factor_blue
+}
+
+image: "Thermal image\n\nUseful contrast\nnot raw truth"
+image.class: center
+
+reading: "Read with scene context\n\nDo not trust color alone.\nInterpret the thermal view with geometry and target knowledge."
+reading.class: note
+
+factors.emissivity -> image: affect
+factors.reflections -> image: affect
+factors.atmosphere -> image: affect
+factors.setup -> image: affect
+image -> reading: interpret

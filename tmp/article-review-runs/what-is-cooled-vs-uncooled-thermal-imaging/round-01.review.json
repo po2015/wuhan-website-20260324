@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article clearly explains the detector-level difference between cooled and uncooled thermal imaging, turns that difference into practical selection logic, and is strong enough to pass without revision.",
+  "overall_score": 8.5,
+  "word_count": 1974,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article explains detector physics in plain language without losing the practical difference between microbolometers and cryocooled detectors.",
+    "It makes the trade-off concrete by covering sensitivity, range, startup, power, maintenance, and lifecycle burden together.",
+    "The selection section correctly frames the topic as mission fit rather than a simple premium-versus-basic hierarchy."
+  ],
+  "summary_assessment": "This is a strong Foundation article: it is readable, technically grounded, and useful enough to pass without revision."
+}

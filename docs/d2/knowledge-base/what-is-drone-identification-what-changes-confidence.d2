@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes drone\nidentification confidence?"
+root.class: core
+
+coop_node: "Cooperative signal\navailability"
+coop_node.class: factor
+
+sensor_node: "Sensor quality:\nEO, RF, radar"
+sensor_node.class: factor
+
+fusion_node: "Correlation and\nmulti-sensor fusion"
+fusion_node.class: factor
+
+scene_node: "Environment,\nclutter, and traffic"
+scene_node.class: factor
+
+auth_node: "Authorization and\nmission context"
+auth_node.class: factor
+
+time_node: "Time available\nto build evidence"
+time_node.class: factor
+
+root -> coop_node
+root -> sensor_node
+root -> fusion_node
+root -> scene_node
+root -> auth_node
+root -> time_node

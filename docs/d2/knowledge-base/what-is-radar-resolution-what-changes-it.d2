@@ -1,0 +1,48 @@
+direction: down
+
+classes: {
+  core: {
+    shape: rectangle
+    width: 360
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 20
+  }
+  factor: {
+    shape: rectangle
+    width: 300
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 18
+  }
+}
+
+root: "What changes radar\nresolution?"
+root.class: core
+
+wave_node: "Waveform, bandwidth,\nor pulse characteristics"
+wave_node.class: factor
+
+beam_node: "Beamwidth and\nantenna geometry"
+beam_node.class: factor
+
+range_node: "Distance to target\nand beam spreading"
+range_node.class: factor
+
+proc_node: "Signal processing\nand display logic"
+proc_node.class: factor
+
+contrast_node: "Target contrast,\nstrength, and spacing"
+contrast_node.class: factor
+
+clutter_node: "Clutter, weather,\nand background effects"
+clutter_node.class: factor
+
+root -> wave_node
+root -> beam_node
+root -> range_node
+root -> proc_node
+root -> contrast_node
+root -> clutter_node

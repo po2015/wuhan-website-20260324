@@ -1,0 +1,50 @@
+direction: right
+
+classes: {
+  light_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#EFF6FF"
+    style.stroke: "#60A5FA"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+  dark_blue: {
+    shape: rectangle
+    width: 220
+    style.fill: "#0F304B"
+    style.stroke: "#7ED0FF"
+    style.font-color: "#FFFFFF"
+    style.font-size: 17
+  }
+  gold: {
+    shape: rectangle
+    width: 220
+    style.fill: "#FFFBEB"
+    style.stroke: "#F59E0B"
+    style.font-color: "#0F172A"
+    style.font-size: 17
+  }
+}
+
+radar_node: "Radar view\n\nBeam plus range cells"
+radar_node.class: dark_blue
+
+range_sep: "Range resolution\n\nCan front-to-back\ntargets be separated?"
+range_sep.class: light_blue
+
+angle_sep: "Angular resolution\n\nCan side-to-side\ntargets be separated?"
+angle_sep.class: light_blue
+
+merge_node: "If separation is too small,\nreturns merge together"
+merge_node.class: gold
+
+detail_node: "If separation is large enough,\nreturns appear distinct"
+detail_node.class: dark_blue
+
+radar_node -> range_sep: depth difference
+radar_node -> angle_sep: beamwidth difference
+range_sep -> merge_node: too close
+angle_sep -> merge_node: too close
+range_sep -> detail_node: enough separation
+angle_sep -> detail_node: enough separation
