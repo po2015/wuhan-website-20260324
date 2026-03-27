@@ -1,18 +1,18 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The article now clears the pass threshold with a safer high-level compliance scope, clearer workflow guidance, and stronger use of official sources.",
-  "overall_score": 8.2,
-  "word_count": 1042,
+  "reason_for_decision": "The article passes as a high-level compliance-planning piece because it stays within non-legal-advice boundaries while still giving project teams concrete process guidance.",
+  "overall_score": 8.5,
+  "word_count": 1117,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
-    "marketing_noise_control": 9,
+    "marketing_noise_control": 10,
     "content_depth": 8,
     "readability_human_quality": 8,
     "information_density": 8,
     "seo_knowledge_base_fitness": 8,
     "technical_credibility": 8,
-    "decision_value": 8,
+    "decision_value": 9,
     "original_insight": 8
   },
   "failed_dimensions_below_5": [],
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now stays at the right altitude for a compliance overview and avoids pretending to give item-specific legal conclusions.",
-    "It uses current official sources and dates to frame the 2024 dual-use regulatory changes accurately.",
-    "The workflow and escalation sections are useful for project planning without crossing into legal advice."
+    "The article clearly defines itself as operational guidance rather than legal advice, which keeps the framing disciplined.",
+    "It is strong on end-use clarity, document consistency, and engineering-compliance synchronization.",
+    "The 2024 regulatory updates are integrated in a way that helps program teams understand why the workflow changed."
   ],
-  "summary_assessment": "This version is publishable under the stricter rubric. It is more current, more careful, and more operationally useful than the earlier short checklist."
+  "summary_assessment": "This article passes comfortably. It is appropriately cautious, practically useful, and well aligned with the needs of project managers handling dual-use export workflows.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\compliance-overview-for-dual-use-export-of-civil-security-radar-products.md",
+    "article_sha256": "8d83cbcf861bf80bd6b88349cd504cb6e69df84797dbdbd70ef559d78e6ee1eb",
+    "normalized_review_input_sha256": "7d11a63c5189945e9e3162cbf2ba9e2eb0040e9a202e3ae3651cba845d2c2ad4",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\compliance-overview-for-dual-use-export-of-civil-security-radar-products\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:37:04+00:00"
+  }
 }

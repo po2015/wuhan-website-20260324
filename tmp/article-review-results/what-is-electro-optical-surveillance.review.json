@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The article now clears the pass threshold with strong beginner framing, clear visible-versus-thermal distinctions, and credible deployment boundaries.",
   "overall_score": 8.2,
-  "word_count": 1037,
+  "word_count": 1115,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "It correctly positions EO as a confirmation layer rather than pretending cameras solve wide-area search alone.",
     "The limitations around line of sight, field of view, and weather are concrete and keep the article grounded."
   ],
-  "summary_assessment": "This is now a solid foundation article. It reads naturally, stays technically believable, and helps readers decide where EO surveillance is strong and where it still needs support from other sensors."
+  "summary_assessment": "This is now a solid foundation article. It reads naturally, stays technically believable, and helps readers decide where EO surveillance is strong and where it still needs support from other sensors.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-electro-optical-surveillance.md",
+    "article_sha256": "ba557c423ffe8adc17d958ddcfef8119115a9781a4e77a9970a29eccc6f3d80e",
+    "normalized_review_input_sha256": "dad3bb34a3f3b41fff056b3ccc2150663cf967144f4f81168d135f12e8a22f79",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-electro-optical-surveillance\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:26:46+00:00"
+  }
 }

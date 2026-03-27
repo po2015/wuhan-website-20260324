@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The article now covers source ownership, uncertainty, latency, auditability, and feedback loops, which gives it enough design depth to pass.",
-    "overall_score":  8.4,
-    "word_count":  1003,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  9,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  9,
-                             "original_insight":  8
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It treats fusion as a staged process rather than a vague feature.",
-                      "The operator-facing uncertainty and tiered-output sections improve practical value.",
-                      "The brand-specific detour has been removed."
-                  ],
-    "summary_assessment":  "This version passes. It is now properly framed as a system-design article rather than a short fusion summary."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article clears the pass bar by treating fusion as a staged design process with normalization, correlation, uncertainty handling, and auditability rather than as a vague platform promise.",
+  "overall_score": 8.5,
+  "word_count": 1114,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on normalization and on preserving intermediate reasoning instead of collapsing everything into one icon.",
+    "Its sections on contradictory inputs, source ownership, and latency budgets give it real engineering depth.",
+    "The operator feedback and auditability guidance make the piece useful beyond initial deployment."
+  ],
+  "summary_assessment": "This is a high-quality pass. The article offers strong system-design value and keeps fusion tied to actionability and operator trust.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\data-fusion-system-design.md",
+    "article_sha256": "2d5c784e43c2e02e8c6c979b02826ce82b47a076c87232873fcbcfa659027b55",
+    "normalized_review_input_sha256": "a1afc348f801c90a40975871a52d8fdcf1de214006dbc592dfda66469f96353a",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\data-fusion-system-design\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:41:22+00:00"
+  }
 }

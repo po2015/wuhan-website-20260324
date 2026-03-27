@@ -1,8 +1,8 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The rewritten article clears the pass threshold with a general architecture taxonomy, clearer revisit-driven logic, and much lower catalog noise.",
+  "reason_for_decision": "The article passes because it compares scanning architectures through revisit pattern, mechanical burden, and workflow impact, even though the ending is slightly lighter than the strongest comparison pieces.",
   "overall_score": 8.3,
-  "word_count": 1003,
+  "word_count": 1100,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article has been upgraded from a catalog-style code table into a general knowledge-base comparison of scanning families.",
-    "Revisit behavior, hybrid trade-offs, and lifecycle burden are explained in operational terms.",
-    "The selection questions now make the piece useful even for readers who do not know the internal product taxonomy."
+    "The article explains scanning architecture through operational behavior rather than product terminology.",
+    "It handles mechanical, hybrid, sector electronic, and multi-face designs in a balanced way.",
+    "The planning questions and integration checklist make the comparison useful for engineering teams."
   ],
-  "summary_assessment": "This version is now strong enough to pass. It is materially better structured, more generalizable, and more editorially disciplined than the earlier draft."
+  "summary_assessment": "This article is strong enough to pass under the strict rubric. It is practically useful and technically coherent, with only a slightly lighter closing structure than the strongest pieces in the set.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\comparison-of-different-radar-scanning-architectures.md",
+    "article_sha256": "fd07a2af54ca2c2145fffa6372c692d9af9ff751358690fe0502347313c19150",
+    "normalized_review_input_sha256": "c8fc01e04a13090f3fa94b21fb00ce7ccd04c01437dd542187a3a61b5880700c",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\comparison-of-different-radar-scanning-architectures\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:37:04+00:00"
+  }
 }

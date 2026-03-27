@@ -25,6 +25,7 @@ image_source_name: "Loïc Manegarium"
 image_source_url: "https://www.pexels.com/photo/industrial-building-at-night-6045858/"
 weight: 41
 date: 2025-07-25
+lastmod: 2026-03-27T21:10:00+08:00
 draft: false
 keypoints:
   - "Oil and gas sites mix large footprints, hazardous processes, and high-consequence assets."
@@ -71,9 +72,46 @@ This is where optics, stable track history, and disciplined incident display bec
 
 The Department of Energy's [energy security overview](https://www.energy.gov/ceser/energy-security) is a useful reminder that energy infrastructure protection is inseparable from resilience planning. A site security design should therefore account for incident logging, escalation thresholds, fallback communications, and continuity procedures. If a system only generates detections but does not improve coordinated decision-making, it is underperforming.
 
-## Where Cyrentis Fits
+## The Monitoring Logic Should Reflect Operating State
 
-For energy facilities that need broad-area watch and integrated incident handling, Cyrentis can fit with [Surveillance Radar](/sensors/src/) for early warning, [Surveillance Optics](/sensors/soc/) for remote confirmation, [Horizon](/horizon/) for event fusion, and [Services](/services/security-solution-design/) for deployment planning.
+Oil and gas facilities do not operate in one fixed condition. Normal production, turnaround periods, maintenance windows, contractor access, and emergency shutdown conditions all change what activity should look suspicious. A site that ignores operating state usually floods the control room with low-value alarms during planned work and then trains operators to discount later alerts.
+
+That is why mature facility security designs usually align alert logic with:
+
+- work-permit windows,
+- expected contractor or vehicle access,
+- maintenance-zone ownership,
+- and temporary process restrictions that change how responders can move.
+
+This makes the system more credible because the alert picture reflects the plant's real operating mode instead of an idealized always-normal state.
+
+## Validation Should Include Safety-Constrained Response
+
+Security validation at an energy site should include more than proving a sensor can detect movement. The harder question is whether the site can verify and escalate safely when the event occurs near hazardous equipment, flare zones, confined access areas, or remote process assets.
+
+Useful tests usually include:
+
+- nighttime and low-visibility confirmation,
+- incidents near hazardous or no-go areas,
+- communication delay between security and operations,
+- and scenarios where the first response must remain remote until plant staff clear access.
+
+These drills often reveal whether the facility is actually prepared to act on the awareness the system produces.
+
+## Common Planning Mistakes
+
+Several mistakes appear repeatedly in oil and gas security programs:
+
+- over-concentrating sensors at the inner fence while leaving long approach routes weak,
+- treating process and control areas as if they were ordinary perimeter sectors,
+- separating plant operations from security incident review,
+- and measuring success by alarm count instead of by reduction in uncertainty and safer response decisions.
+
+Those mistakes usually create a system that looks active but does not improve decision quality when the event is near the assets that matter most.
+
+## Conclusion
+
+Oil and gas facility security should be designed around consequence, process safety, and continuity of operations. The best systems divide the site into meaningful security zones, support remote verification in hazardous areas, and link the alert picture to the plant's actual operating state. That is what turns surveillance into usable protection rather than disconnected alarm generation.
 
 ## Related Reading
 

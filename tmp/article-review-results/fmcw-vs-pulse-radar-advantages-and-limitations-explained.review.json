@@ -1,17 +1,17 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with stronger system-level waveform framing, better mission-fit logic, and clearer selection sequence.",
-  "overall_score": 8.3,
-  "word_count": 1000,
+  "reason_for_decision": "The article passes with a strong architecture-level comparison of FMCW and pulse radar, especially around integration burden, range behavior, and mission fit.",
+  "overall_score": 8.5,
+  "word_count": 1095,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
     "marketing_noise_control": 9,
     "content_depth": 8,
     "readability_human_quality": 8,
     "information_density": 8,
     "seo_knowledge_base_fitness": 8,
-    "technical_credibility": 8,
+    "technical_credibility": 9,
     "decision_value": 9,
     "original_insight": 8
   },
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now explains how waveform choice affects the rest of the radar platform rather than leaving it as a narrow theory comparison.",
-    "It handles FMCW and pulse trade-offs without drifting into a newer-versus-older narrative.",
-    "The selection sequence gives readers a usable way to connect waveform family to project constraints."
+    "The article explains why waveform choice affects the whole sensing chain, not only the transmit method.",
+    "It keeps the FMCW-versus-pulse discussion tied to power, packaging, minimum range, and surveillance role.",
+    "The selection sequence near the end makes the technical comparison actionable for engineering teams."
   ],
-  "summary_assessment": "This version passes because it makes waveform choice operationally meaningful. It is more coherent and more useful than the earlier draft."
+  "summary_assessment": "This is a high-quality comparison article. It is technically credible, restrained, and useful for readers making waveform-family decisions.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\fmcw-vs-pulse-radar-advantages-and-limitations-explained.md",
+    "article_sha256": "f482dbbfdd8d15f12d5cac8f9248809a244346386e366ab03d00ed1d22763d10",
+    "normalized_review_input_sha256": "4a92d4665fe849fbf1222416505918bbfb28c3f7b2815e425e82519f8e3e3dcb",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\fmcw-vs-pulse-radar-advantages-and-limitations-explained\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:37:03+00:00"
+  }
 }

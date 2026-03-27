@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The revised article now gives a clear beginner-facing architecture overview with enough mechanism, comparison logic, and system context to exceed the pass threshold.",
   "overall_score": 8.4,
-  "word_count": 1272,
+  "word_count": 1235,
   "dimension_scores": {
     "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "The comparison table makes mechanical scan, phased array, AESA, and OTH easier to separate conceptually.",
     "The planning questions at the end increase decision value for non-specialist readers."
   ],
-  "summary_assessment": "This version is publishable. It is clearer, more technically grounded, and substantially more useful as a foundational architecture explainer."
+  "summary_assessment": "This version is publishable. It is clearer, more technically grounded, and substantially more useful as a foundational architecture explainer.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\radar-basics-mechanical-scan-phased-array-aesa-and-over-the-horizon.md",
+    "article_sha256": "3daf928d75dfbc8b516de7b6b4b16abc148798accb7f4961143eda28404b58ac",
+    "normalized_review_input_sha256": "5c31fa6fc2e9b3a65ade107d190a53fc7486e7c3df0d6e2224e16db73ab07ff7",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\radar-basics-mechanical-scan-phased-array-aesa-and-over-the-horizon\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:24:39+00:00"
+  }
 }

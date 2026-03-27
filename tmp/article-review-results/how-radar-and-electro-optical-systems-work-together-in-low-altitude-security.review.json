@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The article already had enough depth, evidence, and decision value to clear the stricter threshold without a structural rewrite.",
   "overall_score": 8.6,
-  "word_count": 1583,
+  "word_count": 1563,
   "dimension_scores": {
     "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "It uses evidence and system logic effectively instead of relying on generic sensor-comparison language.",
     "The workflow framing makes the radar and EO relationship operationally concrete."
   ],
-  "summary_assessment": "This article passes comfortably under the stricter rubric. It is technically credible, decision-useful, and already close to the target style for the rest of the queue."
+  "summary_assessment": "This article passes comfortably under the stricter rubric. It is technically credible, decision-useful, and already close to the target style for the rest of the queue.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-radar-and-electro-optical-systems-work-together-in-low-altitude-security.md",
+    "article_sha256": "2e9cf025b7b11594d461057a56d1099b72c4c8dc00fc65dff7b92f795b8ccac3",
+    "normalized_review_input_sha256": "b106e6759126e2831a0aed6d76e88a271c251a1d14d647669a7976332df2e2e9",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-radar-and-electro-optical-systems-work-together-in-low-altitude-security\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:26:45+00:00"
+  }
 }

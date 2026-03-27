@@ -1,8 +1,8 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with stronger role separation, clearer deployment boundaries, and lower promotional drift.",
+  "reason_for_decision": "The article passes because it draws a clear boundary between physical sensing and emission sensing, then turns that distinction into useful deployment guidance.",
   "overall_score": 8.5,
-  "word_count": 1128,
+  "word_count": 1236,
   "dimension_scores": {
     "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now treats radar and RF as different evidence sources rather than as simplified competitors.",
-    "It clearly explains when RF adds real value and when a radar-first design remains necessary.",
-    "The procurement guidance is practical and avoids flattening the comparison into a marketing-style winner declaration."
+    "The article explains what radar and RF actually measure instead of comparing them through vague feature lists.",
+    "It handles the role of Remote ID and cooperative versus non-cooperative traffic in a practical way.",
+    "The selection sequence near the end gives readers a usable decision framework rather than a generic winner-loser verdict."
   ],
-  "summary_assessment": "This version is publishable under the stricter rubric. It is more specific, more operationally useful, and more technically honest than the earlier draft."
+  "summary_assessment": "This article is strong enough to pass under the strict rubric. It is technically coherent, useful for system selection, and keeps the layered-system conclusion grounded in real sensing differences.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\radar-vs-rf-detection.md",
+    "article_sha256": "dddfc62af126fef4f8db7ee48f9c27728e6c83f1a3f717bedbef9228e0b2efed",
+    "normalized_review_input_sha256": "16ed43c7e9b8c315243cca2aa9ee12cfc67500b351dba05f8db2ad679921758e",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\radar-vs-rf-detection\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:33:58+00:00"
+  }
 }

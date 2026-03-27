@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The article now compares fixed and mobile deployment as distinct operating models with enough engineering and workflow depth to pass.",
-    "overall_score":  8.4,
-    "word_count":  1053,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  9,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  9,
-                             "original_insight":  8
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It treats deployment model as a system decision instead of a packaging choice.",
-                      "The access, logistics, and validation sections improve real-world decision value.",
-                      "The brand-led section has been removed entirely."
-                  ],
-    "summary_assessment":  "This version passes under the stricter rubric. It is now practical, balanced, and strong enough for procurement-facing knowledge content."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it compares fixed and mobile systems through power, backhaul, calibration, and command workflow instead of through superficial deployment labels.",
+  "overall_score": 8.4,
+  "word_count": 1172,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is particularly good on how setup time, calibration, and local constraints change the value of mobile systems.",
+    "It treats fixed systems as infrastructure commitments rather than default choices, which improves the comparison.",
+    "The hybrid-model guidance is realistic for operators with both persistent and temporary mission needs."
+  ],
+  "summary_assessment": "This article passes comfortably. It is practical, balanced, and useful for teams deciding between permanent and deployable surveillance models.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\fixed-vs-mobile-surveillance-systems.md",
+    "article_sha256": "4d22935162c0c6d34f416e1b83ace658cde26a9daefe0b005d5bfdfc8ce6306b",
+    "normalized_review_input_sha256": "54547c9f9671aa088fd13a410e32be3f3cf919d3ec03ab91a9bdff9d6f856eef",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\fixed-vs-mobile-surveillance-systems\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:41:21+00:00"
+  }
 }

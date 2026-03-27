@@ -1,0 +1,87 @@
+{
+  "final_decision": "PASS | REQUIRE_REVISION | REQUIRE_REWRITE",
+  "reason_for_decision": "string",
+  "overall_score": 0.0,
+  "dimension_scores": {
+    "above_the_fold_clarity": 0,
+    "page_structure_information_hierarchy": 0,
+    "product_positioning_clarity": 0,
+    "technical_information_completeness": 0,
+    "conversion_readiness": 0,
+    "readability_professional_tone": 0,
+    "visual_structural_balance": 0,
+    "seo_topic_focus": 0,
+    "internal_linking_system_context": 0,
+    "trust_procurement_readiness": 0
+  },
+  "critical_dimensions_below_5": [
+    "string"
+  ],
+  "content_blocks": {
+    "hero_summary": "strong | adequate | weak | missing",
+    "key_features": "strong | adequate | weak | missing",
+    "specifications": "strong | adequate | weak | missing",
+    "use_cases": "strong | adequate | weak | missing",
+    "cta": "strong | adequate | weak | missing",
+    "related_links": "strong | adequate | weak | missing"
+  },
+  "extracted_page_signals": {
+    "title": "string",
+    "meta_description": "string",
+    "canonical_url": "string",
+    "h1": "string",
+    "h2_headings": [
+      "string"
+    ],
+    "h3_headings": [
+      "string"
+    ],
+    "hero_headline": "string",
+    "hero_subheadline": "string",
+    "first_cta_text": "string",
+    "first_cta_link": "string",
+    "intro_summary": "string",
+    "feature_signals": [
+      "string"
+    ],
+    "specification_signals": [
+      "string"
+    ],
+    "use_case_signals": [
+      "string"
+    ],
+    "conversion_signals": [
+      "string"
+    ],
+    "internal_link_signals": [
+      "string"
+    ],
+    "trust_signals": [
+      "string"
+    ],
+    "visual_structure_signals": {
+      "section_count": 0,
+      "has_tables": true,
+      "has_bullet_lists": true,
+      "has_images": true,
+      "appears_text_heavy": true,
+      "appears_structurally_balanced": true
+    }
+  },
+  "placeholder_or_ai_signals": [
+    "string"
+  ],
+  "major_issues": [
+    "string"
+  ],
+  "revision_actions": [
+    "string"
+  ],
+  "rewrite_actions": [
+    "string"
+  ],
+  "strengths": [
+    "string"
+  ],
+  "summary_assessment": "string"
+}

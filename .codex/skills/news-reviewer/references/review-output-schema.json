@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cyrentis News Review Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "final_decision",
+    "reason_for_decision",
+    "classified_category",
+    "overall_score",
+    "word_count",
+    "dimension_scores",
+    "critical_dimensions_below_5",
+    "mandatory_news_elements",
+    "ai_or_non_news_signals",
+    "major_issues",
+    "revision_actions",
+    "rewrite_actions",
+    "strengths",
+    "suggested_improved_title",
+    "suggested_improved_opening_angle",
+    "summary_assessment"
+  ],
+  "properties": {
+    "final_decision": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "REQUIRE_REVISION",
+        "REQUIRE_REWRITE"
+      ]
+    },
+    "reason_for_decision": {
+      "type": "string"
+    },
+    "classified_category": {
+      "type": "string",
+      "enum": [
+        "holiday_greeting",
+        "policy_interpretation",
+        "company_statement",
+        "company_event",
+        "exhibition_news",
+        "milestone_update",
+        "official_notice",
+        "general_company_news",
+        "other"
+      ]
+    },
+    "overall_score": {
+      "type": "number"
+    },
+    "word_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "dimension_scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "official_tone",
+        "factuality_objectivity",
+        "time_event_specificity",
+        "clarity_of_main_event",
+        "newsworthiness",
+        "structure_news_format",
+        "marketing_noise_control",
+        "readability_professional_fluency",
+        "category_fit",
+        "length_discipline"
+      ],
+      "properties": {
+        "official_tone": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "factuality_objectivity": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "time_event_specificity": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "clarity_of_main_event": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "newsworthiness": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "structure_news_format": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "marketing_noise_control": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "readability_professional_fluency": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "category_fit": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "length_discipline": { "type": "integer", "minimum": 1, "maximum": 10 }
+      }
+    },
+    "critical_dimensions_below_5": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mandatory_news_elements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "specific_time_reference",
+        "specific_event_reference",
+        "clear_subject_actor",
+        "clear_main_message",
+        "publication_worthy_reason"
+      ],
+      "properties": {
+        "specific_time_reference": {
+          "type": "string",
+          "enum": ["strong", "adequate", "weak", "missing"]
+        },
+        "specific_event_reference": {
+          "type": "string",
+          "enum": ["strong", "adequate", "weak", "missing"]
+        },
+        "clear_subject_actor": {
+          "type": "string",
+          "enum": ["strong", "adequate", "weak", "missing"]
+        },
+        "clear_main_message": {
+          "type": "string",
+          "enum": ["strong", "adequate", "weak", "missing"]
+        },
+        "publication_worthy_reason": {
+          "type": "string",
+          "enum": ["strong", "adequate", "weak", "missing"]
+        }
+      }
+    },
+    "ai_or_non_news_signals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "major_issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "revision_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rewrite_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "suggested_improved_title": {
+      "type": "string"
+    },
+    "suggested_improved_opening_angle": {
+      "type": "string"
+    },
+    "summary_assessment": {
+      "type": "string"
+    }
+  }
+}
+

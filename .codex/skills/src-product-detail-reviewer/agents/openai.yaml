@@ -1,0 +1,4 @@
+interface:
+  display_name: "SRC Detail Reviewer"
+  short_description: "Review rendered radar detail pages."
+  default_prompt: "Review this rendered SRC radar product detail page and output strict JSON only."

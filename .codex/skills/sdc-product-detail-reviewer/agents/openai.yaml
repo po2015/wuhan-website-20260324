@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDC Detail Reviewer"
+  short_description: "Review rendered RF detail pages."
+  default_prompt: "Review this rendered SDC spectrum detection product detail page and output strict JSON only."

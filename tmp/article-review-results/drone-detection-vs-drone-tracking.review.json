@@ -1,8 +1,8 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with stronger engineering separation between first notice and maintained tracking, plus clearer evaluation criteria.",
+  "reason_for_decision": "The article passes because it separates first notice from maintained state clearly and translates that distinction into concrete system requirements.",
   "overall_score": 8.5,
-  "word_count": 1003,
+  "word_count": 1097,
   "dimension_scores": {
     "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
@@ -10,8 +10,8 @@
     "content_depth": 8,
     "readability_human_quality": 8,
     "information_density": 8,
-    "seo_knowledge_base_fitness": 9,
-    "technical_credibility": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 9,
     "decision_value": 9,
     "original_insight": 8
   },
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now makes the escalation from detection to tracking feel like a genuine change in system requirements rather than a wording change.",
-    "It highlights the practical factors that break tracking quality, which improves technical credibility.",
-    "The evaluation section gives readers a concrete way to interrogate product claims."
+    "The article keeps the detection-versus-tracking distinction crisp from the opening paragraph onward.",
+    "It identifies update cadence, association logic, and continuity as the real engineering shift once tracking is required.",
+    "The piece is especially useful for preventing teams from mistaking alert capability for stable track capability."
   ],
-  "summary_assessment": "This version is strong enough to pass. It is clearer, more operationally relevant, and more honest about the difference between alerting and sustained awareness."
+  "summary_assessment": "This is a clear pass under the strict rubric. It has good technical discipline and strong decision value for readers evaluating low-altitude monitoring systems.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\drone-detection-vs-drone-tracking.md",
+    "article_sha256": "9b7bd61fcd5b3ae994b8114d2cf129ad59d1161f8cf6c78e55bdc85184656c46",
+    "normalized_review_input_sha256": "3fa1abeea6019e98a4aec7cf419f2cc5b9e8a0bb1f440e1a66c412ebf391dafd",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\drone-detection-vs-drone-tracking\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:33:59+00:00"
+  }
 }

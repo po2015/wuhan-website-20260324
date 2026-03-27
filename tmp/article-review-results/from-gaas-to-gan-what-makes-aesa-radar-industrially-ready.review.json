@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The revised article moves past material-label marketing and explains industrial readiness through modules, thermal margin, calibration, and production discipline.",
   "overall_score": 8.3,
-  "word_count": 1313,
+  "word_count": 1302,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "The T/R module, thermal, calibration, and repeatability sections give the piece real engineering substance.",
     "Buyer-facing questions are concrete and reduce the chance of purely marketing-led interpretation."
   ],
-  "summary_assessment": "This version is publishable under the stricter rubric. It now reads like a technical maturity explainer rather than a short technology-positioning note."
+  "summary_assessment": "This version is publishable under the stricter rubric. It now reads like a technical maturity explainer rather than a short technology-positioning note.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\from-gaas-to-gan-what-makes-aesa-radar-industrially-ready.md",
+    "article_sha256": "b0f78ad557f925567553f4af4999c99d2bd29cf8025b59e15d998f0b3daa3ce6",
+    "normalized_review_input_sha256": "f071b44f59dad01c01a79b7d446c46341aabdf7c6aa6e5523b612bfeb6023b94",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\from-gaas-to-gan-what-makes-aesa-radar-industrially-ready\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:24:38+00:00"
+  }
 }

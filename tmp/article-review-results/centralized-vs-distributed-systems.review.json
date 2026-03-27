@@ -1,10 +1,10 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The article now clears the pass threshold with better function-placement logic, stronger hybrid-architecture framing, and more useful degraded-mode best practices.",
-  "overall_score": 8.3,
-  "word_count": 1000,
+  "reason_for_decision": "The article meets the pass threshold with a good function-placement lens, a realistic hybrid conclusion, and useful best-practice guidance for degraded conditions.",
+  "overall_score": 8.4,
+  "word_count": 1094,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
     "marketing_noise_control": 9,
     "content_depth": 8,
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now explains why pure centralization and pure distribution are both uncommon in practice.",
-    "The edge-versus-center function discussion makes the architecture comparison more concrete and actionable.",
-    "The degraded-mode testing guidance improves the article beyond a generic pros-and-cons list."
+    "The article frames the choice as function placement instead of ideology, which is the right engineering lens.",
+    "It handles hybrid architecture honestly by separating edge continuity from centralized situational awareness.",
+    "The emphasis on degraded-communications testing makes the guidance more operational than diagrammatic."
   ],
-  "summary_assessment": "This version now passes. It is more architectural, more realistic, and better aligned with how mixed surveillance systems are actually designed."
+  "summary_assessment": "This article passes comfortably. It is structured well, gives practical architecture guidance, and offers a mature hybrid recommendation instead of a simplistic centralized-versus-distributed verdict.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\centralized-vs-distributed-systems.md",
+    "article_sha256": "9993f6172b5c126d51964ab88c0975c79d604493a7c6d958a40b360f93476b52",
+    "normalized_review_input_sha256": "ea4b6298a63f07cce172ccb4d832416370a1e4172f24e34269a8f68cd7729f6b",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\centralized-vs-distributed-systems\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:33:59+00:00"
+  }
 }

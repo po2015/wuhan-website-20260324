@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The revised article now explains layered radar as a timing and workflow architecture rather than a generic multi-range slogan, which pushes it above the pass threshold.",
   "overall_score": 8.4,
-  "word_count": 1303,
+  "word_count": 1293,
   "dimension_scores": {
     "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "The article connects sensing layers to response timing, ambiguity reduction, and workflow ownership.",
     "Scenario mapping for airports, ports, and industrial sites adds practical planning value."
   ],
-  "summary_assessment": "This version is now a strong knowledge-base article. It is more structured, more technical, and substantially more useful for civil-security planning."
+  "summary_assessment": "This version is now a strong knowledge-base article. It is more structured, more technical, and substantially more useful for civil-security planning.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\layered-radar-architectures-what-civil-security-planners-can-borrow.md",
+    "article_sha256": "4d75ae19210f319f773765421259855eef764bb2ce87b77ce419a9427d6ec394",
+    "normalized_review_input_sha256": "a896446c6d6a9abdc9249da2dde0b59b7446968cbb8c9fafad1f5acc5b8eee0c",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\layered-radar-architectures-what-civil-security-planners-can-borrow\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:24:38+00:00"
+  }
 }

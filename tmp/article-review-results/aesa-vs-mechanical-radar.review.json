@@ -1,17 +1,17 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The article now clears the pass threshold with stronger revisit-rate framing, better lifecycle trade-off coverage, and improved system-level reasoning.",
-  "overall_score": 8.3,
-  "word_count": 1004,
+  "reason_for_decision": "The article passes with a strong architecture-level comparison, especially around revisit behavior, lifecycle burden, and mission fit.",
+  "overall_score": 8.5,
+  "word_count": 1113,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
     "marketing_noise_control": 9,
     "content_depth": 8,
     "readability_human_quality": 8,
     "information_density": 8,
     "seo_knowledge_base_fitness": 8,
-    "technical_credibility": 8,
+    "technical_credibility": 9,
     "decision_value": 9,
     "original_insight": 8
   },
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The comparison now explains why revisit behavior matters more than the technology label alone.",
-    "Lifecycle and integration trade-offs are stated more honestly than in a basic upgrade narrative.",
-    "The article makes it clear when mechanical scan remains rational instead of treating it as obsolete by default."
+    "The article centers the comparison on revisit behavior and mission fit instead of simply treating AESA as the modern winner.",
+    "It balances acquisition and lifecycle considerations without becoming procurement fluff.",
+    "The system-level section on how scan behavior affects upper-layer cueing adds real design value."
   ],
-  "summary_assessment": "This version is publishable under the stricter rubric. It offers a more defensible architectural comparison and avoids the usual newer-versus-older simplification."
+  "summary_assessment": "This is a high-quality comparison article. It is technically credible, restrained, and genuinely useful for readers choosing between scan architectures.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\aesa-vs-mechanical-radar.md",
+    "article_sha256": "1f77d0fcec6043bb9e317fc55043c60eb8e69b756623ed037b6f696c047876ce",
+    "normalized_review_input_sha256": "9a8f2fb17c0c4a71647a0afb43bb18a3f83b9cceb8b5315cb1fa82f4d142abeb",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\aesa-vs-mechanical-radar\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:33:59+00:00"
+  }
 }

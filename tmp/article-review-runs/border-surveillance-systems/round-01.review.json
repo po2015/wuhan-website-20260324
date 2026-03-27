@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article clears the pass threshold with clearer persistence framing, stronger operator-workflow logic, and reduced promotional drift.",
+  "overall_score": 8.2,
+  "word_count": 1107,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 8,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article correctly reframes border surveillance as a persistence problem rather than a simple maximum-range problem.",
+    "The fixed-versus-mobile discussion is practical and tied to terrain, coverage gaps, and patrol support.",
+    "The ending now measures operational value in terms of continuity and triage instead of reverting to product positioning."
+  ],
+  "summary_assessment": "This is now a publishable deployment article. It stays close to real border planning trade-offs and gives enough operational judgment to be useful beyond SEO capture."
+}

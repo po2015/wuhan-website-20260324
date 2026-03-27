@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article now passes with stronger discussion of contraband pathways, evidence handling, and the operational cost of staff redeployment.",
+  "overall_score": 8.3,
+  "word_count": 1012,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The revised version now clears the strict word-count floor while preserving the topic focus.",
+    "The article is more neutral and architecture-oriented after removing repo-specific positioning.",
+    "The added operational sections materially improve decision value and topic depth."
+  ],
+  "summary_assessment": "This version is strong enough to pass under the stricter workflow. It offers a fuller correctional-security treatment while staying practical and non-promotional.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\prison-security-systems.md",
+    "article_sha256": "746db5fa86c1d3f17d265a0f11673144f3b50779b444e735fe8eca9a59338c9f",
+    "normalized_review_input_sha256": "2d1062620e2017a204bec6fceacb8e09bbf8b51ff93268e13c2d22c10a55793b",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\prison-security-systems\\round-02.review.json",
+    "sealed_at_utc": "2026-03-27T02:54:48+00:00"
+  }
+}

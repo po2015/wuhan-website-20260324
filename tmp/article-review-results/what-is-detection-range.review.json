@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The article now explains range as a conditional performance statement tied to target, environment, geometry, and workflow, which is enough for PASS.",
-    "overall_score":  8.3,
-    "word_count":  1010,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  8,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  8,
-                             "original_insight":  7
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It now explains probability, false alarms, and geometry alongside the headline number.",
-                      "The distinction between detection and tracking remains clear.",
-                      "The workflow section improves operational interpretation of range claims."
-                  ],
-    "summary_assessment":  "This version passes. It is materially better grounded and more useful for interpreting radar range claims."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes as a beginner guide because it makes detection range conditional on target, environment, probability, and workflow rather than treating it as one universal number.",
+  "overall_score": 8.4,
+  "word_count": 1118,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 9,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 7,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on explaining why published range numbers are conditional rather than absolute.",
+    "It clearly separates detection range from tracking and identification range, which improves conceptual accuracy.",
+    "The sections on probability, false alarms, and geometry prevent a simplistic reading of range claims."
+  ],
+  "summary_assessment": "This is a solid pass for a foundation article. It gives readers an accurate and useful mental model for interpreting detection range claims honestly.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-detection-range.md",
+    "article_sha256": "62e6a39b25825188f0938f314fe71b7faf7935cce0290374512b76dddee581c8",
+    "normalized_review_input_sha256": "b1b1c8ed60cd434731311e18bbf9ed35ed0e2bed07903df2899fc9b5639ddce0",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-detection-range\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:41:23+00:00"
+  }
 }

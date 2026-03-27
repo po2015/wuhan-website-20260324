@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Detail Reviewer"
+  short_description: "Review rendered B2B product pages and return strict JSON."
+  default_prompt: "Review this rendered product detail page using the product-detail-reviewer workflow and output strict JSON only."

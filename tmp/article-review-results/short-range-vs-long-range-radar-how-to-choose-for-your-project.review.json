@@ -1,10 +1,10 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The article now clears the pass threshold with stronger geometry framing, clearer target-type dependence, and more useful layered-range guidance.",
-  "overall_score": 8.3,
-  "word_count": 1005,
+  "reason_for_decision": "The article passes because it reframes range selection around useful coverage geometry, blind zones, and decision distance instead of headline maximum range.",
+  "overall_score": 8.4,
+  "word_count": 1106,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
     "marketing_noise_control": 9,
     "content_depth": 8,
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now moves beyond headline range and explains why minimum range and decision distance matter.",
-    "It correctly ties range class to target type and workflow timing rather than to maximum detection claims alone.",
-    "The layered-range conclusion gives the reader a practical planning model instead of a one-number answer."
+    "The article is strong on minimum range and near-field gaps, which are often missed in simplistic range comparisons.",
+    "It makes outer-layer versus inner-layer range planning easy to understand for project teams.",
+    "The selection questions at the end convert a vague product comparison into an architectural planning exercise."
   ],
-  "summary_assessment": "This version is strong enough to pass. It is more realistic about range planning and more useful for actual project selection."
+  "summary_assessment": "This is a solid pass. It is practical, balanced, and particularly good at translating radar range classes into real deployment choices.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\short-range-vs-long-range-radar-how-to-choose-for-your-project.md",
+    "article_sha256": "1ac5707430e888aeb2e69c996130fd1ebc47f2e6552bae2f682bab2dcd1b6878",
+    "normalized_review_input_sha256": "5a3aa557feabf48715effd865fe23ecb1461cf3807a5d68308b1d0227ec8996e",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\short-range-vs-long-range-radar-how-to-choose-for-your-project\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:37:03+00:00"
+  }
 }

@@ -1,16 +1,16 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with a clearer evidence ladder, better operator framing, and stronger procurement relevance.",
-  "overall_score": 8.3,
-  "word_count": 1004,
+  "reason_for_decision": "The article passes because it draws clear boundaries between detection, classification, and identification, then ties those boundaries to evidence burden and operator workflow.",
+  "overall_score": 8.5,
+  "word_count": 1102,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
     "marketing_noise_control": 9,
     "content_depth": 8,
     "readability_human_quality": 8,
     "information_density": 8,
-    "seo_knowledge_base_fitness": 8,
+    "seo_knowledge_base_fitness": 9,
     "technical_credibility": 8,
     "decision_value": 9,
     "original_insight": 8
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now turns terminology into an evidence ladder that is genuinely useful for system design and operations.",
-    "It explains why the distinction matters for operator display, escalation, and procurement expectations.",
-    "The added procurement questions reduce the risk of vague product claims passing as meaningful capability statements."
+    "The article keeps the three surveillance outcomes distinct and operationally meaningful from start to finish.",
+    "It explains how evidence burden changes across the ladder instead of treating the terms as vocabulary only.",
+    "The procurement and operator-clarity sections make the distinction useful in real system design."
   ],
-  "summary_assessment": "This version passes because it is clearer, more disciplined, and more useful for both operators and buyers than a simple glossary treatment."
+  "summary_assessment": "This article is a strong pass under the strict rubric. It is clear, disciplined, and especially useful for correcting terminology drift in surveillance discussions.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\detection-vs-identification-vs-classification-whats-the-difference.md",
+    "article_sha256": "7d76a879498a0e26976311c8037c118c16998ffbe47f1d4b0f6c165ae18ca210",
+    "normalized_review_input_sha256": "dbd0842dcc2716a318912aba4860aefa17bc0d590519ea677ce838dccea40a98",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\detection-vs-identification-vs-classification-whats-the-difference\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:39:11+00:00"
+  }
 }

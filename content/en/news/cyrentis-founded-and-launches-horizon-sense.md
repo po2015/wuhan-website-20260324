@@ -1,17 +1,16 @@
 ---
 title: "Cyrentis Formally Established and Introduces Horizon Sense"
-description: "Wuhan Cyrentis Technology Co., Ltd. announced its establishment and presented Horizon Sense as the first public software component in the Horizon platform roadmap."
+description: "We announced our establishment and presented Horizon Sense as the first public software component in the Horizon platform roadmap."
 kicker: "News"
 slug: "cyrentis-founded-and-launches-horizon-sense"
 url: "/news/cyrentis-founded-and-launches-horizon-sense/"
 seo_title: "Cyrentis Formally Established and Introduces Horizon Sense"
-seo_description: "Cyrentis announced its establishment in Wuhan and introduced Horizon Sense as the first software component in its Horizon platform direction."
+seo_description: "We announced our establishment in Wuhan and introduced Horizon Sense as the first software component in our Horizon platform direction."
 keywords:
   - "Cyrentis establishment"
   - "Horizon Sense"
   - "Cyrentis software platform"
   - "integrated monitoring software"
-
 author: "Cyrentis Editorial Team"
 author_role: "Corporate Communications"
 categories:
@@ -26,20 +25,18 @@ image_alt: "Monitoring software and multi-screen control room environment relate
 image_source_url: "https://www.pexels.com/photo/sound-engineering-software-on-monitors-11044812/"
 image_source_name: "John Taran"
 keypoints:
-  - "Cyrentis officially established its business direction around integrated monitoring systems."
-  - "Horizon Sense was introduced as the first public module in the Horizon platform line."
-  - "The company will combine software, sensor products, and integration services under one delivery structure."
+  - "We formally established our business direction around integrated monitoring systems."
+  - "We introduced Horizon Sense as the first public module in the Horizon platform line."
+  - "We will combine software, sensor products, and integration services under one delivery structure."
 date: 2025-04-01
-lastmod: 2026-03-24
+lastmod: 2026-03-27
 draft: false
 ---
 
-Wuhan Cyrentis Technology Co., Ltd. announced its formal establishment on April 1, 2025, with a business focus on integrated monitoring systems built around software, sensing products, and deployment-oriented engineering services.
+On April 1, 2025, we announced the formal establishment of Wuhan Cyrentis Technology Co., Ltd. and introduced **Horizon Sense** as the first public module in our Horizon software roadmap.
 
-At the same time, the company introduced **Horizon Sense** as the first public component in the Horizon software line. Horizon Sense is positioned as the device orchestration and status layer of the platform, designed to bring radar, electro-optical, and RF sensing assets into one managed software environment instead of leaving operators to work across multiple vendor-specific tools.
+Our initial business structure is built around three connected layers: Horizon as the software core, the `SRC`, `SOC`, and `SDC` families as the sensing product layer, and project-facing services covering system design, software customization, and equipment integration.
 
-The company stated that the first phase of Horizon will prioritize readable device control, operational visibility, and cross-sensor onboarding so that future workflow modules can be added on top of a consistent software foundation.
+At the same time, we presented Horizon Sense as the device orchestration and status layer of the Horizon platform. The module is intended to help operators bring radar, electro-optical, and RF sensing assets into one managed software environment instead of relying on separate interfaces for each device type.
 
-This launch also clarified Cyrentis' overall structure. Horizon will serve as the software core, the `SRC`, `SOC`, and `SDC` families will define the product layer, and project-facing services will cover system design, software customization, and equipment integration.
-
-Visitors interested in the software direction can review the current [Horizon platform overview](/horizon/) and the wider [sensor portfolio](/sensors/) to see how Cyrentis intends to connect software and field assets inside one operating architecture.
+With this first public release direction, we aim to establish a consistent software foundation for later workflow, correlation, and operational modules. Additional information is available on the [Horizon platform overview](/horizon/) and the broader [sensor portfolio](/sensors/).

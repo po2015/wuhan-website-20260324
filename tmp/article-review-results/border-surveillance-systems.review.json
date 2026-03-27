@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The revised article clears the pass threshold with clearer persistence framing, stronger operator-workflow logic, and reduced promotional drift.",
   "overall_score": 8.2,
-  "word_count": 1056,
+  "word_count": 1107,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "The fixed-versus-mobile discussion is practical and tied to terrain, coverage gaps, and patrol support.",
     "The ending now measures operational value in terms of continuity and triage instead of reverting to product positioning."
   ],
-  "summary_assessment": "This is now a publishable deployment article. It stays close to real border planning trade-offs and gives enough operational judgment to be useful beyond SEO capture."
+  "summary_assessment": "This is now a publishable deployment article. It stays close to real border planning trade-offs and gives enough operational judgment to be useful beyond SEO capture.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\border-surveillance-systems.md",
+    "article_sha256": "0e8ca821f1a28f2ddcb0817865ed632abe349de25744e61a10cf0abaf2d86600",
+    "normalized_review_input_sha256": "a7a6723306945faa47257e8899efb156fe0a0f7898d22595a567f29281b55d3e",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\border-surveillance-systems\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:26:47+00:00"
+  }
 }

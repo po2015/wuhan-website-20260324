@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The revised article now separates near-term, mid-term, and long-horizon topics cleanly and gives readers a disciplined way to interpret frontier radar claims.",
   "overall_score": 8.3,
-  "word_count": 1213,
+  "word_count": 1204,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "The article avoids hype by asking whether each technology changes deployable architecture or only lab benchmarks.",
     "The watch-list framing makes the piece useful for program planning rather than trend commentary alone."
   ],
-  "summary_assessment": "This version is publishable and well aligned with the stricter review standard. It turns a broad trend topic into a disciplined architecture and roadmap explainer."
+  "summary_assessment": "This version is publishable and well aligned with the stricter review standard. It turns a broad trend topic into a disciplined architecture and roadmap explainer.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\frontier-radar-technologies-what-is-real-what-is-emerging-and-what-to-watch.md",
+    "article_sha256": "19f4ea7a51b5fb5b27217805933926861101946cc5feb552411db042abdec68e",
+    "normalized_review_input_sha256": "56291835d3ea52b9e7c93530c32a969e5daa5b0325c8e3e1cc83e2f7c1fd0e18",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\frontier-radar-technologies-what-is-real-what-is-emerging-and-what-to-watch\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:24:39+00:00"
+  }
 }

@@ -12,19 +12,26 @@ Use this skill when drafting or revising Cyrentis knowledge-base articles that s
 1. Start from `content/en/knowledge-base/template.md`.
 2. Read `references/article-standard.md` and `references/taxonomy-guidance.md` before drafting.
 3. Browse primary sources first: standards bodies, government agencies, academic papers, official technical documentation, or reputable research institutions.
-4. Keep the article educational. Do not write sales copy, feature boasting, or unsupported competitive claims.
-5. Use charts, tables, or diagrams only when the underlying data is public, citable, and methodologically clear.
-6. If no trustworthy numeric dataset is available, do not invent a chart. Use a sourced comparison table or a labeled logic diagram instead.
-7. Add internal links only where they genuinely improve comprehension, planning, or system selection.
-8. Keep external links authoritative and directly relevant to the technical claim they support.
-9. If the article needs a stock lead image, use `scripts/fetch_pexels_cover.py`, then add `image_source_name` and `image_source_url`. Before finalizing, check existing knowledge-base articles and do not reuse the same stock photo, `image_source_url`, or cover asset.
-10. Rebuild with `conda run -n python314 hugo --cleanDestinationDir` when done.
+4. Draft for first-pass `PASS` under the knowledge-base reviewer rubric, not merely for publication-ready prose.
+5. Build the article to at least `1500` words of substantive body text unless the user explicitly asks for shorter.
+If the topic feels thin, widen scope with mechanisms, trade-offs, deployment implications, validation logic, or buyer questions instead of padding.
+6. Keep the article educational. Do not write sales copy, feature boasting, or unsupported competitive claims.
+7. Include at least one section that explains how or why the technology works, and at least one section that gives decision value such as trade-offs, deployment fit, limitations, or selection guidance.
+8. Use charts, tables, or diagrams only when the underlying data is public, citable, and methodologically clear.
+9. If no trustworthy numeric dataset is available, do not invent a chart. Use a sourced comparison table or a labeled logic diagram instead.
+10. Add internal links only where they genuinely improve comprehension, planning, or system selection.
+11. Keep external links authoritative and directly relevant to the technical claim they support.
+12. If the article needs a stock lead image, use `scripts/fetch_pexels_cover.py`, then add `image_source_name` and `image_source_url`. Before finalizing, check existing knowledge-base articles and do not reuse the same stock photo, `image_source_url`, or cover asset.
+13. Before finalizing, self-check against the reviewer's highest-risk failure points: weak structure, shallow depth, low information density, vague technical claims, low decision value, and generic AI-like filler.
+14. Rebuild with `conda run -n python314 hugo --cleanDestinationDir` when done.
 
 ## Output Rules
 
 - Default destination: `content/en/knowledge-base/<slug>.md`
 - Tone: technical, explanatory, calm, and evidence-led
 - Purpose: knowledge transfer first, SEO second, product promotion last
+- Length: target `1500-2200` words; treat `1500` as the default floor unless the user explicitly requests a shorter format
+- Structure: introduction plus at least `5` substantial `##` sections, including one mechanism/depth section and one trade-off, deployment, or decision section
 - Allowed Cyrentis mention: only when there is a real technical fit or a clear system-design connection
 - Never fabricate:
   - field data
@@ -34,6 +41,8 @@ Use this skill when drafting or revising Cyrentis knowledge-base articles that s
   - third-party endorsements
 - Every numeric claim should have a source, a unit, and enough context to understand what it means
 - Prefer exact dates when discussing regulations, standards updates, or published studies
+- Do not pad to reach length; each added paragraph must improve depth, comparison value, or practical decision support
+- Avoid abrupt endings; use a short conclusion or closing synthesis unless the user explicitly wants a fragment or outline
 
 ## Figure Rules
 

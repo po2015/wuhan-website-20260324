@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The revised beginner article now explains AESA more accurately, distinguishes it from adjacent architectures, and adds enough practical selection context to pass.",
-    "overall_score":  8.3,
-    "word_count":  1379,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  8,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  8,
-                             "original_insight":  8
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It gives a clean beginner explanation without flattening important architectural differences.",
-                      "The AESA versus PESA versus mechanical comparison removes a common source of confusion.",
-                      "The procurement-oriented questions improve the article beyond simple definition content."
-                  ],
-    "summary_assessment":  "This article now passes. It is clear, sufficiently deep for a foundation piece, and no longer relies on the acronym alone to carry the explanation."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes as a beginner guide because it explains AESA clearly, keeps the architecture claims disciplined, and avoids turning the acronym into a magic-performance label.",
+  "overall_score": 8.5,
+  "word_count": 1477,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 9,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 8,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is beginner-friendly without becoming shallow or inaccurate.",
+    "It is strong on the distinction between AESA, electronically scanned arrays, and mechanical scan architectures.",
+    "The evaluation section usefully reminds readers to ask how the AESA architecture is actually being used in the system."
+  ],
+  "summary_assessment": "This is a solid pass for a foundation-style article. It is readable, technically responsible, and especially good at correcting hype-driven misunderstandings about AESA radar.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-aesa-radar.md",
+    "article_sha256": "eeae6f32e2515573e451abb908d9ee53434ab36bc2b2ec389b9adc8db8a23d0b",
+    "normalized_review_input_sha256": "d21aa4e9e8f266ebf266b28ad578e3ec840ede97bc1c5d00bda19dabe35ff80e",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-aesa-radar\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:39:12+00:00"
+  }
 }

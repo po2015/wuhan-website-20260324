@@ -3,6 +3,7 @@
 ## Goal
 
 Capture broad beginner search intent with content that is easy to understand on the first read and still technically sound.
+The article should still be strong enough to pass the knowledge-base reviewer without needing a rewrite.
 
 ## Best-Fit Topics
 
@@ -20,16 +21,19 @@ Capture broad beginner search intent with content that is easy to understand on 
 - Define jargon once, then keep it simple.
 - Explain why the concept matters in real life.
 - Avoid white-paper tone, procurement language, and product bragging.
-- Do not force a conclusion section.
+- Prefer a short conclusion or takeaway when the draft would otherwise end abruptly.
+- Avoid definition-only writing; add enough mechanism, implications, and judgment to keep the page from feeling thin.
 
 ## Structure Pattern
 
 Use a flexible pattern such as:
 
-1. Short introduction
+1. Short introduction with the plain-language answer
 2. `##` sections that answer the obvious beginner questions
-3. Optional FAQ
-4. Final `## Related Reading`
+3. One section on common confusion, limitations, or practical trade-offs
+4. Optional FAQ
+5. Short takeaway or conclusion when helpful
+6. Final `## Related Reading`
 
 Good section types include:
 
@@ -39,7 +43,16 @@ Good section types include:
 - `## Main Parts of a Radar System`
 - `## Common Types of Radar`
 - `## Where Radar Is Used`
+- `## Common Mistakes or Limits`
+- `## What This Means in Practice`
 - `## FAQ`
+
+## Length Standard
+
+- Default floor: `1500` words of substantive article text
+- Preferred target: `1500-1900` words
+- Do not pad with repetitive examples or keyword stuffing
+- If the topic is simple, deepen it with real-world implications, common misconceptions, comparison logic, or operational limits
 
 ## Link Policy
 
@@ -77,3 +90,15 @@ Good section types include:
 - If the topic is stable, use the clearest authoritative sources, not the most obscure ones.
 - Avoid making numeric claims unless the source is clear and the number actually helps the reader.
 - When multiple definitions exist, say that plainly instead of pretending one wording is universal.
+
+## Reviewer Safety Checklist
+
+Before finalizing, check that the draft is unlikely to fail on:
+
+- shallow explanation
+- low information density
+- repetitive AI-like transitions
+- weak decision value
+- abrupt or underdeveloped ending
+
+If any of these are present, revise before finalizing.

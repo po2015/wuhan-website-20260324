@@ -1,0 +1,5 @@
+interface:
+  display_name: "Official Company News Writer"
+  short_description: "Write reviewer-safe corporate news posts."
+  default_prompt: "Draft a formal Cyrentis company news article that can pass the strict news reviewer."
+

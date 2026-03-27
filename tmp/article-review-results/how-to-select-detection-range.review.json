@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The article now connects range selection to warning time, site geometry, layered sensing, and validation logic in a way that clears the stricter PASS threshold.",
-    "overall_score":  8.4,
-    "word_count":  1001,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  9,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  9,
-                             "original_insight":  8
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It reframes range as an operational timing problem rather than a brochure number.",
-                      "The added layered-system and planning-sequence sections improve real deployment value.",
-                      "The article is now cleaner editorially and no longer carries the earlier product-led detour."
-                  ],
-    "summary_assessment":  "This article now passes. It is practical, specific enough for real planning work, and aligned with the stricter review rubric."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it turns range selection into a warning-time and workflow question instead of a brochure-range argument.",
+  "overall_score": 8.4,
+  "word_count": 1103,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on converting range into warning time and response budget rather than treating range as a static number.",
+    "It separates detection, tracking, and identification ranges clearly, which improves planning value.",
+    "The emphasis on site geometry and validation keeps the guidance practical and field-oriented."
+  ],
+  "summary_assessment": "This is a strong pass. The article is well structured, operationally useful, and especially effective at reframing detection range as a system-design variable.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-to-select-detection-range.md",
+    "article_sha256": "5043315e1d768958912d2d72c6101e3ecaecea33d09b3876ffef33b914021b71",
+    "normalized_review_input_sha256": "d51cf33b7ad849dc90f50adc8333ef49b9b2643d1f13f0aa467ad6ce1b45197a",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-to-select-detection-range\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:41:21+00:00"
+  }
 }

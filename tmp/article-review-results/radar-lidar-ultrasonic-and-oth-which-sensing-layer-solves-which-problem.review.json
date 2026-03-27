@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The revised article clears the 8.0 pass threshold with stronger technical framing, clearer failure boundaries, and a more neutral decision-oriented structure.",
   "overall_score": 8.4,
-  "word_count": 2000,
+  "word_count": 1950,
   "dimension_scores": {
     "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "The article adds practical breakdown points and a clear selection sequence, which improves decision value substantially.",
     "The previous brand-positioning drift has been removed and replaced with a more neutral layered-architecture explanation."
   ],
-  "summary_assessment": "This version is strong enough to pass under the stricter rubric. It is materially better grounded, more useful for technical selection, and more editorially disciplined than the original version."
+  "summary_assessment": "This version is strong enough to pass under the stricter rubric. It is materially better grounded, more useful for technical selection, and more editorially disciplined than the original version.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem.md",
+    "article_sha256": "0c1608dca122fcd9b02dbaaafc541c3a4841e873dc8304ab1ee810bb5d1d5c8d",
+    "normalized_review_input_sha256": "62719d4634f119bcd8afafa316a440ce8b41468da1531223b0a40fcb70e76a3d",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\radar-lidar-ultrasonic-and-oth-which-sensing-layer-solves-which-problem\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:24:37+00:00"
+  }
 }

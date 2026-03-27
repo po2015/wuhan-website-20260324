@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The revised article clears the pass threshold with stronger operational framing, clearer workflow logic, and better definition of protected airspace.",
   "overall_score": 8.5,
-  "word_count": 1157,
+  "word_count": 1241,
   "dimension_scores": {
     "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "The new section on defining the relevant airspace adds practical value and prevents the piece from staying too abstract.",
     "The distinction between detection capability and legal response authority improves technical and regulatory realism."
   ],
-  "summary_assessment": "This version is strong enough to pass. It is clearer, more decision-oriented, and more useful for teams trying to understand what low-altitude security actually includes."
+  "summary_assessment": "This version is strong enough to pass. It is clearer, more decision-oriented, and more useful for teams trying to understand what low-altitude security actually includes.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-low-altitude-security.md",
+    "article_sha256": "b1f1b3a5f69b3df1203169764902569ecd28bcaa7df1f0bd0f352d436b8f5c6f",
+    "normalized_review_input_sha256": "5099c19e2240306121988e5959d963f0aea51911e7d4dd8eaea74fa9824e8f49",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-low-altitude-security\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:26:46+00:00"
+  }
 }

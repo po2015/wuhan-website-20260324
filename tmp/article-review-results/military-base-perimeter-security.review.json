@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article now clears the strict pass threshold with stronger treatment of standoff space, command authority, and mixed air-ground validation.",
+  "overall_score": 8.3,
+  "word_count": 1035,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The revised version now clears the strict word-count floor while preserving the topic focus.",
+    "The article is more neutral and architecture-oriented after removing repo-specific positioning.",
+    "The added operational sections materially improve decision value and topic depth."
+  ],
+  "summary_assessment": "This version is strong enough to pass under the stricter workflow. It is better grounded in installation security operations and less reliant on short-form product framing.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\military-base-perimeter-security.md",
+    "article_sha256": "4dea24b9e7fa1f80f2143c7e5dc025b4c6c36b770a3b5b7fc7f672ee3a6ef491",
+    "normalized_review_input_sha256": "45379ea5681e3c021637c81900b8663187f8da6484f8cd45499731375e0148a9",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\military-base-perimeter-security\\round-02.review.json",
+    "sealed_at_utc": "2026-03-27T02:54:47+00:00"
+  }
+}

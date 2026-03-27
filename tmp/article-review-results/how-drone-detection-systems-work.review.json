@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The article now clears the pass threshold with stronger process framing, cleaner sensor-role explanation, and improved distinction between detection and identification.",
   "overall_score": 8.5,
-  "word_count": 1153,
+  "word_count": 1222,
   "dimension_scores": {
     "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "The revised section separating detection, tracking, and identification increases engineering clarity.",
     "The piece keeps low marketing noise while still offering enough practical judgment to guide system understanding."
   ],
-  "summary_assessment": "This is now a strong foundation explainer. It gives readers a practical mental model for how drone detection systems actually work and why multi-sensor design is common."
+  "summary_assessment": "This is now a strong foundation explainer. It gives readers a practical mental model for how drone detection systems actually work and why multi-sensor design is common.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-drone-detection-systems-work.md",
+    "article_sha256": "2e35599fce503aad4af9777caca3b87b674c26e51f6387d823218eb03019e203",
+    "normalized_review_input_sha256": "fac84563def51001e8dec2ba55147b5421cb7d8970b924551f964f8413aae587",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-drone-detection-systems-work\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:26:46+00:00"
+  }
 }

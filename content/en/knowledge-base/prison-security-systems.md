@@ -25,6 +25,7 @@ image_source_name: "More on my YouTube"
 image_source_url: "https://www.pexels.com/photo/signage-on-a-metal-fence-4977524/"
 weight: 44
 date: 2025-08-15
+lastmod: 2026-03-27T21:10:00+08:00
 draft: false
 keypoints:
   - "Correctional security is driven by contraband control, perimeter integrity, and operational visibility."
@@ -69,9 +70,45 @@ In this environment, false alarms are not just an annoyance. They can consume at
 
 Prison incidents often become investigative matters. That makes event history, sensor correlation, and evidence retention especially important. A system that only flashes a transient alert but does not preserve location, time, and confirmation data leaves the facility with weak operational follow-through.
 
-## Where Cyrentis Fits
+## Contraband Pathways Should Drive Siting
 
-For correctional sites that need layered perimeter and low-altitude awareness, Cyrentis can fit with [Surveillance Radar](/sensors/src/) for search, [Surveillance Optics](/sensors/soc/) for confirmation, [Spectrum Detection](/sensors/sdc/) for RF context, and [Horizon](/horizon/) for incident review and coordinated alerting.
+Correctional facilities gain more value when sensor placement reflects how contraband actually moves. The most important areas are not always the most obvious ones. Staff need to think about likely drop zones, blind areas near the perimeter, service yards, rooflines, recreation spaces, and handoff locations that connect exterior activity to internal movement.
+
+That is why prison security systems should be designed around contraband pathways and response routes, not only around formal perimeter lines. A sensor that technically covers a fence may still miss the spaces where an event becomes operationally relevant.
+
+## Command and Evidence Handling Need Discipline
+
+Corrections incidents require clean evidence handling because many events may later support disciplinary, investigative, or prosecutorial action. The monitoring system should therefore preserve:
+
+- time-stamped alert history,
+- video or image confirmation,
+- location context,
+- and operator actions taken during the incident.
+
+If those pieces are fragmented across several consoles or saved inconsistently, the facility loses value after the initial alert even if the detection itself was valid.
+
+## Validation Should Follow Daily Operating Reality
+
+Prison environments are structured by predictable routines, but that does not make validation easy. Good testing should include:
+
+- routine movement periods with high background activity,
+- nighttime or limited-visibility conditions,
+- low-altitude delivery attempts,
+- and scenarios where staff must decide whether to redeploy people or continue monitoring remotely.
+
+These conditions reveal whether the system improves control or simply adds noise to an already demanding environment.
+
+## Staff Redeployment Has Opportunity Cost
+
+One reason alert quality matters so much in corrections is that moving staff to one incident can weaken supervision elsewhere. A prison security system should therefore be judged partly by whether it reduces unnecessary redeployment and helps staff hold resources in reserve until the event is credible enough to justify action.
+
+## The Goal Is Controlled Confidence
+
+The best prison monitoring systems do not try to produce constant intervention. They try to give staff enough confidence to act decisively when needed and enough context to avoid avoidable movement when the event is weak or ambiguous.
+
+## Conclusion
+
+Prison security systems should be built around controlled visibility, contraband prevention, and disciplined incident handling. The strongest designs link perimeter watch, low-altitude awareness, and evidentiary workflow so staff can assess events before moving resources and preserve a credible record after the event ends.
 
 ## Related Reading
 

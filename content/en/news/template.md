@@ -40,13 +40,14 @@ build:
 News writing rules:
 1. Keep the tone public-facing and factual.
 2. Start with a clear opening paragraph explaining what happened and why it matters.
-3. Explain why the event matters to security, sensing, deployment, or workflow.
-4. Add a measured Cyrentis point of view without turning the piece into marketing copy.
-5. Mention related Cyrentis products, Horizon modules, or services only when relevant.
-6. Do not invent claims, customers, certifications, shipment facts, or policy impacts.
-7. Do not use `recent`, `recently`, `today`, `this week`, or similar relative-time wording in the body.
-8. Keep inline sourcing light; use at most one external source in the body.
-9. Place broader external reading under a short `Reference Reading` section at the end.
+3. If the piece is company-originated news, write the summary copy and body in first-person company voice (`we`, `our`) while keeping the tone formal.
+4. Explain why the event matters to security, sensing, deployment, or workflow.
+5. Add a measured Cyrentis point of view without turning the piece into marketing copy.
+6. Mention related Cyrentis products, Horizon modules, or services only when relevant.
+7. Do not invent claims, customers, certifications, shipment facts, or policy impacts.
+8. Do not use `recent`, `recently`, `today`, `this week`, or similar relative-time wording in the body.
+9. Keep inline sourcing light; use at most one external source in the body.
+10. Place broader external reading under a short `Reference Reading` section at the end.
 -->
 
 Write one opening paragraph explaining the news event and why it matters to visitors.

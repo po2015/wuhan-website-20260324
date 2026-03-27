@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The revised article clears the pass threshold with clearer capability boundaries, stronger layered-system framing, and a disciplined technical tone.",
   "overall_score": 8.4,
-  "word_count": 1140,
+  "word_count": 1226,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "It now distinguishes detection, decoding, and identification instead of flattening all RF capability into one vague category.",
     "The limits around silent targets, dense spectrum, and location ambiguity are stated clearly enough to keep the piece technically credible."
   ],
-  "summary_assessment": "This version is publishable under the stricter rubric. It is specific, restrained, and useful for readers trying to understand where RF detection fits in a layered sensing stack."
+  "summary_assessment": "This version is publishable under the stricter rubric. It is specific, restrained, and useful for readers trying to understand where RF detection fits in a layered sensing stack.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-rf-detection.md",
+    "article_sha256": "6d689cc75eae4450f023c67ab5d0311ed691c4481b2f77b2b94735a32d7cbfc3",
+    "normalized_review_input_sha256": "f63ea8c6e5f823f756939308cb42d81b4d3b3a960b4f01c2eae511fe21f6abb7",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-rf-detection\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:26:46+00:00"
+  }
 }

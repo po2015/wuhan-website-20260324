@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The article clears the pass threshold with stronger coastal-specific trade-offs, clearer VTS context, and better operational evaluation criteria.",
   "overall_score": 8.2,
-  "word_count": 1010,
+  "word_count": 1069,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "It makes the AIS-versus-radar distinction clearly enough to avoid a common conceptual error.",
     "The closing performance section improves decision value by focusing attention on constrained waters instead of nominal open-water range."
   ],
-  "summary_assessment": "This version is strong enough to pass. It is narrower, more maritime-aware, and more operationally useful than a generic radar deployment article."
+  "summary_assessment": "This version is strong enough to pass. It is narrower, more maritime-aware, and more operationally useful than a generic radar deployment article.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\coastal-radar-surveillance.md",
+    "article_sha256": "00ee80e2f9076ddbba99b5a844e1f066fd7decedd0baf1642b75a1f9448ea5f2",
+    "normalized_review_input_sha256": "471d10565cc0684fe0cdea243540eba7f198c604f796d4c92ae43ff7538101ab",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\coastal-radar-surveillance\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:26:47+00:00"
+  }
 }

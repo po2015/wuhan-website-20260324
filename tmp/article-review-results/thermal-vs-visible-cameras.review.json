@@ -1,8 +1,8 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The article now clears the pass threshold with stronger low-light framing, clearer identification boundaries, and a more practical dual-channel selection model.",
-  "overall_score": 8.3,
-  "word_count": 1008,
+  "reason_for_decision": "The article passes because it answers the low-light question directly while still keeping the larger detection-versus-interpretation trade-off intact.",
+  "overall_score": 8.4,
+  "word_count": 1106,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -10,7 +10,7 @@
     "content_depth": 8,
     "readability_human_quality": 8,
     "information_density": 8,
-    "seo_knowledge_base_fitness": 8,
+    "seo_knowledge_base_fitness": 9,
     "technical_credibility": 8,
     "decision_value": 9,
     "original_insight": 8
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article explains low-light performance in operational terms instead of leaving it at a superficial sensor comparison.",
-    "It correctly distinguishes detection advantage from identification advantage, which improves credibility.",
-    "The final selection guidance now matches how teams actually use visible and thermal channels together."
+    "The article answers the headline comparison without flattening thermal and visible imaging into interchangeable tools.",
+    "It keeps the distinction between detection utility and identification utility clear throughout the piece.",
+    "The closing guidance on assigning one channel to discovery and another to interpretation is operationally useful."
   ],
-  "summary_assessment": "This is now a strong comparison article. It is more grounded, more decision-oriented, and less likely to mislead readers into a false either-or choice."
+  "summary_assessment": "This is a solid pass. The article is readable, decision-oriented, and avoids the common mistake of presenting thermal as a universal upgrade over visible imaging.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\thermal-vs-visible-cameras.md",
+    "article_sha256": "e2234490a0ebfc735c202ddea5b134889aa5f285d59b2e2f096e04545b9fddb2",
+    "normalized_review_input_sha256": "2c8932d755661bb74ad8d5c55f31e9375b9c862ed39a2f453ef539363971d288",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\thermal-vs-visible-cameras\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:33:58+00:00"
+  }
 }

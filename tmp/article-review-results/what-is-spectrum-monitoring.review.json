@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The article now explains spectrum monitoring as an evidence-producing workflow with better operational framing, sufficient depth, and cleaner editorial control.",
-    "overall_score":  8.3,
-    "word_count":  1005,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  8,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  8,
-                             "original_insight":  8
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It now distinguishes measurement from interpretation, which improves technical accuracy.",
-                      "The distributed-versus-centralized discussion makes the architecture implications clearer.",
-                      "The encoding issue and weak ending have been corrected."
-                  ],
-    "summary_assessment":  "This version passes. It is substantially more useful than the earlier draft and is now suitable for automation-grade review output."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes as a foundation explainer because it defines spectrum monitoring clearly, distinguishes it from one-time instrument use, and keeps interpretation boundaries honest.",
+  "overall_score": 8.5,
+  "word_count": 1120,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 9,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 8,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article explains well that monitoring is about patterns over time rather than isolated screenshots.",
+    "It draws a clean distinction between a spectrum analyzer as a tool and spectrum monitoring as a system or practice.",
+    "The limitations section usefully prevents readers from assuming monitoring alone reveals intent or authorization."
+  ],
+  "summary_assessment": "This is a solid pass for a foundation article. It is readable, operationally honest, and gives non-specialists a useful mental model for RF awareness and monitoring systems.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-spectrum-monitoring.md",
+    "article_sha256": "13e4bb13ed9a12476fa164434636128255f9cde7d6bd1b76d063576307860de4",
+    "normalized_review_input_sha256": "9a8e99fb3e751c43d256e927b1a7f56d555576756c6efda4a53229b972f0568f",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-spectrum-monitoring\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:39:13+00:00"
+  }
 }

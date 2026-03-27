@@ -3,14 +3,22 @@
 ## Goal
 
 Produce long-form knowledge content that helps engineers, planners, buyers, and technically curious visitors understand a topic without reading like a brochure.
+The default target is first-pass `PASS` under the article reviewer, not merely a draft that can be cleaned up later.
 
 ## Recommended Structure
 
-1. Short introduction
-2. Main technical explanation with `##` sections
-3. One or more comparison, implications, or deployment sections
-4. Optional "Where Cyrentis Fits" section only when genuinely useful
-5. Short conclusion
+1. Short introduction that frames the question and why it matters
+2. Main mechanism or technical explanation with substantive `##` sections
+3. One or more comparison, implications, deployment, or decision sections
+4. One section that states limitations, trade-offs, or what the article does not cover
+5. Optional "Where Cyrentis Fits" section only when genuinely useful and technically justified
+6. Short conclusion or synthesis
+
+## Length Standard
+
+- Default floor: `1500` words of substantive article text
+- Preferred target: `1500-2200` words
+- Do not add filler to reach the floor; use mechanisms, comparisons, deployment implications, validation logic, and buyer questions to deepen the article honestly
 
 ## Research Standard
 
@@ -32,6 +40,20 @@ Produce long-form knowledge content that helps engineers, planners, buyers, and 
 - Prefer concrete language over inflated summary
 - Define specialized terms once, then use them consistently
 - Keep paragraphs compact and decision-useful
+- Avoid generic AI transitions, repetitive closers, and empty summary paragraphs
+- Every major `##` section should add either depth, evidence, comparison value, or deployment judgment
+
+## Reviewer Safety Checklist
+
+Before finalizing, check that the draft would likely clear these reviewer dimensions:
+
+- `structure_logical_clarity`: the section order feels intentional and easy to scan
+- `content_depth`: the article explains mechanisms, trade-offs, or engineering logic
+- `information_density`: paragraphs are not padded or repetitive
+- `technical_credibility`: claims sound precise to a technical reader
+- `decision_value`: the article helps selection, planning, or interpretation
+
+If one of these feels weak, revise before finalizing.
 
 ## Internal Links
 

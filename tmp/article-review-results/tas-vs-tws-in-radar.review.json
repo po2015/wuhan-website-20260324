@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The article is already strong enough under the stricter rubric because it clearly separates TAS and TWS workloads, preserves neutral framing, and provides decision-oriented reading guidance.",
-    "overall_score":  8.3,
-    "word_count":  1387,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  8,
-                             "target_classification_content_framing":  8,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  9,
-                             "decision_value":  8,
-                             "original_insight":  8
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It explains why TAS and TWS capacity figures are not directly comparable.",
-                      "The article stays close to operational scheduling logic instead of drifting into jargon for its own sake.",
-                      "The official reading list supports the technical distinctions well."
-                  ],
-    "summary_assessment":  "This version passes. It is specific enough to be useful, technically credible, and sufficiently neutral for the current rubric."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it explains TAS and TWS as different scheduling workloads, not as directly comparable capacity badges, which is exactly the distinction readers need.",
+  "overall_score": 8.7,
+  "word_count": 1512,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article handles the acronym ambiguity around TAS carefully without losing practical usefulness.",
+    "It is strong on why capacity numbers do not convert one-to-one across TWS and TAS workloads.",
+    "The links between scan architecture, update rhythm, and target capacity give the article real engineering depth."
+  ],
+  "summary_assessment": "This is a high-quality pass. The article is technically careful, operationally useful, and unusually strong at explaining why published TAS and TWS figures are often misread.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\tas-vs-tws-in-radar.md",
+    "article_sha256": "b571873601290bcc4efb8b83f709f6c2794c5e93df05e6b2031cd25aba417fc3",
+    "normalized_review_input_sha256": "61363452bd1cc021b1c1a8b8e31ff468fcaad2c2da49a0945e39068300f54e9c",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\tas-vs-tws-in-radar\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:39:12+00:00"
+  }
 }

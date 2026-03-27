@@ -11,6 +11,8 @@ Use this skill to review one article at a time against a strict 10-dimension edi
 
 This skill is for article QA, not article writing. It should be used when the user wants a structured review result, a gating decision, or machine-readable editorial feedback.
 
+This skill is **not** the entrypoint for repo review loops. In repo workflows, use the review-loop entry skill and let it call this reviewer as a subordinate step.
+
 ## Workflow
 
 1. If the user gives a repository article file instead of raw text, run `scripts/prepare_kb_article_review.py`.
@@ -19,6 +21,7 @@ This skill is for article QA, not article writing. It should be used when the us
 4. Review the article body only. Ignore YAML front matter for scoring except when title, description, or keypoints are intentionally included in the normalized review input.
 5. Return only valid JSON. No markdown, no code fences, no commentary before or after the JSON object.
 6. In iterative QA workflows, treat any score below pass threshold as blocked work: revise the article for `REQUIRE_REVISION`, rewrite the article for `REQUIRE_REWRITE`, then review again until the result is `PASS`.
+7. Never write or edit `tmp/article-review-results/*.review.json` directly from this skill. Final PASS files must be sealed by `scripts/seal_final_review.py` through the review-loop workflow.
 
 ## Input Contract
 
@@ -55,5 +58,6 @@ When reviewing Cyrentis knowledge-base content in this repo:
   to select the earliest dated article and emit normalized review input
 - Use `python .codex/skills/article-reviewer/scripts/prepare_kb_article_review.py --file <path>`
   to review a specific article
+- Use `--strict-pass-only` when the review loop must trust only sealed PASS results that match the current article content hash
 
 The script helps automation by selecting the file, stripping front matter, and producing a stable text payload for this skill.

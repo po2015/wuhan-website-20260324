@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The article now clears the pass threshold with stronger airport-specific governance framing, layered sensor logic, and lower marketing noise.",
   "overall_score": 8.3,
-  "word_count": 1094,
+  "word_count": 1162,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "It uses FAA guidance appropriately to frame both technology constraints and escalation workflow.",
     "The revised ending keeps the article practical by turning the discussion into an airport design check instead of a brand section."
   ],
-  "summary_assessment": "This version passes under the stricter rubric. It is technically grounded, airport-specific, and more useful for planning than the earlier, more promotional variant."
+  "summary_assessment": "This version passes under the stricter rubric. It is technically grounded, airport-specific, and more useful for planning than the earlier, more promotional variant.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\drone-detection-for-airports.md",
+    "article_sha256": "cfa665da908c752c7d04710a72b9f51c5e1f68ff54787bfa34c88546b2452134",
+    "normalized_review_input_sha256": "6ff20b4f2148f445e349936d372fecf9a2b118f1ce0a3a291ff5a7ec2f2486e3",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\drone-detection-for-airports\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:26:47+00:00"
+  }
 }

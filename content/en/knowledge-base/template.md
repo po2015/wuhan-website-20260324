@@ -36,33 +36,60 @@ keypoints:
 <!--
 Knowledge-base writing rules:
 1. Use a practical, explanatory tone.
-2. Lead with a short explanation of the topic in plain language.
-3. Use H2 and H3 headings to organize the article.
-4. Use charts or tables only when the underlying data is public and citable.
-5. Recommend existing Cyrentis products or services only when there is a real fit.
-6. External links should be authoritative and directly relevant.
-7. Keep terminology consistent with existing Cyrentis product naming.
-8. Do not reuse the same lead image, stock photo source, or article-specific figure from another knowledge-base article unless the user explicitly requests reuse.
+2. Default target is 1500+ substantive words unless the user explicitly asks for shorter.
+3. Lead with a short explanation of the topic in plain language.
+4. Use H2 and H3 headings to organize the article.
+5. Include the equivalent of these reviewer-safe blocks:
+   - mechanism or main technical explanation
+   - operational or decision section
+   - limitations, trade-offs, or common mistakes section
+   - short conclusion or takeaway
+6. Use charts or tables only when the underlying data is public and citable.
+7. Recommend existing Cyrentis products or services only when there is a real fit.
+8. External links should be authoritative and directly relevant.
+9. Keep terminology consistent with existing Cyrentis product naming.
+10. Do not reuse the same lead image, stock photo source, or article-specific figure from another knowledge-base article unless the user explicitly requests reuse.
+11. Do not pad for word count; add mechanism, implications, comparison value, or reader judgment instead.
 -->
 
-Write a short introduction that explains the topic, the real-world question behind it, and why the reader should care.
+Write a 2-3 paragraph introduction that explains the topic, the real-world question behind it, and why the reader should care.
 
-## Main Section Title
+## Core Explanation or How It Works
 
-Explain the first major idea in practical terms.
+Explain the main mechanism, architecture, or technical logic in practical terms.
 
 ### Supporting Detail
 
-Add a narrower explanation, comparison, or field example.
+Add a narrower explanation, comparison, field example, or clarifying detail that increases technical depth.
 
-## Operational Implications
+## What Changes Performance or Selection
 
-Explain what the topic changes in planning, system design, deployment, or procurement.
+Explain the variables, design choices, or comparison points that most affect how the topic should be understood.
 
-## Where Cyrentis Fits
+## Operational Implications or Decision Guidance
 
-When relevant, connect the topic to existing Cyrentis pages such as [Horizon](/horizon/), [Surveillance Radar](/sensors/src/), [Surveillance Optics](/sensors/soc/), [Spectrum Detection](/sensors/sdc/), or [Services](/services/).
+Explain what the topic changes in planning, system design, deployment, procurement, or real-world interpretation.
+
+## Limits, Trade-Offs, or Common Mistakes
+
+State what the article does not prove, where the concept is often misunderstood, or what trade-offs matter in practice.
 
 ## Conclusion
 
-End with a short practical takeaway.
+End with a short practical takeaway or synthesis. Do not end abruptly.
+
+## Related Reading
+
+Add authoritative external links and a small number of relevant internal links.
+
+<!--
+If the article is Foundation-oriented, you can rename the sections into plainer language such as:
+- What X Means
+- How X Works
+- Why It Matters
+- Common Mistakes or Limits
+- What This Means in Practice
+But keep the same underlying coverage so the draft remains reviewer-safe.
+
+If there is a genuine technical fit, you may insert an optional "Where Cyrentis Fits" section before the conclusion.
+-->

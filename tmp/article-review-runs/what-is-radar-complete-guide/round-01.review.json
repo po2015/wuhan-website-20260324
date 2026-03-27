@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article clears the pass threshold with strong foundational structure, broad technical coverage, and solid beginner decision framing.",
+  "overall_score": 8.6,
+  "word_count": 1569,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 8,
+    "original_insight": 9
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article covers radar fundamentals, system parts, type taxonomy, and applications in a coherent order.",
+    "The new beginner-selection framing helps the guide move beyond pure definition into practical understanding.",
+    "The tone remains explanatory and technically disciplined rather than drifting into hype or unsupported claims."
+  ],
+  "summary_assessment": "This is a strong foundation guide. It is broad without feeling padded and gives beginners a credible map of what radar is, how it works, and why radar families differ."
+}

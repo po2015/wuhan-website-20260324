@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The article now gives a complete enough selection framework across mission, geometry, integration, scan behavior, and sustainment to pass under the stricter rubric.",
-    "overall_score":  8.4,
-    "word_count":  1006,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  9,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  9,
-                             "original_insight":  8
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It treats radar selection as a system-engineering decision rather than a spec-sheet comparison.",
-                      "The scan-architecture and sustainment sections materially improve practical usefulness.",
-                      "The brand-led section has been removed, making the article more neutral and review-ready."
-                  ],
-    "summary_assessment":  "This version passes. It is now decision-oriented, technically grounded, and suitable as a professional planning article."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it anchors radar selection in mission, geometry, clutter, scan behavior, and sustainment rather than in brochure claims.",
+  "overall_score": 8.5,
+  "word_count": 1103,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on coverage ownership and on treating radar choice as geometry rather than only sensor capability.",
+    "It balances scan architecture, integration, and human factors in a way that is useful for real procurement.",
+    "The checklist at the end turns the guidance into a practical selection process."
+  ],
+  "summary_assessment": "This article is a strong pass. It gives a mature radar-selection framework and resists the common temptation to reduce the decision to range or one headline feature.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\choosing-the-right-radar-system.md",
+    "article_sha256": "d2cf14e730ae3303ae94c70cbd4b9b48bdd28ca5646feab554196c4c936cfa17",
+    "normalized_review_input_sha256": "fe5aae10d9605c31f17aed867f94e5f5d74e6e6569ef934c6404b805f4b93860",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\choosing-the-right-radar-system\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:39:13+00:00"
+  }
 }

@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The article now explains tracking as an estimation process and makes TWS operationally meaningful enough to pass the stricter review.",
-    "overall_score":  8.3,
-    "word_count":  1018,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  8,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  8,
-                             "original_insight":  7
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It now explains initiation, maintenance, coasting, and termination rather than only defining TWS.",
-                      "The article correctly separates track count from tracking quality.",
-                      "It connects radar tracking to downstream operator workflows."
-                  ],
-    "summary_assessment":  "This article passes. It is clear enough for beginners while still preserving the technical ideas that matter."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes as a foundation guide because it explains target tracking and track-while-scan in clear operational terms without flattening the estimation and track-management challenges.",
+  "overall_score": 8.5,
+  "word_count": 1107,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 9,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 8,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article distinguishes detection from tracking very clearly, which is the right starting point for beginners.",
+    "It explains track files, track initiation, coasting, and termination without becoming over-technical.",
+    "The sections on why large TWS numbers can mislead are especially useful."
+  ],
+  "summary_assessment": "This is a strong pass for an introductory article. It is readable, technically disciplined, and helps readers understand why tracking quality matters more than one feature word on a datasheet.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-target-tracking-tws.md",
+    "article_sha256": "5638c7226e4c00873736e0a71917c72e20fe471b824af9a75bbc6c9999919707",
+    "normalized_review_input_sha256": "74597204e1eb1beb2afaec4a06f3fe8bb0da06a78d73c2e3571c830264ff9cfd",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-target-tracking-tws\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:41:22+00:00"
+  }
 }

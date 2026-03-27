@@ -1,0 +1,4 @@
+interface:
+  display_name: "News Reviewer"
+  short_description: "Review formal company news drafts."
+  default_prompt: "Review this company news draft and output strict JSON only."

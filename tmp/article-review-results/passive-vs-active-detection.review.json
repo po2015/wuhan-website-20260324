@@ -1,8 +1,8 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with better deployment framing, clearer dependence logic, and stronger role assignment for passive and active sensing.",
-  "overall_score": 8.2,
-  "word_count": 1017,
+  "reason_for_decision": "The article clears the pass threshold by explaining the sensing distinction clearly and tying it to deployment scenarios where combined architectures make sense.",
+  "overall_score": 8.3,
+  "word_count": 1120,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -12,7 +12,7 @@
     "information_density": 8,
     "seo_knowledge_base_fitness": 8,
     "technical_credibility": 8,
-    "decision_value": 8,
+    "decision_value": 9,
     "original_insight": 8
   },
   "failed_dimensions_below_5": [],
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The piece now explains how the active-versus-passive distinction changes operational dependence, not only sensing physics.",
-    "It gives useful deployment scenarios instead of leaving the article at textbook definitions.",
-    "The conclusion ties the comparison back to uncertainty reduction rather than to a simplistic technology preference."
+    "The article explains active and passive sensing in physical terms rather than using them as marketing labels.",
+    "It does a good job showing why passive methods are often more conditional on target behavior and ambient conditions.",
+    "The layered examples make the conclusion practical instead of abstract."
   ],
-  "summary_assessment": "This version passes because it is more applied and more credible than a generic active-versus-passive explainer. It now works as a system-planning article."
+  "summary_assessment": "This article is strong enough to pass under the stricter workflow. It is technically sound, clear for non-specialists, and useful for deployment planning.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\passive-vs-active-detection.md",
+    "article_sha256": "db71b109264198a1e32d6b8e29a2b25ec685f85de3d2739e4a10a8748da36049",
+    "normalized_review_input_sha256": "2e90c976714b0181ce79265ee6d5e62c3a7292fba33ae7d33fff1001e2305c2e",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\passive-vs-active-detection\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:33:59+00:00"
+  }
 }

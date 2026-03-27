@@ -1,0 +1,8 @@
+interface:
+  display_name: "Article Review Loop"
+  short_description: "Review, revise, re-review, then seal final PASS"
+  brand_color: "#1F4D6B"
+  default_prompt: "Use $article-review-loop to process the next pending article under the strict review -> revise -> review -> PASS workflow."
+
+policy:
+  allow_implicit_invocation: true

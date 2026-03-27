@@ -1,12 +1,12 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article now clears the pass threshold with stronger consequence framing, clearer security-resilience integration, and improved workflow focus.",
-  "overall_score": 8.2,
-  "word_count": 1001,
+  "reason_for_decision": "The article clears the pass threshold with strong consequence-driven framing, useful protection-architecture guidance, and disciplined non-promotional writing.",
+  "overall_score": 8.4,
+  "word_count": 1069,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
-    "marketing_noise_control": 8,
+    "marketing_noise_control": 9,
     "content_depth": 8,
     "readability_human_quality": 8,
     "information_density": 8,
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now starts from consequence and dependency, which is the right organizing logic for critical-infrastructure protection.",
-    "It connects surveillance architecture to escalation, continuity, and operator ownership instead of treating security as a device catalog.",
-    "The added exercise and workflow language improves realism and lowers the risk of the piece reading like a generic template."
+    "The piece starts from consequence and dependency mapping rather than hardware shopping, which improves its decision usefulness.",
+    "It connects surveillance design to continuity and recovery logic instead of treating infrastructure security as a device-only problem.",
+    "The article stays operational and concrete, especially around command-layer integration and escalation ownership."
   ],
-  "summary_assessment": "This version passes because it is more specific, more operationally grounded, and less generic than the earlier draft. It now behaves like a real system-design article rather than a high-level checklist."
+  "summary_assessment": "This is a strong knowledge-base article for infrastructure security planning. It is practical, coherent, and grounded in operational consequences rather than generic protection language.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\critical-infrastructure-protection.md",
+    "article_sha256": "7fddd690b4a62198c7b71b3f9ee3daa5007b74e1e1eaaae5a387b3f45be4f2bd",
+    "normalized_review_input_sha256": "87706fa5bdc1f821b49f0e6b46bbb5aece1ee671c308179a9cf41cf15fdfc47c",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\critical-infrastructure-protection\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:33:58+00:00"
+  }
 }

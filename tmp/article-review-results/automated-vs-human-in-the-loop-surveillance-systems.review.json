@@ -1,10 +1,10 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with stronger authority-boundary framing, better consequence-based oversight logic, and clearer trust requirements.",
-  "overall_score": 8.3,
-  "word_count": 1000,
+  "reason_for_decision": "The article clears the pass threshold by tying automation levels to authority, consequence, and operator trust instead of treating automation as a headcount question.",
+  "overall_score": 8.4,
+  "word_count": 1088,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
     "marketing_noise_control": 9,
     "content_depth": 8,
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now explains that the real design question is where authority changes hands, not whether automation exists.",
-    "It connects automation level to consequence, which improves both governance and system-design value.",
-    "The oversight requirements are concrete enough to move beyond generic human-in-the-loop rhetoric."
+    "The article is strong on authority boundaries and why consequence level should shape automation depth.",
+    "It explains clearly how weak human-in-the-loop design can still fail if evidence quality is poor.",
+    "The recommended architecture of automating lower layers while preserving operator authority for consequential actions is sound."
   ],
-  "summary_assessment": "This version passes because it treats automation as a risk and authority design problem rather than as a staffing question. It now reads like a serious surveillance-systems article."
+  "summary_assessment": "This is a strong pass. The article is disciplined, risk-aware, and practically useful for teams defining automation and operator oversight in surveillance systems.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\automated-vs-human-in-the-loop-surveillance-systems.md",
+    "article_sha256": "cb400a803ef35bc18f582ce8a85da77acba528cfd802ef1078cb59e9de64d6cc",
+    "normalized_review_input_sha256": "023d7daa843c45a74d480859abbd7041e1960b82429ec16135f2075617fe00c3",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\automated-vs-human-in-the-loop-surveillance-systems\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:37:04+00:00"
+  }
 }

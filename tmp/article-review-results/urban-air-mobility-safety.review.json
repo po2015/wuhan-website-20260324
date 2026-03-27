@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article now meets the strict pass threshold with stronger operational depth, reduced promotional framing, and clearer decision support value.",
+  "overall_score": 8.3,
+  "word_count": 1072,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The revised version now clears the strict word-count floor while preserving the topic focus.",
+    "The article is more neutral and architecture-oriented after removing repo-specific positioning.",
+    "The added operational sections materially improve decision value and topic depth."
+  ],
+  "summary_assessment": "The revised version now treats UAM safety as an operational integration problem, with stronger coverage of vertiport state, contingencies, and phased deployment reality.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\urban-air-mobility-safety.md",
+    "article_sha256": "3c110a9a6a4e23afdd750d76532be285619103d1e080aa3a98e161cf44a1cf5c",
+    "normalized_review_input_sha256": "af240dcf454075e7e7468e273c97358db9fa1b43d9a7eca68b8023993c415842",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\urban-air-mobility-safety\\round-02.review.json",
+    "sealed_at_utc": "2026-03-27T03:03:09+00:00"
+  }
+}

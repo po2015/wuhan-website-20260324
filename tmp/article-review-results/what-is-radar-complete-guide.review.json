@@ -2,7 +2,7 @@
   "final_decision": "PASS",
   "reason_for_decision": "The article clears the pass threshold with strong foundational structure, broad technical coverage, and solid beginner decision framing.",
   "overall_score": 8.6,
-  "word_count": 1489,
+  "word_count": 1569,
   "dimension_scores": {
     "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
@@ -25,5 +25,14 @@
     "The new beginner-selection framing helps the guide move beyond pure definition into practical understanding.",
     "The tone remains explanatory and technically disciplined rather than drifting into hype or unsupported claims."
   ],
-  "summary_assessment": "This is a strong foundation guide. It is broad without feeling padded and gives beginners a credible map of what radar is, how it works, and why radar families differ."
+  "summary_assessment": "This is a strong foundation guide. It is broad without feeling padded and gives beginners a credible map of what radar is, how it works, and why radar families differ.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-radar-complete-guide.md",
+    "article_sha256": "bcb2466802ac69f354c68c35864df32819dc74be08f479c00b129216b868ff0d",
+    "normalized_review_input_sha256": "f6f7f21501507e4c8842948e80d7a8afe83315649d4084ac4698007be8682a04",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-radar-complete-guide\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:26:46+00:00"
+  }
 }

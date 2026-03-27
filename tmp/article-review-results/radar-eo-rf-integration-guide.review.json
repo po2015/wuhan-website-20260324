@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The article now describes integration as a workflow and evidence problem rather than a simple sensor-bundling exercise, which is strong enough to pass.",
-    "overall_score":  8.4,
-    "word_count":  1001,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  9,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  9,
-                             "original_insight":  8
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It clearly separates the roles of radar, EO, and RF instead of collapsing them into one metric.",
-                      "The latency-budget and evidence-threshold sections add real systems-engineering value.",
-                      "The brand-specific section has been removed, which improves editorial discipline."
-                  ],
-    "summary_assessment":  "This version passes. It is structured, actionable, and more aligned with professional system-design guidance."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article clears the pass bar by focusing on integration as a workflow problem involving role separation, timing, coordinate alignment, and operator closure.",
+  "overall_score": 8.6,
+  "word_count": 1089,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article explains that shared networking is not the same as real integration, which is the right architectural starting point.",
+    "Its treatment of time synchronization, coordinate registration, and confidence logic is especially strong.",
+    "The operator-closure and degraded-mode sections make the guidance practical rather than theoretical."
+  ],
+  "summary_assessment": "This article passes comfortably. It is one of the stronger system-design pieces in the queue because it treats fusion as an operational chain instead of a generic feature.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\radar-eo-rf-integration-guide.md",
+    "article_sha256": "5e5d62d03023eaab434c6f15582ed322d3db0d6bf27f3f99c3d7b92332818d3a",
+    "normalized_review_input_sha256": "ae0e1aa894c37078792ee510639b9252200c32772cafd51a13d22f251e57f2c7",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\radar-eo-rf-integration-guide\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:39:12+00:00"
+  }
 }

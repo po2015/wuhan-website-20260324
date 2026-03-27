@@ -1,8 +1,8 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with stronger operating-model framing, clearer hybrid-fleet logic, and more honest treatment of setup burden.",
+  "reason_for_decision": "The article passes because it defines flexibility correctly in operational terms and distinguishes persistence flexibility from redeployment flexibility.",
   "overall_score": 8.3,
-  "word_count": 1001,
+  "word_count": 1088,
   "dimension_scores": {
     "structure_logical_clarity": 8,
     "target_classification_content_framing": 9,
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article no longer treats mobility as self-evident value and instead asks what kind of flexibility the mission actually needs.",
-    "The added setup and calibration discussion improves realism significantly.",
-    "The hybrid-fleet model makes the comparison more useful for real programs than a simple fixed-versus-mobile dichotomy."
+    "The article avoids the simplistic assumption that mobility automatically means better flexibility.",
+    "It is strong on field setup, calibration, and communications burden for mobile radar programs.",
+    "The mixed-fleet recommendation is realistic for programs that operate both permanent and temporary missions."
   ],
-  "summary_assessment": "This version passes because it ties flexibility to operations, staffing, and support burden rather than to transportability alone."
+  "summary_assessment": "This article is strong enough to pass under the stricter workflow. It gives a useful operational definition of flexibility and connects it to deployment models rather than slogans.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\fixed-radar-vs-mobile-radar-systems-which-is-more-flexible.md",
+    "article_sha256": "5feee9f4a90a5a5c0800efc22bb45833d3f72db15da6899d7fb81dc550984143",
+    "normalized_review_input_sha256": "c916ee3dcefb51ac7515130fed4ea2e490fde1ae37a287602e8933fc5b59c495",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\fixed-radar-vs-mobile-radar-systems-which-is-more-flexible\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:37:03+00:00"
+  }
 }

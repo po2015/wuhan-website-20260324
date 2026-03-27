@@ -1,16 +1,16 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with clearer band-selection trade-offs, stronger system-fit framing, and lower risk of simplistic higher-band bias.",
-  "overall_score": 8.4,
-  "word_count": 1050,
+  "reason_for_decision": "The article passes because it compares band choice through mission geometry, weather behavior, and system fit instead of through shallow frequency labels.",
+  "overall_score": 8.5,
+  "word_count": 1166,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
     "marketing_noise_control": 9,
     "content_depth": 8,
     "readability_human_quality": 8,
-    "information_density": 9,
-    "seo_knowledge_base_fitness": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
     "technical_credibility": 8,
     "decision_value": 9,
     "original_insight": 8
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article avoids turning frequency bands into a simple better-versus-worse ranking.",
-    "It connects band choice to aperture, weather, target size, and full-system architecture rather than to frequency alone.",
-    "The procurement guidance is practical and reduces the risk of choosing a band for the wrong reason."
+    "The article explains what actually changes between C, X, and Ku band in operational terms, not only spectrum terms.",
+    "It keeps the selection tied to target set, weather, aperture, and workflow, which is the right planning lens.",
+    "The procurement sequence near the end gives readers a usable way to narrow the band choice for real projects."
   ],
-  "summary_assessment": "This version is strong enough to pass. It gives readers a disciplined way to think about C, X, and Ku band selection without oversimplifying the trade-offs."
+  "summary_assessment": "This is a strong comparison article. It is technically grounded, practically useful, and avoids the common mistake of treating higher frequency as automatically better.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\c-band-vs-x-band-vs-ku-band-radar.md",
+    "article_sha256": "30ae9baaf9d6c359648072c672e065862c39f5be0149e995c7a1030227c0a1c4",
+    "normalized_review_input_sha256": "87d0d0e5b730902de56a0328423ae97968b767d414a8a190a9733c7cbe256e3d",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\c-band-vs-x-band-vs-ku-band-radar\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:37:02+00:00"
+  }
 }

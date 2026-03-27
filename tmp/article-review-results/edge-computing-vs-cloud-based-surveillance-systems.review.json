@@ -1,10 +1,10 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with stronger function-placement logic, better hybrid framing, and clearer latency-versus-governance trade-offs.",
-  "overall_score": 8.3,
-  "word_count": 1018,
+  "reason_for_decision": "The article clears the pass bar by treating compute placement as a mission question about latency, resilience, and data movement rather than as infrastructure fashion.",
+  "overall_score": 8.4,
+  "word_count": 1104,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
     "marketing_noise_control": 9,
     "content_depth": 8,
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article now separates time-critical and management-critical functions, which improves architectural clarity.",
-    "The hybrid-model explanation is concrete enough to guide real deployment decisions.",
-    "The piece avoids ideology and keeps the comparison tied to degraded-network behavior and operational need."
+    "The article separates time-critical functions from management-critical functions in a way that is very useful for system design.",
+    "It explains clearly why pure cloud and pure edge architectures both break down in real surveillance programs.",
+    "The hybrid split of local alerting with centralized analytics is a strong, pragmatic recommendation."
   ],
-  "summary_assessment": "This version passes because it treats edge and cloud as function-placement choices rather than as infrastructure slogans. It now works as a practical surveillance-architecture article."
+  "summary_assessment": "This article passes comfortably. It is well structured, operationally useful, and grounded in concrete architecture trade-offs rather than trend language.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\edge-computing-vs-cloud-based-surveillance-systems.md",
+    "article_sha256": "85c239e1d3a34cf35dee1e2c485e3297da23387c81ac428b1b87b2b3c55de9cc",
+    "normalized_review_input_sha256": "eda9acb3ed344ff605c8d15a8dfa3ed47fa7d660b253bab875cb00946e8f2e69",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\edge-computing-vs-cloud-based-surveillance-systems\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:37:03+00:00"
+  }
 }

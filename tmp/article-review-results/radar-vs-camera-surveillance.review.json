@@ -1,16 +1,16 @@
 {
   "final_decision": "PASS",
-  "reason_for_decision": "The revised article clears the pass threshold with stronger handoff logic, clearer camera-search limitations, and better mission-fit framing.",
-  "overall_score": 8.3,
-  "word_count": 1006,
+  "reason_for_decision": "The article meets the pass bar with a clean search-versus-confirmation framing, strong handoff emphasis, and good practical deployment guidance.",
+  "overall_score": 8.5,
+  "word_count": 1109,
   "dimension_scores": {
-    "structure_logical_clarity": 8,
+    "structure_logical_clarity": 9,
     "target_classification_content_framing": 9,
     "marketing_noise_control": 9,
     "content_depth": 8,
     "readability_human_quality": 8,
     "information_density": 8,
-    "seo_knowledge_base_fitness": 8,
+    "seo_knowledge_base_fitness": 9,
     "technical_credibility": 8,
     "decision_value": 9,
     "original_insight": 8
@@ -21,9 +21,18 @@
   "revision_actions": [],
   "rewrite_actions": [],
   "strengths": [
-    "The article makes the search-versus-confirmation split clear enough for non-specialist readers without becoming shallow.",
-    "The new handoff section improves decision value by explaining why cue quality matters more than simply owning both sensors.",
-    "The tone stays neutral and technical while still making a clear selection argument."
+    "The article avoids a false one-sensor winner and instead assigns radar and cameras different operational jobs.",
+    "Its discussion of cueing and sensor handoff is more useful than a generic comparison table alone.",
+    "The writeup stays concrete about field-of-view, pointing, and timing limits that affect real camera performance."
   ],
-  "summary_assessment": "This version now passes. It is clearer about how radar and cameras divide labor, and it gives readers a more realistic basis for system selection."
+  "summary_assessment": "This version passes comfortably. It is organized well, aligned with security workflows, and especially strong on explaining why radar-to-camera handoff quality matters.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\radar-vs-camera-surveillance.md",
+    "article_sha256": "955ffc664e3f97768573bbcbf9f385bd383e4e478f3407d36f5d544096f4e3f8",
+    "normalized_review_input_sha256": "bf1c119057bcadd6b3af497ba11fe46729f670b6e49542e2132fdae617d4ed1a",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\radar-vs-camera-surveillance\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:33:58+00:00"
+  }
 }

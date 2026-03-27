@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article now meets the strict pass threshold with stronger operational depth, reduced promotional framing, and clearer decision support value.",
+  "overall_score": 8.3,
+  "word_count": 1052,
+  "dimension_scores": {
+    "structure_logical_clarity": 8,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The revised version now clears the strict word-count floor while preserving the topic focus.",
+    "The article is more neutral and architecture-oriented after removing repo-specific positioning.",
+    "The added operational sections materially improve decision value and topic depth."
+  ],
+  "summary_assessment": "The revised version is now more grounded in campus reality, with clearer treatment of seasonal use patterns, governance, emergency workflow, and selective expansion.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\campus-security-systems.md",
+    "article_sha256": "72e83496504faec8fe220569f1f25b87dee2a3b510b248206bdb97f74bbf3dcd",
+    "normalized_review_input_sha256": "705411fbf8c78e9579475059f122080e31b475227a611c4df416129c48de0f99",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\campus-security-systems\\round-02.review.json",
+    "sealed_at_utc": "2026-03-27T03:03:10+00:00"
+  }
+}

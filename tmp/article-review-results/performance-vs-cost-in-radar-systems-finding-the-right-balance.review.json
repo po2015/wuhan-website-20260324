@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The revised article now treats radar economics as a lifecycle and mission-effectiveness problem, which gives it clear decision value and enough depth to pass.",
-    "overall_score":  8.6,
-    "word_count":  1406,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  8,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  9,
-                             "original_insight":  9
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It replaces shallow price-versus-performance framing with a mission-consequence model.",
-                      "The scoring and procurement red-flag sections make the article actionable for real trade studies.",
-                      "The tone stays neutral and avoids product-led drift."
-                  ],
-    "summary_assessment":  "This article now passes comfortably. It is more rigorous, more useful for buying decisions, and more editorially controlled than the earlier version."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article clears the pass threshold by comparing performance and cost at the same operational level and by grounding procurement advice in trade-study discipline.",
+  "overall_score": 8.6,
+  "word_count": 1570,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is especially strong on separating acquisition cost from full lifecycle and integration cost.",
+    "It gives readers concrete measures-of-effectiveness and worksheet-style approaches that improve decision value.",
+    "The piece avoids vague budget talk and keeps cost-performance balance tied to mission consequence."
+  ],
+  "summary_assessment": "This article passes comfortably. It is one of the stronger planning pieces in the set because it turns an abstract budget debate into a disciplined systems-engineering process.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\performance-vs-cost-in-radar-systems-finding-the-right-balance.md",
+    "article_sha256": "566f04afaaf0687197c26778f54107f37b26916532b3cc17593ccf334782fde3",
+    "normalized_review_input_sha256": "5e55d3b6bf2bd43006cc21fb55557fcfa0ff283d79c9aa7c7014deff21e01de7",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\performance-vs-cost-in-radar-systems-finding-the-right-balance\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:39:12+00:00"
+  }
 }

@@ -1,0 +1,272 @@
+{{ define "main" }}
+{{- $heroStats := .Params.hero_stats -}}
+{{- $featureCards := .Params.feature_cards -}}
+{{- $coverageTable := .Params.coverage_table -}}
+{{- $fitChecks := .Params.fit_checks -}}
+{{- $planningNotes := .Params.planning_notes -}}
+{{- $technicalSnapshot := .Params.technical_snapshot -}}
+{{- $integrationModules := .Params.integration_modules -}}
+{{- $deploymentScenarios := .Params.deployment_scenarios -}}
+{{- $relatedProducts := .Params.related_products -}}
+
+<section class="bg-slate-50">
+  <section class="py-14">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
+        <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(340px,0.92fr)] lg:items-start">
+          <div>
+            {{ partial "breadcrumb.html" . }}
+            {{ with .Params.series_label }}
+            <p class="mt-4 text-[0.78rem] font-extrabold uppercase tracking-[0.18em] text-sky-700">{{ . }}</p>
+            {{ end }}
+            <h1 class="mt-3 text-[clamp(2.2rem,2.3vw+1rem,4rem)] font-extrabold leading-[0.98] tracking-[-0.05em] text-slate-900">{{ .Params.model | default .Title }}</h1>
+            {{ with .Params.description }}
+            <p class="mt-4 max-w-3xl text-base leading-8 text-slate-600">{{ . }}</p>
+            {{ end }}
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              {{ with .Params.band }}<span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-800">{{ . }}</span>{{ end }}
+              {{ with .Params.system_type }}<span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-800">{{ . }}</span>{{ end }}
+              {{ with .Params.architecture_name }}<span class="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-800">{{ . }}</span>{{ end }}
+            </div>
+
+            {{ with .Params.hero_summary_points }}
+            <ul class="mt-6 grid gap-3 text-sm leading-7 text-slate-700">
+              {{ range . }}
+              <li class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">{{ . }}</li>
+              {{ end }}
+            </ul>
+            {{ end }}
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="{{ printf "%s#contact-form" ("contact-us/" | relLangURL) }}" class="inline-flex items-center justify-center rounded-full bg-sky-700 px-5 py-3 text-sm font-bold text-white transition hover:bg-sky-800">Request Project Discussion</a>
+              <a href="{{ "/sensors/src/" | relLangURL }}" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">Back to SRC List</a>
+            </div>
+          </div>
+
+          <div class="grid gap-4">
+            <div class="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-b from-slate-100 via-sky-50 to-white p-6">
+              <span class="absolute bottom-8 left-1/2 h-7 w-2/3 -translate-x-1/2 rounded-full bg-slate-400/20 blur-2xl"></span>
+              {{ with .Params.hero_image }}
+              <img src="{{ . | relURL }}" alt="{{ $.Params.model | default $.Title }}" class="relative z-10 mx-auto h-[22rem] w-full object-contain object-center">
+              {{ end }}
+            </div>
+
+            {{ with $fitChecks }}
+            <article class="card-shell">
+              <p class="section-kicker">Project Fit</p>
+              <h2 class="mt-4 text-[1.3rem] font-extrabold leading-tight text-slate-900">What a buyer should confirm before treating this model as the right radar.</h2>
+              <div class="mt-5 grid gap-3">
+                {{ range . }}
+                <article class="rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4">
+                  <h3 class="text-sm font-extrabold uppercase tracking-[0.12em] text-slate-500">{{ .title }}</h3>
+                  <p class="mt-2 text-sm leading-7 text-slate-600">{{ .text }}</p>
+                </article>
+                {{ end }}
+              </div>
+            </article>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ with $heroStats }}
+  <section class="pb-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        {{ range . }}
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
+          {{ with .icon }}
+          <img src="{{ . | relURL }}" alt="" class="h-14 w-14" aria-hidden="true">
+          {{ end }}
+          <p class="mt-4 text-[0.72rem] font-extrabold uppercase tracking-[0.16em] text-slate-500">{{ .label }}</p>
+          <p class="mt-2 text-lg font-extrabold leading-7 text-slate-900">{{ .value }}</p>
+          {{ with .note }}
+          <p class="mt-2 text-sm leading-7 text-slate-600">{{ . }}</p>
+          {{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(340px,0.92fr)]">
+        <article class="card-shell">
+          <p class="section-kicker">Operational Position</p>
+          <h2 class="section-title">{{ .Params.positioning_title }}</h2>
+          <div class="content-typography mt-5">{{ .Content }}</div>
+          <div class="mt-6">
+            {{ partial "social-share-panel.html" . }}
+          </div>
+        </article>
+
+        {{ with $planningNotes }}
+        <article class="card-shell">
+          <p class="section-kicker">Planning Notes</p>
+          <h2 class="mt-4 text-[1.4rem] font-extrabold leading-tight text-slate-900">Early project questions that matter more than feature slogans.</h2>
+          <div class="mt-5 grid gap-4">
+            {{ range . }}
+            <article class="rounded-3xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="text-base font-extrabold text-slate-900">{{ .title }}</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-600">{{ .text }}</p>
+            </article>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ with $featureCards }}
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-4 lg:grid-cols-3">
+        {{ range . }}
+        <article class="card-shell">
+          <p class="section-kicker">Capability</p>
+          <h2 class="mt-4 text-[1.2rem] font-extrabold leading-tight text-slate-900">{{ .title }}</h2>
+          <p class="mt-3 text-sm leading-8 text-slate-600">{{ .text }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)]">
+        {{ with $technicalSnapshot }}
+        <article class="card-shell">
+          <p class="section-kicker">Technical Snapshot</p>
+          <h2 class="mt-4 text-[1.4rem] font-extrabold leading-tight text-slate-900">The main parameters a technical buyer needs for first-pass fit screening.</h2>
+          <div class="mt-5 overflow-hidden rounded-3xl border border-slate-200">
+            <table class="w-full border-collapse">
+              <tbody>
+                {{ range . }}
+                <tr class="border-t border-slate-200 first:border-t-0">
+                  <th class="w-[34%] bg-slate-50 px-5 py-4 text-left text-[0.72rem] font-extrabold uppercase tracking-[0.14em] text-slate-500">{{ .name }}</th>
+                  <td class="px-5 py-4 text-sm leading-7 text-slate-700">{{ .value }}</td>
+                </tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+        </article>
+        {{ end }}
+
+        {{ with $coverageTable }}
+        <article class="card-shell">
+          <p class="section-kicker">Detection Envelope</p>
+          <h2 class="mt-4 text-[1.4rem] font-extrabold leading-tight text-slate-900">How the published coverage numbers frame the 90 deg sector.</h2>
+          <div class="mt-5 grid gap-4">
+            {{ range . }}
+            <article class="rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4">
+              <p class="text-[0.72rem] font-extrabold uppercase tracking-[0.16em] text-slate-500">{{ .label }}</p>
+              <p class="mt-2 text-2xl font-extrabold text-slate-900">{{ .value }}</p>
+              {{ with .note }}
+              <p class="mt-2 text-sm leading-7 text-slate-600">{{ . }}</p>
+              {{ end }}
+            </article>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ with $integrationModules }}
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="card-shell">
+        <p class="section-kicker">Integration Narrative</p>
+        <h2 class="section-title">How the radar should behave inside a wider site workflow.</h2>
+        <div class="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {{ range . }}
+          <article class="rounded-3xl border border-slate-200 bg-slate-50 p-4">
+            {{ with .icon }}
+            <img src="{{ . | relURL }}" alt="" class="h-12 w-12" aria-hidden="true">
+            {{ end }}
+            <h3 class="mt-3 text-base font-extrabold text-slate-900">{{ .title }}</h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">{{ .text }}</p>
+          </article>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with $deploymentScenarios }}
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="card-shell">
+        <p class="section-kicker">Deployment Fit</p>
+        <h2 class="section-title">Three site patterns where this model is easier to justify.</h2>
+        <div class="mt-5 grid gap-4 lg:grid-cols-3">
+          {{ range . }}
+          {{- $scenario := . -}}
+          <article class="overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            {{ with .image }}
+            <img src="{{ . | relURL }}" alt="{{ $scenario.alt | default $scenario.title }}" class="block aspect-[16/10] w-full object-cover">
+            {{ end }}
+            <div class="p-5">
+              <h3 class="text-lg font-extrabold text-slate-900">{{ .title }}</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-600">{{ .text }}</p>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with $relatedProducts }}
+  <section class="py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <article class="card-shell">
+        <p class="section-kicker">Related Products</p>
+        <h2 class="section-title">Adjacent SRC models to compare before final selection.</h2>
+        <div class="mt-5 grid gap-4 lg:grid-cols-2">
+          {{ range . }}
+          <a href="{{ .url | relURL }}" class="rounded-3xl border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-white">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <h3 class="text-lg font-extrabold text-slate-900">{{ .model }}</h3>
+              <span class="inline-flex rounded-full bg-sky-50 px-3 py-1 text-xs font-extrabold uppercase tracking-[0.14em] text-sky-800">{{ .max_range }}</span>
+            </div>
+            <p class="mt-2 text-[0.72rem] font-extrabold uppercase tracking-[0.16em] text-slate-500">{{ .band }} / {{ .system_type }} / {{ .architecture_name }}</p>
+            <p class="mt-3 text-sm leading-7 text-slate-600">{{ .description }}</p>
+            {{ with .relation }}
+            <p class="mt-3 text-sm leading-7 text-sky-800">{{ . }}</p>
+            {{ end }}
+          </a>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="py-8">
+    <div class="mx-auto max-w-7xl px-4 pb-14 sm:px-6 lg:px-8">
+      <div class="overflow-hidden rounded-[2rem] border border-sky-200 bg-gradient-to-r from-slate-900 via-sky-900 to-sky-700 p-8 shadow-soft">
+        <p class="text-[0.74rem] font-extrabold uppercase tracking-[0.18em] text-sky-100">Next Step</p>
+        <h2 class="mt-3 text-[clamp(1.7rem,1.6vw+1rem,2.5rem)] font-extrabold leading-tight text-white">Need a site-fit discussion or a formal datasheet review for SRC-C03A-1G?</h2>
+        <p class="mt-4 max-w-3xl text-sm leading-8 text-sky-50">Use this page for first-pass model evaluation, then move to project geometry, target assumptions, and integration questions before locking the radar into a deployment design.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="{{ printf "%s#contact-form" ("contact-us/" | relLangURL) }}" class="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-bold text-slate-900 transition hover:bg-sky-50">Request Project Discussion</a>
+          <a href="{{ "/sensors/src/" | relLangURL }}" class="inline-flex items-center justify-center rounded-full border border-sky-200/40 bg-transparent px-5 py-3 text-sm font-bold text-white transition hover:border-sky-100 hover:bg-white/10">Compare Other SRC Models</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+{{ end }}

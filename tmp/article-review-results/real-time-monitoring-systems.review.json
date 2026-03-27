@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The revised article now meets the strict pass threshold with stronger architectural depth, a clearer real-time definition, and a more neutral, system-level treatment.",
+  "overall_score": 8.4,
+  "word_count": 1214,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 8,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The revised article now explains end-to-end data flow, edge-versus-central processing, and degraded-mode design in practical terms.",
+    "Removing the product-specific section improves neutrality and makes the article more consistent with the rest of the reviewed knowledge base.",
+    "The added sections on operator closure and monitoring-system metrics materially improve decision value."
+  ],
+  "summary_assessment": "This revised version is strong enough to pass under the stricter workflow. It is materially fuller, more neutral, and more operationally useful than the initial draft.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\real-time-monitoring-systems.md",
+    "article_sha256": "9088f73dfef672817b1b78387bb307b9fb13db013339e8eff7417e1c1ec78de8",
+    "normalized_review_input_sha256": "39a60564b73f87ab036013dd2b2d811bd6bd37779c682312ec33690740bbd581",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\real-time-monitoring-systems\\round-02.review.json",
+    "sealed_at_utc": "2026-03-27T02:44:59+00:00"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SOC Detail Reviewer"
+  short_description: "Review rendered optics detail pages."
+  default_prompt: "Review this rendered SOC electro-optical product detail page and output strict JSON only."

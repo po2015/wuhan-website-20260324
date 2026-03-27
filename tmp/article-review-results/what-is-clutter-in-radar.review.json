@@ -1,39 +1,38 @@
 {
-    "final_decision":  "PASS",
-    "reason_for_decision":  "The revised article now explains clutter as a deployment and signal-separation problem with enough detail and operator relevance to pass.",
-    "overall_score":  8.3,
-    "word_count":  1002,
-    "dimension_scores":  {
-                             "structure_logical_clarity":  9,
-                             "target_classification_content_framing":  8,
-                             "marketing_noise_control":  9,
-                             "content_depth":  8,
-                             "readability_human_quality":  8,
-                             "information_density":  8,
-                             "seo_knowledge_base_fitness":  8,
-                             "technical_credibility":  8,
-                             "decision_value":  8,
-                             "original_insight":  7
-                         },
-    "failed_dimensions_below_5":  [
-
-                                  ],
-    "ai_signals_detected":  [
-
-                            ],
-    "major_issues":  [
-
-                     ],
-    "revision_actions":  [
-
-                         ],
-    "rewrite_actions":  [
-
-                        ],
-    "strengths":  [
-                      "It explains why geometry changes the clutter problem, not just the signal processing.",
-                      "The distinction between clutter, noise, and interference is clearer now.",
-                      "The article ties clutter back to real usability and detection performance."
-                  ],
-    "summary_assessment":  "This article passes. It is now a stronger educational piece with better practical grounding."
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes as a foundation explainer because it defines clutter clearly, shows why clutter matters operationally, and distinguishes clutter from noise and interference.",
+  "overall_score": 8.4,
+  "word_count": 1105,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 9,
+    "content_depth": 8,
+    "readability_human_quality": 9,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 7,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article explains clutter in plain language without losing the important operational consequences for small or slow targets.",
+    "It is especially useful on the role of geometry and local site tuning in clutter behavior.",
+    "The distinction between clutter, noise, and interference is clear and beginner-friendly."
+  ],
+  "summary_assessment": "This is a solid pass for a foundation article. It is readable, technically sound, and gives newcomers an accurate mental model for why clutter dominates many radar problems.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-is-clutter-in-radar.md",
+    "article_sha256": "71c7378ed4a3401439af3d2815da47cd75f7e2114b4e1b08e91d06966484035e",
+    "normalized_review_input_sha256": "eb8a19859e41873dce76862b8a5a7f0fda259f92fb4dbcb41c60b3661d667c57",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-is-clutter-in-radar\\round-01.review.json",
+    "sealed_at_utc": "2026-03-27T02:41:22+00:00"
+  }
 }
