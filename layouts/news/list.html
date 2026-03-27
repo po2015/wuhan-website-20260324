@@ -52,25 +52,7 @@
       {{ end }}
     </div>
 
-    {{ if gt $paginator.TotalPages 1 }}
-    <nav class="mt-10 flex flex-wrap items-center justify-center gap-3" aria-label="Pagination">
-      {{ with $paginator.Prev }}
-      <a href="{{ .URL }}" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">Previous</a>
-      {{ end }}
-
-      {{ range $paginator.Pagers }}
-      {{ if eq .PageNumber $paginator.PageNumber }}
-      <span class="inline-flex h-10 min-w-10 items-center justify-center rounded-full bg-brand-700 px-4 text-sm font-bold text-white">{{ .PageNumber }}</span>
-      {{ else }}
-      <a href="{{ .URL }}" class="inline-flex h-10 min-w-10 items-center justify-center rounded-full border border-slate-300 bg-white px-4 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">{{ .PageNumber }}</a>
-      {{ end }}
-      {{ end }}
-
-      {{ with $paginator.Next }}
-      <a href="{{ .URL }}" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">Next</a>
-      {{ end }}
-    </nav>
-    {{ end }}
+    {{ partial "pagination.html" (dict "paginator" $paginator) }}
     {{ else }}
     <div class="rounded-3xl border border-slate-200 bg-white p-10 text-center text-sm text-slate-600">{{ $ui.no_items_label | default "No items available in this section yet." }}</div>
     {{ end }}

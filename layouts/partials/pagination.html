@@ -1,0 +1,43 @@
+{{- $paginator := .paginator -}}
+{{- if and $paginator (gt $paginator.TotalPages 1) -}}
+{{- $current := $paginator.PageNumber -}}
+{{- $total := $paginator.TotalPages -}}
+{{- $window := 3 -}}
+{{- $start := 1 -}}
+{{- $end := $total -}}
+
+{{- if gt $total $window -}}
+  {{- if le $current 2 -}}
+    {{- $end = $window -}}
+  {{- else if ge $current (sub $total 1) -}}
+    {{- $start = sub $total (sub $window 1) -}}
+  {{- else -}}
+    {{- $start = sub $current 1 -}}
+    {{- $end = add $current 1 -}}
+  {{- end -}}
+{{- end -}}
+
+<nav class="mt-10 flex flex-wrap items-center justify-center gap-3" aria-label="Pagination">
+  {{ with $paginator.Prev }}
+  <a href="{{ .URL }}" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">Previous</a>
+  {{ else }}
+  <span aria-disabled="true" class="inline-flex cursor-not-allowed items-center justify-center rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-bold text-slate-400">Previous</span>
+  {{ end }}
+
+  {{ range seq $start $end }}
+  {{- $pageNumber := . -}}
+  {{- $pager := index $paginator.Pagers (sub $pageNumber 1) -}}
+  {{ if eq $pageNumber $current }}
+  <span aria-current="page" class="inline-flex h-10 min-w-10 items-center justify-center rounded-full bg-brand-700 px-4 text-sm font-bold text-white">{{ $pageNumber }}</span>
+  {{ else }}
+  <a href="{{ $pager.URL }}" class="inline-flex h-10 min-w-10 items-center justify-center rounded-full border border-slate-300 bg-white px-4 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">{{ $pageNumber }}</a>
+  {{ end }}
+  {{ end }}
+
+  {{ with $paginator.Next }}
+  <a href="{{ .URL }}" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">Next</a>
+  {{ else }}
+  <span aria-disabled="true" class="inline-flex cursor-not-allowed items-center justify-center rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-bold text-slate-400">Next</span>
+  {{ end }}
+</nav>
+{{- end -}}
