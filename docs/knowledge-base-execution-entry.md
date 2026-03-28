@@ -29,16 +29,21 @@ It keeps:
 | 2026-05-06 | Console Layout and Screen Zoning for Multi-Sensor Operations | `content/en/knowledge-base/console-layout-and-screen-zoning-for-multi-sensor-operations.md` | `PASS` | Done |
 | 2026-05-13 | What a Good Civil-Security Tender Should Ask About Verification, Not Just Detection | `content/en/knowledge-base/what-a-good-civil-security-tender-should-ask-about-verification-not-just-detection.md` | `PASS` | Done |
 | 2026-05-20 | When a Verification Camera Needs Narrow FOV and When It Does Not | `content/en/knowledge-base/when-a-verification-camera-needs-narrow-fov-and-when-it-does-not.md` | `PASS` | Done |
+| 2026-05-27 | False Alarm Escalation vs False Alarm Rate: Why They Are Not the Same KPI | `content/en/knowledge-base/false-alarm-escalation-vs-false-alarm-rate-why-they-are-not-the-same-kpi.md` | `PASS` | Done |
+| 2026-06-03 | PTZ vs Fixed Thermal Cameras for Perimeter Projects | `content/en/knowledge-base/ptz-vs-fixed-thermal-cameras-for-perimeter-projects.md` | `PASS` | Done |
+| 2026-06-09 | How to Choose Focal Length for Long-Range Surveillance | `content/en/knowledge-base/how-to-choose-focal-length-for-long-range-surveillance.md` | `PASS` | Done |
+| 2026-06-10 | AOA vs TDOA vs FDOA: Which RF Geolocation Method Fits Which Project? | `content/en/knowledge-base/aoa-vs-tdoa-vs-fdoa-which-rf-geolocation-method-fits-which-project.md` | `PASS` | Done |
+| 2026-06-16 | Alert Triage Design for Multi-Sensor Security Platforms | `content/en/knowledge-base/alert-triage-design-for-multi-sensor-security-platforms.md` | `PASS` | Done |
 
 ### Next Planned
 
 | Date | Topic | Target File | Status |
 | --- | --- | --- | --- |
-| 2026-05-27 | False Alarm Escalation vs False Alarm Rate: Why They Are Not the Same KPI | `content/en/knowledge-base/false-alarm-escalation-vs-false-alarm-rate-why-they-are-not-the-same-kpi.md` | Planned |
-| 2026-06-03 | PTZ vs Fixed Thermal Cameras for Perimeter Projects | `content/en/knowledge-base/ptz-vs-fixed-thermal-cameras-for-perimeter-projects.md` | Planned |
-| 2026-06-09 | How to Choose Focal Length for Long-Range Surveillance | `content/en/knowledge-base/how-to-choose-focal-length-for-long-range-surveillance.md` | Planned |
-| 2026-06-10 | AOA vs TDOA vs FDOA: Which RF Geolocation Method Fits Which Project? | `content/en/knowledge-base/aoa-vs-tdoa-vs-fdoa-which-rf-geolocation-method-fits-which-project.md` | Planned |
-| 2026-06-16 | Alert Triage Design for Multi-Sensor Security Platforms | `content/en/knowledge-base/alert-triage-design-for-multi-sensor-security-platforms.md` | Planned |
+| 2026-06-17 | Data Center Perimeter Security System Design | `content/en/knowledge-base/data-center-perimeter-security-system-design.md` | Planned |
+| 2026-06-23 | How to Reduce False Alarms Without Slowing Response | `content/en/knowledge-base/how-to-reduce-false-alarms-without-slowing-response.md` | Planned |
+| 2026-06-24 | How to Write Better Detection-Range Requirements in Tenders | `content/en/knowledge-base/how-to-write-better-detection-range-requirements-in-tenders.md` | Planned |
+| 2026-06-30 | Visible + Thermal Camera Pairing: When Dual-Sensor Payloads Matter | `content/en/knowledge-base/visible-and-thermal-camera-pairing-when-dual-sensor-payloads-matter.md` | Planned |
+| 2026-07-01 | Remote ID Reception Range: What Actually Changes It? | `content/en/knowledge-base/remote-id-reception-range-what-actually-changes-it.md` | Planned |
 
 ## Publishing Schedule
 
@@ -68,12 +73,12 @@ It keeps:
 | 2026-05-19 | Tue | Scheduled | System Design, Deployment | Data Fusion System Design |
 | 2026-05-20 | Wed | PASS | Technology Basics | When a Verification Camera Needs Narrow FOV and When It Does Not |
 | 2026-05-26 | Tue | Scheduled | System Design, Machine Vision | AI Integration in Security Systems |
-| 2026-05-27 | Wed | Planned | System Design | False Alarm Escalation vs False Alarm Rate: Why They Are Not the Same KPI |
+| 2026-05-27 | Wed | PASS | System Design | False Alarm Escalation vs False Alarm Rate: Why They Are Not the Same KPI |
 | 2026-06-02 | Tue | Scheduled | System Design, Deployment | Real-Time Monitoring Systems |
-| 2026-06-03 | Wed | Planned | Technology Basics | PTZ vs Fixed Thermal Cameras for Perimeter Projects |
-| 2026-06-09 | Tue | Planned | System Design | How to Choose Focal Length for Long-Range Surveillance |
-| 2026-06-10 | Wed | Planned | Digital RF | AOA vs TDOA vs FDOA: Which RF Geolocation Method Fits Which Project? |
-| 2026-06-16 | Tue | Planned | System Design | Alert Triage Design for Multi-Sensor Security Platforms |
+| 2026-06-03 | Wed | PASS | Technology Basics | PTZ vs Fixed Thermal Cameras for Perimeter Projects |
+| 2026-06-09 | Tue | PASS | System Design | How to Choose Focal Length for Long-Range Surveillance |
+| 2026-06-10 | Wed | PASS | Digital RF | AOA vs TDOA vs FDOA: Which RF Geolocation Method Fits Which Project? |
+| 2026-06-16 | Tue | PASS | System Design | Alert Triage Design for Multi-Sensor Security Platforms |
 | 2026-06-17 | Wed | Planned | Deployment | Data Center Perimeter Security System Design |
 | 2026-06-23 | Tue | Planned | System Design | How to Reduce False Alarms Without Slowing Response |
 | 2026-06-24 | Wed | Planned | Compliance | How to Write Better Detection-Range Requirements in Tenders |

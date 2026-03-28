@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it compares PTZ and fixed thermal cameras through persistence, cueing, and perimeter workflow rather than through shallow spec-sheet tradeoffs.",
+  "overall_score": 8.7,
+  "word_count": 1870,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The piece is strong at framing fixed thermal as persistent sector ownership and PTZ thermal as flexible verification, which is exactly the decision buyers need.",
+    "It keeps the comparison grounded in perimeter geometry, cueing quality, and simultaneous coverage rather than generic camera marketing.",
+    "The hybrid-architecture section gives readers a realistic answer instead of forcing an artificial either-or conclusion."
+  ],
+  "summary_assessment": "This is a strong deployment-oriented comparison article. It is technically grounded, easy to follow, and useful for perimeter camera architecture decisions.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\ptz-vs-fixed-thermal-cameras-for-perimeter-projects.md",
+    "article_sha256": "cc1e93980dc78bf9e3ba169871b400d1dc69f697069321a0190e20e628db1346",
+    "normalized_review_input_sha256": "899cd656fa247dbc88a96f12749ebf189c4c629e37b1a32506df77ad55da41fa",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\ptz-vs-fixed-thermal-cameras-for-perimeter-projects\\round-01.review.json",
+    "sealed_at_utc": "2026-03-28T13:55:35+00:00"
+  }
+}

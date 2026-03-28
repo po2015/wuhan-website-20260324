@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it compares AOA, TDOA, and FDOA through geometry, synchronization, and signal behavior instead of treating them as generic interchangeable geolocation features.",
+  "overall_score": 8.7,
+  "word_count": 1938,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong at identifying geometry and synchronization as the real selection drivers, which gives the comparison practical engineering value.",
+    "It avoids false certainty by explaining where each method becomes weak rather than presenting one as universally superior.",
+    "The hybrid-geolocation discussion helps the reader understand why real RF projects often combine methods instead of forcing a single-mode design."
+  ],
+  "summary_assessment": "This is a strong RF geolocation comparison article. It is useful, technically aware, and well scoped for system planners choosing between locating methods.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\aoa-vs-tdoa-vs-fdoa-which-rf-geolocation-method-fits-which-project.md",
+    "article_sha256": "6b43c12c00d78e02f25f7fae91224edf084d7f71c8dbe65e5ddedf56e943c765",
+    "normalized_review_input_sha256": "be6c97b527bfefb5f64cd1c899eac3ead3ad98fb1d17d846c4ecd7a91bcb16b4",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\aoa-vs-tdoa-vs-fdoa-which-rf-geolocation-method-fits-which-project\\round-01.review.json",
+    "sealed_at_utc": "2026-03-28T13:55:35+00:00"
+  }
+}

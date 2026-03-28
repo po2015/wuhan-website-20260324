@@ -121,21 +121,18 @@ integration_modules:
   text: Pushes alarms, live track state, and operator actions into one command workflow
     instead of disconnected device screens.
 deployment_scenarios:
-- image: /images/sensors/deployment-airport.svg
+- image: /images/sensors/deployment/radar-deployment-container-port-waterfront-aerial.png
   title: Low Altitude Surveillance
-  alt: Line concept illustration of an airport perimeter monitoring site
-  text: Suitable for low-altitude surveillance projects that need radar warning integrated
-    into a broader security workflow.
-- image: /images/sensors/deployment-industrial.svg
+  alt: Aerial view of container berths and waterfront shipping lane
+  text: Suitable for broad site airspace where operators need earlier low-altitude warning across approach lanes, rooflines, and working zones.
+- image: /images/sensors/deployment/radar-deployment-riverside-power-plant-overview.png
   title: Critical site protection
-  alt: Line concept illustration of an industrial monitoring site
-  text: Suitable for critical site protection projects that need radar warning integrated
-    into a broader security workflow.
-- image: /images/sensors/deployment-airport.svg
+  alt: Riverside power plant with open approach sectors
+  text: Suitable for protected compounds, industrial assets, and utility sites that need continuous low-altitude awareness tied to response workflow.
+- image: /images/sensors/deployment/radar-deployment-airport-apron-overview.jpg
   title: Airport and low-altitude security
-  alt: Line concept illustration of an airport perimeter monitoring site
-  text: Suitable for counter-uas early warning projects that need radar warning integrated
-    into a broader security workflow.
+  alt: Airport runway and apron environment viewed across a broad airspace corridor
+  text: Suitable for airports and adjacent low-altitude corridors where early warning is needed across runway, apron, and perimeter airspace.
 related_products:
 - model: SRC-X10C-1D
   url: /sensors/src/src-x10c-1d/

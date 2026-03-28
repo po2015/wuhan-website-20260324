@@ -133,21 +133,18 @@ integration_modules:
   text: Pushes alarms, live track state, and operator actions into one command workflow
     instead of disconnected device screens.
 deployment_scenarios:
-- image: /images/sensors/deployment-industrial.svg
+- image: /images/sensors/deployment/radar-deployment-fenced-perimeter-guard-corridor.png
   title: Border and perimeter zones
-  alt: Line concept illustration of an industrial monitoring site
-  text: Suitable for land border surveillance projects that need radar warning integrated
-    into a broader security workflow.
-- image: /images/sensors/deployment-port.svg
+  alt: Fenced perimeter corridor with guard post and drainage berm
+  text: Suitable for land borders, fenced perimeters, and open approach sectors where operators need earlier warning before a target reaches the protected line.
+- image: /images/sensors/deployment/radar-deployment-container-port-waterfront-aerial.png
   title: Port and maritime watch
-  alt: Line concept illustration of a port monitoring site
-  text: Suitable for maritime surveillance projects that need radar warning integrated
-    into a broader security workflow.
-- image: /images/sensors/deployment-industrial.svg
+  alt: Aerial view of container berths and waterfront shipping lane
+  text: Suitable for ports, shorelines, and mixed land-water approach lanes where low-altitude traffic must be tracked across the waterfront.
+- image: /images/sensors/deployment/radar-deployment-industrial-process-plant-overhead.png
   title: Critical site protection
-  alt: Line concept illustration of an industrial monitoring site
-  text: Suitable for critical site protection projects that need radar warning integrated
-    into a broader security workflow.
+  alt: Overhead view of an industrial process plant and service roads
+  text: Suitable for plants, substations, storage areas, and other protected compounds that need persistent low-altitude awareness around critical infrastructure.
 related_products:
 - model: SRC-X10B-2D
   url: /sensors/src/src-x10b-2d/

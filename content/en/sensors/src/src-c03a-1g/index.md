@@ -132,18 +132,18 @@ integration_modules:
     title: Horizon Command
     text: Pushes alerts, track history, and operator actions into one response workflow instead of disconnected local device screens.
 deployment_scenarios:
-  - image: /images/sensors/deployment-industrial.svg
-    title: Border and corridor surveillance
-    alt: Line concept illustration of a corridor surveillance sector
-    text: Strong fit for ground corridors where operators want a defined warning sector covering likely movement routes rather than full circular search.
-  - image: /images/sensors/deployment-industrial.svg
-    title: Critical site perimeter
-    alt: Line concept illustration of a protected industrial perimeter
-    text: Useful around depots, substations, storage yards, and protected compounds that need a compact radar warning layer tied to response workflow.
-  - image: /images/sensors/deployment-industrial.svg
-    title: Waterside approach monitoring
-    alt: Line concept illustration of a near-shore monitoring position
-    text: Applicable to shoreline or harbor-edge watch when the buyer needs short-range awareness of small craft on a known approach axis.
+- image: /images/sensors/deployment/radar-deployment-fenced-perimeter-guard-corridor.png
+  title: Border and corridor surveillance
+  alt: Fenced perimeter corridor with guard post and drainage berm
+  text: Strong fit for border corridors and fixed approach axes where operators want a defined warning sector covering likely movement routes.
+- image: /images/sensors/deployment/radar-deployment-industrial-complex-overview.jpg
+  title: Critical site perimeter
+  alt: Aerial view of an industrial complex and process area
+  text: Useful around depots, substations, storage yards, and protected compounds that need a compact radar warning layer tied to response workflow.
+- image: /images/sensors/deployment/radar-deployment-port-operations-center-waterfront.png
+  title: Waterside approach monitoring
+  alt: Harbor operations center and quay edge overlooking the waterfront
+  text: Applicable to harbor edges, riverside sites, and shoreline approaches where short-range detection is needed along a known waterside axis.
 related_products:
   - model: SRC-X03C-1D
     url: /sensors/src/src-x03c-1d/

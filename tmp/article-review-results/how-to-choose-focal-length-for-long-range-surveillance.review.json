@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it ties focal length to task, sensor size, field of view, and mounting reality instead of treating lens choice as a simple zoom preference.",
+  "overall_score": 8.8,
+  "word_count": 1731,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong at turning an optics topic into a practical surveillance-design workflow instead of a camera-buying checklist.",
+    "It explains why focal length cannot be interpreted without sensor size and task level, which gives the piece solid technical credibility.",
+    "The sections on stability, cueing, and atmosphere keep the lens discussion grounded in real deployment behavior."
+  ],
+  "summary_assessment": "This is a strong technical explainer with good decision value. It should help buyers and planners avoid several common long-range lens-selection mistakes.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-to-choose-focal-length-for-long-range-surveillance.md",
+    "article_sha256": "49e0416522250f48254bafa925651cd85da51a5e41cde9c28583ef9aa6dd15c4",
+    "normalized_review_input_sha256": "ddc89234ece3bc875d7966f095a55e71f51d717caf6e6acc7aa52c2a6446f0cf",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-to-choose-focal-length-for-long-range-surveillance\\round-01.review.json",
+    "sealed_at_utc": "2026-03-28T13:55:35+00:00"
+  }
+}
