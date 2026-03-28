@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it translates raw multi-sensor alerting into a concrete operator-queue model with strong workflow and measurement guidance.",
+  "overall_score": 8.8,
+  "word_count": 2004,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article clearly separates machine-originated alerts from operator-owned queue items, which gives the piece a strong and useful framing.",
+    "It adds real operational depth through sections on deduplication, state models, ownership, evidence packaging, and queue metrics rather than stopping at generic alerting advice.",
+    "The queue-health discussion gives buyers and platform designers concrete metrics that are more useful than alert-count reporting."
+  ],
+  "summary_assessment": "This is a strong system-design article. It is practical, technically credible, and highly useful for readers designing control-room workflow rather than just integrating sensor feeds.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-to-turn-sensor-alerts-into-operator-queues.md",
+    "article_sha256": "1006947f92d5763e29c38739b633ae5d5806ea930c7ab7ec326cfd06fbc6247a",
+    "normalized_review_input_sha256": "bf00fe6129af17d1e80db6ed0582cf1878a339f2600d1bd168c139fcb79b419e",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-to-turn-sensor-alerts-into-operator-queues\\round-01.review.json",
+    "sealed_at_utc": "2026-03-28T12:39:53+00:00"
+  }
+}

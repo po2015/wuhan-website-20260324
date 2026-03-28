@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it grounds RF bearing trust in site physics, calibration, multipath, and validation rather than in nominal angular accuracy alone.",
+  "overall_score": 8.8,
+  "word_count": 1696,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on showing why site geometry and multipath often matter more than a nominal brochure angle number.",
+    "It explains calibration and array integrity in a way that remains readable while still feeling technically credible.",
+    "The acceptance-testing section gives clear buyer and commissioning guidance instead of stopping at theory."
+  ],
+  "summary_assessment": "This is a strong applied knowledge-base article. It reads like practical engineering guidance and gives the reader a credible framework for judging RF bearing quality in deployment.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-makes-an-rf-bearing-trustworthy-in-real-sites.md",
+    "article_sha256": "a73cde68787d422fdeea61148bab77fb4e45e3a35fedab331d0909a30753d4e9",
+    "normalized_review_input_sha256": "cca735197c44bae34800de27cdcedc0d7c8bab320f6e9d60a35c11ef237585b8",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-makes-an-rf-bearing-trustworthy-in-real-sites\\round-01.review.json",
+    "sealed_at_utc": "2026-03-28T11:58:34+00:00"
+  }
+}

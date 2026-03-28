@@ -23,7 +23,7 @@ image_alt: "A technical illustration showing how target size, clutter, and geome
 image_source_name: ""
 image_source_url: ""
 weight: 45
-date: 2026-05-20
+date: 2026-01-07
 lastmod: 2026-03-27T20:32:00+08:00
 draft: false
 keypoints:

@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it makes DRI task-based, connects it to optical tradeoffs, and prevents common misreadings of EO/IR range claims.",
+  "overall_score": 8.9,
+  "word_count": 1760,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article does a good job of turning DRI from a slogan into a concrete task framework for EO/IR selection.",
+    "It connects focal length, field of view, contrast, and stabilization to detection, recognition, and identification in a way that is useful for procurement.",
+    "The piece adds mature decision value by explaining what classic DRI does not capture, especially atmosphere, cueing, and field-of-regard assumptions."
+  ],
+  "summary_assessment": "This is a strong professional knowledge-base article. It is technically credible, well framed, and genuinely useful for readers evaluating EO/IR payloads beyond simple brochure range claims.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-dri-criteria-change-eo-ir-system-selection.md",
+    "article_sha256": "c2f44ba1fb6ed0833183db19a5d6662cc5915cddf87feff95a05dbd9a57458ec",
+    "normalized_review_input_sha256": "0b895504808a3feb4b4d41070f328abc7a8d1ef2e0ddb375bdadb9c62cf5d123",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-dri-criteria-change-eo-ir-system-selection\\round-01.review.json",
+    "sealed_at_utc": "2026-03-28T11:58:34+00:00"
+  }
+}

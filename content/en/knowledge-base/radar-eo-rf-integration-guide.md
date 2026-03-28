@@ -20,12 +20,12 @@ tags:
   - "RF Detection"
   - "Sensor Fusion"
 image: "/images/knowledge-base/radar-eo-rf-integration-guide-cover.jpg"
-image_alt: "An illuminated control panel with multiple active displays."
-image_source_name: "Mike Bird"
-image_source_url: "https://www.pexels.com/photo/black-vehicle-control-panel-turned-on-241192/"
+image_alt: "An engineer working in a control room with multiple monitoring screens, used as a lead visual for a radar, EO, and RF integration article."
+image_source_name: "Sergey Sergeev"
+image_source_url: "https://www.pexels.com/photo/engineer-at-control-room-monitoring-screens-32845700/"
 weight: 62
 date: 2026-04-07
-lastmod: 2026-03-27T18:24:00+08:00
+lastmod: 2026-03-28T10:45:00+08:00
 draft: false
 keypoints:
   - "Radar, EO/IR, and RF layers should be designed around different jobs in the same workflow."

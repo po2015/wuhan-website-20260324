@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it turns vague tender language into a concrete verification-oriented procurement framework with strong acceptance-test guidance.",
+  "overall_score": 8.7,
+  "word_count": 2161,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article gives unusually strong procurement value by separating detection, verification, workflow, and acceptance obligations instead of blending them together.",
+    "Its scenario-based tender language and acceptance-matrix guidance make the piece useful for real bid drafting rather than for abstract security discussion.",
+    "The failure-mode section keeps the article grounded in what buyers actually need to ask vendors before deployment."
+  ],
+  "summary_assessment": "This is a strong compliance and system-design article. It is practical, specific, and well focused on helping buyers write tenders that measure operational value instead of just sensor claims.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\what-a-good-civil-security-tender-should-ask-about-verification-not-just-detection.md",
+    "article_sha256": "0fd8f6bbf82dfdb3c77a6a2015044967edf6bc0e8ae52ebfb34cc95fa53e8fd0",
+    "normalized_review_input_sha256": "1b9220938ae7923cdae12d9e82e31b7ae96f023b3d52789fc5742f673cf41ed5",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\what-a-good-civil-security-tender-should-ask-about-verification-not-just-detection\\round-01.review.json",
+    "sealed_at_utc": "2026-03-28T12:39:53+00:00"
+  }
+}

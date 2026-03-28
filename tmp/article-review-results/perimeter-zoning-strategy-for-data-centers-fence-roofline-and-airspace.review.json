@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it turns data-center perimeter planning into a clear three-zone model tied to geometry, sensor roles, and operator workflow.",
+  "overall_score": 8.6,
+  "word_count": 1849,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The fence-line, roofline, and airspace framing is easy to understand and gives the article a strong deployment-specific identity.",
+    "The piece keeps the zoning model connected to real operator questions, escalation logic, and verification needs instead of leaving it as a purely conceptual site map.",
+    "It provides clear practical value for data-center security planning by tying zone definitions to sensor placement and blind-spot analysis."
+  ],
+  "summary_assessment": "This is a strong deployment article with a clear audience and solid planning value. It does a good job of turning layered-security principles into a site-specific zoning method.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\perimeter-zoning-strategy-for-data-centers-fence-roofline-and-airspace.md",
+    "article_sha256": "14425cf2b6e382685a1cc3568fac16a50aab563d48010d7b998c58da0313518e",
+    "normalized_review_input_sha256": "e19cac6a2fc66f5ef6d8ae685ebf82b4d618f4da29c8aae74ae19190c4377eec",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\perimeter-zoning-strategy-for-data-centers-fence-roofline-and-airspace\\round-01.review.json",
+    "sealed_at_utc": "2026-03-28T12:39:53+00:00"
+  }
+}

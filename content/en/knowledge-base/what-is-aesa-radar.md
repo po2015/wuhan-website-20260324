@@ -23,7 +23,7 @@ image_alt: "A technical illustration of an AESA radar panel steering beams elect
 image_source_name: ""
 image_source_url: ""
 weight: 38
-date: 2026-04-01
+date: 2025-11-12
 lastmod: 2026-03-27T18:10:00+08:00
 draft: false
 keypoints:

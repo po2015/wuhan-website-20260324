@@ -1,4 +1,0 @@
-interface:
-  display_name: "Foundation KB Writer"
-  short_description: "Beginner-friendly search-entry KB writing"
-  default_prompt: "Use $foundation-search-kb to draft a plain-language Foundation article for broad search intent with minimal promotion and no formal conclusion."

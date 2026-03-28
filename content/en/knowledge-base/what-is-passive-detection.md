@@ -23,7 +23,7 @@ image_alt: "A technical illustration of passive detection using RF, EO, and pass
 image_source_name: ""
 image_source_url: ""
 weight: 41
-date: 2026-04-22
+date: 2025-12-24
 lastmod: 2026-03-27T20:15:00+08:00
 draft: false
 keypoints:

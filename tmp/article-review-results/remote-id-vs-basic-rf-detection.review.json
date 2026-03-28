@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it cleanly separates cooperative Remote ID evidence from broader RF sensing and ties the comparison to real workflow and procurement decisions.",
+  "overall_score": 8.7,
+  "word_count": 1900,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on separating cooperative identity from broader RF awareness instead of treating them as interchangeable features.",
+    "It gives practical decision value by showing when Remote ID helps most, when generic RF adds coverage, and where both still need radar or EO support.",
+    "The procurement and workflow sections keep the comparison tied to system design rather than to abstract definitions alone."
+  ],
+  "summary_assessment": "This is a strong applied knowledge-base article. It is clear, technically grounded, and useful for readers who need to scope RF layers without confusing identity with detection.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\remote-id-vs-basic-rf-detection.md",
+    "article_sha256": "281e4b9c09ff0ee5aef1383d5161b98ba0ed743bd0ff58c17d73d3bd7ed72b58",
+    "normalized_review_input_sha256": "18d432619750e83cf4d4d9522713c699da406cc74d35aed3ad9f61d46d3e99c6",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\remote-id-vs-basic-rf-detection\\round-01.review.json",
+    "sealed_at_utc": "2026-03-28T11:58:34+00:00"
+  }
+}

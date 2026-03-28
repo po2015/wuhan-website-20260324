@@ -23,7 +23,7 @@ image_alt: "A technical illustration showing how shape and aspect change a targe
 image_source_name: ""
 image_source_url: ""
 weight: 46
-date: 2026-05-27
+date: 2026-02-18
 lastmod: 2026-03-27T20:45:00+08:00
 draft: false
 keypoints:

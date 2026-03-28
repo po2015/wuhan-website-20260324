@@ -4,7 +4,7 @@ description: C-band pulse Doppler surveillance radar for short-range ground and 
 seo_title: SRC-C03A-1G Radar | C-Band Pulse Doppler Surveillance Radar
 seo_description: Review the SRC-C03A-1G C-band pulse Doppler radar for 90 deg sector surveillance, short-range perimeter monitoring, and Horizon-based integration.
 kicker: SRC Radar
-layout: src-c03a-1g-detail
+layout: src-detail-sample
 slug: src-c03a-1g
 aliases:
   - /complete-products/radar/src-c03a-1g/
