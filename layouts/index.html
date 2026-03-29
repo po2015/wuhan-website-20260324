@@ -1,131 +1,150 @@
 {{ define "main" }}
+{{/* Homepage copy must stay in content/en/_index.md. Keep layout logic here structural only. */}}
 {{- $home := .Params.homepage -}}
 {{- $hero := $home.hero -}}
-{{- $about := $home.about -}}
 {{- $business := $home.business -}}
 {{- $advantages := $home.advantages -}}
-{{- $cta := $home.cta -}}
+{{- $integration := $home.integration -}}
+{{- $information := $home.information -}}
+
+{{- $productScratch := newScratch -}}
+{{- range $integration.product_items -}}
+{{- $tone := .tone -}}
+{{- with $.Site.GetPage .page -}}
+{{- $productScratch.Add "items" (slice (dict "tone" $tone "page" .)) -}}
+{{- end -}}
+{{- end -}}
+{{- $productCards := $productScratch.Get "items" | default (slice) -}}
+
+{{- $latestInfo := where .Site.RegularPages "Section" "in" (slice "news" "knowledge-base") -}}
+{{- $latestInfo = where $latestInfo "Date" "le" now -}}
+{{- $latestInfo = sort $latestInfo "Date" "desc" -}}
+{{- $latestInfo = first 3 $latestInfo -}}
 
 <section class="home-hero-section">
   <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
     <div class="home-hero-shell">
-      <div class="home-hero-visual">
-        <div id="heroCarousel" class="hero-carousel home-hero-carousel carousel relative overflow-hidden">
-          <div class="carousel-track flex transition-transform duration-700 ease-out">
-            {{ range $index, $slide := $hero.slides }}
-            <article class="home-hero-slide relative w-full shrink-0">
-              <div class="home-hero-media-frame">
-                <img src="{{ $slide.image | relURL }}" alt="{{ $slide.image_alt | default $slide.title }}" class="home-hero-image">
-                <div class="home-hero-overlay">
-                  <div class="home-hero-copy">
-                    <div class="home-hero-meta">
-                      <p class="home-hero-kicker">{{ $hero.kicker }}</p>
-                      <span class="home-hero-topic">{{ $slide.tag }}</span>
-                    </div>
-                    {{ if eq $index 0 }}
-                    <h1 class="home-hero-title">{{ $slide.title }}</h1>
-                    {{ else }}
-                    <h2 class="home-hero-title">{{ $slide.title }}</h2>
-                    {{ end }}
-                    <p class="home-hero-lead">{{ $slide.description }}</p>
+      <div class="home-hero-glow home-hero-glow-a" aria-hidden="true"></div>
+      <div class="home-hero-glow home-hero-glow-b" aria-hidden="true"></div>
 
-                    <div class="home-hero-actions">
-                      <a href="{{ $slide.url | relLangURL }}" class="home-hero-primary">{{ $slide.button_label | default "Explore" }}</a>
-                      <a href="{{ $hero.secondary_button_url | relLangURL }}" class="home-hero-secondary">{{ $hero.secondary_button_label }}</a>
+      <div id="heroCarousel" class="hero-carousel home-hero-carousel carousel relative overflow-hidden">
+        <div class="carousel-track flex transition-transform duration-700 ease-out">
+          <article class="home-hero-slide relative w-full shrink-0">
+            <div class="home-hero-banner-single">
+              <div class="home-hero-content">
+                <div class="home-hero-copy-stage">
+                  {{ range $index, $slide := $hero.slides }}
+                  <section class="home-hero-copy-panel{{ if eq $index 0 }} is-active{{ end }}" data-carousel-panel
+                    aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}">
+                    <div class="home-hero-copy">
+                      <div class="home-hero-meta">
+                        <p class="home-hero-kicker">{{ $hero.kicker }}</p>
+                        <span class="home-hero-topic">{{ $slide.tag }}</span>
+                      </div>
+
+                      {{ if eq $index 0 }}
+                      <h1 class="home-hero-title">{{ $slide.title }}</h1>
+                      {{ else }}
+                      <h2 class="home-hero-title">{{ $slide.title }}</h2>
+                      {{ end }}
+
+                      <p class="home-hero-lead">{{ $slide.description }}</p>
+
+                      <div class="home-hero-actions">
+                        <a href="{{ $slide.url | relLangURL }}" class="home-hero-primary">{{ $slide.button_label }}</a>
+                        <a href="{{ $hero.secondary_button_url | relLangURL }}" class="home-hero-secondary">{{
+                          $hero.secondary_button_label }}</a>
+                      </div>
+                    </div>
+                  </section>
+                  {{ end }}
+                </div>
+              </div>
+
+              <div class="home-hero-screen-wrap">
+                <div class="home-hero-screen-frame">
+                  <div class="home-hero-screen-toolbar">
+                    <div class="home-hero-screen-dots" aria-hidden="true">
+                      <span class="home-hero-screen-dot"></span>
+                      <span class="home-hero-screen-dot"></span>
+                      <span class="home-hero-screen-dot"></span>
+                    </div>
+                  </div>
+
+                  <div class="home-hero-screen-inner">
+                    <div class="home-hero-visual">
+                      <div class="home-hero-media-frame">
+                        <div class="home-hero-media-stage">
+                          {{ range $index, $slide := $hero.slides }}
+                          <div class="home-hero-media-panel{{ if eq $index 0 }} is-active{{ end }}"
+                            data-carousel-media-panel aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}">
+                            <img src="{{ $slide.image | relURL }}" alt="{{ $slide.image_alt | default $slide.title }}"
+                              class="home-hero-image">
+                          </div>
+                          {{ end }}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </article>
-            {{ end }}
-          </div>
+            </div>
+          </article>
+        </div>
 
-          <button class="carousel-control left-3 sm:left-4" type="button" data-carousel-prev aria-label="Previous slide">&#8249;</button>
-          <button class="carousel-control right-3 sm:right-4" type="button" data-carousel-next aria-label="Next slide">&#8250;</button>
-
-          <div class="home-hero-dots absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 gap-2">
-            {{ range $index, $slide := $hero.slides }}
-            <button class="carousel-dot {{ if eq $index 0 }}is-active{{ end }}" data-carousel-dot="{{ $index }}" aria-label="Slide {{ add $index 1 }}"></button>
-            {{ end }}
-          </div>
+        <div class="home-hero-dots absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+          {{ range $index, $_ := $hero.slides }}
+          <button class="carousel-dot {{ if eq $index 0 }}is-active{{ end }}" data-carousel-dot="{{ $index }}"
+            aria-label="{{ printf " %s %d" $hero.slide_aria_label_prefix (add $index 1) }}"></button>
+          {{ end }}
         </div>
       </div>
+    </div>
+  </div>
+</section>
 
-      {{ with $hero.metrics }}
-      <div class="home-hero-metrics">
-        {{ range . }}
-        <article class="home-hero-metric">
-          <strong>{{ .title }}</strong>
-          <span>{{ .description }}</span>
-        </article>
+<section class="home-business-section py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="home-section-head home-section-head-centered">
+      <p class="section-kicker">{{ $business.kicker }}</p>
+      <h2 class="section-title">{{ $business.title }}</h2>
+      <p class="home-section-lead">{{ $business.lead }}</p>
+    </div>
+
+    <div class="home-business-grid">
+      {{ range $index, $card := $business.cards }}
+      <article class="home-business-card">
+
+        {{ with $card.image }}
+        <div class="home-business-media">
+          <img src="{{ . | relURL }}" alt="{{ $card.image_alt | default $card.title }}" class="home-business-image">
+        </div>
         {{ end }}
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-
-<section class="py-20">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="home-section-head">
-      <p class="section-kicker">{{ $about.kicker }}</p>
-      <h2 class="section-title">{{ $about.title }}</h2>
-      <p class="home-section-lead">{{ $about.lead }}</p>
-    </div>
-
-    <div class="home-story-grid">
-      {{ range $about.items }}
-      <article class="home-story-card">
-        <div class="home-story-icon">
-          {{ partial "home-icon.html" (dict "name" .icon "class" "h-6 w-6") }}
-        </div>
-        <h3>{{ .title }}</h3>
-        <p>{{ .description }}</p>
+        <p class="home-business-label">{{ $card.label }}</p>
+        <h3>{{ $card.title }}</h3>
+        <p>{{ $card.description }}</p>
+        <a href="{{ $card.button_url | relLangURL }}" class="card-link">{{ $card.button_label }}</a>
       </article>
       {{ end }}
     </div>
+
+
   </div>
 </section>
 
-<section class="bg-white/70 py-20">
+<section class="home-why-section pb-24">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="mb-10 flex flex-wrap items-end justify-between gap-4">
-      <div class="max-w-3xl">
-        <p class="section-kicker">{{ $business.kicker }}</p>
-        <h2 class="section-title">{{ $business.title }}</h2>
-        <p class="home-section-lead">{{ $business.lead }}</p>
-      </div>
-      <a href="{{ $business.cta_url | relLangURL }}" class="home-section-link">{{ $business.cta_label }}</a>
-    </div>
-
-    <div class="home-offer-grid">
-      {{ range $business.cards }}
-      <article class="home-offer-card">
-        <div class="home-offer-icon">
-          {{ partial "home-icon.html" (dict "name" .icon "class" "h-6 w-6") }}
-        </div>
-        <p class="home-offer-label">{{ .label }}</p>
-        <h3>{{ .title }}</h3>
-        <p>{{ .description }}</p>
-        <a href="{{ .button_url | relLangURL }}" class="card-link">{{ .button_label }}</a>
-      </article>
-      {{ end }}
-    </div>
-  </div>
-</section>
-
-<section class="py-20">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="home-section-head">
+    <div class="home-section-head home-section-head-centered home-why-head">
       <p class="section-kicker">{{ $advantages.kicker }}</p>
       <h2 class="section-title">{{ $advantages.title }}</h2>
       <p class="home-section-lead">{{ $advantages.intro }}</p>
     </div>
 
-    <div class="home-advantage-grid">
+    <div class="home-why-grid">
       {{ range $index, $item := $advantages.items }}
-      <article class="home-adv-card">
-        <span class="home-adv-number">{{ printf "%02d" (add $index 1) }}</span>
+      <article class="home-why-card{{ with $item.background_image }} has-image{{ end }}" {{ with $item.background_image
+        }} style="--why-card-bg: url('{{ . | relURL }}');" {{ end }}>
+        <span class="home-why-card-number">{{ printf "%02d" (add $index 1) }}</span>
         <h3>{{ $item.title }}</h3>
         <p>{{ $item.description }}</p>
       </article>
@@ -134,13 +153,82 @@
   </div>
 </section>
 
-<section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-  <div class="home-cta-shell">
-    <div class="max-w-3xl">
-      <h2 class="home-cta-title">{{ $cta.title }}</h2>
-      <p class="home-cta-text">{{ $cta.description }}</p>
+<section class="home-integration-section py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="home-integration-shell">
+      <p class="section-kicker">{{ $integration.kicker }}</p>
+      {{ if gt (len $productCards) 0 }}
+      <div class="home-product-marquee" aria-hidden="true">
+        <div class="home-product-track">
+          {{ range $productCards }}
+          {{- $page := .page -}}
+          <article class="home-product-chip tone-{{ .tone }}">
+            <div class="home-product-chip-visual">
+              <img src="{{ $page.Params.hero_image | relURL }}" alt="" class="home-product-chip-image">
+            </div>
+          </article>
+          {{ end }}
+          {{ range $productCards }}
+          {{- $page := .page -}}
+          <article class="home-product-chip tone-{{ .tone }}">
+            <div class="home-product-chip-visual">
+              <img src="{{ $page.Params.hero_image | relURL }}" alt="" class="home-product-chip-image">
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      <div class="home-integration-copy">
+        <h2 class="section-title">{{ $integration.title }}</h2>
+        <p class="home-section-lead">{{ $integration.lead }}</p>
+
+        <div class="home-integration-actions">
+          <a href="{{ $integration.button_url | relLangURL }}" class="home-hero-primary">{{ $integration.button_label
+            }}</a>
+        </div>
+      </div>
     </div>
-    <a href="{{ $cta.button_url | relLangURL }}" class="home-cta-button">{{ $cta.button_label }}</a>
+  </div>
+</section>
+
+<section class="home-info-section pb-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="home-section-head home-section-head-centered">
+      <p class="section-kicker">{{ $information.kicker }}</p>
+      <h2 class="section-title">
+        <a href="{{ $information.title_url | relLangURL }}" class="home-info-head-link">{{ $information.title }}</a>
+      </h2>
+      <p class="home-section-lead">{{ $information.lead }}</p>
+    </div>
+
+    <div class="home-info-grid">
+      {{ range $latestInfo }}
+      {{- $pageImage := .Params.image | default (.Params.hero_image | default "images/placeholder.png") -}}
+      <article class="home-info-card">
+        <a href="{{ .RelPermalink }}" class="home-info-image-link">
+          <img src="{{ $pageImage | relURL }}" alt="{{ .Title }}" class="home-info-image">
+        </a>
+
+        <div class="home-info-copy">
+          <div class="home-info-meta">
+            <span class="home-info-type {{ if eq .Section " news" }}is-news{{ else }}is-kb{{ end }}">
+              {{ if eq .Section "news" }}{{ $information.news_label }}{{ else }}{{ $information.knowledge_base_label
+              }}{{ end }}
+            </span>
+            <span class="home-info-date">
+              {{ if not .Date.IsZero }}{{ $information.published_prefix }} {{ .Date.Format "2006-01-02" }}{{ end }}
+            </span>
+          </div>
+
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+          <a href="{{ .RelPermalink }}" class="card-link">{{ $information.read_more_label }}</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
   </div>
 </section>
 {{ end }}

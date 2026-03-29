@@ -1,6 +1,7 @@
 /public/
 /resources/_gen/
 /.hugo_build.lock
+/reference/
 /.codex/*
 !/.codex/skills/
 !/.codex/skills/**

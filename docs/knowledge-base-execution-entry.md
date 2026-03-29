@@ -34,16 +34,21 @@ It keeps:
 | 2026-06-09 | How to Choose Focal Length for Long-Range Surveillance | `content/en/knowledge-base/how-to-choose-focal-length-for-long-range-surveillance.md` | `PASS` | Done |
 | 2026-06-10 | AOA vs TDOA vs FDOA: Which RF Geolocation Method Fits Which Project? | `content/en/knowledge-base/aoa-vs-tdoa-vs-fdoa-which-rf-geolocation-method-fits-which-project.md` | `PASS` | Done |
 | 2026-06-16 | Alert Triage Design for Multi-Sensor Security Platforms | `content/en/knowledge-base/alert-triage-design-for-multi-sensor-security-platforms.md` | `PASS` | Done |
+| 2026-06-17 | Data Center Perimeter Security System Design | `content/en/knowledge-base/data-center-perimeter-security-system-design.md` | `PASS` | Done |
+| 2026-06-23 | How to Reduce False Alarms Without Slowing Response | `content/en/knowledge-base/how-to-reduce-false-alarms-without-slowing-response.md` | `PASS` | Done |
+| 2026-06-24 | How to Write Better Detection-Range Requirements in Tenders | `content/en/knowledge-base/how-to-write-better-detection-range-requirements-in-tenders.md` | `PASS` | Done |
+| 2026-06-30 | Visible + Thermal Camera Pairing: When Dual-Sensor Payloads Matter | `content/en/knowledge-base/visible-and-thermal-camera-pairing-when-dual-sensor-payloads-matter.md` | `PASS` | Done |
+| 2026-07-01 | Remote ID Reception Range: What Actually Changes It? | `content/en/knowledge-base/remote-id-reception-range-what-actually-changes-it.md` | `PASS` | Done |
 
 ### Next Planned
 
 | Date | Topic | Target File | Status |
 | --- | --- | --- | --- |
-| 2026-06-17 | Data Center Perimeter Security System Design | `content/en/knowledge-base/data-center-perimeter-security-system-design.md` | Planned |
-| 2026-06-23 | How to Reduce False Alarms Without Slowing Response | `content/en/knowledge-base/how-to-reduce-false-alarms-without-slowing-response.md` | Planned |
-| 2026-06-24 | How to Write Better Detection-Range Requirements in Tenders | `content/en/knowledge-base/how-to-write-better-detection-range-requirements-in-tenders.md` | Planned |
-| 2026-06-30 | Visible + Thermal Camera Pairing: When Dual-Sensor Payloads Matter | `content/en/knowledge-base/visible-and-thermal-camera-pairing-when-dual-sensor-payloads-matter.md` | Planned |
-| 2026-07-01 | Remote ID Reception Range: What Actually Changes It? | `content/en/knowledge-base/remote-id-reception-range-what-actually-changes-it.md` | Planned |
+| 2026-07-07 | What Makes a Good Control Room Layout for Multi-Sensor Operations? | `content/en/knowledge-base/what-makes-a-good-control-room-layout-for-multi-sensor-operations.md` | Planned |
+| 2026-07-08 | Substation and Power Grid Perimeter Monitoring | `content/en/knowledge-base/substation-and-power-grid-perimeter-monitoring.md` | Planned |
+| 2026-07-14 | What Limits Thermal Detection in Humidity, Rain, and Haze? | `content/en/knowledge-base/what-limits-thermal-detection-in-humidity-rain-and-haze.md` | Planned |
+| 2026-07-15 | How RF Antenna Placement Changes Detection and Bearing Accuracy | `content/en/knowledge-base/how-rf-antenna-placement-changes-detection-and-bearing-accuracy.md` | Planned |
+| 2026-07-21 | Data Retention Design for Security Events, Tracks, and Evidence | `content/en/knowledge-base/data-retention-design-for-security-events-tracks-and-evidence.md` | Planned |
 
 ## Publishing Schedule
 
@@ -79,11 +84,11 @@ It keeps:
 | 2026-06-09 | Tue | PASS | System Design | How to Choose Focal Length for Long-Range Surveillance |
 | 2026-06-10 | Wed | PASS | Digital RF | AOA vs TDOA vs FDOA: Which RF Geolocation Method Fits Which Project? |
 | 2026-06-16 | Tue | PASS | System Design | Alert Triage Design for Multi-Sensor Security Platforms |
-| 2026-06-17 | Wed | Planned | Deployment | Data Center Perimeter Security System Design |
-| 2026-06-23 | Tue | Planned | System Design | How to Reduce False Alarms Without Slowing Response |
-| 2026-06-24 | Wed | Planned | Compliance | How to Write Better Detection-Range Requirements in Tenders |
-| 2026-06-30 | Tue | Planned | Technology Basics | Visible + Thermal Camera Pairing: When Dual-Sensor Payloads Matter |
-| 2026-07-01 | Wed | Planned | Digital RF | Remote ID Reception Range: What Actually Changes It? |
+| 2026-06-17 | Wed | PASS | Deployment | Data Center Perimeter Security System Design |
+| 2026-06-23 | Tue | PASS | System Design | How to Reduce False Alarms Without Slowing Response |
+| 2026-06-24 | Wed | PASS | Compliance | How to Write Better Detection-Range Requirements in Tenders |
+| 2026-06-30 | Tue | PASS | Technology Basics | Visible + Thermal Camera Pairing: When Dual-Sensor Payloads Matter |
+| 2026-07-01 | Wed | PASS | Digital RF | Remote ID Reception Range: What Actually Changes It? |
 | 2026-07-07 | Tue | Planned | System Design | What Makes a Good Control Room Layout for Multi-Sensor Operations? |
 | 2026-07-08 | Wed | Planned | Deployment | Substation and Power Grid Perimeter Monitoring |
 | 2026-07-14 | Tue | Planned | Technology Basics | What Limits Thermal Detection in Humidity, Rain, and Haze? |

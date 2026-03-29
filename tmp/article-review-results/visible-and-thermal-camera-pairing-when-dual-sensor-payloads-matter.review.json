@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it explains when visible and thermal pairing adds real decision value and when a dual-sensor payload is only an expensive substitute for better system design.",
+  "overall_score": 8.5,
+  "word_count": 1631,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 8,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 9,
+    "original_insight": 7
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on showing that visible and thermal channels contribute different evidence rather than functioning as interchangeable upgrades.",
+    "It gives useful deployment judgment by tying bispectral value to cueing, boresight, framing, and operator workflow instead of to brochure complexity.",
+    "The sections on when the pairing may not be worth it keep the article balanced and practically useful for buyer-side decisions."
+  ],
+  "summary_assessment": "This is a strong knowledge-base article. It is clear, technically believable, and helps readers judge dual-sensor payloads by mission role rather than by headline feature count.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\visible-and-thermal-camera-pairing-when-dual-sensor-payloads-matter.md",
+    "article_sha256": "95f4983a17ef5f237973e6e359ea477660cbb0d7f8832da9e4dc6cbd5e1985fe",
+    "normalized_review_input_sha256": "d1000406b3bf29a751e7f68243eefa4bb5860a90603025f9fb7e80e9595ad3b0",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\visible-and-thermal-camera-pairing-when-dual-sensor-payloads-matter\\round-01.review.json",
+    "sealed_at_utc": "2026-03-29T08:59:23+00:00"
+  }
+}

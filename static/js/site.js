@@ -15,30 +15,57 @@ const initCarousel = () => {
   const carousel = document.getElementById('heroCarousel');
   if (!carousel) return;
 
-  const track = carousel.querySelector('.carousel-track');
-  const slides = track ? Array.from(track.children) : [];
+  const textPanels = Array.from(carousel.querySelectorAll('[data-carousel-panel]'));
+  const mediaPanels = Array.from(carousel.querySelectorAll('[data-carousel-media-panel]'));
   const dots = Array.from(carousel.querySelectorAll('[data-carousel-dot]'));
-  const prevBtn = carousel.querySelector('[data-carousel-prev]');
-  const nextBtn = carousel.querySelector('[data-carousel-next]');
 
-  if (!track || slides.length === 0) return;
+  if (!textPanels.length || textPanels.length !== mediaPanels.length) return;
 
   let current = 0;
   let timer = null;
+  let cleanupTimer = null;
 
-  const goTo = (index) => {
-    current = (index + slides.length) % slides.length;
-    track.style.transform = `translateX(-${current * 100}%)`;
-    dots.forEach((dot, dotIndex) => {
-      dot.classList.toggle('is-active', dotIndex === current);
+  const applyState = (panels, activeIndex, previousIndex, initial = false) => {
+    panels.forEach((panel, panelIndex) => {
+      panel.classList.remove('is-active', 'is-leaving');
+
+      if (panelIndex === activeIndex) {
+        panel.classList.add('is-active');
+        panel.setAttribute('aria-hidden', 'false');
+        return;
+      }
+
+      panel.setAttribute('aria-hidden', 'true');
+
+      if (!initial && panelIndex === previousIndex) {
+        panel.classList.add('is-leaving');
+      }
     });
   };
 
-  const next = () => goTo(current + 1);
-  const prev = () => goTo(current - 1);
+  const goTo = (index, initial = false) => {
+    const nextIndex = (index + textPanels.length) % textPanels.length;
+    if (!initial && nextIndex === current) return;
 
-  if (nextBtn) nextBtn.addEventListener('click', next);
-  if (prevBtn) prevBtn.addEventListener('click', prev);
+    const previous = current;
+    current = nextIndex;
+
+    applyState(textPanels, current, previous, initial);
+    applyState(mediaPanels, current, previous, initial);
+
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle('is-active', dotIndex === current);
+    });
+
+    if (cleanupTimer) clearTimeout(cleanupTimer);
+    cleanupTimer = setTimeout(() => {
+      [...textPanels, ...mediaPanels].forEach((panel) => {
+        panel.classList.remove('is-leaving');
+      });
+    }, 1020);
+  };
+
+  const next = () => goTo(current + 1);
 
   dots.forEach((dot) => {
     dot.addEventListener('click', () => {
@@ -49,7 +76,7 @@ const initCarousel = () => {
 
   const startAutoplay = () => {
     if (timer) clearInterval(timer);
-    timer = setInterval(next, 5500);
+    timer = setInterval(next, 5000);
   };
 
   carousel.addEventListener('mouseenter', () => {
@@ -58,7 +85,7 @@ const initCarousel = () => {
 
   carousel.addEventListener('mouseleave', startAutoplay);
 
-  goTo(0);
+  goTo(0, true);
   startAutoplay();
 };
 

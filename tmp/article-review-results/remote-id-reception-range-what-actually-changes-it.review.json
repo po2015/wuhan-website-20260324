@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it cleanly separates Remote ID compliance from actual site reception performance and grounds the topic in receiver design, installation geometry, and RF link behavior.",
+  "overall_score": 8.9,
+  "word_count": 1841,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on distinguishing broadcast compliance from dependable operational coverage, which is the core confusion many buyers have.",
+    "It explains transmitter power, receiver sensitivity, antenna behavior, and site geometry in a way that feels technically credible without becoming unnecessarily dense.",
+    "The planning and testing questions give the reader practical guidance for designing and validating a Remote ID reception layer."
+  ],
+  "summary_assessment": "This is a strong applied RF article. It gives readers a reliable framework for thinking about Remote ID reception as an engineered coverage problem instead of as a fixed rule-derived number.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\remote-id-reception-range-what-actually-changes-it.md",
+    "article_sha256": "3b98188f9a252c61f8f8518531bb69cde51dc428ad94f8c60db60b1066ef8014",
+    "normalized_review_input_sha256": "af07c9f4cf139dfac51cec38fb7f958f751f2b7f9ff790b88504dda3e613c15a",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\remote-id-reception-range-what-actually-changes-it\\round-01.review.json",
+    "sealed_at_utc": "2026-03-29T08:59:41+00:00"
+  }
+}
