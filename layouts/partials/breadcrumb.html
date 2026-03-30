@@ -38,12 +38,12 @@
     {{- $crumbs = $crumbs | append (dict "title" (cond $servicesPage $servicesPage.Title "Services") "url" ("/services/" | relLangURL)) -}}
   {{- end -}}
 {{- else if hasPrefix $path "/knowledge-base/" -}}
-  {{- $crumbs = $crumbs | append (dict "title" (cond $infoPage $infoPage.Title "Information") "url" ("/info-center/" | relLangURL)) -}}
+  {{- $crumbs = $crumbs | append (dict "title" (cond $infoPage $infoPage.Title "Info Center") "url" ("/info-center/" | relLangURL)) -}}
   {{- if ne $path "/knowledge-base/" -}}
     {{- $crumbs = $crumbs | append (dict "title" (cond $kbPage $kbPage.Title "Knowledge Base") "url" ("/knowledge-base/" | relLangURL)) -}}
   {{- end -}}
 {{- else if hasPrefix $path "/news/" -}}
-  {{- $crumbs = $crumbs | append (dict "title" (cond $infoPage $infoPage.Title "Information") "url" ("/info-center/" | relLangURL)) -}}
+  {{- $crumbs = $crumbs | append (dict "title" (cond $infoPage $infoPage.Title "Info Center") "url" ("/info-center/" | relLangURL)) -}}
   {{- if ne $path "/news/" -}}
     {{- $crumbs = $crumbs | append (dict "title" (cond $newsPage $newsPage.Title "News") "url" ("/news/" | relLangURL)) -}}
   {{- end -}}

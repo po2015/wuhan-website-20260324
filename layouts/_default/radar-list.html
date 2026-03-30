@@ -174,7 +174,7 @@
         data-architecture="{{ lower $archCode }}" data-generation="{{ $genCode }}" data-purpose="{{ lower $purposeCode }}"
         data-range="{{ $maxRange }}">
         <a href="{{ $detailPage.RelPermalink }}" class="radar-catalog-media">
-            <img src='{{ $cardImage | relURL }}' alt="{{ $model }}"
+            <img loading="lazy" src='{{ $cardImage | relURL }}' alt="{{ $model }}"
               class="radar-catalog-image">
         </a>
 
@@ -193,7 +193,7 @@
 
           <div class="radar-catalog-stats">
             <div class="radar-catalog-stat">
-              <img src='{{ $systemIcon | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <img loading="lazy" src='{{ $systemIcon | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
               <div>
                 <span class="radar-catalog-stat-label">System type</span>
                 <p class="radar-catalog-stat-value">{{ $genName }}</p>
@@ -201,7 +201,7 @@
             </div>
 
             <div class="radar-catalog-stat">
-              <img src='{{ "/images/icons/radar-stat-architecture.svg" | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <img loading="lazy" src='{{ "/images/icons/radar-stat-architecture.svg" | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
               <div>
                 <span class="radar-catalog-stat-label">Architecture</span>
                 <p class="radar-catalog-stat-value">{{ $archName }}</p>
@@ -209,17 +209,17 @@
             </div>
 
             <div class="radar-catalog-stat">
-              <img src='{{ "/images/icons/radar-stat-target.svg" | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <img loading="lazy" src='{{ "/images/icons/radar-stat-target.svg" | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
               <div>
                 <div class="radar-catalog-target-line">
                   <span class="radar-catalog-stat-label">Target</span>
                   <div class="radar-catalog-target-row">
                     {{- if gt (len $targetItems) 0 -}}
                     {{- range $targetItems -}}
-                    <img src='{{ .icon | relURL }}' alt='{{ .label }}' title='{{ .label }}' class="radar-catalog-target-chip">
+                    <img loading="lazy" src='{{ .icon | relURL }}' alt='{{ .label }}' title='{{ .label }}' class="radar-catalog-target-chip">
                     {{- end -}}
                     {{- else -}}
-                    <img src='{{ "/images/icons/radar-stat-target.svg" | relURL }}' alt="Target pending" title="Target pending" class="radar-catalog-target-chip">
+                    <img loading="lazy" src='{{ "/images/icons/radar-stat-target.svg" | relURL }}' alt="Target pending" title="Target pending" class="radar-catalog-target-chip">
                     {{- end -}}
                   </div>
                 </div>
@@ -227,7 +227,7 @@
             </div>
 
             <div class="radar-catalog-stat">
-              <img src='{{ "/images/icons/radar-stat-range.svg" | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
+              <img loading="lazy" src='{{ "/images/icons/radar-stat-range.svg" | relURL }}' alt="" class="radar-catalog-stat-icon" aria-hidden="true">
               <div>
                 <span class="radar-catalog-stat-label">Max range</span>
                 <p class="radar-catalog-stat-value">{{ $maxRange }} km</p>

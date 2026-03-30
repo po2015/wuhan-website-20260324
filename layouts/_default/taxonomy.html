@@ -24,7 +24,7 @@
       <article class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft transition duration-200 hover:-translate-y-0.5 hover:shadow-xl">
         <div class="grid lg:grid-cols-[320px_minmax(0,1fr)]">
           <a href="{{ .RelPermalink }}" class="block overflow-hidden border-b border-slate-200 bg-slate-100 lg:border-b-0 lg:border-r">
-            <img src="{{ $pageImage | relURL }}" alt="{{ .Title }}" class="h-[15rem] w-full object-cover object-center transition duration-200 hover:scale-[1.02] lg:h-full">
+            <img loading="lazy" src="{{ $pageImage | relURL }}" alt="{{ .Title }}" class="h-[15rem] w-full object-cover object-center transition duration-200 hover:scale-[1.02] lg:h-full">
           </a>
 
           <div class="grid gap-5 p-6 lg:p-7">

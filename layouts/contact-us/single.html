@@ -46,7 +46,7 @@
           {{ range $cfg.details }}
           <div class="contact-detail-row">
             {{ with .icon }}
-            <img src="{{ . | relURL }}" alt="" class="contact-detail-icon" aria-hidden="true">
+            <img loading="lazy" src="{{ . | relURL }}" alt="" class="contact-detail-icon" aria-hidden="true">
             {{ end }}
             <div class="min-w-0">
               <dt class="contact-detail-label">{{ .label }}</dt>
@@ -67,7 +67,7 @@
         <div class="contact-map-head">
           <div class="contact-card-head">
             {{ with $cfg.map_icon }}
-            <img src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
+            <img loading="lazy" src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
             {{ end }}
             <div>
               <p class="contact-card-eyebrow">Location</p>
@@ -89,7 +89,7 @@
       <article id="{{ $formAnchor }}" class="contact-panel contact-form-anchor p-7">
         <div class="contact-card-head">
           {{ with $cfg.form_icon }}
-          <img src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
+          <img loading="lazy" src="{{ . | relURL }}" alt="" class="contact-card-icon" aria-hidden="true">
           {{ end }}
           <div>
             <p class="contact-card-eyebrow">Project Contact</p>
@@ -108,7 +108,7 @@
           {{ range . }}
           <article class="contact-meta-card">
             {{ with .icon }}
-            <img src="{{ . | relURL }}" alt="" class="contact-meta-icon" aria-hidden="true">
+            <img loading="lazy" src="{{ . | relURL }}" alt="" class="contact-meta-icon" aria-hidden="true">
             {{ end }}
             <div>
               <h3 class="contact-meta-title">{{ .title }}</h3>
@@ -124,7 +124,7 @@
           {{ range . }}
           <a href="{{ .href | safeURL }}" class="contact-action-card" {{ if hasPrefix .href "http" }}target="_blank" rel="noreferrer"{{ end }}>
             {{ with .icon }}
-            <img src="{{ . | relURL }}" alt="" class="contact-action-icon" aria-hidden="true">
+            <img loading="lazy" src="{{ . | relURL }}" alt="" class="contact-action-icon" aria-hidden="true">
             {{ end }}
             <div class="min-w-0">
               <h3 class="contact-meta-title">{{ .title }}</h3>
@@ -142,7 +142,7 @@
           {{ $qr := . }}
           <article class="contact-qr-card">
             {{ with .image }}
-            <img src="{{ . | relURL }}" alt="{{ $qr.title | default "QR placeholder" }}" class="contact-qr-image">
+            <img loading="lazy" src="{{ . | relURL }}" alt="{{ $qr.title | default "QR placeholder" }}" class="contact-qr-image">
             {{ end }}
             <div>
               <h3 class="contact-meta-title">{{ .title }}</h3>

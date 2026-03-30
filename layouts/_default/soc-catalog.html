@@ -66,7 +66,7 @@
         <a href="{{ $page.RelPermalink }}" class="soc-catalog-card-media">
           <span class="soc-catalog-card-glow"></span>
           {{ with $cardImage }}
-          <img src="{{ . | relURL }}" alt="{{ $page.Params.model | default $page.Title }}" class="soc-catalog-card-image">
+          <img loading="lazy" src="{{ . | relURL }}" alt="{{ $page.Params.model | default $page.Title }}" class="soc-catalog-card-image">
           {{ end }}
         </a>
 
@@ -105,7 +105,7 @@
             {{ range $stats }}
             <div class="soc-catalog-stat">
               {{ with .icon }}
-              <img src="{{ . | relURL }}" alt="" class="soc-catalog-stat-icon" aria-hidden="true">
+              <img loading="lazy" src="{{ . | relURL }}" alt="" class="soc-catalog-stat-icon" aria-hidden="true">
               {{ end }}
               <div>
                 <span class="soc-catalog-stat-label">{{ .label }}</span>

@@ -29,7 +29,7 @@
           <span class="soc-detail-hero-glow soc-detail-hero-glow-b"></span>
           <div class="soc-detail-device-stage">
             {{ with .Params.hero_image }}
-            <img src="{{ . | relURL }}" alt="{{ $.Params.model | default $.Title }}" class="soc-detail-hero-product">
+            <img loading="lazy" src="{{ . | relURL }}" alt="{{ $.Params.model | default $.Title }}" class="soc-detail-hero-product">
             {{ end }}
           </div>
         </div>
@@ -44,7 +44,7 @@
         {{ range . }}
         <article class="soc-detail-stat-card">
           {{ with .icon }}
-          <img src="{{ . | relURL }}" alt="" class="soc-detail-stat-icon">
+          <img loading="lazy" src="{{ . | relURL }}" alt="" class="soc-detail-stat-icon">
           {{ end }}
           <p class="soc-detail-stat-label">{{ .label }}</p>
           <p class="soc-detail-stat-value">{{ .value }}</p>
@@ -108,7 +108,7 @@
         {{ range . }}
         <article class="soc-detail-feature-card">
           {{ with .icon }}
-          <img src="{{ . | relURL }}" alt="" class="soc-detail-feature-icon">
+          <img loading="lazy" src="{{ . | relURL }}" alt="" class="soc-detail-feature-icon">
           {{ end }}
           <div class="soc-detail-feature-copy">
             <h3>{{ .title }}</h3>
@@ -179,7 +179,7 @@
         <h2 class="soc-detail-panel-title">{{ .Params.integration_native_title | default "The original software path from alert to optical confirmation." }}</h2>
         <div class="soc-detail-software-layout">
           {{ with .Params.integration_image }}
-          <img src="{{ . | relURL }}" alt="{{ $.Params.integration_image_alt | default "SOC software view" }}" class="soc-detail-software-image">
+          <img loading="lazy" src="{{ . | relURL }}" alt="{{ $.Params.integration_image_alt | default "SOC software view" }}" class="soc-detail-software-image">
           {{ end }}
           {{ with .Params.integration_text }}
           <div class="soc-detail-software-copy">
@@ -199,7 +199,7 @@
           {{ range . }}
           <article class="soc-detail-module-card">
             {{ with .icon }}
-            <img src="{{ . | relURL }}" alt="" class="soc-detail-module-icon">
+            <img loading="lazy" src="{{ . | relURL }}" alt="" class="soc-detail-module-icon">
             {{ end }}
             <div>
               <h3>{{ .title }}</h3>
@@ -225,7 +225,7 @@
           <article class="soc-detail-note-card">
             <div class="soc-detail-note-media">
               {{ with $note.image }}
-              <img src="{{ . | relURL }}" alt="{{ $note.alt | default $note.title }}" class="soc-detail-note-image">
+              <img loading="lazy" src="{{ . | relURL }}" alt="{{ $note.alt | default $note.title }}" class="soc-detail-note-image">
               {{ end }}
             </div>
             <div class="soc-detail-note-copy">
@@ -249,7 +249,7 @@
         <div class="soc-detail-photo-grid">
           {{ range . }}
           <article class="soc-detail-photo-card">
-            <img src="{{ .image | relURL }}" alt="{{ .alt | default .title }}" class="soc-detail-photo-image">
+            <img loading="lazy" src="{{ .image | relURL }}" alt="{{ .alt | default .title }}" class="soc-detail-photo-image">
             <div class="soc-detail-photo-copy">
               <h3>{{ .title }}</h3>
               <p>{{ .text }}</p>

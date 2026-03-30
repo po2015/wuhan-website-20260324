@@ -135,14 +135,14 @@ homepage:
       - page: "/sensors/sdc/sdc-pt-d02"
         tone: "spectrum"
   information:
-    kicker: "Information"
+    kicker: "Info Center"
     title: "Latest News and Knowledge Base Updates"
     title_url: "/info-center/"
     lead: "Follow the newest material from Cyrentis across company news and technical knowledge content, with the home page pulling the three published entries closest to today."
     news_label: "News"
     knowledge_base_label: "Knowledge Base"
     published_prefix: "Published"
-    read_more_label: "Read More"
+    read_more_label: "Read Article"
   cta:
     title: "Need Horizon, sensor products, or an integration-ready system plan?"
     description: "Tell Cyrentis what you need to detect, confirm, or coordinate. We can help define the right software scope, sensor mix, and delivery approach."

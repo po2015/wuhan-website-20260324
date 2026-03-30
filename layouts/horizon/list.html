@@ -22,7 +22,7 @@
         </div>
 
         <div class="horizon-hero-media">
-          <img src="{{ $hero.image | relURL }}" alt="Horizon platform visual" class="horizon-hero-image">
+          <img loading="lazy" src="{{ $hero.image | relURL }}" alt="Horizon platform visual" class="horizon-hero-image">
         </div>
       </div>
 
@@ -50,7 +50,7 @@
       <div class="horizon-position-grid">
         {{ range $positioning.items }}
         <article class="horizon-position-item">
-          <img src="{{ .icon | relURL }}" alt="" class="horizon-position-icon">
+          <img loading="lazy" src="{{ .icon | relURL }}" alt="" class="horizon-position-icon">
           <h3 class="horizon-position-title">{{ .title }}</h3>
           <p class="horizon-position-text">{{ .description }}</p>
         </article>
@@ -87,7 +87,7 @@
           <div class="horizon-phase-head">
             <span class="horizon-phase-tag">{{ $phase.tag }}</span>
             {{ with $phase.icon }}
-            <img src="{{ . | relURL }}" alt="" class="horizon-phase-icon">
+            <img loading="lazy" src="{{ . | relURL }}" alt="" class="horizon-phase-icon">
             {{ end }}
           </div>
           <div class="horizon-phase-copy">
@@ -146,7 +146,7 @@
           <article class="horizon-module-story {{ if $isReverse }}is-reverse{{ end }}">
             <div class="horizon-module-icon-column">
               {{ with $module.icon }}
-              <img src="{{ . | relURL }}" alt="{{ $module.name }} icon" class="horizon-module-icon">
+              <img loading="lazy" src="{{ . | relURL }}" alt="{{ $module.name }} icon" class="horizon-module-icon">
               {{ end }}
             </div>
 

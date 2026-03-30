@@ -19,7 +19,7 @@
 
           <div class="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-b from-slate-100 via-sky-50 to-slate-200/70">
             {{ with .Params.hero_image }}
-            <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="block h-[24rem] w-full object-cover object-center">
+            <img loading="lazy" src="{{ . | relURL }}" alt="{{ $.Title }}" class="block h-[24rem] w-full object-cover object-center">
             {{ end }}
             {{ with .Params.service_tag }}
             <span class="absolute left-5 top-5 inline-flex rounded-full bg-white/92 px-3 py-1 text-[0.72rem] font-extrabold uppercase tracking-[0.15em] text-sky-700 ring-1 ring-sky-100">{{ . }}</span>
@@ -120,7 +120,7 @@
           {{ range . }}
           <article class="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white">
             {{ with .image }}
-            <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="h-[16rem] w-full object-cover object-center">
+            <img loading="lazy" src="{{ . | relURL }}" alt="{{ $.Title }}" class="h-[16rem] w-full object-cover object-center">
             {{ end }}
             <div class="grid gap-4 p-5">
               <div>

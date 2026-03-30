@@ -42,7 +42,7 @@
             <span class="src-sample-radar-beam src-sample-radar-beam-a"></span>
             <span class="src-sample-radar-beam src-sample-radar-beam-b"></span>
             {{ with .Params.hero_image }}
-            <img src="{{ . | relURL }}" alt="{{ $.Params.model | default $.Title }}" class="src-sample-hero-product">
+            <img loading="lazy" src="{{ . | relURL }}" alt="{{ $.Params.model | default $.Title }}" class="src-sample-hero-product">
             {{ end }}
           </div>
         </div>
@@ -81,7 +81,7 @@
         {{ range . }}
         <article class="src-sample-stat-card">
           {{ with .icon }}
-          <img src="{{ . | relURL }}" alt="" class="src-sample-stat-icon">
+          <img loading="lazy" src="{{ . | relURL }}" alt="" class="src-sample-stat-icon">
           {{ end }}
           <div class="src-sample-stat-copy">
             <p class="src-sample-stat-label">{{ .label }}</p>
@@ -186,7 +186,7 @@
           {{ range . }}
           <article class="src-sample-module-card">
             {{ with .icon }}
-            <img src="{{ . | relURL }}" alt="" class="src-sample-module-icon">
+            <img loading="lazy" src="{{ . | relURL }}" alt="" class="src-sample-module-icon">
             {{ end }}
             <div>
               <h3 class="src-sample-feature-title">{{ .title }}</h3>
@@ -211,7 +211,7 @@
           <article class="src-sample-photo-card">
             {{- $scenario := . -}}
             {{ with .image }}
-            <img src="{{ . | relURL }}" alt="{{ $scenario.alt | default $scenario.title }}" class="src-sample-photo-image">
+            <img loading="lazy" src="{{ . | relURL }}" alt="{{ $scenario.alt | default $scenario.title }}" class="src-sample-photo-image">
             {{ end }}
             <div class="src-sample-photo-copy">
               <h3 class="src-sample-feature-title">{{ .title }}</h3>
@@ -238,7 +238,7 @@
               <h3 class="src-sample-feature-title">{{ .model }}</h3>
               <span class="src-sample-related-range">{{ .max_range }}</span>
             </div>
-            <p class="src-sample-related-meta">{{ .band }} · {{ .system_type }} · {{ .architecture_name }}</p>
+            <p class="src-sample-related-meta">{{ .band }} Â· {{ .system_type }} Â· {{ .architecture_name }}</p>
             <p class="src-sample-feature-text">{{ .description }}</p>
             {{ with .relation }}
             <p class="src-sample-related-note">{{ . }}</p>

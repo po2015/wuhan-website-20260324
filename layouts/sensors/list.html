@@ -19,7 +19,7 @@
         <a href="{{ .url | relLangURL }}" class="sensor-strip-link">
           <div class="sensor-strip-media">
             {{ with .background }}
-            <img src="{{ . | relURL }}" alt="" class="sensor-strip-bg" aria-hidden="true">
+            <img loading="lazy" src="{{ . | relURL }}" alt="" class="sensor-strip-bg" aria-hidden="true">
             {{ end }}
             {{ with .visual_lines }}
             <div class="sensor-strip-mark" aria-hidden="true">
@@ -30,7 +30,7 @@
             {{ end }}
             <div class="sensor-strip-device-stage" aria-hidden="true">
               {{ with .device }}
-              <img src="{{ . | relURL }}" alt="" class="sensor-strip-device" aria-hidden="true">
+              <img loading="lazy" src="{{ . | relURL }}" alt="" class="sensor-strip-device" aria-hidden="true">
               {{ end }}
             </div>
           </div>

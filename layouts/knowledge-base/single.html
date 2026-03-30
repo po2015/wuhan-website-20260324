@@ -36,7 +36,7 @@
         {{ with $heroImage }}
         <figure class="mb-8">
           <div class="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-100">
-            <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" class="w-full object-cover object-center">
+            <img loading="lazy" src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" class="w-full object-cover object-center">
           </div>
           {{ with $.Params.image_source_url }}
           <figcaption class="mt-3 text-xs leading-6 text-slate-500">

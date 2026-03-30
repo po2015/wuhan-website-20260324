@@ -1,12 +1,12 @@
 ---
-title: "Information"
+title: "Info Center"
 description: "Explore practical articles and company updates related to Cyrentis platforms, sensors, and project planning."
-seo_title: "Information | Cyrentis Articles and Company Updates"
+seo_title: "Info Center | Cyrentis Articles and Company Updates"
 seo_description: "Read Cyrentis knowledge-base articles and company news covering platforms, sensors, deployment planning, and project delivery."
 layout: "list"
 weight: 4
 info_center:
-  kicker: "Information"
+  kicker: "Info Center"
   view_all_label: "View All"
   kb_empty: "No knowledge-base posts yet."
   news_empty: "No news posts yet."

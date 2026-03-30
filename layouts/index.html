@@ -78,7 +78,7 @@
                           {{ range $index, $slide := $hero.slides }}
                           <div class="home-hero-media-panel{{ if eq $index 0 }} is-active{{ end }}"
                             data-carousel-media-panel aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}">
-                            <img src="{{ $slide.image | relURL }}" alt="{{ $slide.image_alt | default $slide.title }}"
+                            <img loading="lazy" src="{{ $slide.image | relURL }}" alt="{{ $slide.image_alt | default $slide.title }}"
                               class="home-hero-image">
                           </div>
                           {{ end }}
@@ -117,7 +117,7 @@
 
         {{ with $card.image }}
         <div class="home-business-media">
-          <img src="{{ . | relURL }}" alt="{{ $card.image_alt | default $card.title }}" class="home-business-image">
+          <img loading="lazy" src="{{ . | relURL }}" alt="{{ $card.image_alt | default $card.title }}" class="home-business-image">
         </div>
         {{ end }}
         <p class="home-business-label">{{ $card.label }}</p>
@@ -164,7 +164,7 @@
           {{- $page := .page -}}
           <article class="home-product-chip tone-{{ .tone }}">
             <div class="home-product-chip-visual">
-              <img src="{{ $page.Params.hero_image | relURL }}" alt="" class="home-product-chip-image">
+              <img loading="lazy" src="{{ $page.Params.hero_image | relURL }}" alt="" class="home-product-chip-image">
             </div>
           </article>
           {{ end }}
@@ -172,7 +172,7 @@
           {{- $page := .page -}}
           <article class="home-product-chip tone-{{ .tone }}">
             <div class="home-product-chip-visual">
-              <img src="{{ $page.Params.hero_image | relURL }}" alt="" class="home-product-chip-image">
+              <img loading="lazy" src="{{ $page.Params.hero_image | relURL }}" alt="" class="home-product-chip-image">
             </div>
           </article>
           {{ end }}
@@ -208,7 +208,7 @@
       {{- $pageImage := .Params.image | default (.Params.hero_image | default "images/placeholder.png") -}}
       <article class="home-info-card">
         <a href="{{ .RelPermalink }}" class="home-info-image-link">
-          <img src="{{ $pageImage | relURL }}" alt="{{ .Title }}" class="home-info-image">
+          <img loading="lazy" src="{{ $pageImage | relURL }}" alt="{{ .Title }}" class="home-info-image">
         </a>
 
         <div class="home-info-copy">
@@ -224,7 +224,7 @@
 
           <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
           <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
-          <a href="{{ .RelPermalink }}" class="card-link">{{ $information.read_more_label }}</a>
+          <a href="{{ .RelPermalink }}" class="card-link home-info-read-link">Read article: {{ .Title }}</a>
         </div>
       </article>
       {{ end }}
