@@ -17,22 +17,23 @@ summaryLength = 24
   brand_name = "Cyrentis"
   company_name = "Wuhan Cyrentis Technology Co., Ltd."
   site_name = "Cyrentis"
-  site_title_suffix = "Integrated Monitoring Systems"
-  default_title = "Cyrentis | Horizon Software, Surveillance Radar, EO & RF Systems"
+  site_title_suffix = "Integrated Security Solutions"
+  site_slogan = "Integrated Security Solutions for Smarter Monitoring"
+  default_title = "Cyrentis | Surveillance Radar, EO/IR & RF Detection Systems"
   address = "Room 201-134, Building C9, Phase II, Wuhan Software New City, No. 8 Huacheng Avenue, East Lake High-tech Development Zone, Wuhan, China"
   phone = "+86-13986053927"
   email = "info@cyrentis.com"
   google_tag_id = "G-H32XFR8H0R"
   icp_license = "鄂ICP备2024048791号-3"
-  default_description = "Cyrentis provides Horizon software, surveillance radar, electro-optical and RF sensing products, plus system design and integration services for site security and low-altitude awareness."
-  default_social_image = "/images/home_horizon.png"
-  default_social_image_alt = "Cyrentis integrated monitoring systems built around Horizon software and sensor products."
-  default_keywords = ["Cyrentis", "Horizon software", "surveillance radar", "electro-optical systems", "spectrum detection", "system integration", "low-altitude awareness"]
+  default_description = "Cyrentis provides surveillance radar, electro-optical and RF detection products, plus integration-ready software and engineering support for site security and low-altitude awareness."
+  default_social_image = "/images/home_horizon_2.png"
+  default_social_image_alt = "Cyrentis surveillance radar, EO/IR, and RF detection solutions for integrated site monitoring."
+  default_keywords = ["Cyrentis", "surveillance radar", "EO/IR systems", "electro-optical systems", "RF detection", "drone detection radar", "site security sensors", "low-altitude awareness"]
 
   [params.ui]
     page_kicker = "Page"
     section_kicker = "Section"
-    read_more_label = "Read More"
+    read_more_label = "Read Article"
     no_items_label = "No items available in this section yet."
     key_points_title = "Key Points"
     inquiry_title = "Project Inquiry"
@@ -61,9 +62,9 @@ summaryLength = 24
   weight = 5
 
 [[menus.main]]
-  name = "Horizon"
+  name = "Software Platform"
   pageRef = "/horizon"
-  weight = 10
+  weight = 35
 
 [[menus.main]]
   name = "Sensors"
@@ -114,7 +115,7 @@ summaryLength = 24
   weight = 30
 
 [[menus.main]]
-  name = "Information"
+  name = "Info Center"
   identifier = "information-center"
   pageRef = "/info-center"
   weight = 40
@@ -142,9 +143,9 @@ summaryLength = 24
   weight = 10
 
 [[menus.footer]]
-  name = "Horizon"
+  name = "Software Platform"
   pageRef = "/horizon"
-  weight = 15
+  weight = 27
 
 [[menus.footer]]
   name = "Sensors"
@@ -157,7 +158,7 @@ summaryLength = 24
   weight = 25
 
 [[menus.footer]]
-  name = "Information"
+  name = "Info Center"
   pageRef = "/info-center"
   weight = 30
 

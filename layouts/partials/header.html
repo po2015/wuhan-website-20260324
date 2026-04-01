@@ -1,9 +1,14 @@
 <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/92 backdrop-blur-md">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between gap-4 lg:h-[4.5rem]">
-      <a href="{{ "/" | relLangURL }}" class="shrink-0">
-        <img loading="lazy" src="{{ "images/logo.png" | relURL }}" alt="Cyrentis" class="h-10 w-auto max-w-[210px] object-contain">
-      </a>
+      <div class="flex min-w-0 items-center gap-3">
+        <a href="{{ "/" | relLangURL }}" class="shrink-0">
+          <img loading="lazy" src="{{ "images/logo.png" | relURL }}" alt="Cyrentis" class="h-10 w-auto max-w-[210px] object-contain">
+        </a>
+        {{ with .Site.Params.site_slogan }}
+        <p class="hidden max-w-[10.5rem] text-[0.68rem] font-semibold leading-4 text-slate-500 lg:block xl:max-w-[17rem] xl:text-[0.72rem]">{{ . }}</p>
+        {{ end }}
+      </div>
 
       <button id="mobileMenuButton" type="button" class="inline-flex items-center rounded-lg border border-slate-300/90 bg-white px-3 py-2 text-sm font-semibold text-slate-700 lg:hidden" aria-expanded="false" aria-controls="mobileMenu">
         Menu
@@ -57,6 +62,9 @@
         </ul>
       </nav>
     </div>
+    {{ with .Site.Params.site_slogan }}
+    <p class="pb-3 text-[0.78rem] font-medium leading-5 text-slate-500 lg:hidden">{{ . }}</p>
+    {{ end }}
 
     <div id="mobileMenu" class="hidden border-t border-slate-200 py-4 lg:hidden">
       <div class="space-y-2 text-sm font-semibold text-slate-700">

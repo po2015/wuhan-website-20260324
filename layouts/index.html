@@ -224,7 +224,7 @@
 
           <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
           <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
-          <a href="{{ .RelPermalink }}" class="card-link home-info-read-link">Read article: {{ .Title }}</a>
+          <a href="{{ .RelPermalink }}" class="card-link">{{ $information.read_more_label }}</a>
         </div>
       </article>
       {{ end }}
