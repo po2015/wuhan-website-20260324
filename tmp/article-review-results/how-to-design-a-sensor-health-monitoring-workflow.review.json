@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Well-structured, operationally credible, and strong on turning telemetry into maintainable workflow design.",
+  "overall_score": 8.9,
+  "word_count": 1772,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Moves beyond online-offline monitoring and gives a useful health model around freshness, quality, timing, and dependencies.",
+    "Separates technical symptoms from mission impact in a way that fits real multi-sensor operations.",
+    "Provides concrete workflow value through routing logic, recovery-state design, and meaningful health metrics."
+  ],
+  "summary_assessment": "A reviewer-safe professional article with strong system-design framing, good operational specificity, and clear practical guidance for health monitoring workflows.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-to-design-a-sensor-health-monitoring-workflow.md",
+    "article_sha256": "f8688d6a842f29a1ca5f3d0d6a4afa9de350911439ba30c9c0d29a806738663d",
+    "normalized_review_input_sha256": "2c2edd68c44f835b2180f207c4ed2c0ce472f83cd4013f1584eccdd209237350",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-to-design-a-sensor-health-monitoring-workflow\\round-01.review.json",
+    "sealed_at_utc": "2026-04-03T03:40:27+00:00"
+  }
+}

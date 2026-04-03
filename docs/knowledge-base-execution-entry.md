@@ -39,16 +39,26 @@ It keeps:
 | 2026-06-24 | How to Write Better Detection-Range Requirements in Tenders | `content/en/knowledge-base/how-to-write-better-detection-range-requirements-in-tenders.md` | `PASS` | Done |
 | 2026-06-30 | Visible + Thermal Camera Pairing: When Dual-Sensor Payloads Matter | `content/en/knowledge-base/visible-and-thermal-camera-pairing-when-dual-sensor-payloads-matter.md` | `PASS` | Done |
 | 2026-07-01 | Remote ID Reception Range: What Actually Changes It? | `content/en/knowledge-base/remote-id-reception-range-what-actually-changes-it.md` | `PASS` | Done |
+| 2026-07-07 | What Makes a Good Control Room Layout for Multi-Sensor Operations? | `content/en/knowledge-base/what-makes-a-good-control-room-layout-for-multi-sensor-operations.md` | `PASS` | Done |
+| 2026-07-08 | Substation and Power Grid Perimeter Monitoring | `content/en/knowledge-base/substation-and-power-grid-perimeter-monitoring.md` | `PASS` | Done |
+| 2026-07-14 | What Limits Thermal Detection in Humidity, Rain, and Haze? | `content/en/knowledge-base/what-limits-thermal-detection-in-humidity-rain-and-haze.md` | `PASS` | Done |
+| 2026-07-15 | How RF Antenna Placement Changes Detection and Bearing Accuracy | `content/en/knowledge-base/how-rf-antenna-placement-changes-detection-and-bearing-accuracy.md` | `PASS` | Done |
+| 2026-07-21 | Data Retention Design for Security Events, Tracks, and Evidence | `content/en/knowledge-base/data-retention-design-for-security-events-tracks-and-evidence.md` | `PASS` | Done |
+| 2026-07-22 | What an Export-Ready Security Sensor Datasheet Should Include | `content/en/knowledge-base/what-an-export-ready-security-sensor-datasheet-should-include.md` | `PASS` | Done |
+| 2026-07-28 | How to Design a Sensor Health Monitoring Workflow | `content/en/knowledge-base/how-to-design-a-sensor-health-monitoring-workflow.md` | `PASS` | Done |
+| 2026-07-29 | What Causes RF Multipath and Bearing Error in Urban Sites? | `content/en/knowledge-base/what-causes-rf-multipath-and-bearing-error-in-urban-sites.md` | `PASS` | Done |
+| 2026-08-04 | Latency Budgets in Multi-Sensor Systems: Why Seconds Matter | `content/en/knowledge-base/latency-budgets-in-multi-sensor-systems-why-seconds-matter.md` | `PASS` | Done |
+| 2026-08-05 | Solar Farm Security Monitoring: Geometry, Power, and Communications | `content/en/knowledge-base/solar-farm-security-monitoring-geometry-power-and-communications.md` | `PASS` | Done |
 
 ### Next Planned
 
 | Date | Topic | Target File | Status |
 | --- | --- | --- | --- |
-| 2026-07-07 | What Makes a Good Control Room Layout for Multi-Sensor Operations? | `content/en/knowledge-base/what-makes-a-good-control-room-layout-for-multi-sensor-operations.md` | Planned |
-| 2026-07-08 | Substation and Power Grid Perimeter Monitoring | `content/en/knowledge-base/substation-and-power-grid-perimeter-monitoring.md` | Planned |
-| 2026-07-14 | What Limits Thermal Detection in Humidity, Rain, and Haze? | `content/en/knowledge-base/what-limits-thermal-detection-in-humidity-rain-and-haze.md` | Planned |
-| 2026-07-15 | How RF Antenna Placement Changes Detection and Bearing Accuracy | `content/en/knowledge-base/how-rf-antenna-placement-changes-detection-and-bearing-accuracy.md` | Planned |
-| 2026-07-21 | Data Retention Design for Security Events, Tracks, and Evidence | `content/en/knowledge-base/data-retention-design-for-security-events-tracks-and-evidence.md` | Planned |
+| 2026-08-11 | How Stabilization Affects Long-Range EO Tracking | `content/en/knowledge-base/how-stabilization-affects-long-range-eo-tracking.md` | Planned |
+| 2026-08-12 | Passive RF Detection vs Protocol Decoding: What Do You Actually Get? | `content/en/knowledge-base/passive-rf-detection-vs-protocol-decoding-what-do-you-actually-get.md` | Planned |
+| 2026-08-18 | FAT vs SAT in Security Projects: What Changes Between Factory and Site | `content/en/knowledge-base/fat-vs-sat-in-security-projects-what-changes-between-factory-and-site.md` | Planned |
+| 2026-08-19 | How to Estimate Camera Identification Range for People, Vehicles, and Small Craft | `content/en/knowledge-base/how-to-estimate-camera-identification-range-for-people-vehicles-and-small-craft.md` | Planned |
+| 2026-08-25 | How to Plan RF Coverage for Drone Detection Around Buildings | `content/en/knowledge-base/how-to-plan-rf-coverage-for-drone-detection-around-buildings.md` | Planned |
 
 ## Publishing Schedule
 
@@ -89,16 +99,16 @@ It keeps:
 | 2026-06-24 | Wed | PASS | Compliance | How to Write Better Detection-Range Requirements in Tenders |
 | 2026-06-30 | Tue | PASS | Technology Basics | Visible + Thermal Camera Pairing: When Dual-Sensor Payloads Matter |
 | 2026-07-01 | Wed | PASS | Digital RF | Remote ID Reception Range: What Actually Changes It? |
-| 2026-07-07 | Tue | Planned | System Design | What Makes a Good Control Room Layout for Multi-Sensor Operations? |
-| 2026-07-08 | Wed | Planned | Deployment | Substation and Power Grid Perimeter Monitoring |
-| 2026-07-14 | Tue | Planned | Technology Basics | What Limits Thermal Detection in Humidity, Rain, and Haze? |
-| 2026-07-15 | Wed | Planned | Digital RF | How RF Antenna Placement Changes Detection and Bearing Accuracy |
-| 2026-07-21 | Tue | Planned | System Design | Data Retention Design for Security Events, Tracks, and Evidence |
-| 2026-07-22 | Wed | Planned | Export Control | What an Export-Ready Security Sensor Datasheet Should Include |
-| 2026-07-28 | Tue | Planned | System Design | How to Design a Sensor Health Monitoring Workflow |
-| 2026-07-29 | Wed | Planned | Digital RF | What Causes RF Multipath and Bearing Error in Urban Sites? |
-| 2026-08-04 | Tue | Planned | System Design | Latency Budgets in Multi-Sensor Systems: Why Seconds Matter |
-| 2026-08-05 | Wed | Planned | Deployment | Solar Farm Security Monitoring: Geometry, Power, and Communications |
+| 2026-07-07 | Tue | PASS | System Design | What Makes a Good Control Room Layout for Multi-Sensor Operations? |
+| 2026-07-08 | Wed | PASS | Deployment | Substation and Power Grid Perimeter Monitoring |
+| 2026-07-14 | Tue | PASS | Technology Basics | What Limits Thermal Detection in Humidity, Rain, and Haze? |
+| 2026-07-15 | Wed | PASS | Digital RF | How RF Antenna Placement Changes Detection and Bearing Accuracy |
+| 2026-07-21 | Tue | PASS | System Design | Data Retention Design for Security Events, Tracks, and Evidence |
+| 2026-07-22 | Wed | PASS | Export Control | What an Export-Ready Security Sensor Datasheet Should Include |
+| 2026-07-28 | Tue | PASS | System Design | How to Design a Sensor Health Monitoring Workflow |
+| 2026-07-29 | Wed | PASS | Digital RF | What Causes RF Multipath and Bearing Error in Urban Sites? |
+| 2026-08-04 | Tue | PASS | System Design | Latency Budgets in Multi-Sensor Systems: Why Seconds Matter |
+| 2026-08-05 | Wed | PASS | Deployment | Solar Farm Security Monitoring: Geometry, Power, and Communications |
 | 2026-08-11 | Tue | Planned | Technology Basics | How Stabilization Affects Long-Range EO Tracking |
 | 2026-08-12 | Wed | Planned | Digital RF | Passive RF Detection vs Protocol Decoding: What Do You Actually Get? |
 | 2026-08-18 | Tue | Planned | Compliance | FAT vs SAT in Security Projects: What Changes Between Factory and Site |

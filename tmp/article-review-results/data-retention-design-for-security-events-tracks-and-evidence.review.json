@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it reframes retention as an incident reconstruction and retrieval design problem rather than as a simple number-of-video-days discussion.",
+  "overall_score": 8.8,
+  "word_count": 1942,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 8,
+    "decision_value": 10,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on distinguishing media retention from incident retention and keeping tracks, metadata, operator actions, and replay design in one coherent model.",
+    "It gives particularly high decision value by explaining hot, warm, and cold retention tiers in operational rather than purely storage terms.",
+    "The focus on timestamp integrity and retrieval performance makes the topic feel practical instead of generic."
+  ],
+  "summary_assessment": "This is a strong system-design article. It is clear, specific, and gives readers a credible way to plan retention architecture for modern multi-sensor security platforms.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\data-retention-design-for-security-events-tracks-and-evidence.md",
+    "article_sha256": "40f35c682d2b47fee20760e28355400f7bcfc6b945b637294c7114316c3ab214",
+    "normalized_review_input_sha256": "553494e5b283076283bf9a6fd6f865af948fb55f35b538bb1b015970e479bc55",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\data-retention-design-for-security-events-tracks-and-evidence\\round-01.review.json",
+    "sealed_at_utc": "2026-04-03T03:06:25+00:00"
+  }
+}

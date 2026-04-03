@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Clear, technically grounded, and highly usable for export-control documentation workflows.",
+  "overall_score": 8.9,
+  "word_count": 1880,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Frames the article correctly as documentation guidance rather than legal advice or marketing copy.",
+    "Explains why exact model identity, variant scope, and classification-relevant parameters matter to downstream export review.",
+    "Maintains strong practical decision value by translating regulatory context into datasheet-writing discipline."
+  ],
+  "summary_assessment": "A strong professional knowledge-base article with clear export-control framing, concrete documentation guidance, and useful distinctions around ECCN, variants, and downstream review."
+}

@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it shows how placement geometry, clutter, calibration, and sector ownership change RF performance before algorithms can help.",
+  "overall_score": 8.9,
+  "word_count": 1816,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on explaining why antenna placement is part of the RF measurement chain rather than a final installation detail.",
+    "It adds practical deployment judgment through sector-based planning, post-installation validation, and maintenance-change awareness.",
+    "The bearing discussion stays concrete by tying array integrity and calibration to real-site consequences."
+  ],
+  "summary_assessment": "This is a strong RF deployment article. It is technically believable, decision-useful, and gives readers a credible framework for antenna siting and validation.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-rf-antenna-placement-changes-detection-and-bearing-accuracy.md",
+    "article_sha256": "a6c07a3564c8159d3d7ad3fe61a39594bf49eca6c6edb7bce7fac6538730b1cf",
+    "normalized_review_input_sha256": "936e8984b245d1d2ee0d9e94c76793fcfd74b2960fba961d4ac770c87716203c",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-rf-antenna-placement-changes-detection-and-bearing-accuracy\\round-01.review.json",
+    "sealed_at_utc": "2026-04-03T03:06:25+00:00"
+  }
+}

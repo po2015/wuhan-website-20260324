@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "The article passes because it shows how placement geometry, clutter, calibration, and sector ownership change RF performance before algorithms can help.",
+  "overall_score": 8.9,
+  "word_count": 1816,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "The article is strong on explaining why antenna placement is part of the RF measurement chain rather than a final installation detail.",
+    "It adds practical deployment judgment through sector-based planning, post-installation validation, and maintenance-change awareness.",
+    "The bearing discussion stays concrete by tying array integrity and calibration to real-site consequences."
+  ],
+  "summary_assessment": "This is a strong RF deployment article. It is technically believable, decision-useful, and gives readers a credible framework for antenna siting and validation."
+}
