@@ -49,16 +49,26 @@ It keeps:
 | 2026-07-29 | What Causes RF Multipath and Bearing Error in Urban Sites? | `content/en/knowledge-base/what-causes-rf-multipath-and-bearing-error-in-urban-sites.md` | `PASS` | Done |
 | 2026-08-04 | Latency Budgets in Multi-Sensor Systems: Why Seconds Matter | `content/en/knowledge-base/latency-budgets-in-multi-sensor-systems-why-seconds-matter.md` | `PASS` | Done |
 | 2026-08-05 | Solar Farm Security Monitoring: Geometry, Power, and Communications | `content/en/knowledge-base/solar-farm-security-monitoring-geometry-power-and-communications.md` | `PASS` | Done |
+| 2026-08-11 | How Stabilization Affects Long-Range EO Tracking | `content/en/knowledge-base/how-stabilization-affects-long-range-eo-tracking.md` | `PASS` | Done |
+| 2026-08-12 | Passive RF Detection vs Protocol Decoding: What Do You Actually Get? | `content/en/knowledge-base/passive-rf-detection-vs-protocol-decoding-what-do-you-actually-get.md` | `PASS` | Done |
+| 2026-08-18 | FAT vs SAT in Security Projects: What Changes Between Factory and Site | `content/en/knowledge-base/fat-vs-sat-in-security-projects-what-changes-between-factory-and-site.md` | `PASS` | Done |
+| 2026-08-19 | How to Estimate Camera Identification Range for People, Vehicles, and Small Craft | `content/en/knowledge-base/how-to-estimate-camera-identification-range-for-people-vehicles-and-small-craft.md` | `PASS` | Done |
+| 2026-08-25 | How to Plan RF Coverage for Drone Detection Around Buildings | `content/en/knowledge-base/how-to-plan-rf-coverage-for-drone-detection-around-buildings.md` | `PASS` | Done |
+| 2026-08-26 | Network Topology for Distributed Sensor Sites: Fiber, Wireless, and Redundancy | `content/en/knowledge-base/network-topology-for-distributed-sensor-sites-fiber-wireless-and-redundancy.md` | `PASS` | Done |
+| 2026-09-01 | Warehouse and Logistics Park Surveillance Design | `content/en/knowledge-base/warehouse-and-logistics-park-surveillance-design.md` | `PASS` | Done |
+| 2026-09-02 | Why Narrow FOV and Wide FOV Need to Work Together in EO Verification | `content/en/knowledge-base/why-narrow-fov-and-wide-fov-need-to-work-together-in-eo-verification.md` | `PASS` | Done |
+| 2026-09-08 | Spectrum Monitoring vs Communications Intelligence: Where the Line Is for Civil Projects | `content/en/knowledge-base/spectrum-monitoring-vs-communications-intelligence-where-the-line-is-for-civil-projects.md` | `PASS` | Done |
+| 2026-09-09 | API vs SDK vs Protocol Gateways in Security System Integration | `content/en/knowledge-base/api-vs-sdk-vs-protocol-gateways-in-security-system-integration.md` | `PASS` | Done |
 
 ### Next Planned
 
 | Date | Topic | Target File | Status |
 | --- | --- | --- | --- |
-| 2026-08-11 | How Stabilization Affects Long-Range EO Tracking | `content/en/knowledge-base/how-stabilization-affects-long-range-eo-tracking.md` | Planned |
-| 2026-08-12 | Passive RF Detection vs Protocol Decoding: What Do You Actually Get? | `content/en/knowledge-base/passive-rf-detection-vs-protocol-decoding-what-do-you-actually-get.md` | Planned |
-| 2026-08-18 | FAT vs SAT in Security Projects: What Changes Between Factory and Site | `content/en/knowledge-base/fat-vs-sat-in-security-projects-what-changes-between-factory-and-site.md` | Planned |
-| 2026-08-19 | How to Estimate Camera Identification Range for People, Vehicles, and Small Craft | `content/en/knowledge-base/how-to-estimate-camera-identification-range-for-people-vehicles-and-small-craft.md` | Planned |
-| 2026-08-25 | How to Plan RF Coverage for Drone Detection Around Buildings | `content/en/knowledge-base/how-to-plan-rf-coverage-for-drone-detection-around-buildings.md` | Planned |
+| 2026-09-15 | Border River and Canal Monitoring Design | `content/en/knowledge-base/border-river-and-canal-monitoring-design.md` | Planned |
+| 2026-09-16 | How EO Auto-Tracking Works and Where It Fails | `content/en/knowledge-base/how-eo-auto-tracking-works-and-where-it-fails.md` | Planned |
+| 2026-09-22 | What Makes Non-Cooperative Drone Detection Hard in RF Systems? | `content/en/knowledge-base/what-makes-non-cooperative-drone-detection-hard-in-rf-systems.md` | Planned |
+| 2026-09-23 | Acceptance Testing for Multi-Sensor Projects: What Should Be Verified On Site? | `content/en/knowledge-base/acceptance-testing-for-multi-sensor-projects-what-should-be-verified-on-site.md` | Planned |
+| 2026-09-29 | Radar + EO + RF Bill of Materials: How to Scope an Early Budget | `content/en/knowledge-base/radar-eo-rf-bill-of-materials-how-to-scope-an-early-budget.md` | Planned |
 
 ## Publishing Schedule
 
@@ -109,16 +119,16 @@ It keeps:
 | 2026-07-29 | Wed | PASS | Digital RF | What Causes RF Multipath and Bearing Error in Urban Sites? |
 | 2026-08-04 | Tue | PASS | System Design | Latency Budgets in Multi-Sensor Systems: Why Seconds Matter |
 | 2026-08-05 | Wed | PASS | Deployment | Solar Farm Security Monitoring: Geometry, Power, and Communications |
-| 2026-08-11 | Tue | Planned | Technology Basics | How Stabilization Affects Long-Range EO Tracking |
-| 2026-08-12 | Wed | Planned | Digital RF | Passive RF Detection vs Protocol Decoding: What Do You Actually Get? |
-| 2026-08-18 | Tue | Planned | Compliance | FAT vs SAT in Security Projects: What Changes Between Factory and Site |
-| 2026-08-19 | Wed | Planned | Technology Basics | How to Estimate Camera Identification Range for People, Vehicles, and Small Craft |
-| 2026-08-25 | Tue | Planned | Counter-UAS | How to Plan RF Coverage for Drone Detection Around Buildings |
-| 2026-08-26 | Wed | Planned | System Design | Network Topology for Distributed Sensor Sites: Fiber, Wireless, and Redundancy |
-| 2026-09-01 | Tue | Planned | Deployment | Warehouse and Logistics Park Surveillance Design |
-| 2026-09-02 | Wed | Planned | System Design | Why Narrow FOV and Wide FOV Need to Work Together in EO Verification |
-| 2026-09-08 | Tue | Planned | Compliance | Spectrum Monitoring vs Communications Intelligence: Where the Line Is for Civil Projects |
-| 2026-09-09 | Wed | Planned | System Design | API vs SDK vs Protocol Gateways in Security System Integration |
+| 2026-08-11 | Tue | PASS | Technology Basics | How Stabilization Affects Long-Range EO Tracking |
+| 2026-08-12 | Wed | PASS | Digital RF | Passive RF Detection vs Protocol Decoding: What Do You Actually Get? |
+| 2026-08-18 | Tue | PASS | Compliance | FAT vs SAT in Security Projects: What Changes Between Factory and Site |
+| 2026-08-19 | Wed | PASS | Technology Basics | How to Estimate Camera Identification Range for People, Vehicles, and Small Craft |
+| 2026-08-25 | Tue | PASS | Counter-UAS | How to Plan RF Coverage for Drone Detection Around Buildings |
+| 2026-08-26 | Wed | PASS | System Design | Network Topology for Distributed Sensor Sites: Fiber, Wireless, and Redundancy |
+| 2026-09-01 | Tue | PASS | Deployment | Warehouse and Logistics Park Surveillance Design |
+| 2026-09-02 | Wed | PASS | System Design | Why Narrow FOV and Wide FOV Need to Work Together in EO Verification |
+| 2026-09-08 | Tue | PASS | Compliance | Spectrum Monitoring vs Communications Intelligence: Where the Line Is for Civil Projects |
+| 2026-09-09 | Wed | PASS | System Design | API vs SDK vs Protocol Gateways in Security System Integration |
 | 2026-09-15 | Tue | Planned | Deployment | Border River and Canal Monitoring Design |
 | 2026-09-16 | Wed | Planned | Technology Basics | How EO Auto-Tracking Works and Where It Fails |
 | 2026-09-22 | Tue | Planned | Counter-UAS | What Makes Non-Cooperative Drone Detection Hard in RF Systems? |

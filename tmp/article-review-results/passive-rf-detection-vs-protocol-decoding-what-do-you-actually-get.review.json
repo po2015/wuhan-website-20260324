@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Clear, technically precise, and very useful at separating RF evidence layers that are often conflated in projects.",
+  "overall_score": 8.9,
+  "word_count": 1806,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Separates passive RF detection from protocol decoding in a way that is operationally specific rather than generic.",
+    "Explains what each layer actually outputs, what conditions decoding depends on, and where unsupported signals remain important.",
+    "Provides strong buyer value through evidence-model questions and architecture guidance."
+  ],
+  "summary_assessment": "A reviewer-safe RF article with good technical discipline, low hype, and clear decision value around detection versus decoding workflows.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\passive-rf-detection-vs-protocol-decoding-what-do-you-actually-get.md",
+    "article_sha256": "a94a8dfe4b08b77dff678c3b09a9f60df97e68c9f875f157987cdfc413d072e7",
+    "normalized_review_input_sha256": "0bdff2ff8ba9d9c845cc9f98a7e5b66f55781c20801b0b6f12c050fe65bc64bd",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\passive-rf-detection-vs-protocol-decoding-what-do-you-actually-get\\round-01.review.json",
+    "sealed_at_utc": "2026-04-08T16:23:14+00:00"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Careful, disciplined, and useful at separating legitimate civil RF monitoring from content-oriented collection risk.",
+  "overall_score": 9.0,
+  "word_count": 1485,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 9
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Draws a clear and decision-useful line between RF environment monitoring and communication-content exploitation.",
+    "Uses Remote ID and minimum-necessary observables to turn a legal-compliance topic into actionable engineering guidance.",
+    "Keeps the tone appropriately careful without becoming vague or drifting into empty legal disclaimers."
+  ],
+  "summary_assessment": "A strong compliance-oriented RF article with precise scope control, practical procurement guidance, and credible treatment of a legally sensitive distinction.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\spectrum-monitoring-vs-communications-intelligence-where-the-line-is-for-civil-projects.md",
+    "article_sha256": "ce987350553e768f6e2dc8cb881cf08e8425df2bfdceffc9f817c2d7b62a7271",
+    "normalized_review_input_sha256": "79a00cab1e1f7211310bc6bf68f350f95d70813bd663bf01c9ce582f7ba981f8",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\spectrum-monitoring-vs-communications-intelligence-where-the-line-is-for-civil-projects\\round-01.review.json",
+    "sealed_at_utc": "2026-04-09T09:05:18+00:00"
+  }
+}

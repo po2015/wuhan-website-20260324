@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Clear, technically precise, and very useful at separating RF evidence layers that are often conflated in projects.",
+  "overall_score": 8.9,
+  "word_count": 1806,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Separates passive RF detection from protocol decoding in a way that is operationally specific rather than generic.",
+    "Explains what each layer actually outputs, what conditions decoding depends on, and where unsupported signals remain important.",
+    "Provides strong buyer value through evidence-model questions and architecture guidance."
+  ],
+  "summary_assessment": "A reviewer-safe RF article with good technical discipline, low hype, and clear decision value around detection versus decoding workflows."
+}

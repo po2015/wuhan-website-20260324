@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Clear, technically believable, and especially strong at explaining field of view as a workflow transition problem rather than a camera spec debate.",
+  "overall_score": 9.0,
+  "word_count": 1503,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 9
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Explains clearly why wide and narrow views serve different stages of the verification chain.",
+    "Connects cue error, scene ownership, stabilization, and reacquisition in a way that gives the topic real system-design depth.",
+    "Provides strong operator-facing value by framing FOV selection around trust, transition speed, and retained context."
+  ],
+  "summary_assessment": "A strong EO verification article with good task framing, credible technical logic, and non-obvious insight into how field of view choices affect operator confidence.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\why-narrow-fov-and-wide-fov-need-to-work-together-in-eo-verification.md",
+    "article_sha256": "8efd709dd3568e6c1a5d2ad647f126a6006dd522920caefcc7653e0773c82b27",
+    "normalized_review_input_sha256": "7d5e1c86705e3e75f1fa699228f8b0fb3ab32aa369436fd356c125030c8a9025",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\why-narrow-fov-and-wide-fov-need-to-work-together-in-eo-verification\\round-01.review.json",
+    "sealed_at_utc": "2026-04-09T09:05:18+00:00"
+  }
+}

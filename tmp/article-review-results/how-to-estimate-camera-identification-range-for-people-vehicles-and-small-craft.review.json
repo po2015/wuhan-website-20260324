@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Detailed, technically credible, and strong at converting image-quality theory into task-based range estimation logic.",
+  "overall_score": 9.0,
+  "word_count": 1924,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 9
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Frames identification correctly as a task definition problem before it becomes a geometry calculation.",
+    "Handles people, vehicles, and small craft as genuinely different target classes rather than treating them as one object type.",
+    "Combines pixels-on-target logic with stabilization, atmosphere, and workflow derating in a way that creates strong buyer guidance."
+  ],
+  "summary_assessment": "A high-quality technical explainer with good image-quality reasoning, strong practical estimation guidance, and clear deployment realism.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-to-estimate-camera-identification-range-for-people-vehicles-and-small-craft.md",
+    "article_sha256": "6e9cfbb09b31045152f9df56ca6fcfa1114676939c51aed718c351b01ae175a3",
+    "normalized_review_input_sha256": "1388a88693db8f2d6b66aa785d215d11c94e8f1f1e5239307a22317dadf9cdbf",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-to-estimate-camera-identification-range-for-people-vehicles-and-small-craft\\round-01.review.json",
+    "sealed_at_utc": "2026-04-08T16:23:14+00:00"
+  }
+}

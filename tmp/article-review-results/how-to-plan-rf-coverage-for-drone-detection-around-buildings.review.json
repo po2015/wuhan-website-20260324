@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Clear, field-aware, and strong at translating urban geometry into RF coverage-planning decisions.",
+  "overall_score": 8.9,
+  "word_count": 1720,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Treats building coverage as a geometry and sector-validation problem rather than a simple range problem.",
+    "Explains the difference between rooftop awareness, low-level approaches, and decode-quality coverage in a practical way.",
+    "Provides strong deployment value through overlap logic, friendly-emitter mapping, and sector-based commissioning guidance."
+  ],
+  "summary_assessment": "A strong professional RF planning article with good urban specificity, clear operational framing, and practical advice for building-centric drone detection coverage.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-to-plan-rf-coverage-for-drone-detection-around-buildings.md",
+    "article_sha256": "6ac2009b6b20f3042a07e46fe38bd327e695baf43fa83ed7a49e5f7344a8b18a",
+    "normalized_review_input_sha256": "9a602425c1a580b34ca7a73ddd8ea5904dbb94e8a0e3a0896adeeb0fad4bae65",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-to-plan-rf-coverage-for-drone-detection-around-buildings\\round-01.review.json",
+    "sealed_at_utc": "2026-04-08T16:23:14+00:00"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Well framed, operationally grounded, and strong at distinguishing controlled factory proof from field proof.",
+  "overall_score": 8.8,
+  "word_count": 1815,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 8,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 8
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Explains the acceptance-boundary difference between FAT and SAT clearly and keeps the discussion tied to security deployment realities.",
+    "Translates abstract project terms into concrete examples such as coverage, latency, geometry, and operator workflow.",
+    "Adds strong planning value by showing how acceptance criteria and configuration control should differ between stages."
+  ],
+  "summary_assessment": "A solid professional article with clear structure, practical commissioning relevance, and strong guidance on how to divide proof between factory and site."
+}

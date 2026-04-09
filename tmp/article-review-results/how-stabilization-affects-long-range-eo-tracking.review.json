@@ -1,0 +1,38 @@
+{
+  "final_decision": "PASS",
+  "reason_for_decision": "Technically coherent, well structured, and strong on linking stabilization behavior to real EO tracking outcomes.",
+  "overall_score": 9.0,
+  "word_count": 1910,
+  "dimension_scores": {
+    "structure_logical_clarity": 9,
+    "target_classification_content_framing": 9,
+    "marketing_noise_control": 10,
+    "content_depth": 9,
+    "readability_human_quality": 8,
+    "information_density": 9,
+    "seo_knowledge_base_fitness": 9,
+    "technical_credibility": 9,
+    "decision_value": 9,
+    "original_insight": 9
+  },
+  "failed_dimensions_below_5": [],
+  "ai_signals_detected": [],
+  "major_issues": [],
+  "revision_actions": [],
+  "rewrite_actions": [],
+  "strengths": [
+    "Explains long-range EO tracking as a line-of-sight control problem rather than only an optics problem.",
+    "Connects focal length, residual jitter, settle behavior, and target retention in a way that is useful for real procurement and acceptance testing.",
+    "Keeps strong decision value by distinguishing mechanical stabilization, visual tracking, and image-domain compensation."
+  ],
+  "summary_assessment": "A strong professional technical article with clear control-system framing, practical deployment value, and solid depth around long-range EO stabilization.",
+  "review_metadata": {
+    "schema_version": 2,
+    "workflow": "article-review-loop",
+    "article_path": "E:\\Cyrentis\\site\\content\\en\\knowledge-base\\how-stabilization-affects-long-range-eo-tracking.md",
+    "article_sha256": "c8272f7b19eedbc7dacc4e177796898d3b519a2cf268c90ab8644385c804c7ce",
+    "normalized_review_input_sha256": "cbf4c45949f4ab102fca42f505dfd08436237e2ee87ccbdf0eddc4049dbcd8cf",
+    "source_round_path": "E:\\Cyrentis\\site\\tmp\\article-review-runs\\how-stabilization-affects-long-range-eo-tracking\\round-01.review.json",
+    "sealed_at_utc": "2026-04-08T16:23:14+00:00"
+  }
+}
