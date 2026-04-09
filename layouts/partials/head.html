@@ -109,8 +109,8 @@
   {{- end }}
   {{- end }}
 
-  <script type="application/ld+json">{{ $orgData | jsonify | safeHTML }}</script>
-  <script type="application/ld+json">{{ $websiteData | jsonify | safeHTML }}</script>
+  {{- printf `<script type="application/ld+json">%s</script>` ($orgData | jsonify) | safeHTML }}
+  {{- printf `<script type="application/ld+json">%s</script>` ($websiteData | jsonify) | safeHTML }}
   {{- if $isArticle }}
   {{- $articleType := cond (eq .Section "news") "NewsArticle" "Article" -}}
   {{- $articleData := dict
@@ -131,7 +131,7 @@
   {{- if not .Lastmod.IsZero -}}
     {{- $articleData = merge $articleData (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
   {{- end -}}
-  <script type="application/ld+json">{{ $articleData | jsonify | safeHTML }}</script>
+  {{- printf `<script type="application/ld+json">%s</script>` ($articleData | jsonify) | safeHTML }}
   {{- end }}
 
   <script src="https://cdn.tailwindcss.com"></script>
